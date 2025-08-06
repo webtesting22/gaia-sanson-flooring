@@ -1,0 +1,20 @@
+/* TEAM */
+    Developer: Sanson Group Development Team
+    Contact: contact@sansonfloorings.com
+    From: New Delhi, India
+
+/* SITE */
+    Last update: 2024/01/15
+    Language: English
+    Doctype: HTML5
+    IDE: VS Code
+    Standards: HTML5, CSS3, JavaScript ES6+
+    Components: Vue.js 3, Vite, Swiper.js
+    Software: Node.js, npm
+
+/* BRAND */
+    Name: GAIA
+    Tagline: The New World of Flooring Fashion
+    Description: Premium flooring and acoustic solutions combining innovation with purpose
+    Inspiration: Gaia (Greek goddess of Earth) and Prithvi (Indian Earth goddess)
+    Philosophy: Where innovation meets tradition, and every floor tells a story 

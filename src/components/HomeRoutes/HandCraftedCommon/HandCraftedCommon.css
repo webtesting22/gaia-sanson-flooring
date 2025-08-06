@@ -1,0 +1,240 @@
+/* ===========================================
+   HANDCRAFTED COMMON CONTAINER - SPLIT LAYOUT
+   =========================================== */
+.HandCraftedCommonContainerParent{
+    background-color: #ECEDEE !important;
+}
+.HandCraftedCommonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    min-height: 400px;
+    /* max-height: 400px; */
+    /* background: #f8f9fa; */
+    /* border-radius: 12px; */
+    overflow: hidden;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+}
+
+/* ===========================================
+   LEFT SIDE - MANUFACTURING IMAGE
+   =========================================== */
+
+.HandCraftedCommonContainer .handcrafted-image-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #e9ecef;
+}
+
+.HandCraftedCommonContainer .image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.HandCraftedCommonContainer .manufacturing-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.05);
+}
+
+.HandCraftedCommonContainer .image-wrapper:hover .manufacturing-image {
+    transform: scale(1);
+}
+
+.HandCraftedCommonContainer .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.HandCraftedCommonContainer .image-wrapper:hover .image-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+
+/* ===========================================
+   RIGHT SIDE - CONTENT
+   =========================================== */
+
+.HandCraftedCommonContainer .handcrafted-content-container {
+    padding: 60px 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.HandCraftedCommonContainer .content-wrapper {
+    max-width: 500px;
+}
+
+
+.HandCraftedCommonContainer .title-script {
+    font-style: italic;
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    color: #8b6f47;
+}
+
+.HandCraftedCommonContainer .handcrafted-description {
+    /* font-size: 1.1rem; */
+    color: #2c3e50;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 400;
+}
+
+.HandCraftedCommonContainer .highlighted-text {
+    /* text-decoration: underline; */
+    /* text-decoration-color: #d4a574; */
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: 500;
+}
+
+/* ===========================================
+   HOVER ANIMATIONS & MICRO-INTERACTIONS
+   =========================================== */
+
+.HandCraftedCommonContainer .image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.HandCraftedCommonContainer .image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+.HandCraftedCommonContainer .image-wrapper:hover::before {
+    left: 100%;
+}
+
+.HandCraftedCommonContainer .handcrafted-title {
+    transition: color 0.3s ease;
+}
+
+.HandCraftedCommonContainer .content-wrapper:hover .handcrafted-title {
+    color: #1a252f;
+}
+
+.HandCraftedCommonContainer .handcrafted-description {
+    transition: color 0.3s ease;
+}
+
+.HandCraftedCommonContainer .content-wrapper:hover .handcrafted-description {
+    color: #34495e;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .HandCraftedCommonContainer {
+        grid-template-columns: 1fr;
+        gap: 0;
+        min-height: auto;
+    }
+    
+    .HandCraftedCommonContainer .handcrafted-image-container {
+        height: 300px;
+    }
+    
+    .HandCraftedCommonContainer .handcrafted-content-container {
+        padding: 40px 30px;
+    }
+ 
+    .HandCraftedCommonContainer .handcrafted-description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .HandCraftedCommonContainer {
+        border-radius: 8px;
+    }
+    
+    .HandCraftedCommonContainer .handcrafted-image-container {
+        height: 250px;
+    }
+    
+    .HandCraftedCommonContainer .handcrafted-content-container {
+        padding: 30px 20px;
+    }
+    
+
+    .HandCraftedCommonContainer .handcrafted-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .HandCraftedCommonContainer .content-wrapper {
+        max-width: 100%;
+    }
+}
+
+/* ===========================================
+   ACCESSIBILITY & PERFORMANCE
+   =========================================== */
+
+.HandCraftedCommonContainer .manufacturing-image {
+    will-change: transform;
+}
+
+.HandCraftedCommonContainer .image-wrapper {
+    will-change: transform;
+}
+
+/* Focus states for accessibility */
+.HandCraftedCommonContainer .content-wrapper:focus-within {
+    outline: 2px solid #d4a574;
+    outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .HandCraftedCommonContainer .manufacturing-image,
+    .HandCraftedCommonContainer .image-wrapper::before {
+        transition: none;
+    }
+    
+    .HandCraftedCommonContainer .image-wrapper:hover .manufacturing-image {
+        transform: none;
+    }
+}
+
+/* ===========================================
+   PRINT STYLES
+   =========================================== */
+
+@media print {
+    .HandCraftedCommonContainer {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .HandCraftedCommonContainer .image-overlay {
+        display: none;
+    }
+}

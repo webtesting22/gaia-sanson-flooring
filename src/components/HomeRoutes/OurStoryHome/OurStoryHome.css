@@ -1,0 +1,326 @@
+/* ===========================================
+   OUR STORY CONTAINER - USING PARENT CONTAINER
+   =========================================== */
+
+.OurStoryHomeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 600px;
+    background: #f5f3f0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===========================================
+   LEFT SIDE - IMAGE CONTAINER
+   =========================================== */
+
+.OurStoryHomeContainer .story-image-container {
+    position: relative;
+    background: #d4c4b0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.OurStoryHomeContainer .story-header {
+    padding: 40px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+.OurStoryHomeContainer .story-arrow-icon {
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.OurStoryHomeContainer .story-image-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    margin: 0 40px 40px 40px;
+    border-radius: 8px;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.OurStoryHomeContainer .story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.05);
+}
+
+.OurStoryHomeContainer .story-image-wrapper:not(.animating) .story-image {
+    transform: scale(1);
+}
+
+.OurStoryHomeContainer .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===========================================
+   RIGHT SIDE - CONTENT CONTAINER
+   =========================================== */
+
+.OurStoryHomeContainer .story-content-container {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px;
+}
+
+.OurStoryHomeContainer .story-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.OurStoryHomeContainer .nav-btn {
+    background: transparent;
+    border: 1px solid #d0d0d0;
+    color: #666;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    min-width: 60px;
+}
+
+.OurStoryHomeContainer .nav-btn:hover {
+    border-color: #333;
+    color: #333;
+    transform: translateY(-1px);
+}
+
+.OurStoryHomeContainer .nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.OurStoryHomeContainer .story-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.OurStoryHomeContainer .content-wrapper {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.OurStoryHomeContainer .content-wrapper.animating {
+    opacity: 0.7;
+    transform: translateX(20px);
+}
+
+
+.OurStoryHomeContainer .story-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin: 0 0 40px 0;
+    font-weight: 400;
+}
+
+.OurStoryHomeContainer .progress-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #999;
+    font-weight: 500;
+}
+
+.OurStoryHomeContainer .current-slide {
+    color: #333;
+    font-weight: 600;
+}
+
+.OurStoryHomeContainer .divider {
+    color: #ccc;
+}
+
+/* ===========================================
+   ANIMATIONS - FRAMER MOTION STYLE
+   =========================================== */
+
+/* Image Transitions */
+.slide-image-enter-active, .slide-image-leave-active {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-image-enter-from {
+    opacity: 0;
+    transform: scale(1.1) translateX(-30px);
+}
+
+.slide-image-leave-to {
+    opacity: 0;
+    transform: scale(0.95) translateX(30px);
+}
+
+/* Content Transitions */
+.slide-content-enter-active, .slide-content-leave-active {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-content-enter-from {
+    opacity: 0;
+    transform: translateX(40px) translateY(20px);
+}
+
+.slide-content-leave-to {
+    opacity: 0;
+    transform: translateX(-40px) translateY(-20px);
+}
+
+/* Hover Effects */
+.OurStoryHomeContainer .story-image-wrapper:hover .story-image {
+    transform: scale(1.02);
+}
+
+.OurStoryHomeContainer .story-image-wrapper:hover .image-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .OurStoryHomeContainer {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .OurStoryHomeContainer .story-image-container {
+        min-height: 400px;
+    }
+    
+    .OurStoryHomeContainer .story-header {
+        padding: 30px 30px 15px 30px;
+    }
+    
+  
+    .OurStoryHomeContainer .story-image-wrapper {
+        margin: 0 30px 30px 30px;
+    }
+    
+    .OurStoryHomeContainer .story-content-container {
+        padding: 30px;
+    }
+    
+    .OurStoryHomeContainer .story-navigation {
+        margin-bottom: 40px;
+    }
+    
+   
+    
+    .OurStoryHomeContainer .story-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .OurStoryHomeContainer .story-header {
+        padding: 20px 20px 10px 20px;
+    }
+    
+  
+    .OurStoryHomeContainer .story-arrow-icon {
+        font-size: 1.5rem;
+    }
+    
+    .OurStoryHomeContainer .story-image-wrapper {
+        margin: 0 20px 20px 20px;
+    }
+    
+    .OurStoryHomeContainer .story-content-container {
+        padding: 20px;
+    }
+    
+    .OurStoryHomeContainer .story-navigation {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .OurStoryHomeContainer .nav-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        min-width: 50px;
+    }
+  
+    
+    .OurStoryHomeContainer .story-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+}
+
+/* ===========================================
+   MICRO-INTERACTIONS
+   =========================================== */
+
+.OurStoryHomeContainer .nav-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.OurStoryHomeContainer .nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.05), transparent);
+    transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.OurStoryHomeContainer .nav-btn:hover::before {
+    left: 100%;
+}
+
+/* Progress Indicator Animation */
+.OurStoryHomeContainer .progress-indicator {
+    position: relative;
+}
+
+.OurStoryHomeContainer .progress-indicator::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #333;
+    transition: width 0.3s ease;
+}
+
+.OurStoryHomeContainer .content-wrapper:hover .progress-indicator::after {
+    width: 50px;
+}

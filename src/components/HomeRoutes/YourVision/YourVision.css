@@ -1,0 +1,277 @@
+/* ===========================================
+   YOUR VISION CONTAINER - RESPONSIVE GRID LAYOUT
+   =========================================== */
+.YourVisionContainer{
+    background-color: #ECEDEE !important;
+}
+.YourVisionContainer {
+    width: 100%;
+    background:transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+}
+
+/* ===========================================
+   HEADER SECTION
+   =========================================== */
+
+.YourVisionContainer .vision-header {
+    text-align: center;
+    /* background: #ffffff; */
+}
+
+.YourVisionContainer .vision-title {
+    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===========================================
+   MAIN CONTENT GRID
+   =========================================== */
+
+.YourVisionContainer .vision-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 500px;
+}
+
+/* ===========================================
+   LEFT SIDE - MAIN IMAGE
+   =========================================== */
+
+.YourVisionContainer .vision-main-image-container {
+    position: relative;
+    overflow: hidden;
+    background: #e9ecef;
+}
+
+.YourVisionContainer .main-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.YourVisionContainer .main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.05);
+}
+
+.YourVisionContainer .main-image-wrapper:hover .main-image {
+    transform: scale(1);
+}
+
+.YourVisionContainer .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.YourVisionContainer .main-image-wrapper:hover .image-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+
+/* ===========================================
+   RIGHT SIDE - CONTENT
+   =========================================== */
+
+.YourVisionContainer .vision-content-container {
+    /* background: #ffffff; */
+    padding: 40px;
+    padding-right: 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.YourVisionContainer .content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.YourVisionContainer .vision-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin: 0 0 40px 0;
+    font-weight: 400;
+}
+
+.YourVisionContainer .know-more-btn {
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+/* ===========================================
+   BOTTOM SMALL IMAGE
+   =========================================== */
+
+.YourVisionContainer .secondary-image-container {
+    position: relative;
+    margin-top: auto;
+}
+
+.YourVisionContainer .secondary-image-wrapper {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.YourVisionContainer .secondary-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.05);
+}
+
+.YourVisionContainer .secondary-image-wrapper:hover .secondary-image {
+    transform: scale(1);
+}
+
+.YourVisionContainer .secondary-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.YourVisionContainer .secondary-image-wrapper:hover .secondary-image-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+
+/* ===========================================
+   HOVER ANIMATIONS & MICRO-INTERACTIONS
+   =========================================== */
+
+.YourVisionContainer .main-image-wrapper,
+.YourVisionContainer .secondary-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.YourVisionContainer .main-image-wrapper::before,
+.YourVisionContainer .secondary-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+.YourVisionContainer .main-image-wrapper:hover::before,
+.YourVisionContainer .secondary-image-wrapper:hover::before {
+    left: 100%;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet View */
+@media (max-width: 768px) {
+   
+    
+    .YourVisionContainer .vision-content-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .YourVisionContainer .vision-content-container {
+        padding: 30px;
+    }
+    
+    .YourVisionContainer .vision-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .YourVisionContainer .secondary-image-wrapper {
+        height: 180px;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    
+    
+    .YourVisionContainer .vision-content-container {
+        padding: 20px;
+    }
+    
+    .YourVisionContainer .vision-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+    
+    .YourVisionContainer .secondary-image-wrapper {
+        height: 150px;
+        margin-top: 15px;
+    }
+    
+    .YourVisionContainer .know-more-btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+/* ===========================================
+   ACCESSIBILITY & PERFORMANCE
+   =========================================== */
+
+.YourVisionContainer img {
+    will-change: transform;
+}
+
+.YourVisionContainer .main-image-wrapper,
+.YourVisionContainer .secondary-image-wrapper {
+    will-change: transform;
+}
+
+/* Focus states for accessibility */
+.YourVisionContainer .know-more-btn:focus {
+    outline: 2px solid #d4a574;
+    outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .YourVisionContainer .main-image,
+    .YourVisionContainer .secondary-image,
+    .YourVisionContainer .main-image-wrapper::before,
+    .YourVisionContainer .secondary-image-wrapper::before {
+        transition: none;
+    }
+    
+    .YourVisionContainer .main-image-wrapper:hover .main-image,
+    .YourVisionContainer .secondary-image-wrapper:hover .secondary-image {
+        transform: none;
+    }
+}

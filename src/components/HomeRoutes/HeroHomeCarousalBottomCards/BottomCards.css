@@ -1,0 +1,206 @@
+/* ===========================================
+   COMMON LAYOUT CONTAINER - REUSABLE PARENT CLASS
+   Use this class for consistent layout across components
+   =========================================== */
+
+.CommonLayoutContainer {
+    width: 100%;
+}
+
+.BottomCardsContainer {
+    width: 100%;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 5;
+}
+
+/* ===========================================
+   PERFECT GRID LAYOUT - 3 CARDS
+   =========================================== */
+
+.BottomCardsContainer .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    align-items: start;
+}
+
+/* ===========================================
+   INDIVIDUAL CARD STYLING
+   =========================================== */
+
+.BottomCardsContainer .card-item {
+    background: #293A42;
+    /* border-radius: 12px; */
+    padding: 30px 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.BottomCardsContainer .card-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================================
+   IMAGE PLACEHOLDER (FOR FUTURE USE)
+   =========================================== */
+
+.BottomCardsContainer .card-image-placeholder {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.BottomCardsContainer .card-image-placeholder::before {
+    content: "Image will be added here";
+    color: #6c757d;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+/* ===========================================
+   CARD CONTENT STYLING
+   =========================================== */
+
+.BottomCardsContainer .card-content {
+    text-align: left;
+}
+
+/* ===========================================
+   HOVER ANIMATIONS & MICRO-INTERACTIONS
+   =========================================== */
+
+.BottomCardsContainer .card-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.BottomCardsContainer .card-item:hover::before {
+    left: 100%;
+}
+
+.BottomCardsContainer .card-title {
+    transition: color 0.3s ease;
+}
+
+
+.BottomCardsContainer .card-description {
+    transition: color 0.3s ease;
+}
+
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .CommonLayoutContainer {
+        padding: 40px 15px;
+    }
+    
+    .BottomCardsContainer .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .BottomCardsContainer .card-item {
+        padding: 25px 20px;
+    }
+    
+    .BottomCardsContainer .card-image-placeholder {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .BottomCardsContainer .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .BottomCardsContainer .card-description {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .CommonLayoutContainer {
+        padding: 30px 10px;
+    }
+    
+    .BottomCardsContainer .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .BottomCardsContainer .card-item {
+        padding: 20px 15px;
+    }
+    
+    .BottomCardsContainer .card-image-placeholder {
+        height: 120px;
+        margin-bottom: 12px;
+    }
+    
+    .BottomCardsContainer .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .BottomCardsContainer .card-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* ===========================================
+   UTILITY CLASSES (FOR OTHER COMPONENTS)
+   =========================================== */
+
+/* Additional spacing options for CommonLayoutContainer */
+.CommonLayoutContainer.compact {
+    padding: 40px 20px;
+}
+
+.CommonLayoutContainer.spacious {
+    padding: 80px 20px;
+}
+
+.CommonLayoutContainer.no-padding {
+    padding: 0 20px;
+}
+
+/* Dark theme variant (optional) */
+.CommonLayoutContainer.dark-theme .card-item {
+    background: #2c3e50;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.CommonLayoutContainer.dark-theme .card-title {
+    color: #ffffff;
+}
+
+.CommonLayoutContainer.dark-theme .card-description {
+    color: #bdc3c7;
+}

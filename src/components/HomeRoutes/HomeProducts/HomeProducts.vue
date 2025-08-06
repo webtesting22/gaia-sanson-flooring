@@ -1,0 +1,118 @@
+<script>
+import "./HomeProducts.css"
+import HomeProductsData from "./HomeProductsData"
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+export default {
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    data() {
+        return {
+            productsData: HomeProductsData,
+            swiperInstance: null,
+        };
+    },
+    setup() {
+        return {
+            modules: [Autoplay, Pagination, Navigation],
+        };
+    },
+    methods: {
+        onSwiper(swiper) {
+            this.swiperInstance = swiper;
+        },
+        goToPrevSlide() {
+            if (this.swiperInstance) {
+                this.swiperInstance.slidePrev();
+            }
+        },
+        goToNextSlide() {
+            if (this.swiperInstance) {
+                this.swiperInstance.slideNext();
+            }
+        }
+    }
+};
+</script>
+
+<template>
+    <div class="HomeProductParentContainer">
+        <div class="Container paddingTop80 paddingBottom80 ">
+            <div class="HomeProductsContainer">
+                <!-- Header Section -->
+                <div class="products-header marginBottom80">
+                    <h2 class="products-title">OUR PRODUCT RANGE</h2>
+                    <p class="products-subtitle">Discover our comprehensive collection of premium flooring solutions</p>
+                </div>
+
+                <!-- Swiper Container -->
+                <div class="products-swiper-container">
+                    <swiper @swiper="onSwiper" :slidesPerView="1" :spaceBetween="30" :centeredSlides="true" :loop="true"
+                        :autoplay="{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }" :speed="800" :modules="modules" class="products-swiper" :breakpoints="{
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        }
+                    }">
+                        <swiper-slide v-for="product in productsData" :key="product.id">
+                            <div class="product-card" :style="{ backgroundColor: product.bgColor }">
+                                <!-- Top Section - Description -->
+                                <div class="card-top-section">
+                                    <p class="card-description" :style="{ color: product.textColor }">
+                                        {{ product.description }}
+                                    </p>
+                                </div>
+
+                                <!-- Middle Section - Image -->
+                                <div class="card-image-section">
+                                    <div class="image-wrapper">
+                                        <img :src="product.image" :alt="product.title" class="product-image" />
+                                        <div class="image-overlay"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Bottom Section - Title and Arrow -->
+                                <div class="card-bottom-section">
+                                    <div class="card-title-section">
+                                        <h3 class="card-title" :style="{ color: product.textColor }">
+                                            {{ product.title }}
+                                        </h3>
+                                        <div class="card-arrow">
+                                            <span class="arrow-icon">→</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper>
+
+                    <!-- Navigation Buttons -->
+                    <div class="products-navigation">
+                        <button @click="goToPrevSlide" class="nav-btn prev-btn">
+                            <span>‹</span>
+                        </button>
+                        <button @click="goToNextSlide" class="nav-btn next-btn">
+                            <span>›</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<style scoped></style>

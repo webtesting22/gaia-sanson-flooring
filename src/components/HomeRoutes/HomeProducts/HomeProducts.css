@@ -1,0 +1,398 @@
+/* ===========================================
+   HOME PRODUCTS CONTAINER
+   =========================================== */
+
+   .HomeProductParentContainer{
+    background-color: white !important;
+   }
+.HomeProductsContainer {
+    width: 100%;
+    position: relative;
+}
+
+/* ===========================================
+   HEADER SECTION
+   =========================================== */
+
+.HomeProductsContainer .products-header {
+    text-align: center;
+    /* margin-bottom: 60px; */
+}
+
+.HomeProductsContainer .products-title {
+    margin-bottom: 20px;
+}
+
+.HomeProductsContainer .products-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* ===========================================
+   SWIPER CONTAINER
+   =========================================== */
+
+.HomeProductsContainer .products-swiper-container {
+    position: relative;
+    padding: 0 0px;
+}
+
+.HomeProductsContainer .products-swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* ===========================================
+   PRODUCT CARD DESIGN
+   =========================================== */
+
+.HomeProductsContainer .product-card {
+    height: 500px;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.HomeProductsContainer .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================================
+   CARD TOP SECTION - DESCRIPTION
+   =========================================== */
+
+.HomeProductsContainer .card-top-section {
+    padding: 25px 25px 15px 25px;
+    flex-shrink: 0;
+}
+
+.HomeProductsContainer .card-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* ===========================================
+   CARD IMAGE SECTION
+   =========================================== */
+
+.HomeProductsContainer .card-image-section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.HomeProductsContainer .image-wrapper {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.HomeProductsContainer .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.05);
+}
+
+.HomeProductsContainer .product-card:hover .product-image {
+    transform: scale(1);
+}
+
+.HomeProductsContainer .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.HomeProductsContainer .product-card:hover .image-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+
+/* ===========================================
+   CARD BOTTOM SECTION - TITLE AND ARROW
+   =========================================== */
+
+.HomeProductsContainer .card-bottom-section {
+    padding: 20px 25px 25px 25px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.HomeProductsContainer .card-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HomeProductsContainer .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.HomeProductsContainer .card-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.HomeProductsContainer .arrow-icon {
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.HomeProductsContainer .product-card:hover .card-arrow {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.HomeProductsContainer .product-card:hover .arrow-icon {
+    transform: translateX(2px);
+}
+
+/* ===========================================
+   NAVIGATION BUTTONS
+   =========================================== */
+
+.HomeProductsContainer .products-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.HomeProductsContainer .nav-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.HomeProductsContainer .nav-btn span {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.HomeProductsContainer .nav-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.HomeProductsContainer .nav-btn:active {
+    transform: scale(0.95);
+}
+
+/* ===========================================
+   SWIPER PAGINATION CUSTOMIZATION
+   =========================================== */
+
+.HomeProductsContainer .swiper-pagination {
+    bottom: 20px !important;
+    position: relative !important;
+    margin-top: 30px;
+}
+
+.HomeProductsContainer .swiper-pagination-bullet {
+    background: rgba(0, 0, 0, 0.3) !important;
+    opacity: 1 !important;
+    margin: 0 6px !important;
+    width: 10px !important;
+    height: 10px !important;
+    transition: all 0.3s ease !important;
+}
+
+.HomeProductsContainer .swiper-pagination-bullet-active {
+    background: #333 !important;
+    transform: scale(1.2) !important;
+}
+
+/* ===========================================
+   HOVER ANIMATIONS & MICRO-INTERACTIONS
+   =========================================== */
+
+.HomeProductsContainer .product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.HomeProductsContainer .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+.HomeProductsContainer .product-card:hover::before {
+    left: 100%;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    /* .HomeProductsContainer .products-header {
+        margin-bottom: 40px;
+    } */
+    
+    .HomeProductsContainer .products-subtitle {
+        font-size: 1rem;
+    }
+    
+    .HomeProductsContainer .product-card {
+        height: 450px;
+    }
+    
+    .HomeProductsContainer .card-top-section {
+        padding: 20px 20px 10px 20px;
+    }
+    
+    .HomeProductsContainer .card-description {
+        font-size: 0.8rem;
+    }
+    
+    .HomeProductsContainer .card-bottom-section {
+        padding: 15px 20px 20px 20px;
+    }
+    
+    .HomeProductsContainer .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .HomeProductsContainer .nav-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .HomeProductsContainer .nav-btn span {
+        font-size: 18px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .HomeProductsContainer .products-swiper-container {
+        padding: 0 10px;
+    }
+    
+    .HomeProductsContainer .product-card {
+        height: 400px;
+    }
+    
+    .HomeProductsContainer .card-top-section {
+        padding: 15px 15px 10px 15px;
+    }
+    
+    .HomeProductsContainer .card-description {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    
+    .HomeProductsContainer .card-bottom-section {
+        padding: 12px 15px 15px 15px;
+    }
+    
+    .HomeProductsContainer .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .HomeProductsContainer .card-arrow {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .HomeProductsContainer .arrow-icon {
+        font-size: 1rem;
+    }
+    
+    .HomeProductsContainer .nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .HomeProductsContainer .nav-btn span {
+        font-size: 16px;
+    }
+}
+
+/* ===========================================
+   ACCESSIBILITY & PERFORMANCE
+   =========================================== */
+
+.HomeProductsContainer .product-image {
+    will-change: transform;
+}
+
+.HomeProductsContainer .product-card {
+    will-change: transform;
+}
+
+/* Focus states for accessibility */
+.HomeProductsContainer .nav-btn:focus {
+    outline: 2px solid #d4a574;
+    outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .HomeProductsContainer .product-image,
+    .HomeProductsContainer .product-card::before {
+        transition: none;
+    }
+    
+    .HomeProductsContainer .product-card:hover .product-image {
+        transform: none;
+    }
+}

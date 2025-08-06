@@ -1,11 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+/* Degular Font Import - Local Font Files */
+@font-face {
+  font-family: 'Degular';
+  src: url('/fonts/Degular-Regular.woff2') format('woff2'),
+       url('/fonts/Degular-Regular.woff') format('woff'),
+       url('/fonts/Degular-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('/fonts/Degular-Medium.woff2') format('woff2'),
+       url('/fonts/Degular-Medium.woff') format('woff'),
+       url('/fonts/Degular-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('/fonts/Degular-Semibold.woff2') format('woff2'),
+       url('/fonts/Degular-Semibold.woff') format('woff'),
+       url('/fonts/Degular-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('/fonts/Degular-Bold.woff2') format('woff2'),
+       url('/fonts/Degular-Bold.woff') format('woff'),
+       url('/fonts/Degular-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('/fonts/Degular-Black.woff2') format('woff2'),
+       url('/fonts/Degular-Black.woff') format('woff'),
+       url('/fonts/Degular-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #FFFAF2;
-  font-family: "Karla", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .Container {
@@ -15,12 +66,12 @@ body {
 
 a {
   text-decoration: none;
-  font-family: "Karla", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 ul {
   list-style: none;
-  font-family: "Karla", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 h1,
@@ -30,13 +81,13 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "Degular Display";
   font-weight: 600;
 }
 
 p {
   margin: 0;
-  font-family: "Karla", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .paddingTop80 {
@@ -124,7 +175,7 @@ h2 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: "Karla", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .common-btn:hover {

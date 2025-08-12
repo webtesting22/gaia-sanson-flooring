@@ -1,0 +1,487 @@
+.AcousticTilesLayoutContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================================
+   TECHNICAL HEADER
+   =========================================== */
+
+.technical-header {
+    margin-bottom: 80px;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.technical-subtitle {
+    font-size: 1.3rem;
+    color: #E4D8C8;
+    margin: 0 0 40px 0;
+    font-weight: 400;
+}
+
+.technical-specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.spec-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spec-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d4a574;
+    margin-bottom: 8px;
+}
+
+.spec-label {
+    font-size: 0.9rem;
+    color: #E4D8C8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.header-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sound-wave-animation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100px;
+}
+
+.wave {
+    width: 8px;
+    background: linear-gradient(135deg, #d4a574, #8b6f47);
+    border-radius: 4px;
+    animation: wave-animation 2s ease-in-out infinite;
+}
+
+@keyframes wave-animation {
+    0%, 100% { height: 20px; }
+    50% { height: 80px; }
+}
+
+/* ===========================================
+   PERFORMANCE METRICS
+   =========================================== */
+
+.performance-metrics {
+    margin-bottom: 80px;
+}
+
+.performance-metrics h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(212, 165, 116, 0.3);
+}
+
+.metric-circle {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #d4a574, #8b6f47);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.metric-unit {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.metric-card h4 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.metric-card p {
+    color: #E4D8C8;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ===========================================
+   INSTALLATION TYPES
+   =========================================== */
+
+.installation-types {
+    margin-bottom: 80px;
+}
+
+.installation-types h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+
+.installation-tabs {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+}
+
+.tab-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.method-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.method-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.method-details h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.method-details p {
+    color: #E4D8C8;
+    font-size: 1.1rem;
+    margin: 0 0 25px 0;
+    line-height: 1.6;
+}
+
+.method-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.method-features li {
+    color: #E4D8C8;
+    font-size: 1rem;
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.method-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #d4a574;
+    font-weight: bold;
+}
+
+.method-specs {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.spec {
+    background: rgba(212, 165, 116, 0.2);
+    color: #d4a574;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+}
+
+/* ===========================================
+   APPLICATIONS GALLERY
+   =========================================== */
+
+.applications-gallery {
+    margin-bottom: 80px;
+}
+
+.applications-gallery h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.app-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.app-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .app-image img {
+    transform: scale(1.1);
+}
+
+.app-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, rgba(47, 57, 74, 0.9) 0%, rgba(20, 28, 39, 0.9) 100%);
+    padding: 25px;
+    color: white;
+}
+
+.app-overlay h4 {
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.app-overlay p {
+    font-size: 0.95rem;
+    margin: 0 0 15px 0;
+    color: #E4D8C8;
+    line-height: 1.5;
+}
+
+.app-benefits {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background: rgba(212, 165, 116, 0.2);
+    color: #d4a574;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+}
+
+/* ===========================================
+   TECHNICAL SPECIFICATIONS
+   =========================================== */
+
+.technical-specifications {
+    margin-bottom: 80px;
+}
+
+.technical-specifications h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+
+.specs-table {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.spec-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 20px;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-row:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.spec-property {
+    color: #E4D8C8;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.spec-value {
+    color: #d4a574;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.spec-description {
+    color: #E4D8C8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 768px) {
+    .AcousticTilesLayoutContainer {
+        padding: 0 15px;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .technical-specs {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tab-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .spec-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .technical-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .performance-metrics h2 {
+        font-size: 2rem;
+    }
+
+    .installation-types h2 {
+        font-size: 2rem;
+    }
+
+    .applications-gallery h2 {
+        font-size: 2rem;
+    }
+
+    .technical-specifications h2 {
+        font-size: 2rem;
+    }
+
+    .installation-tabs {
+        padding: 25px 20px;
+    }
+} 

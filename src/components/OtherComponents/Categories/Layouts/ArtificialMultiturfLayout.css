@@ -1,0 +1,519 @@
+.ArtificialMultiturfLayoutContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================================
+   OUTDOOR HERO
+   =========================================== */
+
+.outdoor-hero {
+    margin-bottom: 80px;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #E4D8C8;
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+.hero-features {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    color: #E4D8C8;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.hero-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.weather-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    padding: 15px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+.weather-icon {
+    font-size: 1.5rem;
+}
+
+/* ===========================================
+   SPORTS APPLICATIONS
+   =========================================== */
+
+.sports-applications {
+    margin-bottom: 80px;
+}
+
+.sports-applications h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.sport-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.sport-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.sport-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.sport-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.sport-card:hover .sport-image img {
+    transform: scale(1.1);
+}
+
+.sport-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, rgba(47, 57, 74, 0.9) 0%, rgba(20, 28, 39, 0.9) 100%);
+    padding: 25px;
+    color: white;
+}
+
+.sport-overlay h4 {
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.sport-overlay p {
+    font-size: 0.95rem;
+    margin: 0 0 15px 0;
+    color: #E4D8C8;
+    line-height: 1.5;
+}
+
+.sport-specs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.spec {
+    background: rgba(212, 165, 116, 0.2);
+    color: #d4a574;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+}
+
+/* ===========================================
+   INSTALLATION PROCESS
+   =========================================== */
+
+.installation-process {
+    margin-bottom: 80px;
+}
+
+.installation-process h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(212, 165, 116, 0.3);
+}
+
+.timeline-marker {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #d4a574, #8b6f47);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.timeline-content h4 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #E4D8C8;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+.step-duration {
+    color: #d4a574;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(212, 165, 116, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* ===========================================
+   MAINTENANCE GUIDE
+   =========================================== */
+
+.maintenance-guide {
+    margin-bottom: 80px;
+}
+
+.maintenance-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.maintenance-text h3 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    font-weight: 600;
+}
+
+.maintenance-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tip-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.tip-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.tip-content h4 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.tip-content p {
+    color: #E4D8C8;
+    font-size: 1rem;
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.frequency {
+    color: #d4a574;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.maintenance-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maintenance-demo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-grass {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.grass-blade {
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(135deg, #66BB6A, #4CAF50);
+    border-radius: 2px;
+    animation: grass-sway 3s ease-in-out infinite;
+}
+
+.grass-blade:nth-child(1) { height: 40px; left: 20px; top: 20px; animation-delay: 0s; }
+.grass-blade:nth-child(2) { height: 35px; left: 35px; top: 25px; animation-delay: 0.2s; }
+.grass-blade:nth-child(3) { height: 45px; left: 50px; top: 15px; animation-delay: 0.4s; }
+.grass-blade:nth-child(4) { height: 30px; left: 65px; top: 30px; animation-delay: 0.6s; }
+.grass-blade:nth-child(5) { height: 40px; left: 80px; top: 20px; animation-delay: 0.8s; }
+.grass-blade:nth-child(6) { height: 35px; left: 95px; top: 25px; animation-delay: 1s; }
+.grass-blade:nth-child(7) { height: 45px; left: 110px; top: 15px; animation-delay: 1.2s; }
+.grass-blade:nth-child(8) { height: 30px; left: 125px; top: 30px; animation-delay: 1.4s; }
+
+@keyframes grass-sway {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+}
+
+/* ===========================================
+   ENVIRONMENTAL BENEFITS
+   =========================================== */
+
+.environmental-benefits {
+    margin-bottom: 80px;
+}
+
+.environmental-benefits h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(76, 175, 80, 0.3);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.benefit-card h4 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: #E4D8C8;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}
+
+.impact-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.impact-label {
+    color: #E4D8C8;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.impact-value {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 768px) {
+    .ArtificialMultiturfLayoutContainer {
+        padding: 0 15px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .maintenance-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sports-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .process-timeline {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
+    .sports-applications h2 {
+        font-size: 2rem;
+    }
+
+    .installation-process h2 {
+        font-size: 2rem;
+    }
+
+    .maintenance-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .environmental-benefits h2 {
+        font-size: 2rem;
+    }
+} 

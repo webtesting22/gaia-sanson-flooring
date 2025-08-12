@@ -1,11 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeRoutes from '../components/HomeRoutes/HomeRoutes.vue'
+import CategoriesRoutes from '../components/OtherComponents/Categories/CategoriesLayout/Categories.vue'
+import CategoryDetail from '../components/OtherComponents/Categories/CategoriesLayout/CategoryDetail.vue'
 
 const routes = [
     {
         path: '/',
         name: 'Home',
         component: HomeRoutes
+    },
+    {
+        path: '/categories',
+        name: 'Categories',
+        component: CategoriesRoutes
+    },
+    {
+        path: '/categories/:slug',
+        name: 'CategoryDetail',
+        component: CategoryDetail,
+        props: true
     },
     //   {
     //     path: '/about',

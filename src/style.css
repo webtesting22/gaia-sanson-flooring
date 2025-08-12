@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
 /* Degular Font Import - Local Font Files */
 @font-face {
   font-family: 'Degular';
   src: url('/fonts/Degular-Regular.woff2') format('woff2'),
-       url('/fonts/Degular-Regular.woff') format('woff'),
-       url('/fonts/Degular-Regular.ttf') format('truetype');
+    url('/fonts/Degular-Regular.woff') format('woff'),
+    url('/fonts/Degular-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -14,8 +15,8 @@
 @font-face {
   font-family: 'Degular';
   src: url('/fonts/Degular-Medium.woff2') format('woff2'),
-       url('/fonts/Degular-Medium.woff') format('woff'),
-       url('/fonts/Degular-Medium.ttf') format('truetype');
+    url('/fonts/Degular-Medium.woff') format('woff'),
+    url('/fonts/Degular-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -24,8 +25,8 @@
 @font-face {
   font-family: 'Degular';
   src: url('/fonts/Degular-Semibold.woff2') format('woff2'),
-       url('/fonts/Degular-Semibold.woff') format('woff'),
-       url('/fonts/Degular-Semibold.ttf') format('truetype');
+    url('/fonts/Degular-Semibold.woff') format('woff'),
+    url('/fonts/Degular-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -34,8 +35,8 @@
 @font-face {
   font-family: 'Degular';
   src: url('/fonts/Degular-Bold.woff2') format('woff2'),
-       url('/fonts/Degular-Bold.woff') format('woff'),
-       url('/fonts/Degular-Bold.ttf') format('truetype');
+    url('/fonts/Degular-Bold.woff') format('woff'),
+    url('/fonts/Degular-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -44,8 +45,8 @@
 @font-face {
   font-family: 'Degular';
   src: url('/fonts/Degular-Black.woff2') format('woff2'),
-       url('/fonts/Degular-Black.woff') format('woff'),
-       url('/fonts/Degular-Black.ttf') format('truetype');
+    url('/fonts/Degular-Black.woff') format('woff'),
+    url('/fonts/Degular-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -126,6 +127,15 @@ p {
   width: 100%;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 h3 {
   font-size: 1.8rem;
   font-weight: 500;
@@ -149,7 +159,8 @@ h2 {
   h2 {
     font-size: 2.5rem;
   }
-  h3{
+
+  h3 {
     font-size: 1.5rem;
   }
 }

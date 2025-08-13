@@ -22,9 +22,9 @@
 
                 <!-- Right Section - Descriptive Text -->
                 <div class="description-section">
-                    <h2>
+                    <h3>
                         We customize carpets — including artificial grass — to your size, color, and design. Tell us your idea, we'll make it real.
-                    </h2>
+                    </h3>
                 </div>
             </div>
         </div>

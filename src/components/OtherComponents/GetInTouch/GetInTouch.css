@@ -60,7 +60,7 @@
     width: 100%;
     padding: 1rem 1.5rem;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 30px;
     font-size: 1rem;
     background-color: #f8f8f8;
     color: #333;
@@ -80,9 +80,9 @@
 
 .submit-button {
     position: absolute;
-    right: -20px;
-    width: 50px;
-    height: 50px;
+    right: 7px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #1a1a2e;
     border: none;
@@ -127,11 +127,11 @@
     .content-wrapper {
         gap: 3rem;
     }
-    
+
     .main-heading {
         font-size: 2.2rem;
     }
-    
+
     .description-text {
         font-size: 1rem;
     }
@@ -143,25 +143,25 @@
         gap: 2rem;
         text-align: center;
     }
-    
+
     .contact-form-section {
         padding-left: 0;
         order: 2;
     }
-    
+
     .description-section {
         padding-right: 0;
         order: 1;
     }
-    
+
     .main-heading {
         font-size: 2rem;
     }
-    
+
     .input-group {
         margin: 0 auto;
     }
-    
+
     .get-in-touch-section {
         padding: 3rem 0;
     }
@@ -171,30 +171,30 @@
     .container {
         padding: 0 1rem;
     }
-    
+
     .main-heading {
         font-size: 1.8rem;
     }
-    
+
     .sub-heading {
         font-size: 1rem;
     }
-    
+
     .description-text {
         font-size: 0.95rem;
     }
-    
+
     .email-input {
         padding: 0.875rem 1.25rem;
         font-size: 0.9rem;
     }
-    
+
     .submit-button {
         width: 45px;
         height: 45px;
         right: -15px;
     }
-    
+
     .arrow-icon {
         font-size: 1rem;
     }
@@ -221,9 +221,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }

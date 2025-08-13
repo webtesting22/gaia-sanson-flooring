@@ -1,163 +1,214 @@
 <template>
     <div class="width100">
-        <CommonTopLayout 
-            :heading="`${category?.name} - Where Luxury Meets Comfort`"
-            :backgroundImage="category?.image || 'https://images.unsplash.com/photo-1706553397756-07063648e11a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'"
-        />
-        <div class="BackgroundImageSet">
-            <div class="BroadloomCarpetsLayoutContainer">
-                <!-- Luxury Header Section -->
-                <div class="luxury-header">
-                    <div class="header-content">
-                        <div class="header-text">
-                            <h1>{{ category.name }}</h1>
-                            <p class="luxury-tagline">Where Luxury Meets Comfort</p>
-                            <div class="luxury-badges">
-                                <span class="badge premium">Premium Quality</span>
-                                <span class="badge handmade">Handcrafted</span>
-                                <span class="badge warranty">25 Year Warranty</span>
-                            </div>
-                        </div>
-                        <div class="header-image">
-                            <img :src="category.image" :alt="category.name" />
-                        </div>
+        <CommonTopLayout heading="Premium Artificial Grass for Every Space"
+            imageSrc="https://images.unsplash.com/photo-1502481686408-d428268c24ff?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            imageAlt="Artificial grass background image" />
+
+        <div class="Container paddingTop80 paddingBottom80">
+            <div>
+                <div class="CommonHeader">
+                    <h2>Choose a design to preview</h2>
+                    <div class="SwiperNavigation">
+                        <button class="common-btn secondary swiper-button-prev-custom">
+                            <span>&lt;</span>
+                        </button>
+                        <button class="common-btn secondary swiper-button-next-custom">
+                            <span>&gt;</span>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Material Showcase -->
-                <div class="material-showcase">
-                    <h2>Premium Materials</h2>
-                    <div class="materials-grid">
-                        <div class="material-card" v-for="material in materials" :key="material.name">
-                            <div class="material-icon">{{ material.icon }}</div>
-                            <h4>{{ material.name }}</h4>
-                            <p>{{ material.description }}</p>
-                            <div class="material-properties">
-                                <span class="property">{{ material.property1 }}</span>
-                                <span class="property">{{ material.property2 }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Room Applications -->
-                <div class="room-applications">
-                    <h2>Perfect For Every Room</h2>
-                    <div class="rooms-carousel">
-                        <div class="room-item" v-for="room in roomTypes" :key="room.name">
-                            <div class="room-image">
-                                <img :src="room.image" :alt="room.name" />
-                                <div class="room-overlay">
-                                    <h4>{{ room.name }}</h4>
-                                    <p>{{ room.description }}</p>
+                <div class="swiper-container paddingTop80 BroadloomCarpetsLayoutSwiper">
+                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="30" :centeredSlides="true" :loop="true"
+                        :speed="700" :modules="[SwiperNavigation, Autoplay]" class="artificial-grass-swiper"
+                        id="AnimateSwiper" :autoplay="{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: true,
+                        }" :breakpoints="{
+                            320: { slidesPerView: 1, spaceBetween: 15 },
+                            768: { slidesPerView: 2, spaceBetween: 20 },
+                            1024: { slidesPerView: 2, spaceBetween: 30 },
+                            1200: { slidesPerView: 3, spaceBetween: 30 }
+                        }" :navigation="{
+                            nextEl: '.swiper-button-next-custom',
+                            prevEl: '.swiper-button-prev-custom'
+                        }">
+                        <swiper-slide v-for="(design, index) in designSwatches" :key="index" class="DesignSlide">
+                            <div class="DesignSwatch">
+                                <div class="swatch-image">
+                                    <img :src="design.image" :alt="design.name" />
+                                    <div class="ImageOverlayText">
+                                        <h3 class="whiteColor">{{ design.name }}</h3>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Care Instructions -->
-                <div class="care-instructions">
-                    <div class="care-content">
-                        <div class="care-text">
-                            <h3>Care & Maintenance</h3>
-                            <div class="care-tips">
-                                <div class="tip-item" v-for="tip in careTips" :key="tip.title">
-                                    <div class="tip-icon">{{ tip.icon }}</div>
-                                    <div class="tip-content">
-                                        <h4>{{ tip.title }}</h4>
-                                        <p>{{ tip.description }}</p>
+                                <div class="swatch-info">
+                                    <div class="FlexEndContainer">
+                                        <div class="story-arrow-icon">↗</div>
+                                        <div>
+                                            <h3 class="whiteColor">{{ design.name }}</h3>
+                                            <br>
+                                            <div class="swatch-description">
+                                                <p class="whiteColor">{{ design.specifications }}</p>
+                                                <br>
+                                                <p class="whiteColor">{{ design.pileHeights }}</p>
+                                                <br>
+                                                <ul>
+                                                    <li v-for="feature in design.features" :key="feature"
+                                                        class="whiteColor">{{ feature }}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="care-visual">
-                            <div class="care-demo">
-                                <div class="demo-circle">
-                                    <span class="demo-text">Easy Care</span>
+                        </swiper-slide>
+                    </swiper>
+                </div>
+
+            </div>
+        </div>
+        <div class="width100 BroadloomCarpetsLayoutContainer ">
+            <div class="BackgroundColorContainer">
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="CommonHeader paddingTop80 paddingBottom80 Container">
+                <div class="width100">
+                    <div class="max-width-800">
+                        <h2 class="text-center">Designed for Every Space</h2>
+                        <p class="text-center">Our artificial grass enhances environments of all sizes, offering
+                            durability, comfort, and
+                            year-round greenery</p>
+                    </div>
+                    <div class="paddingTop80">
+                        <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50" :loop="true" :speed="700"
+                            :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
+                                320: { slidesPerView: 1, spaceBetween: 15 },
+                                768: { slidesPerView: 2, spaceBetween: 20 },
+                                1024: { slidesPerView: 2, spaceBetween: 30 },
+                                1200: { slidesPerView: 3, spaceBetween: 70 }
+                            }" :autoplay="{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
+                            }" :navigation="{
+                                nextEl: '.swiper-button-next-custom',
+                                prevEl: '.swiper-button-prev-custom'
+                            }">
+                            <swiper-slide v-for="(design, index) in DesignedData" :key="index" class="DesignSlide">
+                                <div class="DesignedContainer">
+                                    <div class="DesignedImage">
+                                        <img :src="design.image" :alt="design.name" />
+                                    </div>
+                                    <div class="DesignedText">
+                                        <h3 class="text-center">{{ design.title }}</h3>
+                                        <p class="text-center" style="color: #525252;">{{ design.description }}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </swiper-slide>
+                        </swiper>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+    <GetInTouch />
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-import CategoriesData from '../CategoriesLayout/Categories'
+import { ref } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation as SwiperNavigation, Autoplay, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import CommonTopLayout from '../CommonTopLayout/CommonTopLayout.vue'
+import GetInTouch from '../../GetInTouch/GetInTouch.vue'
 
-const route = useRoute()
-const category = computed(() => {
-    const slug = route.params.slug
-    return CategoriesData.find(cat => cat.slug === slug)
-})
+const swiperInstance = ref(null)
 
-const materials = [
+const onSwiper = (swiper) => {
+    swiperInstance.value = swiper
+}
+
+const designSwatches = [
     {
-        name: 'New Zealand Wool',
-        icon: '🐑',
-        description: 'Premium wool blend for ultimate luxury',
-        property1: 'Natural Fiber',
-        property2: 'Hypoallergenic'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'Landscape Grass',
+        specifications: 'Available in 13,14,15,18,24 Stitches, other stitches also available on request in following Pile Height.',
+        pileHeights: '20mm, 25mm, 30mm, 35mm, 40mm, 45mm, 50mm, 55mm',
+        features: [
+            'Single / Double Layered',
+            'Black / Green Backing',
+            '6000 ± 5% Twisted yarn'
+        ]
     },
     {
-        name: 'Silk Blend',
-        icon: '🕸️',
-        description: 'Silk fibers for exceptional softness',
-        property1: 'Luxury Feel',
-        property2: 'Durable'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'Sports Grass',
+        specifications: 'Professional sports turf solutions with enhanced durability and performance.',
+        pileHeights: '15mm, 20mm, 25mm, 30mm',
+        features: [
+            'High-performance sports turf',
+            'UV resistant',
+            'Drainage optimized'
+        ]
     },
     {
-        name: 'Bamboo Silk',
-        icon: '🎋',
-        description: 'Sustainable bamboo silk alternative',
-        property1: 'Eco-Friendly',
-        property2: 'Antibacterial'
-    }
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'Curly Grass',
+        specifications: 'Decorative artificial grass with natural curly texture for aesthetic appeal.',
+        pileHeights: '25mm, 30mm, 35mm, 40mm',
+        features: [
+            'Natural curly texture',
+            'Low maintenance',
+            'Perfect for landscaping'
+        ]
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'Premium Grass',
+        specifications: 'Luxury artificial grass with premium feel and exceptional quality.',
+        pileHeights: '30mm, 35mm, 40mm, 45mm, 50mm',
+        features: [
+            'Premium quality material',
+            'Soft underfoot',
+            'Long-lasting durability'
+        ]
+    },
 ]
 
-const roomTypes = [
-    {
-        name: 'Living Room',
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        description: 'Create a warm, inviting atmosphere'
-    },
-    {
-        name: 'Bedroom',
-        image: 'https://images.unsplash.com/photo-1594040226829-7f251ab46d80?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        description: 'Soft underfoot comfort for peaceful sleep'
-    },
-    {
-        name: 'Office',
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        description: 'Professional appearance with comfort'
-    }
-]
 
-const careTips = [
+const DesignedData = [
     {
-        icon: '🧹',
-        title: 'Regular Vacuuming',
-        description: 'Vacuum 2-3 times per week to remove dirt and debris'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Kids at Play',
+        description: 'Soft, safe, and always green – perfect turf for endless fun.'
     },
     {
-        icon: '💧',
-        title: 'Spot Cleaning',
-        description: 'Blot spills immediately with clean, white cloth'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Indoor Play Zone',
+        description: 'Bring the playground indoors with vibrant, cushioned grass.'
     },
     {
-        icon: '🔄',
-        title: 'Professional Cleaning',
-        description: 'Schedule professional cleaning every 12-18 months'
-    }
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Colorful Outdoor Playground',
+        description: 'A splash of color and comfort for big adventures under the sun.'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Colorful Outdoor Playground',
+        description: 'A splash of color and comfort for big adventures under the sun.'
+    },
 ]
 </script>
 
 <style scoped>
-/* Import the CSS file */
 @import './BroadloomCarpetsLayout.css';
 </style>

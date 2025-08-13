@@ -1,8 +1,8 @@
 .CommonTopLayoutContainer {
-    min-height: 800px;
+    min-height: 600px;
     overflow: hidden;
-    max-height: 800px;
-    height: 800px;
+    max-height: 600px;
+    height: 600px;
     position: relative;
 }
 

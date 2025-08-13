@@ -8,11 +8,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import ImageLoader from '../../FramerAnimation/ImageLoader.vue'
 
 export default {
     components: {
         Swiper,
         SwiperSlide,
+        ImageLoader,
     },
     data() {
         return {
@@ -81,7 +83,7 @@ export default {
                                 <!-- Middle Section - Image -->
                                 <div class="card-image-section">
                                     <div class="image-wrapper">
-                                        <img :src="product.image" :alt="product.title" class="product-image" />
+                                        <ImageLoader :src="product.image" :alt="product.title" class="product-image" />
                                         <div class="image-overlay"></div>
                                     </div>
                                 </div>

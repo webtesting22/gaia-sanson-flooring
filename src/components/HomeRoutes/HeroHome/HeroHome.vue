@@ -8,11 +8,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import ImageLoader from '../../FramerAnimation/ImageLoader.vue'
 
 export default {
     components: {
         Swiper,
         SwiperSlide,
+        ImageLoader,
     },
     data() {
         return {
@@ -89,7 +91,7 @@ export default {
                 }" :modules="modules" :speed="800" class="mySwiper">
                     <swiper-slide v-for="item in carouselData" :key="item.id">
                         <div class="slide-content">
-                            <img :src="item.image" :alt="item.title" />
+                            <ImageLoader :src="item.image" :alt="item.title" />
                         </div>
                     </swiper-slide>
                 </swiper>

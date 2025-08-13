@@ -1,7 +1,7 @@
 <template>
-    <div class="width100">
+    <div class="width100" :key="route.params.slug">
         <!-- Dynamic Layout Rendering based on Category -->
-        <component :is="currentLayout" v-if="currentLayout" :category="category" />
+        <component :is="currentLayout" v-if="currentLayout" :category="category" :key="`layout-${route.params.slug}`" />
 
         <!-- Fallback Layout if no specific layout found -->
         <div v-else class="BackgroundImageSet">
@@ -64,7 +64,7 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import CategoriesData from './Categories'
 
@@ -102,6 +102,14 @@ const currentLayout = computed(() => {
 
     return layoutMap[category.value.slug] || null
 })
+
+// Watch for route changes to ensure proper re-rendering
+watch(() => route.params.slug, (newSlug, oldSlug) => {
+    if (newSlug !== oldSlug) {
+        // Force component re-render when slug changes
+        console.log('Route changed from', oldSlug, 'to', newSlug)
+    }
+}, { immediate: true })
 
 // Redirect to 404 if category not found
 onMounted(() => {

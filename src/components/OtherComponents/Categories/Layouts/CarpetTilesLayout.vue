@@ -6,7 +6,7 @@
         <div class="ChooseDesignsContainer">
             <div class="Container paddingTop80 paddingBottom80 ">
                 <div class="ChooseDesignsContainer">
-                    <div class="ChooseDesignsHeader">
+                    <div class="CommonHeader">
                         <h2 class="blackColor marginBottom20">Choose a design to preview</h2>
                         <div class="SwiperNavigation">
                             <button class="common-btn secondary swiper-button-prev-custom">
@@ -64,6 +64,7 @@
             </div>
         </div>
     </div>
+    <GetInTouch />
 </template>
 
 <script setup>
@@ -75,7 +76,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import CategoriesData from '../CategoriesLayout/Categories'
 import CommonTopLayout from '../CommonTopLayout/CommonTopLayout.vue'
-
+import GetInTouch from '../../GetInTouch/GetInTouch.vue'
 const route = useRoute()
 const category = computed(() => {
     const slug = route.params.slug

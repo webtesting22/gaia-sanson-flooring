@@ -21,12 +21,13 @@ export default {
                     <!-- Image Placeholder (for future use) -->
                     <div class="card-image-placeholder">
                         <!-- Image will be added later -->
+                        <img :src="card.image" alt="Card Image" />
                     </div>
 
                     <!-- Card Content -->
                     <div class="card-content">
-                        <h3 class="card-title whiteColor paddingBottom20">{{ card.title }}</h3>
-                        <p class="card-description whiteColor">{{ card.description }}</p>
+                        <h3 class="card-title whiteColor paddingBottom20 text-center ">{{ card.title }}</h3>
+                        <p class="card-description whiteColor text-center">{{ card.description }}</p>
                     </div>
                 </div>
             </div>

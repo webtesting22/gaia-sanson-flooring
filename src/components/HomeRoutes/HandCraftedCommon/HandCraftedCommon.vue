@@ -7,7 +7,7 @@ export default {
             handcraftedData: {
                 title: "Handcrafted with pride in India",
                 description: "Our carpets, made from locally sourced materials, reflect India's craftsmanship and commitment to sustainability. By choosing them, you support the Make in India movement, strengthening the local economy and empowering artisans.",
-                image: "https://images.unsplash.com/photo-1594040226829-7f251ab46d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HandcraftedWith Image.png"
             }
         }
     }

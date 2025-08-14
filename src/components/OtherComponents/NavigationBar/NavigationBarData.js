@@ -1,9 +1,9 @@
 const navigationBarData = [
-    {
-        name: 'Home',
-        path: '/',
-        hasDropdown: false
-    },
+    // {
+    //     name: 'Home',
+    //     path: '/',
+    //     hasDropdown: false
+    // },
     {
         name: 'Our Categories',
         path: '/categories',
@@ -31,26 +31,26 @@ const navigationBarData = [
             }
         ]
     },
-    {
-        name: 'Manufacturing Process',
-        path: '/manufacturing',
-        hasDropdown: false
-    },
+    // {
+    //     name: 'Manufacturing Process',
+    //     path: '/manufacturing',
+    //     hasDropdown: false
+    // },
     {
         name: 'About us',
         path: '/about',
         hasDropdown: false
     },
-    {
-        name: 'Contact us',
-        path: '/contact',
-        hasDropdown: false
-    },
-    {
-        name: 'Demo',
-        path: '/demo',
-        hasDropdown: false
-    }
+    // {
+    //     name: 'Contact us',
+    //     path: '/contact',
+    //     hasDropdown: false
+    // },
+    // {
+    //     name: 'Demo',
+    //     path: '/demo',
+    //     hasDropdown: false
+    // }
 ];
 
 export default navigationBarData;

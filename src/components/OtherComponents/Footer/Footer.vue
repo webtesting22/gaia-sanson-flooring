@@ -35,10 +35,10 @@ import "./Footer.css"
             <div class="footer-section explore-section">
                 <h3 class="section-title">EXPLORE</h3>
                                             <nav class="footer-nav">
-                                <router-link to="/" class="nav-link">Home</router-link>
+                                <!-- <router-link to="/" class="nav-link">Home</router-link> -->
                                 <router-link to="/categories" class="nav-link">Our Products</router-link>
                                 <a href="#" class="nav-link">About Us</a>
-                                <a href="#" class="nav-link">Contact Us</a>
+                                <!-- <a href="#" class="nav-link">Contact Us</a> -->
                             </nav>
             </div>
 

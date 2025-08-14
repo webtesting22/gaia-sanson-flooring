@@ -7,7 +7,7 @@ export default {
             setsApartData: {
                 subtitle: "WHAT SETS US APART?",
                 title: "India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.",
-                image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WhatsSeAPart.png"
             }
         }
     }

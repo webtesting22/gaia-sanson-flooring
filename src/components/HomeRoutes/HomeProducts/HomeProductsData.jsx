@@ -3,7 +3,7 @@ const HomeProductsData = [
         id: 1,
         title: "Acoustic Tiles",
         description: "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. SUSPENDISSE MOLESTIE DOLOR FELIS, NON FERMENTUM QUAM",
-        image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Tiles Image.png",
         bgColor: "#d4c4b0",
         textColor: "#8b6f47"
     },
@@ -11,7 +11,7 @@ const HomeProductsData = [
         id: 2,
         title: "Broadloom Carpets",
         description: "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. SUSPENDISSE MOLESTIE DOLOR FELIS, NON FERMENTUM QUAM",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Broadloom carpets.png",
         bgColor: "#8b7355",
         textColor: "#f5f5f0"
     },
@@ -19,7 +19,7 @@ const HomeProductsData = [
         id: 3,
         title: "Carpet Tiles",
         description: "LOREM IPSUM DOLOR AMET, CONSECTETUR ADIPISCING ELIT.",
-        image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Carpet Tiles.png",
         bgColor: "#f5f5f0",
         textColor: "#8b6f47"
     },

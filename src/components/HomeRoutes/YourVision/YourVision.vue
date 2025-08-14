@@ -7,8 +7,8 @@ export default {
             visionData: {
                 title: "Your Vision, Our Custom Tiles & Acoustic Expertise",
                 description: "If you have a specific product or design in mind, we can develop and customize it to match your exact requirements. We offer personalization in backing, pile height, stitch density, and yarn quality. Please note that a minimum order quantity (MOQ) applies for custom orders. We're happy to work with you to create a product that fits your needs. Let us know your ideas, and we'll help turn them into reality.",
-                mainImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                secondaryImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                mainImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionOe.png",
+                secondaryImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionOe.png"
             }
         }
     }

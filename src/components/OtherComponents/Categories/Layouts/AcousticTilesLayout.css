@@ -1,4 +1,4 @@
-.BlueBackContainer{
+.BlueBackContainer {
     background-color: #29384A;
 }
 
@@ -18,9 +18,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
-
 
 .specsList {
     display: flex;
@@ -36,30 +34,27 @@
     border-left: 4px solid #29384A;
 }
 
-.rightContent ul li{
+.rightContent ul li {
     list-style: disc;
     margin: 20px 0px;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .gridContainer {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .rightContent h2 {
         font-size: 2rem;
     }
-    
+
     .specsList {
         gap: 20px;
     }
-    
+
     .specItem {
         padding: 15px;
     }
-}
-
-.gridSection{
-    background-color: #E4D8C8;
 }

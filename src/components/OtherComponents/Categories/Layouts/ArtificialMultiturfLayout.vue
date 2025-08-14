@@ -1,213 +1,101 @@
 <template>
     <div class="width100">
-        <div class="BackgroundImageSet">
-            <div class="ArtificialMultiturfLayoutContainer">
-                <!-- Outdoor Hero Section -->
-                <div class="outdoor-hero">
-                    <div class="hero-content">
-                        <div class="hero-text">
-                            <h1>{{ category.name }}</h1>
-                            <p class="hero-subtitle">Transform Your Outdoor Spaces</p>
-                            <div class="hero-features">
-                                <span class="feature">🌱 Natural Look</span>
-                                <span class="feature">💧 Low Maintenance</span>
-                                <span class="feature">☀️ UV Resistant</span>
-                                <span class="feature">🏃 Sports Ready</span>
-                            </div>
-                        </div>
-                        <div class="hero-image">
-                            <img :src="category.image" :alt="category.name" />
-                            <div class="weather-overlay">
-                                <div class="weather-icon">☀️</div>
-                                <span>All Weather</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <CommonTopLayout heading="Premium Artificial Grass for Every Space"
+            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Solutions Image.png"
+            imageAlt="Artificial & Multiturf" />
 
-                <!-- Sports Applications -->
-                <div class="sports-applications">
-                    <h2>Sports & Recreation</h2>
-                    <div class="sports-grid">
-                        <div class="sport-card" v-for="sport in sportsTypes" :key="sport.name">
-                            <div class="sport-image">
-                                <img :src="sport.image" :alt="sport.name" />
-                                <div class="sport-overlay">
-                                    <h4>{{ sport.name }}</h4>
-                                    <p>{{ sport.description }}</p>
-                                    <div class="sport-specs">
-                                        <span class="spec">{{ sport.spec1 }}</span>
-                                        <span class="spec">{{ sport.spec2 }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Installation Process -->
-                <div class="installation-process">
-                    <h2>Professional Installation</h2>
-                    <div class="process-timeline">
-                        <div class="timeline-item" v-for="(step, index) in installationSteps" :key="index">
-                            <div class="timeline-marker">{{ index + 1 }}</div>
-                            <div class="timeline-content">
-                                <h4>{{ step.title }}</h4>
-                                <p>{{ step.description }}</p>
-                                <div class="step-duration">{{ step.duration }}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Maintenance Guide -->
-                <div class="maintenance-guide">
-                    <div class="maintenance-content">
-                        <div class="maintenance-text">
-                            <h3>Care & Maintenance</h3>
-                            <div class="maintenance-tips">
-                                <div class="tip-item" v-for="tip in maintenanceTips" :key="tip.title">
-                                    <div class="tip-icon">{{ tip.icon }}</div>
-                                    <div class="tip-content">
-                                        <h4>{{ tip.title }}</h4>
-                                        <p>{{ tip.description }}</p>
-                                        <span class="frequency">{{ tip.frequency }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="maintenance-visual">
-                            <div class="maintenance-demo">
-                                <div class="demo-grass">
-                                    <div class="grass-blade" v-for="i in 8" :key="i"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Environmental Benefits -->
-                <div class="environmental-benefits">
-                    <h2>Environmental Impact</h2>
-                    <div class="benefits-grid">
-                        <div class="benefit-card" v-for="benefit in environmentalBenefits" :key="benefit.title">
-                            <div class="benefit-icon">{{ benefit.icon }}</div>
-                            <h4>{{ benefit.title }}</h4>
-                            <p>{{ benefit.description }}</p>
-                            <div class="impact-level">
-                                <span class="impact-label">Impact:</span>
-                                <span class="impact-value">{{ benefit.impact }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
+    <GetInTouch />
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-import CategoriesData from '../CategoriesLayout/Categories'
+import { ref } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation as SwiperNavigation, Autoplay, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import CommonTopLayout from '../CommonTopLayout/CommonTopLayout.vue'
+import GetInTouch from '../../GetInTouch/GetInTouch.vue'
 
-const route = useRoute()
-const category = computed(() => {
-    const slug = route.params.slug
-    return CategoriesData.find(cat => cat.slug === slug)
-})
+const swiperInstance = ref(null)
 
-const sportsTypes = [
+const onSwiper = (swiper) => {
+    swiperInstance.value = swiper
+}
+
+const designSwatches = [
     {
-        name: 'Football Fields',
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        description: 'Professional-grade football surfaces',
-        spec1: 'FIFA Approved',
-        spec2: 'All Weather'
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard1.png',
+        name: 'Landscape Grass',
+        specifications: 'Available in 13,14,15,18,24 Stitches, other stitches also available on request in following Pile Height.',
+        pileHeights: '20mm, 25mm, 30mm, 35mm, 40mm, 45mm, 50mm, 55mm',
+        features: [
+            'Single / Double Layered',
+            'Black / Green Backing',
+            '6000 ± 5% Twisted yarn'
+        ]
     },
     {
-        name: 'Tennis Courts',
-        image: 'https://images.unsplash.com/photo-1594040226829-7f251ab46d80?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        description: 'Premium tennis court surfaces',
-        spec1: 'ITF Standard',
-        spec2: 'Low Bounce'
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard2.png',
+        name: 'Sports Grass',
+        specifications: 'Professional sports turf solutions with enhanced durability and performance.',
+        pileHeights: '15mm, 20mm, 25mm, 30mm',
+        features: [
+            'High-performance sports turf',
+            'UV resistant',
+            'Drainage optimized'
+        ]
     },
     {
-        name: 'Golf Putting Greens',
-        image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-        description: 'Professional putting practice areas',
-        spec1: 'USGA Specs',
-        spec2: 'True Roll'
-    }
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard3.png',
+        name: 'Curly Grass',
+        specifications: 'Decorative artificial grass with natural curly texture for aesthetic appeal.',
+        pileHeights: '25mm, 30mm, 35mm, 40mm',
+        features: [
+            'Natural curly texture',
+            'Low maintenance',
+            'Perfect for landscaping'
+        ]
+    },
+    {
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard1.png',
+        name: 'Premium Grass',
+        specifications: 'Luxury artificial grass with premium feel and exceptional quality.',
+        pileHeights: '30mm, 35mm, 40mm, 45mm, 50mm',
+        features: [
+            'Premium quality material',
+            'Soft underfoot',
+            'Long-lasting durability'
+        ]
+    },
 ]
 
-const installationSteps = [
-    {
-        title: 'Site Preparation',
-        description: 'Excavation and base preparation',
-        duration: '2-3 days'
-    },
-    {
-        title: 'Base Installation',
-        description: 'Crushed stone and compaction',
-        duration: '3-4 days'
-    },
-    {
-        title: 'Turf Installation',
-        description: 'Rolling and securing artificial grass',
-        duration: '2-3 days'
-    },
-    {
-        title: 'Final Details',
-        description: 'Infill, brushing, and finishing',
-        duration: '1-2 days'
-    }
-]
 
-const maintenanceTips = [
+const DesignedData = [
     {
-        icon: '🧹',
-        title: 'Regular Brushing',
-        description: 'Keep grass blades upright and natural looking',
-        frequency: 'Weekly'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Kids at Play',
+        description: 'Soft, safe, and always green – perfect turf for endless fun.'
     },
     {
-        icon: '💧',
-        title: 'Rinsing',
-        description: 'Remove dust and debris with water',
-        frequency: 'Monthly'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Indoor Play Zone',
+        description: 'Bring the playground indoors with vibrant, cushioned grass.'
     },
     {
-        icon: '🌿',
-        title: 'Infill Top-up',
-        description: 'Maintain proper infill levels',
-        frequency: 'Quarterly'
-    }
-]
-
-const environmentalBenefits = [
-    {
-        icon: '💧',
-        title: 'Water Conservation',
-        description: 'Eliminates need for irrigation and watering',
-        impact: 'High'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Colorful Outdoor Playground',
+        description: 'A splash of color and comfort for big adventures under the sun.'
     },
     {
-        icon: '🌱',
-        title: 'No Pesticides',
-        description: 'Chemical-free maintenance requirements',
-        impact: 'Medium'
+        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Colorful Outdoor Playground',
+        description: 'A splash of color and comfort for big adventures under the sun.'
     },
-    {
-        icon: '♻️',
-        title: 'Recyclable',
-        description: 'Made from recyclable materials',
-        impact: 'Medium'
-    }
 ]
 </script>
 
 <style scoped>
-/* Import the CSS file */
-@import './ArtificialMultiturfLayout.css';
+@import './BroadloomCarpetsLayout.css';
 </style>

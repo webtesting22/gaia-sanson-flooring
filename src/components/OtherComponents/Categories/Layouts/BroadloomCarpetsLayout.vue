@@ -1,7 +1,7 @@
 <template>
     <div class="width100">
         <CommonTopLayout heading="Premium Artificial Grass for Every Space"
-            imageSrc="https://images.unsplash.com/photo-1502481686408-d428268c24ff?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/ArtificialGrassImage.png"
             imageAlt="Artificial grass background image" />
 
         <div class="Container paddingTop80 paddingBottom80">
@@ -139,7 +139,7 @@ const onSwiper = (swiper) => {
 
 const designSwatches = [
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard1.png',
         name: 'Landscape Grass',
         specifications: 'Available in 13,14,15,18,24 Stitches, other stitches also available on request in following Pile Height.',
         pileHeights: '20mm, 25mm, 30mm, 35mm, 40mm, 45mm, 50mm, 55mm',
@@ -150,7 +150,7 @@ const designSwatches = [
         ]
     },
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard2.png',
         name: 'Sports Grass',
         specifications: 'Professional sports turf solutions with enhanced durability and performance.',
         pileHeights: '15mm, 20mm, 25mm, 30mm',
@@ -161,7 +161,7 @@ const designSwatches = [
         ]
     },
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard3.png',
         name: 'Curly Grass',
         specifications: 'Decorative artificial grass with natural curly texture for aesthetic appeal.',
         pileHeights: '25mm, 30mm, 35mm, 40mm',
@@ -172,7 +172,7 @@ const designSwatches = [
         ]
     },
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassCard1.png',
         name: 'Premium Grass',
         specifications: 'Luxury artificial grass with premium feel and exceptional quality.',
         pileHeights: '30mm, 35mm, 40mm, 45mm, 50mm',

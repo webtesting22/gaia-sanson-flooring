@@ -1,5 +1,6 @@
 .acousticTilesLayout {
-/* Blue Background Container */
+
+    /* Blue Background Container */
     .BlueBackContainer {
         background-color: #29384A;
     }
@@ -198,7 +199,7 @@
 
     /* Responsive for Various Applications */
     @media (max-width: 768px) {
-        
+
 
         .VariousApplicationsGridContainer {
             grid-template-columns: repeat(2, 1fr);
@@ -211,11 +212,33 @@
     }
 }
 
-.VariousApplicationsContainer{
+.VariousApplicationsContainer {
     background-color: #FFFAF2;
 }
 
-.VariousApplicationsGridItem .featureIcon svg{
+.VariousApplicationsGridItem .featureIcon svg {
     fill: #AB813E !important;
     /* background-color: #AB813E !important; */
+}
+
+.SurfaceImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.SurfaceGridContainer {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.SurfaceContainer {
+    background-color: #FFFFFF;
+}
+
+.SurfaceContentContainer>div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

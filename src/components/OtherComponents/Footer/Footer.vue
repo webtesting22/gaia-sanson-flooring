@@ -31,15 +31,24 @@ import "./Footer.css"
                 </div>
             </div>
 
-            <!-- Explore Section -->
-            <div class="footer-section explore-section">
-                <h3 class="section-title">EXPLORE</h3>
-                                            <nav class="footer-nav">
-                                <!-- <router-link to="/" class="nav-link">Home</router-link> -->
-                                <router-link to="/categories" class="nav-link">Our Products</router-link>
-                                <a href="#" class="nav-link">About Us</a>
-                                <!-- <a href="#" class="nav-link">Contact Us</a> -->
-                            </nav>
+            <!-- Navigation Section -->
+            <div class="footer-section navigation-section">
+                <h3 class="section-title">NAVIGATION</h3>
+                <nav class="footer-nav">
+                    <div v-for="navItem in navigationData" :key="navItem.name" class="nav-group">
+                        <router-link :to="navItem.path" class="nav-link main-link">{{ navItem.name }}</router-link>
+                        <div v-if="navItem.hasDropdown && navItem.dropdownItems" class="sub-links">
+                            <router-link 
+                                v-for="subItem in navItem.dropdownItems" 
+                                :key="subItem.name"
+                                :to="subItem.path" 
+                                class="nav-link sub-link"
+                            >
+                                {{ subItem.name }}
+                            </router-link>
+                        </div>
+                    </div>
+                </nav>
             </div>
 
             <!-- Address Section -->
@@ -92,7 +101,10 @@ import "./Footer.css"
 </template>
 
 <script setup>
-// Footer component logic can be added here if needed
+import navigationBarData from '../NavigationBar/NavigationBarData.js';
+
+// Use the navigation data in the footer
+const navigationData = navigationBarData;
 </script>
 
 <style scoped>

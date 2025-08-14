@@ -111,7 +111,48 @@
 .footer-nav {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+}
+
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-link {
+    color: #E4D8C8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-link:hover {
+    color: #ffffff;
+}
+
+.sub-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 15px;
+}
+
+.sub-link {
+    color: #B0B8C1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 2px 0;
+}
+
+.sub-link:hover {
+    color: #E4D8C8;
 }
 
 .nav-link {

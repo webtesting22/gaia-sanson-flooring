@@ -6,16 +6,16 @@
 
         <div class="BlueBackContainer paddingTop80 paddingBottom80">
             <div class="Container">
-                <h2 class="whiteColor">Coming Soon – Explore Our New Arrivals</h2>
+                <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals</h2>
                 <br>
-                <p class="whiteColor">Get ready for our latest additions: <strong>Non-Woven (Felt)</strong> and
-                    <strong>Machine Woven
-                        Carpets</strong>.
-                </p>
+                <h3 class="whiteColor">Get ready for our latest additions: Non-Woven (Felt) and
+                    Machine Woven
+                    Carpets.
+                </h3>
                 <!-- <br> -->
-                <p class="whiteColor">Stay tuned and be the first to experience them!</p>
+                <h3 class="whiteColor">Stay tuned and be the first to experience them!</h3>
             </div>
-            
+
         </div>
 
         <!-- Grid Layout Section -->
@@ -90,14 +90,45 @@
                     <div class="VariousApplicationsGridItem" v-for="feature in applicationFeatures" :key="feature.id">
                         <div class="featureIcon">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="#AB813E">
-                                <circle cx="20" cy="20" r="20" fill="#D4AF37"/>
-                                <rect x="12" y="12" width="3" height="16" fill="white"/>
-                                <rect x="17" y="8" width="3" height="24" fill="white"/>
-                                <rect x="22" y="16" width="3" height="8" fill="white"/>
+                                <circle cx="20" cy="20" r="20" fill="#D4AF37" />
+                                <rect x="12" y="12" width="3" height="16" fill="white" />
+                                <rect x="17" y="8" width="3" height="24" fill="white" />
+                                <rect x="22" y="16" width="3" height="8" fill="white" />
                             </svg>
                         </div>
                         <div class="featureText">
                             <span>{{ feature.name }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="SurfaceContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <h2>Surface</h2>
+                <div class="SurfaceGridContainer paddingTop80">
+                    <div class="SurfaceImageContainer">
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/acoustic panel element.png"
+                            alt="">
+                    </div>
+                    <div class="SurfaceContentContainer">
+                        <div>
+                            <div>
+                                <h2>Eco-Friendly & Versatile</h2>
+                                <p>Acoustic Panel boards are made from Recycled Polyester Fiber and are meant to be used
+                                    for Wall Claddings, Ceilings and Paneling.</p>
+                            </div>
+                            <div>
+                                <h2>Performance</h2>
+                                <p>It can absorb 30% of Sound (0.3 NRC) when the panel is directly fixed onto the wall.
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Features</h2>
+                                <p>Acoustical, Recycle, Fire-Rated, Printable, Ventilate, Decorative, Insulation, Light
+                                    Weight, Buffered,
+                                    Tack able, Easy Install, No Voc</p>
+                            </div>
                         </div>
                     </div>
                 </div>

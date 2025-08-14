@@ -6,7 +6,7 @@ const navigationBarData = [
     // },
     {
         name: 'Our Categories',
-        path: '/categories',
+        path: '',
         hasDropdown: true,
         dropdownItems: [
             {

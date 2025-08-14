@@ -99,7 +99,7 @@
 }
 
 .contact-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ffffff;
     font-weight: 400;
 }
@@ -158,7 +158,7 @@
 .nav-link {
     color: #ffffff;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
     transition: color 0.3s ease;
     display: block;
@@ -185,7 +185,7 @@
 }
 
 .address-subtitle {
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #E4D8C8;
     margin: 0;
@@ -194,7 +194,7 @@
 }
 
 .address-text {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #ffffff;
     margin: 0;
     line-height: 1.4;
@@ -337,13 +337,13 @@
     }
 
     .section-title {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .contact-text,
     .nav-link,
     .address-text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .footer-bottom-content {

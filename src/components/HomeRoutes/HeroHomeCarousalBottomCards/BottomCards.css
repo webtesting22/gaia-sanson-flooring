@@ -130,7 +130,7 @@
 /* Mobile View */
 @media (max-width: 480px) {
     .CommonLayoutContainer {
-        padding: 30px 10px;
+        padding: 30px 0px;
     }
     
     .BottomCardsContainer .cards-grid {

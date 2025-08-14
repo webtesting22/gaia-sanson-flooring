@@ -80,6 +80,8 @@ preloadImage()
   position: relative;
   display: inline-block;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .loaded-image {

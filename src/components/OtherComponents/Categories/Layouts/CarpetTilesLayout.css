@@ -99,11 +99,22 @@
     }
 
     .ChooseDesignsContainer {
-        padding: 20px;
+        padding: 0px;
     }
 
     .SwatchImage {
         width: 60px;
         height: 60px;
     }
+    .girdImagesContainer{
+        flex-direction: column;
+    }
+    .girdImagesContainer>div:nth-child(1) {
+        width: 100%;
+    }
+    
+    .girdImagesContainer>div:nth-child(2) {
+        width: 100%;
+    }
+   
 }

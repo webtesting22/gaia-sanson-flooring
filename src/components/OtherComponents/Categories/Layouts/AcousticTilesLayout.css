@@ -242,3 +242,12 @@
     flex-direction: column;
     gap: 30px;
 }
+
+.LastGridImagesGridContainer{
+    display: flex;
+    align-items: center;
+}
+.LastGridImagesGridContainer .LastGridImagesImageContainer img{
+    width: 100%;
+    height: 100%;
+}

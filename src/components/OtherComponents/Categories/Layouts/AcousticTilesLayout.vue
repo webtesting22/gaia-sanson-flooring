@@ -134,6 +134,21 @@
                 </div>
             </div>
         </div>
+        <div class="LastGridImagesContainer">
+            <div>
+                <div class="LastGridImagesGridContainer">
+                    <div class="LastGridImagesGridItem" v-for="space in interiorSpaces" :key="space.id">
+                        <div class="LastGridImagesImageContainer">
+                            <img :src="space.image" :alt="space.name">
+                        </div>
+                        <!-- <div class="LastGridImagesContentContainer">
+                            <h2>{{ space.name }}</h2>
+                            <p>{{ space.description }}</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <GetInTouch />
 </template>
@@ -205,6 +220,32 @@ const applicationFeatures = [
     { id: 6, name: 'Stackable' },
     { id: 7, name: 'No-VOC' },
     { id: 8, name: 'Fire - Rated' }
+]
+const interiorSpaces = [
+    {
+        id: 1,
+        name: 'Home Office',
+        description: 'Create a peaceful and productive environment for work and study.',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage1.png'
+    },
+    {
+        id: 2,
+        name: 'Living Room',
+        description: 'Transform your living space into a sanctuary for relaxation and entertainment.',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage2.png'
+    },
+    {
+        id: 3,
+        name: 'Home Theater',
+        description: 'Enjoy immersive sound and a cinematic experience in your own home.',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage3.png'
+    },
+    {
+        id: 4,
+        name: 'Music Room',
+        description: 'Perfect for practicing, recording, or just enjoying your favorite tunes.',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage4.png'
+    }
 ]
 </script>
 

@@ -46,4 +46,7 @@
     .OverlayHeadingContainer h1 {
         width: 100%;
     }
+    .OverlayHeadingContainer{
+        padding: 0px 10px;
+    }
 }

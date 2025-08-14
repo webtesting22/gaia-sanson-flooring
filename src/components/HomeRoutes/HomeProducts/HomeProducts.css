@@ -324,7 +324,7 @@
 /* Mobile View */
 @media (max-width: 480px) {
     .HomeProductsContainer .products-swiper-container {
-        padding: 0 10px;
+        padding: 0 0px;
     }
     
     .HomeProductsContainer .product-card {

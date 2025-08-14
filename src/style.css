@@ -279,4 +279,8 @@ h2 {
     align-items: start;
     gap: 20px;
   }
+  .Container{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }

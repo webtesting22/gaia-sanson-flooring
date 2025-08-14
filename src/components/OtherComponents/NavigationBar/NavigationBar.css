@@ -415,6 +415,9 @@
 }
 
 @media (max-width: 480px) {
+    .navigation-bar {
+        position: fixed;
+    }
     .nav-container {
         padding: 0 12px;
     }

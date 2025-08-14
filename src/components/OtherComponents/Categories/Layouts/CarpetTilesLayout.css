@@ -102,6 +102,9 @@
         padding: 0px;
     }
 
+    .ChooseDesignsContainer .swiper {
+     padding-top: 50px;
+    }
     .SwatchImage {
         width: 60px;
         height: 60px;
@@ -114,6 +117,9 @@
     }
     
     .girdImagesContainer>div:nth-child(2) {
+        width: 100%;
+    }
+    .CarpertTilesImage img {
         width: 100%;
     }
    

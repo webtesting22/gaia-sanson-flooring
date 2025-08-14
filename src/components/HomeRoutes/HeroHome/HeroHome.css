@@ -341,7 +341,7 @@
 /* Responsive design */
 @media (max-width: 768px) {
     .HomePageHeroContainer .hero-text-content {
-        left: 30px;
+        left: 0px;
     }
 
     .HomePageHeroContainer .hero-title {
@@ -359,5 +359,8 @@
 
     .HomePageHeroContainer .swiper-pagination {
         left: 30px !important;
+    }
+    .HomePageHeroContainer .carousel-navigation {
+        top: 80%;
     }
 }

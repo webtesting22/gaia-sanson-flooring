@@ -188,3 +188,10 @@
 .CommonLayoutContainer.dark-theme .card-description {
     color: #bdc3c7;
 }
+
+
+@media (max-width: 768px) {
+    .CommonLayoutContainer {
+      width: unset !important;
+    }
+}

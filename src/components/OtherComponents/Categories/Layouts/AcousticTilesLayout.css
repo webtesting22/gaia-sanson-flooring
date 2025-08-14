@@ -1,5 +1,5 @@
 .acousticTilesLayout {
-    /* Blue Background Container */
+/* Blue Background Container */
     .BlueBackContainer {
         background-color: #29384A;
     }
@@ -54,7 +54,7 @@
         margin-bottom: 50px;
     }
 
-   
+
 
     .navigationArrows {
         display: flex;
@@ -144,18 +144,78 @@
         .OurColoursCardContainer {
             padding: 60px 0;
         }
-        
+
         .ourColorsHeader {
             flex-direction: column;
             gap: 20px;
             text-align: center;
         }
-        
-       
-        
+
+
+
         .colorSwatchesGrid {
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
     }
+
+
+    .VariousApplicationsGridContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .VariousApplicationsGridItem {
+        /* background: white; */
+        border-radius: 8px;
+        padding: 25px 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); */
+        border: 1px solid #E4D8C8;
+        transition: all 0.3s ease;
+    }
+
+    .VariousApplicationsGridItem:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .featureIcon {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .featureText span {
+        color: #29384A;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.3;
+    }
+
+    /* Responsive for Various Applications */
+    @media (max-width: 768px) {
+        
+
+        .VariousApplicationsGridContainer {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .VariousApplicationsGridItem {
+            padding: 20px 15px;
+        }
+    }
+}
+
+.VariousApplicationsContainer{
+    background-color: #FFFAF2;
+}
+
+.VariousApplicationsGridItem .featureIcon svg{
+    fill: #AB813E !important;
+    /* background-color: #AB813E !important; */
 }

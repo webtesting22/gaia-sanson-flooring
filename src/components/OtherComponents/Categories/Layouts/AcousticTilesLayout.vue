@@ -15,9 +15,7 @@
                 <!-- <br> -->
                 <p class="whiteColor">Stay tuned and be the first to experience them!</p>
             </div>
-            <div class="Container paddingTop80">
-
-            </div>
+            
         </div>
 
         <!-- Grid Layout Section -->
@@ -78,6 +76,28 @@
                         <div class="swatchInfo">
                             <span class="colorCode">{{ swatch.code }}</span>
                             <span class="colorName">{{ swatch.name }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="VariousApplicationsContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <h2 class="text-center">Various Applications</h2>
+                <br>
+                <br>
+                <div class="VariousApplicationsGridContainer marginTop20">
+                    <div class="VariousApplicationsGridItem" v-for="feature in applicationFeatures" :key="feature.id">
+                        <div class="featureIcon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="#AB813E">
+                                <circle cx="20" cy="20" r="20" fill="#D4AF37"/>
+                                <rect x="12" y="12" width="3" height="16" fill="white"/>
+                                <rect x="17" y="8" width="3" height="24" fill="white"/>
+                                <rect x="22" y="16" width="3" height="8" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="featureText">
+                            <span>{{ feature.name }}</span>
                         </div>
                     </div>
                 </div>
@@ -144,7 +164,17 @@ const colorSwatches = [
     }
 ]
 
-
+// Application features data
+const applicationFeatures = [
+    { id: 1, name: 'Decorative' },
+    { id: 2, name: 'Acoustic' },
+    { id: 3, name: 'Recycle' },
+    { id: 4, name: 'Insulation' },
+    { id: 5, name: 'Light Weight' },
+    { id: 6, name: 'Stackable' },
+    { id: 7, name: 'No-VOC' },
+    { id: 8, name: 'Fire - Rated' }
+]
 </script>
 
 <style scoped>

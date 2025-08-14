@@ -24,11 +24,11 @@ const navigationBarData = [
                 path: '/categories/acoustic-tiles',
                 description: 'Sound-absorbing flooring for noise control'
             },
-            {
-                name: 'Artificial & Multiturf',
-                path: '/categories/artificial-multiturf',
-                description: 'Synthetic grass and outdoor flooring solutions'
-            }
+            // {
+            //     name: 'Artificial & Multiturf',
+            //     path: '/categories/artificial-multiturf',
+            //     description: 'Synthetic grass and outdoor flooring solutions'
+            // }
         ]
     },
     // {

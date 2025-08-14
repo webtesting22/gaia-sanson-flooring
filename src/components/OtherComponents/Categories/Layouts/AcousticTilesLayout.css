@@ -1,60 +1,161 @@
-.BlueBackContainer {
-    background-color: #29384A;
-}
-
-/* Grid Layout Styles */
-.gridSection {
-    background-color: #f8f9fa;
-}
-
-.gridContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.leftImage img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.specsList {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.specItem {
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid #29384A;
-}
-
-.rightContent ul li {
-    list-style: disc;
-    margin: 20px 0px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .gridContainer {
-        grid-template-columns: 1fr;
-        gap: 40px;
+.acousticTilesLayout {
+    /* Blue Background Container */
+    .BlueBackContainer {
+        background-color: #29384A;
     }
 
-    .rightContent h2 {
-        font-size: 2rem;
+    /* Grid Layout Styles */
+    .gridSection {
+        background-color: #E4D8C8;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .leftImage img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
 
     .specsList {
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
     }
 
     .specItem {
-        padding: 15px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid #29384A;
+    }
+
+    .rightContent ul li {
+        list-style: disc;
+        margin: 20px 0px;
+    }
+
+    /* Our Colors Section Styles */
+    .OurColoursCardContainer {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+    }
+
+    .ourColorsHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+   
+
+    .navigationArrows {
+        display: flex;
+        gap: 15px;
+    }
+
+    .navArrow {
+        width: 48px;
+        height: 48px;
+        border: 2px solid #ddd;
+        border-radius: 50%;
+        background: white;
+        color: #666;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .navArrow:hover {
+        border-color: #29384A;
+        color: #29384A;
+        transform: scale(1.05);
+    }
+
+    .colorSwatchesGrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .colorSwatch {
+        text-align: center;
+    }
+
+    .swatchImage {
+        width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .swatchImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swatchInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .colorCode {
+        font-weight: 600;
+        color: #333;
+        font-size: 0.9rem;
+    }
+
+    .colorName {
+        color: #666;
+        font-size: 0.85rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .gridContainer {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .rightContent h2 {
+            font-size: 2rem;
+        }
+
+        .specsList {
+            gap: 20px;
+        }
+
+        .specItem {
+            padding: 15px;
+        }
+
+        .OurColoursCardContainer {
+            padding: 60px 0;
+        }
+        
+        .ourColorsHeader {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+        
+       
+        
+        .colorSwatchesGrid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
     }
 }

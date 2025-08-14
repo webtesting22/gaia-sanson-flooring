@@ -57,10 +57,12 @@
         </div>
         <div class="girdImagesContainer">
             <div>
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesLayoutImage1.png" alt="">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesLayoutImage1.png"
+                    alt="">
             </div>
             <div>
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesLayoutImage2.png" alt="">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesLayoutImage2.png"
+                    alt="">
             </div>
         </div>
     </div>
@@ -85,17 +87,17 @@ const category = computed(() => {
 
 // Sample design swatches data
 const designSwatches = [
-    { image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop', name: 'Light Beige', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=150&fit=crop', name: 'Dark Grey', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop', name: 'Muted Blue', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=150&fit=crop', name: 'Dark Blue', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop', name: 'Mustard Gold', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=150&fit=crop', name: 'Olive Green', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop', name: 'Deep Red', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=150&fit=crop', name: 'Multi-colored', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop', name: 'Brown Orange', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=150&fit=crop', name: 'Dark Grey Black', code: '90020066' },
-    { image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&h=150&fit=crop', name: 'Dark Grey Black', code: '90020066' }
+    { image: '/Images/CarpetImages/Carpet1.png', name: 'Premium Carpet', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet3.png', name: 'Modern Design', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet5.png', name: 'Classic Style', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet6.png', name: 'Luxury Collection', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet7.png', name: 'Contemporary', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet1.png', name: 'Premium Carpet', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet3.png', name: 'Modern Design', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet5.png', name: 'Classic Style', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet6.png', name: 'Luxury Collection', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet7.png', name: 'Contemporary', code: '90020066' },
+    { image: '/Images/CarpetImages/Carpet1.png', name: 'Premium Carpet', code: '90020066' }
 ]
 </script>
 

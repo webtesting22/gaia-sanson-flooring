@@ -266,3 +266,18 @@
 .DesignedText {
     padding: 40px 0px;
 }
+
+@media (max-width: 480px) {
+    .DesignedText {
+        padding: 0px 0px;
+        padding-top: 20px;
+    }
+    .DesignedContainer .DesignedImage img {
+        width: 60%;
+ 
+    }
+    .DesignedContainer .DesignedImage {
+        display: flex;
+        justify-content: center;
+    }
+}

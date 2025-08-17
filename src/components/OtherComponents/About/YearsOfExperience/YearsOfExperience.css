@@ -135,13 +135,11 @@
         gap: 60px;
     }
 
-    .circleBackground {
-        width: 250px;
-        height: 250px;
-    }
-
     .yearsNumber {
         font-size: 3.5rem;
+    }
+    .circleBackground::before{
+        display: none !important;
     }
 
     .yearsText {
@@ -162,10 +160,6 @@
         text-align: center;
     }
 
-    .circleBackground {
-        width: 220px;
-        height: 220px;
-    }
 
     .yearsNumber {
         font-size: 3rem;
@@ -195,10 +189,6 @@
 @media (max-width: 480px) {
     
 
-    .circleBackground {
-        width: 180px;
-        height: 180px;
-    }
 
     .yearsNumber {
         font-size: 2.5rem;

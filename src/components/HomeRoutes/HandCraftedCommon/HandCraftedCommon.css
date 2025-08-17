@@ -181,6 +181,7 @@
     
     .HandCraftedCommonContainer .handcrafted-content-container {
         padding: 30px 0px;
+        padding-bottom: 0px !important;
     }
     
 

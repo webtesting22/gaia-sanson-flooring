@@ -69,10 +69,7 @@
         grid-template-columns: 1fr;
         min-height: auto;
     }
-    
-    .visionImage {
-        height: 300px;
-    }
+  
     
     .visionContent {
         padding: 40px 30px;
@@ -83,10 +80,6 @@
 
 @media (max-width: 480px) {
    
-    
-    .visionImage {
-        height: 250px;
-    }
     
     .visionContent {
         padding: 30px 20px;

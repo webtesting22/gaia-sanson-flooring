@@ -70,10 +70,7 @@
         gap: 20px;
     }
     
-    .logoBox {
-        padding: 20px 15px;
-        max-width: 200px;
-    }
+ 
 }
 
 @media (max-width: 1024px) {
@@ -82,9 +79,7 @@
         gap: 25px;
     }
     
-    .logoBox {
-        max-width: 220px;
-    }
+   
 }
 
 @media (max-width: 768px) {
@@ -103,7 +98,9 @@
     
     .logoBox {
         padding: 20px 15px;
-        max-width: 200px;
+        width: 100%;
+        max-width: 100% !important;
+        /* max-width: 2/00px; */
     }
 }
 
@@ -111,14 +108,15 @@
     .AssociateLogosContainer {
         padding: 40px 0;
     }
-    
+    .logoBox {
+        padding: 20px 15px;
+        width: 100%;
+        max-width: 100% !important;
+        /* max-width: 2/00px; */
+    }
     .AssociateLogosGrid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
-    .logoBox {
-        max-width: 250px;
-        padding: 25px 20px;
-    }
+   
 }

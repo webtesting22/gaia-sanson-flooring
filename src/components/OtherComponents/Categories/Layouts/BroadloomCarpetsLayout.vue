@@ -93,10 +93,6 @@
                                 768: { slidesPerView: 2, spaceBetween: 20 },
                                 1024: { slidesPerView: 2, spaceBetween: 30 },
                                 1200: { slidesPerView: 3, spaceBetween: 70 }
-                            }" :autoplay="{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                                pauseOnMouseEnter: true,
                             }" :navigation="{
                                 nextEl: '.swiper-button-next-custom',
                                 prevEl: '.swiper-button-prev-custom'

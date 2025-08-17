@@ -48,8 +48,9 @@
         <WhatWeDo />
         <OurVision />
         <ImageGallery />  
+        <AssociateLogos />
         <GetInTouch />      
-          
+     
     </div>
 </template>
 
@@ -61,6 +62,7 @@ import OurVision from '../OurVision/OurVision.vue';
 import ImageGallery from '../ImageGallery/ImageGallery.vue';
 import "./About.css"
 import GetInTouch from '../GetInTouch/GetInTouch.vue';
+import AssociateLogos from '../AssociateLogos/AssociateLogos.vue';
 </script>
 
 <style scoped>

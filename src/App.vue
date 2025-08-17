@@ -4,6 +4,7 @@ import "./style.css"
 import Footer from "./components/OtherComponents/Footer/Footer.vue"
 import NavigationBar from "./components/OtherComponents/NavigationBar/NavigationBar.vue"
 import PageTransition from "./components/FramerAnimation/PageTransition.vue"
+import WhatsappBtn from "./components/OtherComponents/WhatsappBtn/WhatsappBtn.vue"
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import PageTransition from "./components/FramerAnimation/PageTransition.vue"
     <router-view />
   </PageTransition>
   <Footer />
+  <WhatsappBtn />
 </template>
 
 <style scoped></style>

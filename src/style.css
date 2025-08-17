@@ -91,6 +91,10 @@ p {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
+i{
+  font-style: italic !important;
+}
+
 .paddingTop80 {
   padding-top: 80px;
 }

@@ -3,6 +3,7 @@ import HomeRoutes from '../components/HomeRoutes/HomeRoutes.vue'
 import CategoriesRoutes from '../components/OtherComponents/Categories/CategoriesLayout/Categories.vue'
 import CategoryDetail from '../components/OtherComponents/Categories/CategoriesLayout/CategoryDetail.vue'
 import AnimationDemo from '../components/FramerAnimation/AnimationDemo.vue'
+import AboutUs from '../components/OtherComponents/About/About.vue'
 
 const routes = [
     {
@@ -35,11 +36,11 @@ const routes = [
         name: 'AnimationDemo',
         component: AnimationDemo
     },
-    //   {
-    //     path: '/about',
-    //     name: 'About',
-    //     component: () => import('../components/About/About.vue')
-    //   },
+      {
+        path: '/about-us',
+        name: 'AboutUs',
+        component: AboutUs
+    },
     //   {
     //     path: '/services',
     //     name: 'Services',

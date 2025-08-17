@@ -1,0 +1,231 @@
+.YearsOfExperienceContainer {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.YearsOfExperienceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+
+/* Left Section - Circular Graphic */
+.experienceCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleBackground {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.goldenCrescent {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #AB813E 0%, #AB813E 100%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circleContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    position: sticky;
+    background: white;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.circleBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 300px;
+    height: 300px;
+    background-color: #AB813E;
+    border-radius: 50%;
+}
+
+.yearsNumber {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #AB813E;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.yearsText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #AB813E;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.experienceText {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1;
+}
+
+/* Right Section - Statistics Grid */
+.statisticsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.statColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.statNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #AB813E;
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .YearsOfExperienceGrid {
+        gap: 60px;
+    }
+
+    .circleBackground {
+        width: 250px;
+        height: 250px;
+    }
+
+    .yearsNumber {
+        font-size: 3.5rem;
+    }
+
+    .yearsText {
+        font-size: 1.3rem;
+    }
+
+    .statNumber {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .YearsOfExperienceContainer {
+        padding: 60px 0;
+    }
+
+    .YearsOfExperienceGrid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .circleBackground {
+        width: 220px;
+        height: 220px;
+    }
+
+    .yearsNumber {
+        font-size: 3rem;
+    }
+
+    .yearsText {
+        font-size: 1.2rem;
+    }
+
+    .statisticsGrid {
+        gap: 30px;
+    }
+
+    .statColumn {
+        gap: 25px;
+    }
+
+    .statItem {
+        align-items: center;
+    }
+
+    .statNumber {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .YearsOfExperienceContainer {
+        padding: 40px 0;
+    }
+
+    .circleBackground {
+        width: 180px;
+        height: 180px;
+    }
+
+    .yearsNumber {
+        font-size: 2.5rem;
+    }
+
+    .yearsText {
+        font-size: 1rem;
+    }
+
+    .experienceText {
+        font-size: 0.9rem;
+    }
+
+    .statisticsGrid {
+        gap: 25px;
+    }
+
+    .statColumn {
+        gap: 20px;
+    }
+
+    .statNumber {
+        font-size: 1.8rem;
+    }
+
+    .statLabel {
+        font-size: 0.9rem;
+    }
+}

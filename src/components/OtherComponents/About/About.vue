@@ -4,7 +4,7 @@
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Solutions Image.png"
             imageAlt="Acoustic Solutions" />
         
-        <div class="AboutUsContainerGrid">
+        <div class="AboutUsContainerGrid paddingTop80 paddingBottom80">
             <div class="Container">
                 <div class="aboutGrid">
                     <!-- Left Column - Content -->
@@ -46,6 +46,8 @@
         </div>
         <YearsOfExperience />
         <WhatWeDo />
+        <OurVision />
+        <ImageGallery />    
     </div>
 </template>
 
@@ -53,6 +55,8 @@
 import CommonTopLayout from '../Categories/CommonTopLayout/CommonTopLayout.vue';
 import YearsOfExperience from './YearsOfExperience/YearsOfExperience.vue';
 import WhatWeDo from '../WhatWeDo/WhatWeDo.vue';
+import OurVision from '../OurVision/OurVision.vue';
+import ImageGallery from '../ImageGallery/ImageGallery.vue';
 import "./About.css"
 </script>
 

@@ -3,7 +3,7 @@
     /* About Us Container Grid */
     .AboutUsContainerGrid {
         background-color: #f8f9fa;
-        padding: 80px 0;
+        /* padding: 80px 0; */
     }
 
     .aboutGrid {
@@ -118,10 +118,7 @@
     }
 
     @media (max-width: 768px) {
-        .AboutUsContainerGrid {
-            padding: 60px 0;
-        }
-
+       
         .aboutGrid {
             grid-template-columns: 1fr;
             gap: 50px;
@@ -143,9 +140,7 @@
     }
 
     @media (max-width: 480px) {
-        .AboutUsContainerGrid {
-            padding: 40px 0;
-        }
+      
 
         .featureList li {
             font-size: 0.95rem;

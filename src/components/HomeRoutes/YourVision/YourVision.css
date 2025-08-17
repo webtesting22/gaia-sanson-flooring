@@ -12,20 +12,6 @@
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
 }
 
-/* ===========================================
-   HEADER SECTION
-   =========================================== */
-
-.YourVisionContainer .vision-header {
-    text-align: center;
-    /* background: #ffffff; */
-}
-
-.YourVisionContainer .vision-title {
-    margin: 0;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 /* ===========================================
    MAIN CONTENT GRID

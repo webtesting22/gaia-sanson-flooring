@@ -1,5 +1,5 @@
 <template>
-    <div class="WhatWeDoContainer">
+    <div class="WhatWeDoContainer paddingTop80 paddingBottom80">
         <div class="Container">
             <div class="whatWeDoHeader">
                 <h2>What We Do</h2>

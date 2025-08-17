@@ -1,6 +1,6 @@
 .YearsOfExperienceContainer {
     background-color: #ffffff;
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 .YearsOfExperienceGrid {
@@ -151,9 +151,7 @@
 }
 
 @media (max-width: 768px) {
-    .YearsOfExperienceContainer {
-        padding: 60px 0;
-    }
+  
 
     .YearsOfExperienceGrid {
         grid-template-columns: 1fr;
@@ -192,9 +190,7 @@
 }
 
 @media (max-width: 480px) {
-    .YearsOfExperienceContainer {
-        padding: 40px 0;
-    }
+    
 
     .circleBackground {
         width: 180px;

@@ -1,5 +1,5 @@
 <template>
-    <div class="YearsOfExperienceContainer">
+    <div class="YearsOfExperienceContainer paddingTop80 paddingBottom80">
         <div class="Container">
             <div class="YearsOfExperienceGrid">
                 <!-- Left Section - Circular Graphic -->

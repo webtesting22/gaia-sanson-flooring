@@ -49,17 +49,17 @@ import "./ImageGallery.css";
 const firstRowImages = [
     {
         id: 1,
-        src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery1.png',
         alt: 'Modern Office Workspace with Carpet Tiles'
     },
     {
         id: 2,
-        src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery2.png',
         alt: 'Hexagonal Acoustic Wall Panels'
     },
     {
         id: 3,
-        src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery3.png',
         alt: 'Collaborative Desk Area with Privacy Screens'
     }
 ];
@@ -68,22 +68,22 @@ const firstRowImages = [
 const secondRowImages = [
     {
         id: 4,
-        src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery4.png',
         alt: 'Children\'s Playroom with Colorful Design'
     },
     {
         id: 5,
-        src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery5.png',
         alt: 'Conference Room and Dining Area'
     },
     {
         id: 6,
-        src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery6.png',
         alt: 'Music Studio with Acoustic Panels'
     },
     {
         id: 7,
-        src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery7.png',
         alt: 'Modern Interior with Premium Flooring'
     }
 ];

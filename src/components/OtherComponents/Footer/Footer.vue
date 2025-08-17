@@ -7,7 +7,7 @@ import "./Footer.css"
             <!-- Logo and Tagline Section -->
             <div class="footer-section logo-section">
                 <div class="logo-container">
-                    <h2 class="logo">GAIA</h2>
+                   <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png" alt="">
                     <p class="tagline">EXPERTS IN INNOVATIVE FLOOR FASHION</p>
                 </div>
             </div>

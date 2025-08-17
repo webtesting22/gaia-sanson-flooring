@@ -44,14 +44,8 @@
     flex-direction: column;
     gap: 10px;
 }
-
-.logo {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #E4D8C8;
-    margin: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.logo-container img{
+    width: 180px;
 }
 
 .tagline {

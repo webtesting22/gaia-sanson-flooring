@@ -47,7 +47,9 @@
         <YearsOfExperience />
         <WhatWeDo />
         <OurVision />
-        <ImageGallery />    
+        <ImageGallery />  
+        <GetInTouch />      
+          
     </div>
 </template>
 
@@ -58,6 +60,7 @@ import WhatWeDo from '../WhatWeDo/WhatWeDo.vue';
 import OurVision from '../OurVision/OurVision.vue';
 import ImageGallery from '../ImageGallery/ImageGallery.vue';
 import "./About.css"
+import GetInTouch from '../GetInTouch/GetInTouch.vue';
 </script>
 
 <style scoped>

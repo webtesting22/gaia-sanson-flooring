@@ -59,55 +59,34 @@
                 <div class="acoustic-benefits-grid">
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                <circle cx="20" cy="20" r="20" fill="#D4AF37"/>
-                                <rect x="12" y="15" width="3" height="10" fill="white"/>
-                                <rect x="17" y="12" width="3" height="16" fill="white"/>
-                                <rect x="22" y="8" width="3" height="24" fill="white"/>
-                            </svg>
+                            <img src="/Images/AcousticBenifitsIcons/Balanced Sound Field.svg" alt="Balanced Sound Field" class="acoustic-icon">
                         </div>
-                        <h3 >Balanced Sound Field</h3>
-                        <p >Even sound distribution across the entire space.</p>
+                        <h3>Balanced Sound Field</h3>
+                        <p>Even sound distribution across the entire space.</p>
                     </div>
 
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                <circle cx="20" cy="20" r="20" fill="#D4AF37"/>
-                                <path d="M20 8C22.5 8 24.5 10 24.5 12.5C24.5 15 22.5 17 20 17C17.5 17 15.5 15 15.5 12.5C15.5 10 17.5 8 20 8Z" fill="white"/>
-                                <path d="M20 20C25 20 29 24 29 29H11C11 24 15 20 20 20Z" fill="white"/>
-                                <path d="M28 10C28.5 10.5 29 11 29.5 11.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M30 7C30.5 7.5 31 8 31.5 8.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                            <img src="/Images/AcousticBenifitsIcons/Reduce Echo.svg" alt="Reduce Echo" class="acoustic-icon">
                         </div>
-                        <h3 >Reduce Echo</h3>
-                        <p >Minimizing sound reflections for clearer audio.</p>
+                        <h3>Reduce Echo</h3>
+                        <p>Minimizing sound reflections for clearer audio.</p>
                     </div>
 
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                <circle cx="20" cy="20" r="20" fill="#D4AF37"/>
-                                <circle cx="20" cy="20" r="6" fill="white"/>
-                                <circle cx="20" cy="20" r="12" stroke="white" stroke-width="2" stroke-dasharray="4 4"/>
-                                <circle cx="20" cy="20" r="18" stroke="white" stroke-width="2" stroke-dasharray="4 4"/>
-                            </svg>
+                            <img src="/Images/AcousticBenifitsIcons/Reduce Noise.svg" alt="Reduce Noise" class="acoustic-icon">
                         </div>
-                        <h3 >Reduce Noise</h3>
-                        <p >Lowering unwanted sound for improved comfort.</p>
+                        <h3>Reduce Noise</h3>
+                        <p>Lowering unwanted sound for improved comfort.</p>
                     </div>
 
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                <circle cx="20" cy="20" r="20" fill="#D4AF37"/>
-                                <circle cx="20" cy="20" r="6" fill="white"/>
-                                <circle cx="20" cy="20" r="12" stroke="white" stroke-width="2"/>
-                                <circle cx="20" cy="20" r="18" stroke="white" stroke-width="2"/>
-                            </svg>
+                            <img src="/Images/AcousticBenifitsIcons/Solve Standing Waves.svg" alt="Solve Standing Waves" class="acoustic-icon">
                         </div>
-                        <h3 >Solve Standing Waves</h3>
-                        <p >Eliminating sound distortions for accurate acoustics.</p>
+                        <h3>Solve Standing Waves</h3>
+                        <p>Eliminating sound distortions for accurate acoustics.</p>
                     </div>
                 </div>
             </div>

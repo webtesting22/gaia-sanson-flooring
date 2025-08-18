@@ -29,14 +29,11 @@ export default {
             <div class="handcrafted-content-container">
                 <div class="content-wrapper">
                     <h2 class="handcrafted-title">
-                        <span class="title-script">Handcrafted</span> with pride in India
+                        <span class="title-script">Manufactured</span> in India
                     </h2>
                     
                     <p class="handcrafted-description">
-                        <span class="highlighted-text">Our carpets, made from locally sourced materials,</span> reflect 
-                        <span class="highlighted-text">India's craftsmanship and commitment to sustainability.</span> 
-                        <span class="highlighted-text">By choosing them,</span> you support the 
-                        <span class="highlighted-text">Make in India movement, strengthening the local economy and empowering artisans.</span>
+                        Our carpets, made from locally sourced materials using advanced manufacturing processes, reflect India's quality and commitment to sustainability. By choosing them, you support the Make in India movement and strengthen the local economy.
                     </p>
                 </div>
             </div>

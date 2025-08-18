@@ -42,12 +42,14 @@
                 </div>
             </div>
         </div>
-        <div class="paddingTop80 Container paddingBottom80">
+        
+        <div class="paddingTop80 Container paddingBottom80" style="background-color: white;">
             <h2 class="blackColor marginBottom20">Discover Our Carpet Collection</h2>
             <div class="paddingTop80 CarpertTilesImage">
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/carpet collection.png" alt="">
+                <img src="/Images/CarpetImages/carpet.svg" alt="">
             </div>
         </div>
+       
         <div class="paddingTop80 Container paddingBottom80">
             <div>
                 <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>

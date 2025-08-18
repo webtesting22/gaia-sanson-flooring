@@ -91,17 +91,16 @@ const category = computed(() => {
 
 // Sample design swatches data
 const designSwatches = [
-    { image: '/Images/CarpetImages/Carpet1.png', name: 'Premium Carpet', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet3.png', name: 'Modern Design', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet5.png', name: 'Classic Style', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet6.png', name: 'Luxury Collection', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet7.png', name: 'Contemporary', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet1.png', name: 'Premium Carpet', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet3.png', name: 'Modern Design', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet5.png', name: 'Classic Style', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet6.png', name: 'Luxury Collection', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet7.png', name: 'Contemporary', code: '90020066' },
-    { image: '/Images/CarpetImages/Carpet1.png', name: 'Premium Carpet', code: '90020066' }
+    { image: '/Images/CarpetFrames/CarpetFrame1.svg', name: 'Classic Elegance', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame2.svg', name: 'Modern Luxury', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame3.svg', name: 'Contemporary Style', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame4.svg', name: 'Premium Collection', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame5.svg', name: 'Designer Series', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame6.svg', name: 'Artisan Craft', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame7.svg', name: 'Signature Line', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame8.svg', name: 'Heritage Collection', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame9.svg', name: 'Innovation Series', code: '90020066' },
+    { image: '/Images/CarpetFrames/CarpetFrame10.svg', name: 'Exclusive Edition', code: '90020066' }
 ]
 </script>
 

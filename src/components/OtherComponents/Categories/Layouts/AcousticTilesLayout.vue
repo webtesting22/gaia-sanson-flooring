@@ -134,7 +134,7 @@
                     <div class="VariousApplicationsGridItem" v-for="feature in applicationFeatures" :key="feature.id">
                         <div class="featureIcon">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="#AB813E">
-                                <circle cx="20" cy="20" r="20" fill="#D4AF37" />
+                                <circle cx="20" cy="20" r="20" fill="#AB813E" />
                                 <rect x="12" y="12" width="3" height="16" fill="white" />
                                 <rect x="17" y="8" width="3" height="24" fill="white" />
                                 <rect x="22" y="16" width="3" height="8" fill="white" />

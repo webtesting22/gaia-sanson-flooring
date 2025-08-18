@@ -43,11 +43,13 @@
             </div>
         </div>
         
-        <div class="paddingTop80 Container paddingBottom80" style="background-color: white;">
+        <div  style="background-color: white;">
+            <div class="paddingTop80 Container paddingBottom80">
             <h2 class="blackColor marginBottom20">Discover Our Carpet Collection</h2>
             <div class="paddingTop80 CarpertTilesImage">
                 <img src="/Images/CarpetImages/carpet.svg" alt="">
             </div>
+        </div>
         </div>
        
         <div class="paddingTop80 Container paddingBottom80">

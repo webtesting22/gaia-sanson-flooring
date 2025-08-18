@@ -353,7 +353,7 @@
 @media (max-width: 768px) {
     .acoustic-benefits-wrapper {
         flex-direction: column;
-        margin: 0 20px;
+        /* margin: 0 20px; */
     }
     
     .acoustic-title-section {

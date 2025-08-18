@@ -1,10 +1,123 @@
 <template>
     <div class="width100">
-        <CommonTopLayout heading="Premium Artificial Grass for Every Space"
+        <!-- <CommonTopLayout heading="Premium Artificial Grass for Every Space"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Solutions Image.png"
-            imageAlt="Artificial & Multiturf" />
+            imageAlt="Artificial & Multiturf" /> -->
 
-        
+            <CommonTopLayout heading="Premium Artificial Grass for Every Space"
+            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/ArtificialGrassImage.png"
+            imageAlt="Artificial grass background image" />
+
+        <div class="Container paddingTop80 paddingBottom80">
+            <div>
+                <div class="CommonHeader">
+                    <h2>Choose a design to preview</h2>
+                    <div class="SwiperNavigation">
+                        <button class="common-btn secondary swiper-button-prev-custom">
+                            <span>&lt;</span>
+                        </button>
+                        <button class="common-btn secondary swiper-button-next-custom">
+                            <span>&gt;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-container paddingTop80 BroadloomCarpetsLayoutSwiper">
+                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="30" :centeredSlides="true" :loop="true"
+                        :speed="700" :modules="[SwiperNavigation, Autoplay]" class="artificial-grass-swiper"
+                        id="AnimateSwiper" :autoplay="{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: true,
+                        }" :breakpoints="{
+                            320: { slidesPerView: 4, spaceBetween: 10 },
+                            768: { slidesPerView: 4, spaceBetween: 10 },
+                            1024: { slidesPerView: 2, spaceBetween: 30 },
+                            1200: { slidesPerView: 3, spaceBetween: 30 }
+                        }" :navigation="{
+                            nextEl: '.swiper-button-next-custom',
+                            prevEl: '.swiper-button-prev-custom'
+                        }">
+                        <swiper-slide v-for="(design, index) in designSwatches" :key="index" class="DesignSlide">
+                            <div class="DesignSwatch">
+                                <div class="swatch-image">
+                                    <img :src="design.image" :alt="design.name" />
+                                    <div class="ImageOverlayText">
+                                        <h3 class="whiteColor">{{ design.name }}</h3>
+                                    </div>
+                                </div>
+                                <div class="swatch-info">
+                                    <div class="FlexEndContainer">
+                                        <div class="story-arrow-icon">↗</div>
+                                        <div>
+                                            <h3 class="whiteColor">{{ design.name }}</h3>
+                                            <br>
+                                            <div class="swatch-description">
+                                                <p class="whiteColor">{{ design.specifications }}</p>
+                                                <br>
+                                                <p class="whiteColor">{{ design.pileHeights }}</p>
+                                                <br>
+                                                <ul>
+                                                    <li v-for="feature in design.features" :key="feature"
+                                                        class="whiteColor">{{ feature }}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper>
+                </div>
+
+            </div>
+        </div>
+        <div class="width100 BroadloomCarpetsLayoutContainer ">
+            <div class="BackgroundColorContainer">
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="CommonHeader paddingTop80 paddingBottom80 Container">
+                <div class="width100">
+                    <div class="max-width-800">
+                        <h2 class="text-center">Designed for Every Space</h2>
+                        <p class="text-center">Our artificial grass enhances environments of all sizes, offering
+                            durability, comfort, and
+                            year-round greenery</p>
+                    </div>
+                    <div class="paddingTop80">
+                        <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50" :loop="true" :speed="700"
+                            :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
+                                320: { slidesPerView: 1, spaceBetween: 15 },
+                                768: { slidesPerView: 2, spaceBetween: 20 },
+                                1024: { slidesPerView: 2, spaceBetween: 30 },
+                                1200: { slidesPerView: 3, spaceBetween: 100 }
+                            }" :navigation="{
+                                nextEl: '.swiper-button-next-custom',
+                                prevEl: '.swiper-button-prev-custom'
+                            }">
+                            <swiper-slide v-for="(design, index) in DesignedData" :key="index" class="DesignSlide">
+                                <div class="DesignedContainer">
+                                    <div class="DesignedImage">
+                                        <img :src="design.image" :alt="design.name" />
+                                    </div>
+                                    <div class="DesignedText">
+                                        <h3 class="text-center">{{ design.title }}</h3>
+                                        <p class="text-center" style="color: #525252;">{{ design.description }}</p>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                        </swiper>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
     <GetInTouch />
 </template>
@@ -74,22 +187,17 @@ const designSwatches = [
 
 const DesignedData = [
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Kids at Play.png',
         title: 'Kids at Play',
         description: 'Soft, safe, and always green – perfect turf for endless fun.'
     },
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Indoor Play Zone.png',
         title: 'Indoor Play Zone',
         description: 'Bring the playground indoors with vibrant, cushioned grass.'
     },
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        title: 'Colorful Outdoor Playground',
-        description: 'A splash of color and comfort for big adventures under the sun.'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Colorful Outdoor Playground.png',
         title: 'Colorful Outdoor Playground',
         description: 'A splash of color and comfort for big adventures under the sun.'
     },

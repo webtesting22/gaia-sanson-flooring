@@ -92,7 +92,7 @@
                                 320: { slidesPerView: 1, spaceBetween: 15 },
                                 768: { slidesPerView: 2, spaceBetween: 20 },
                                 1024: { slidesPerView: 2, spaceBetween: 30 },
-                                1200: { slidesPerView: 3, spaceBetween: 70 }
+                                1200: { slidesPerView: 3, spaceBetween: 100 }
                             }" :navigation="{
                                 nextEl: '.swiper-button-next-custom',
                                 prevEl: '.swiper-button-prev-custom'
@@ -183,22 +183,17 @@ const designSwatches = [
 
 const DesignedData = [
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Kids at Play.png',
         title: 'Kids at Play',
         description: 'Soft, safe, and always green – perfect turf for endless fun.'
     },
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Indoor Play Zone.png',
         title: 'Indoor Play Zone',
         description: 'Bring the playground indoors with vibrant, cushioned grass.'
     },
     {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        title: 'Colorful Outdoor Playground',
-        description: 'A splash of color and comfort for big adventures under the sun.'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Colorful Outdoor Playground.png',
         title: 'Colorful Outdoor Playground',
         description: 'A splash of color and comfort for big adventures under the sun.'
     },

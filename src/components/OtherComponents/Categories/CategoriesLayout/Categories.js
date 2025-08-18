@@ -22,6 +22,27 @@ const CategoriesData = [
     },
     {
         id: 2,
+        name: 'Artificial & Multiturf',
+        slug: 'artificial-multiturf',
+        image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        description: 'High-quality artificial grass and multiturf solutions for outdoor spaces, sports facilities, and landscaping.',
+        features: [
+            'UV-resistant and weatherproof',
+            'Low maintenance requirements',
+            'Realistic appearance',
+            'Drainage system included',
+            'Perfect for sports and recreation'
+        ],
+        specifications: [
+            { name: 'Material', value: 'Polyethylene' },
+            { name: 'Pile Height', value: '20-60mm' },
+            { name: 'Density', value: 'High' },
+            { name: 'Installation', value: 'Professional' },
+            { name: 'Warranty', value: '8-10 years' }
+        ]
+    },
+    {
+        id: 3,
         name: 'Broadloom Carpets',
         slug: 'broadloom-carpets',
         image: 'https://images.unsplash.com/photo-1594040226829-7f251ab46d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -62,27 +83,7 @@ const CategoriesData = [
             { name: 'Fire Rating', value: 'Class A' }
         ]
     },
-    {
-        id: 4,
-        name: 'Artificial & Multiturf',
-        slug: 'artificial-multiturf',
-        image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        description: 'High-quality artificial grass and multiturf solutions for outdoor spaces, sports facilities, and landscaping.',
-        features: [
-            'UV-resistant and weatherproof',
-            'Low maintenance requirements',
-            'Realistic appearance',
-            'Drainage system included',
-            'Perfect for sports and recreation'
-        ],
-        specifications: [
-            { name: 'Material', value: 'Polyethylene' },
-            { name: 'Pile Height', value: '20-60mm' },
-            { name: 'Density', value: 'High' },
-            { name: 'Installation', value: 'Professional' },
-            { name: 'Warranty', value: '8-10 years' }
-        ]
-    }
+    
 ]
 
 export default CategoriesData;

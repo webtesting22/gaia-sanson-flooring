@@ -258,7 +258,7 @@
 }
 
 .DesignedContainer .DesignedImage img {
-    width: 100%;
+    width: 90%;
     border-radius: 50% !important;
     border: 3px solid #000000;
 }

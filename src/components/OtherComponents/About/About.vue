@@ -1,7 +1,7 @@
 <template>
     <div class="aboutPage">
         <CommonTopLayout heading="About Us"
-            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Solutions Image.png"
+            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HeroHome1.png"
             imageAlt="Acoustic Solutions" />
         
         <div class="AboutUsContainerGrid paddingTop80 paddingBottom80">

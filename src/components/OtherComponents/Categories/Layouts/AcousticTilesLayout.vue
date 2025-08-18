@@ -137,7 +137,7 @@
                 <div class="VariousApplicationsGridContainer marginTop20">
                     <div class="VariousApplicationsGridItem" v-for="feature in applicationFeatures" :key="feature.id">
                         <div class="featureIcon">
-                            <img :src="feature.icon" :alt="feature.name">
+                            <img :src="feature.image" :alt="feature.name" class="application-icon">
                         </div>
                         <div class="featureText">
                             <span>{{ feature.name }}</span>
@@ -255,14 +255,20 @@ const colorSwatches = [
 
 // Application features data
 const applicationFeatures = [
-    { id: 1, name: 'Decorative',icon: '/Images/AcousticBenifitsIcons/Decorative.svg' },
-    { id: 2, name: 'Acoustic',icon: '/Images/AcousticBenifitsIcons/Acoustic.svg' },
-    { id: 3, name: 'Recycle',icon: '/Images/AcousticBenifitsIcons/Recycle.svg' },
-    { id: 4, name: 'Insulation',icon: '/Images/AcousticBenifitsIcons/Insulation.svg' },
-    { id: 5, name: 'Light Weight',icon: '/Images/AcousticBenifitsIcons/Light Weight.svg' },
-    { id: 6, name: 'Stackable',icon: '/Images/AcousticBenifitsIcons/Stackable.svg' },
-    { id: 7, name: 'No-VOC',icon: '/Images/AcousticBenifitsIcons/No-VOC.svg' },
-    { id: 8, name: 'Fire - Rated',icon: '/Images/AcousticBenifitsIcons/Fire - Rated.svg' }
+    { id: 1, name: 'Decorative', image: '/Images/VariousApplicationsIcons/DecorativeIcon.svg' },
+    { id: 2, name: 'Acoustic', image: '/Images/VariousApplicationsIcons/AcousticIcon.svg' },
+    { id: 3, name: 'Recycle', image: '/Images/VariousApplicationsIcons/RecycleIcon.svg' },
+    { id: 4, name: 'Insulation', image: '/Images/VariousApplicationsIcons/insulationIcon.svg' },
+    { id: 5, name: 'Light Weight', image: '/Images/VariousApplicationsIcons/lightweightIcon.svg' },
+    { id: 6, name: 'Stackable', image: '/Images/VariousApplicationsIcons/stackableIcon.svg' },
+    { id: 7, name: 'No-VOC', image: '/Images/VariousApplicationsIcons/novocIcon.svg' },
+    { id: 8, name: 'Fire - Rated', image: '/Images/VariousApplicationsIcons/fireratedIcon.svg' },
+    { id: 9, name: 'Printable', image: '/Images/VariousApplicationsIcons/printableIcon.svg' },
+    { id: 10, name: 'Ventilate', image: '/Images/VariousApplicationsIcons/ventilateIcon.svg' },
+    { id: 11, name: 'Create Buffer', image: '/Images/VariousApplicationsIcons/createbufferIcon.svg' },
+    { id: 12, name: 'Easy Install', image: '/Images/VariousApplicationsIcons/easyInstallICon.svg' },
+    { id: 13, name: 'STC', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
+    { id: 14, name: 'NRC', image: '/Images/VariousApplicationsIcons/NRCICon.svg' }
 ]
 const interiorSpaces = [
     {

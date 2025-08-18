@@ -72,7 +72,7 @@ export default {
                         <transition name="slide-content" mode="out-in">
                             <div :key="currentSlide" class="content-wrapper" :class="{ 'animating': isAnimating }">
                                 <h3 class="story-title">{{ currentStoryItem.title }}</h3>
-                                <p class="story-description">{{ currentStoryItem.description }}</p>
+                                <div class="story-description" v-html="currentStoryItem.description"></div>
                                 
                                 <!-- Progress Indicator -->
                                 <div class="progress-indicator">

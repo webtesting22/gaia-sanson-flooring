@@ -1,8 +1,8 @@
 const OurStoryHomeData = [
     {
         id: 1,
-        title: "Premium Hardwood Collection",
-        description: "Discover our exquisite range of premium hardwood flooring, crafted from the finest oak, maple, and walnut. Each plank tells a story of natural beauty and timeless elegance.",
+        title: "Introducing GAIA: A New Era in Flooring Fashion",
+        description: "<p>From Gaia, the Greek goddess — Mother Earth, origin of life — to Prithvi, the vast and grounding force in Indian tradition.</p><p>Across cultures, Earth has always been revered as the ultimate source of creation and balance.</p><p>At Sanson Group, we honor this legacy by combining innovation with purpose. Today, we're proud to unveil our newest label: <b>GAIA – The New World of Flooring Fashion.</b></p>",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OurStoryImage.png"
     },
     // {

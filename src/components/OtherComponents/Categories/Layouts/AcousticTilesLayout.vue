@@ -59,7 +59,8 @@
                 <div class="acoustic-benefits-grid">
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <img src="/Images/AcousticBenifitsIcons/Balanced Sound Field.svg" alt="Balanced Sound Field" class="acoustic-icon">
+                            <img src="/Images/AcousticBenifitsIcons/Balanced Sound Field.svg" alt="Balanced Sound Field"
+                                class="acoustic-icon">
                         </div>
                         <h3>Balanced Sound Field</h3>
                         <p>Even sound distribution across the entire space.</p>
@@ -67,7 +68,8 @@
 
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <img src="/Images/AcousticBenifitsIcons/Reduce Echo.svg" alt="Reduce Echo" class="acoustic-icon">
+                            <img src="/Images/AcousticBenifitsIcons/Reduce Echo.svg" alt="Reduce Echo"
+                                class="acoustic-icon">
                         </div>
                         <h3>Reduce Echo</h3>
                         <p>Minimizing sound reflections for clearer audio.</p>
@@ -75,7 +77,8 @@
 
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <img src="/Images/AcousticBenifitsIcons/Reduce Noise.svg" alt="Reduce Noise" class="acoustic-icon">
+                            <img src="/Images/AcousticBenifitsIcons/Reduce Noise.svg" alt="Reduce Noise"
+                                class="acoustic-icon">
                         </div>
                         <h3>Reduce Noise</h3>
                         <p>Lowering unwanted sound for improved comfort.</p>
@@ -83,7 +86,8 @@
 
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <img src="/Images/AcousticBenifitsIcons/Solve Standing Waves.svg" alt="Solve Standing Waves" class="acoustic-icon">
+                            <img src="/Images/AcousticBenifitsIcons/Solve Standing Waves.svg" alt="Solve Standing Waves"
+                                class="acoustic-icon">
                         </div>
                         <h3>Solve Standing Waves</h3>
                         <p>Eliminating sound distortions for accurate acoustics.</p>
@@ -133,12 +137,7 @@
                 <div class="VariousApplicationsGridContainer marginTop20">
                     <div class="VariousApplicationsGridItem" v-for="feature in applicationFeatures" :key="feature.id">
                         <div class="featureIcon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="#AB813E">
-                                <circle cx="20" cy="20" r="20" fill="#AB813E" />
-                                <rect x="12" y="12" width="3" height="16" fill="white" />
-                                <rect x="17" y="8" width="3" height="24" fill="white" />
-                                <rect x="22" y="16" width="3" height="8" fill="white" />
-                            </svg>
+                            <img :src="feature.icon" :alt="feature.name">
                         </div>
                         <div class="featureText">
                             <span>{{ feature.name }}</span>
@@ -256,14 +255,14 @@ const colorSwatches = [
 
 // Application features data
 const applicationFeatures = [
-    { id: 1, name: 'Decorative' },
-    { id: 2, name: 'Acoustic' },
-    { id: 3, name: 'Recycle' },
-    { id: 4, name: 'Insulation' },
-    { id: 5, name: 'Light Weight' },
-    { id: 6, name: 'Stackable' },
-    { id: 7, name: 'No-VOC' },
-    { id: 8, name: 'Fire - Rated' }
+    { id: 1, name: 'Decorative',icon: '/Images/AcousticBenifitsIcons/Decorative.svg' },
+    { id: 2, name: 'Acoustic',icon: '/Images/AcousticBenifitsIcons/Acoustic.svg' },
+    { id: 3, name: 'Recycle',icon: '/Images/AcousticBenifitsIcons/Recycle.svg' },
+    { id: 4, name: 'Insulation',icon: '/Images/AcousticBenifitsIcons/Insulation.svg' },
+    { id: 5, name: 'Light Weight',icon: '/Images/AcousticBenifitsIcons/Light Weight.svg' },
+    { id: 6, name: 'Stackable',icon: '/Images/AcousticBenifitsIcons/Stackable.svg' },
+    { id: 7, name: 'No-VOC',icon: '/Images/AcousticBenifitsIcons/No-VOC.svg' },
+    { id: 8, name: 'Fire - Rated',icon: '/Images/AcousticBenifitsIcons/Fire - Rated.svg' }
 ]
 const interiorSpaces = [
     {

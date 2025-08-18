@@ -37,7 +37,7 @@
                     <!-- Right Column - Image -->
                     <div class="aboutImage">
                         <div class="imageContainer">
-                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage1.png" 
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsImage.png" 
                                  alt="Modern Office Space with GAIA Flooring" />
                         </div>
                     </div>

@@ -42,7 +42,8 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -103,6 +104,10 @@
   </head>
   <body>
     <div id="app"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

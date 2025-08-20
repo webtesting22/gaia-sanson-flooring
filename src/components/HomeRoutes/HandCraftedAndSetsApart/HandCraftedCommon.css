@@ -1,4 +1,12 @@
 /* ===========================================
+   MERGED SECTIONS CONTAINER - HANDCRAFTED + SETS APART
+   =========================================== */
+
+.merged-sections-container {
+    background: linear-gradient(180deg, #ECEDEE 0%, #f8f9fa 50%, #ECEDEE 100%);
+}
+
+/* ===========================================
    HANDCRAFTED COMMON CONTAINER - SPLIT LAYOUT
    =========================================== */
 .HandCraftedCommonContainerParent {
@@ -99,20 +107,118 @@
     /* text-decoration: underline; */
     /* text-decoration-color: #d4a574; */
     text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
+}
+
+/* ===========================================
+   SETS APART CONTAINER - CONTENT LEFT, IMAGE RIGHT
+   =========================================== */
+
+.SetsApartContainerParent {
+    background-color: #f8f9fa !important;
+}
+
+.SetsApartContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+    min-height: 400px;
+    /* background: #fafafa; */
+    /* border-radius: 12px; */
+    overflow: hidden;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+}
+
+/* ===========================================
+   LEFT SIDE - CONTENT
+   =========================================== */
+
+.SetsApartContainer .sets-apart-content {
+    /* padding: 60px 140px; */
+    max-width: 900px;
+    /* background: #ffffff; */
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* justify-content: center; */
+}
+
+.SetsApartContainer .content-wrapper {
+    max-width: 800px;
+}
+
+.SetsApartContainer .sets-apart-subtitle {
+    font-size: 1rem;
     font-weight: 500;
+    color: #666;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.SetsApartContainer .sets-apart-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* ===========================================
+   RIGHT SIDE - SMALLER IMAGE
+   =========================================== */
+
+.SetsApartContainer .sets-apart-image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #e9ecef;
+}
+
+.SetsApartContainer .image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.SetsApartContainer .office-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.05);
+}
+
+.SetsApartContainer .image-wrapper:hover .office-image {
+    transform: scale(1);
+}
+
+.SetsApartContainer .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.SetsApartContainer .image-wrapper:hover .image-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
 }
 
 /* ===========================================
    HOVER ANIMATIONS & MICRO-INTERACTIONS
    =========================================== */
 
-.HandCraftedCommonContainer .image-wrapper {
+.SetsApartContainer .image-wrapper {
     position: relative;
     overflow: hidden;
 }
 
-.HandCraftedCommonContainer .image-wrapper::before {
+.SetsApartContainer .image-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
@@ -121,83 +227,86 @@
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 2;
+    z-index: 1;
 }
 
-.HandCraftedCommonContainer .image-wrapper:hover::before {
+.SetsApartContainer .image-wrapper:hover::before {
     left: 100%;
-}
-
-.HandCraftedCommonContainer .handcrafted-title {
-    transition: color 0.3s ease;
-}
-
-.HandCraftedCommonContainer .content-wrapper:hover .handcrafted-title {
-    color: #1a252f;
-}
-
-.HandCraftedCommonContainer .handcrafted-description {
-    transition: color 0.3s ease;
-}
-
-.HandCraftedCommonContainer .content-wrapper:hover .handcrafted-description {
-    color: #34495e;
 }
 
 /* ===========================================
    RESPONSIVE DESIGN
    =========================================== */
 
-/* Tablet View */
-@media (max-width: 768px) {
-    .HandCraftedCommonContainer {
-        grid-template-columns: 1fr;
-        gap: 0;
-        min-height: auto;
-    }
+@media (max-width: 1024px) {
 
-    .HandCraftedCommonContainer .handcrafted-image-container {
-        height: 300px;
+    .HandCraftedCommonContainer,
+    .SetsApartContainer {
+        gap: 40px;
     }
 
     .HandCraftedCommonContainer .handcrafted-content-container {
         padding: 40px 30px;
     }
 
-    .HandCraftedCommonContainer .handcrafted-description {
-        font-size: 1rem;
-        line-height: 1.6;
+    .SetsApartContainer .sets-apart-title {
+        font-size: 2rem;
     }
 }
 
-/* Mobile View */
-@media (max-width: 480px) {
-    .HandCraftedCommonContainer {
-        border-radius: 8px;
-    }
+@media (max-width: 768px) {
 
-    .HandCraftedCommonContainer .handcrafted-image-container {
-        height: 250px;
+    .HandCraftedCommonContainer,
+    .SetsApartContainer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        min-height: auto;
     }
 
     .HandCraftedCommonContainer .handcrafted-content-container {
-        padding: 30px 0px;
-        padding-bottom: 0px !important;
+        padding: 30px 20px;
+        order: 2;
     }
 
-
-    .HandCraftedCommonContainer .handcrafted-description {
-        font-size: 0.95rem;
-        line-height: 1.5;
+    .HandCraftedCommonContainer .handcrafted-image-container {
+        order: 1;
+        min-height: 300px;
     }
 
-    .HandCraftedCommonContainer .content-wrapper {
-        max-width: 100%;
+    .SetsApartContainer .sets-apart-content {
+        order: 2;
+        margin-left: 0;
+        padding: 30px 20px;
     }
 
-    .HandCraftedCommonContainerParent {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+    .SetsApartContainer .sets-apart-image {
+        order: 1;
+        min-height: 300px;
+    }
+
+    .SetsApartContainer .sets-apart-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .HandCraftedCommonContainer .handcrafted-content-container,
+    .SetsApartContainer .sets-apart-content {
+        padding: 20px 15px;
+    }
+
+    .HandCraftedCommonContainer .handcrafted-image-container,
+    .SetsApartContainer .sets-apart-image {
+        min-height: 250px;
+    }
+
+    .SetsApartContainer .sets-apart-title {
+        font-size: 1.5rem;
+    }
+
+    .SetsApartContainer .sets-apart-subtitle {
+        font-size: 0.9rem;
     }
 }
 

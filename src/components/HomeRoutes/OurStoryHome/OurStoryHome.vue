@@ -41,8 +41,8 @@ export default {
         <div class="Container">
             <div class="OurStoryHomeContainer">
                 <!-- Left Side - Image with Animation -->
-                <div class="story-image-container">
-                    <div class="story-header">
+                <div class="story-image-container" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                    <div class="story-header" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200">
                         <h2 class="story-main-title">Our<br>Story</h2>
                         <div class="story-arrow-icon">↗</div>
                     </div>
@@ -56,9 +56,9 @@ export default {
                 </div>
 
                 <!-- Right Side - Content with Navigation -->
-                <div class="story-content-container">
+                <div class="story-content-container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                     <!-- Navigation Buttons -->
-                    <div class="story-navigation">
+                    <div class="story-navigation" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                         <button @click="goToPrevSlide" class="nav-btn prev-btn" :disabled="isAnimating">
                             PREV
                         </button>
@@ -71,11 +71,11 @@ export default {
                     <div class="story-content">
                         <transition name="slide-content" mode="out-in">
                             <div :key="currentSlide" class="content-wrapper" :class="{ 'animating': isAnimating }">
-                                <h3 class="story-title">{{ currentStoryItem.title }}</h3>
-                                <div class="story-description" v-html="currentStoryItem.description"></div>
+                                <h3 class="story-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">{{ currentStoryItem.title }}</h3>
+                                <div class="story-description" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600" v-html="currentStoryItem.description"></div>
                                 
                                 <!-- Progress Indicator -->
-                                <div class="progress-indicator">
+                                <div class="progress-indicator" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
                                     <span class="current-slide">{{ String(currentSlide + 1).padStart(2, '0') }}</span>
                                     <span class="divider">/</span>
                                     <span class="total-slides">{{ String(storyData.length).padStart(2, '0') }}</span>

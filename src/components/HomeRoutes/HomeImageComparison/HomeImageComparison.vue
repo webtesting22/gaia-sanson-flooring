@@ -102,45 +102,45 @@ export default {
 <template>
     <div class="HomeImageComparisonContainerParent">
         <div class="Container paddingTop80 paddingBottom80">
-        <div class="HomeImageComparisonContainer">
-            <!-- Header -->
-            <div class="comparison-header">
-                <h3 class="comparison-title">{{ comparisonData.title }}</h3>
-            </div>
-
-            <!-- Image Comparison Container -->
-            <div class="comparison-wrapper" ref="comparisonContainer">
-                <!-- Left Image (Background) -->
-                <div class="image-container left-image">
-                    <img :src="comparisonData.leftImage.src" :alt="comparisonData.leftImage.label"
-                        class="comparison-image" />
-                    <div class="image-label left-label">{{ comparisonData.leftImage.label }}</div>
+            <div class="HomeImageComparisonContainer">
+                <!-- Header -->
+                <div class="comparison-header" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="comparison-title">{{ comparisonData.title }}</h3>
                 </div>
 
-                <!-- Right Image (Overlay) -->
-                <div ref="rightImage" class="image-container right-image"
-                    :style="{ clipPath: `inset(0 ${100 - dividerPosition}% 0 0)` }">
-                    <img :src="comparisonData.rightImage.src" :alt="comparisonData.rightImage.label"
-                        class="comparison-image" />
-                    <div class="image-label right-label">{{ comparisonData.rightImage.label }}</div>
-                </div>
-
-                <!-- Draggable Divider -->
-                <div ref="comparisonDivider" class="comparison-divider" :style="{ left: `${dividerPosition}%` }" @mousedown="handleMouseDown"
-                    @touchstart="handleTouchStart">
-                    <div class="divider-line"></div>
-                    <div class="divider-handle">
-                        <span class="arrow-left">‹</span>
-                        <span class="arrow-right">›</span>
+                <!-- Image Comparison Container -->
+                <div class="comparison-wrapper" ref="comparisonContainer" data-aos="zoom-in" data-aos-delay="400">
+                    <!-- Left Image (Background) -->
+                    <div class="image-container left-image">
+                        <img :src="comparisonData.leftImage.src" :alt="comparisonData.leftImage.label"
+                            class="comparison-image" />
+                        <div class="image-label left-label">{{ comparisonData.leftImage.label }}</div>
                     </div>
-                </div>
 
-                <!-- Divider Overlay for Better UX -->
-                <div class="divider-overlay" :style="{ left: `${dividerPosition}%` }" @mousedown="handleMouseDown"
-                    @touchstart="handleTouchStart"></div>
+                    <!-- Right Image (Overlay) -->
+                    <div ref="rightImage" class="image-container right-image"
+                        :style="{ clipPath: `inset(0 ${100 - dividerPosition}% 0 0)` }">
+                        <img :src="comparisonData.rightImage.src" :alt="comparisonData.rightImage.label"
+                            class="comparison-image" />
+                        <div class="image-label right-label">{{ comparisonData.rightImage.label }}</div>
+                    </div>
+
+                    <!-- Draggable Divider -->
+                    <div ref="comparisonDivider" class="comparison-divider" :style="{ left: `${dividerPosition}%` }"
+                        @mousedown="handleMouseDown" @touchstart="handleTouchStart">
+                        <div class="divider-line"></div>
+                        <div class="divider-handle">
+                            <span class="arrow-left">‹</span>
+                            <span class="arrow-right">›</span>
+                        </div>
+                    </div>
+
+                    <!-- Divider Overlay for Better UX -->
+                    <div class="divider-overlay" :style="{ left: `${dividerPosition}%` }" @mousedown="handleMouseDown"
+                        @touchstart="handleTouchStart"></div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </template>
 <style scoped></style>

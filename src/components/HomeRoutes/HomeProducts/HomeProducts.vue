@@ -16,6 +16,16 @@ export default {
         SwiperSlide,
         ImageLoader,
     },
+    props: {
+        title: {
+            type: String,
+            default: "OUR PRODUCT RANGE"
+        },
+        subtitle: {
+            type: String,
+            default: "Discover our comprehensive collection of premium flooring solutions"
+        }
+    },
     data() {
         return {
             productsData: HomeProductsData,
@@ -50,9 +60,10 @@ export default {
         <div class="Container paddingTop80 paddingBottom80 ">
             <div class="HomeProductsContainer">
                 <!-- Header Section -->
-                <div class="products-header marginBottom80" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
-                    <h2 class="products-title">OUR PRODUCT RANGE</h2>
-                    <p class="products-subtitle">Discover our comprehensive collection of premium flooring solutions</p>
+                <div class="products-header marginBottom80" data-aos="fade-down" data-aos-duration="800"
+                    data-aos-delay="100">
+                    <h2 class="products-title">{{ title }}</h2>
+                    <p class="products-subtitle">{{ subtitle }}</p>
                 </div>
 
                 <!-- Swiper Container -->

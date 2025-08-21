@@ -160,6 +160,7 @@
     line-height: 1.6;
     margin-bottom: 0;
     transition: color 0.3s ease;
+    text-transform: uppercase;
 }
 
 .CategoriesClientContainers {
@@ -212,7 +213,7 @@
 .AboutGaiaContainer .AboutGaiaRightSide {
     width: 100%;
     flex: 1;
-    height: 700px;
+    height: 500px;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
@@ -228,7 +229,7 @@
 }
 
 .AboutGaiaContainer .AboutGaiaLeftSide p {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     line-height: 1.8;
     color: #34495e;
     /* margin-bottom: 20px; */
@@ -272,6 +273,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.AboutGaiaContainer {
+    background-color: white;
+}
+
+.RightSideContentContainer p {
+    background-color: white;
+    padding: 15px;
 }
 
 /* Responsive Design */

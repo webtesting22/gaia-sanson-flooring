@@ -3,7 +3,7 @@ const HomeProductsData = [
         id: 1,
         title: "Carpet Tiles",
         description: "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. SUSPENDISSE MOLESTIE DOLOR FELIS, NON FERMENTUM QUAM",
-        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Tiles Image.png",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesupdatedImage.png",
         bgColor: "#d4c4b0",
         textColor: "#8b6f47"
     },
@@ -19,7 +19,7 @@ const HomeProductsData = [
         id: 3,
         title: "Acoustic Tiles",
         description: "LOREM IPSUM DOLOR AMET, CONSECTETUR ADIPISCING ELIT.",
-        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Carpet Tiles.png",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AcousticTilesUpdatedImage.png",
         bgColor: "#f5f5f0",
         textColor: "#8b6f47"
     },

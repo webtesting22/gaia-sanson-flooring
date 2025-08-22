@@ -36,9 +36,10 @@
 
 .YourVisionContainer .main-image-wrapper {
     width: 100%;
-    height: 100%;
+    height: 500px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .YourVisionContainer .main-image {

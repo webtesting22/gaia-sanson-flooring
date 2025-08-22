@@ -6,9 +6,9 @@ export default {
         return {
             visionData: {
                 title: "Your Vision, Our Custom Tiles & Acoustic Expertise",
-                description: "If you have a specific product or design in mind, we can develop and customize it to match your exact requirements. We offer personalization in backing, pile height, stitch density, and yarn quality. Please note that a minimum order quantity (MOQ) applies for custom orders. We're happy to work with you to create a product that fits your needs. Let us know your ideas, and we'll help turn them into reality.",
-                mainImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionOe.png",
-                secondaryImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionOe.png"
+                description: "We create custom carpet tiles that are tailored entirely to your vision, delivering results that are exclusive to your requirements.",
+                mainImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionImage1.png",
+                secondaryImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionImage2.png"
             }
         }
     }

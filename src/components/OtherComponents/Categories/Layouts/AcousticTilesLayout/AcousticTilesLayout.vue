@@ -200,8 +200,8 @@
 import { ref } from 'vue'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import CommonTopLayout from '../CommonTopLayout/CommonTopLayout.vue'
-import GetInTouch from '../../GetInTouch/GetInTouch.vue'
+import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
+import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
 
 const swiperInstance = ref(null)
 

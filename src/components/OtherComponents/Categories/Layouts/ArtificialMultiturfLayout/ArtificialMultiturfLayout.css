@@ -1,0 +1,251 @@
+.ArtificialMultiturfGrid {
+    display: flex;
+    gap: 20px;
+}
+
+.ArtificialMultiturfGridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.ArtificialMultiturfGridItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ArtificialMultiturfGrid .ArtificialMultiturfGridItem:first-child>div:nth-child(1) {
+    height: 400px;
+    overflow: hidden;
+}
+
+.ArtificialMultiturfGrid .ArtificialMultiturfGridItem:first-child>div:nth-child(2) {
+    height: 300px;
+    overflow: hidden;
+}
+
+.ArtificialMultiturfGrid .ArtificialMultiturfGridItem:last-child>div:nth-child(2) {
+    height: 400px;
+    overflow: hidden;
+}
+
+.ArtificialMultiturfGrid .ArtificialMultiturfGridItem:last-child>div:nth-child(1) {
+    height: 300px;
+    overflow: hidden;
+}
+
+.ArtificialMultiturfGridItem>div {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.ArtificialMultiturfGridItem>div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.ArtificialMultiturfGridItem>div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.ArtificialMultiturfGridItemText {
+    position: absolute;
+    bottom: 20px;
+    z-index: 5;
+    left: 20px;
+    color: white;
+}
+
+.ArtificialMultiturfGridItemText h3 {
+    color: white;
+}
+.ArtificialMultiturfGridItemText button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* ===========================================
+   WHY CHOOSE ARTIFICIAL GRASS SECTION
+   =========================================== */
+
+
+   .WhyChooseArtificialMultiturf{
+    background-color: white;
+   }
+.WhyChooseArtificialMultiturf .why-choose-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Features Grid */
+.WhyChooseArtificialMultiturf .features-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/* Individual Feature Cards */
+.WhyChooseArtificialMultiturf .feature-card {
+    background: #34495e;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.WhyChooseArtificialMultiturf .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Feature Icons */
+.WhyChooseArtificialMultiturf .feature-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhyChooseArtificialMultiturf .feature-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Makes icons white */
+}
+
+/* Feature Titles */
+.WhyChooseArtificialMultiturf .feature-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: white;
+    line-height: 1.3;
+}
+
+/* Feature Descriptions */
+.WhyChooseArtificialMultiturf .feature-card p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: #ecf0f1;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+/* Large Desktop */
+@media (max-width: 1200px) {
+    .WhyChooseArtificialMultiturf .features-grid {
+        gap: 20px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-card {
+        padding: 25px 15px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .WhyChooseArtificialMultiturf .why-choose-section h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    
+    .WhyChooseArtificialMultiturf .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-card {
+        padding: 25px 15px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .WhyChooseArtificialMultiturf .why-choose-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    
+    .WhyChooseArtificialMultiturf .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-card {
+        padding: 20px 15px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-icon {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-card h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .WhyChooseArtificialMultiturf .feature-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+    .WhyChooseArtificialMultiturf .features-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .WhyChooseArtificialMultiturf .why-choose-section h2 {
+        font-size: 1.6rem;
+    }
+}

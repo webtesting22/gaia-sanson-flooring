@@ -69,10 +69,10 @@ import { useRoute, useRouter } from 'vue-router'
 import CategoriesData from './Categories'
 
 // Import all layout components
-import CarpetTilesLayout from '../Layouts/CarpetTilesLayout.vue'
-import BroadloomCarpetsLayout from '../Layouts/BroadloomCarpetsLayout.vue'
-import AcousticTilesLayout from '../Layouts/AcousticTilesLayout.vue'
-import ArtificialMultiturfLayout from '../Layouts/ArtificialMultiturfLayout.vue'
+import CarpetTilesLayout from '../Layouts/CarpetTilesLayout'
+import BroadloomCarpetsLayout from '../Layouts/BroadloomCarpetsLayout'
+import AcousticTilesLayout from '../Layouts/AcousticTilesLayout'
+import ArtificialMultiturfLayout from '../Layouts/ArtificialMultiturfLayout'
 
 const route = useRoute()
 const router = useRouter()

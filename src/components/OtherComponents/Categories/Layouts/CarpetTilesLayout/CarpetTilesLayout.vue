@@ -42,16 +42,16 @@
                 </div>
             </div>
         </div>
-        
-        <div  style="background-color: white;">
+
+        <div style="background-color: white;">
             <div class="paddingTop80 Container paddingBottom80">
-            <h2 class="blackColor marginBottom20">Discover Our Carpet Collection</h2>
-            <div class="paddingTop80 CarpertTilesImage">
-                <img src="/Images/CarpetImages/carpet.svg" alt="">
+                <h2 class="blackColor marginBottom20">Discover Our Carpet Collection</h2>
+                <div class="paddingTop80 CarpertTilesImage">
+                    <img src="/Images/CarpetImages/carpet.svg" alt="">
+                </div>
             </div>
         </div>
-        </div>
-       
+
         <div class="paddingTop80 Container paddingBottom80">
             <div>
                 <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>
@@ -80,9 +80,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation as SwiperNavigation, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import CategoriesData from '../CategoriesLayout/Categories'
-import CommonTopLayout from '../CommonTopLayout/CommonTopLayout.vue'
-import GetInTouch from '../../GetInTouch/GetInTouch.vue'
+import CategoriesData from '../../CategoriesLayout/Categories'
+import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
+import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
 const route = useRoute()
 const category = computed(() => {
     const slug = route.params.slug

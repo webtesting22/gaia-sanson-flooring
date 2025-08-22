@@ -174,7 +174,7 @@
 </template>
 
 <script setup>
-import CommonTopLayout from '../Categories/CommonTopLayout/CommonTopLayout.vue';
+import CommonTopLayout from '../../OtherComponents/Categories/CommonTopLayout/CommonTopLayout.vue';
 import SansonTeam from '../SansonTeam/SansonTeam.vue';
 import HomeProducts from "../../HomeRoutes/HomeProducts/HomeProducts.vue";
 import "./About.css"

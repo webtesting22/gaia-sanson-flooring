@@ -1,19 +1,17 @@
 <template>
     <div class="width100 acousticTilesLayout">
-        <CommonTopLayout heading="Acoustic Solutions"
-            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Solutions Image.png"
+        <CommonTopLayout heading="Acoustic Tiles — Redefining Spaces with Elegance"
+            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic TilesImagesBackground.png"
             imageAlt="Acoustic Solutions" />
 
         <div class="BlueBackContainer paddingTop80 paddingBottom80">
             <div class="Container">
                 <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals</h2>
                 <br>
-                <h3 class="whiteColor">Get ready for our latest additions: Non-Woven (Felt) and
-                    Machine Woven
-                    Carpets.
+                <h3 class="whiteColor">Get ready for our latest additions:
                 </h3>
                 <!-- <br> -->
-                <h3 class="whiteColor">Stay tuned and be the first to experience them!</h3>
+                <h3 class="whiteColor">Non-Woven (Felt) and Machine Woven Carpets. </h3>
             </div>
 
         </div>
@@ -23,7 +21,7 @@
             <div class="Container">
                 <div class="gridContainer">
                     <div class="leftImage">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SpecificationImage.png"
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SpecificationAboutusimage.jpg"
                             alt="Specification Image" />
                     </div>
                     <div class="rightContent">
@@ -46,16 +44,14 @@
                 </div>
             </div>
         </div>
-        <div class="AcousticBenefitsContainer">
+        <!-- <div class="AcousticBenefitsContainer">
             <div class="acoustic-benefits-wrapper">
-                <!-- Left Side - Title Section -->
                 <div class="acoustic-title-section">
                     <h2>Acoustic Benefits</h2>
                     <br>
                     <p>Designed for modern, harmonious spaces.</p>
                 </div>
 
-                <!-- Right Side - Benefits Grid -->
                 <div class="acoustic-benefits-grid">
                     <div class="benefit-item">
                         <div class="benefit-icon">
@@ -94,8 +90,86 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <!-- Features Container -->
+        <div class=" paddingTop80 paddingBottom80" style="background: white;">
+            <div class="Container">
+                <div class="HeaderContainerCommonAll">
+                <h2>Features</h2>
+                <p>Every Detail Designed to Deliver Silence, Style, and Performance</p>
+            </div>
+            <br><br>
+            <div class="featuresLayout ">
+                <!-- Left Side - Features List -->
+                <div class="featuresContent">
+                    <div class="featureItem">
+                        <div class="featureIcon">✓</div>
+                        <div class="featureDetails">
+                            <h3>Density: 1350-4000 g/m3</h3>
+                            <ul class="featureSpecs">
+                                <li>9mm X 1220mm X 2440mm (0.35" X 4.00' X 8.00'),<br> Standard 1650gsm</li>
+                                <li>12mm X 1220mm X 2440mm (0.47" X 4.00' X 8.00'),<br> Standard 2400gsm</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="featureItem">
+                        <div class="featureIcon">✓</div>
+                        <div class="featureDetails">
+                            <h3>Different GSM sheet can be made</h3>
+                        </div>
+                    </div>
+
+                    <div class="featureItem">
+                        <div class="featureIcon">✓</div>
+                        <div class="featureDetails">
+                            <h3>Thickness 9mm to 24mm available</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Image -->
+                <div class="featuresImage">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                        alt="Modern Conference Room with Acoustic Solutions" />
+                </div>
+            </div>
+            </div>
+            
         </div>
-        <!-- Grid Layout Section -->
+
+
+        
+        <div class="SurfaceContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <h2>Various Aplications</h2>
+                <div class="SurfaceGridContainer paddingTop80">
+                    <div class="SurfaceImageContainer">
+                        <img src="/Images/VariousAplicationsUpdateImage.svg" alt="">
+                    </div>
+                    <!-- <div class="SurfaceContentContainer">
+                        <div>
+                            <div>
+                                <h2>Eco-Friendly & Versatile</h2>
+                                <p>Acoustic Panel boards are made from Recycled Polyester Fiber and are meant to be used
+                                    for Wall Claddings, Ceilings and Paneling.</p>
+                            </div>
+                            <div>
+                                <h2>Performance</h2>
+                                <p>It can absorb 30% of Sound (0.3 NRC) when the panel is directly fixed onto the wall.
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Features</h2>
+                                <p>Acoustical, Recycle, Fire-Rated, Printable, Ventilate, Decorative, Insulation, Light
+                                    Weight, Buffered,
+                                    Tack able, Easy Install, No Voc</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
         <div class="OurColoursCardContainer">
             <div class="Container">
                 <div class="ourColorsHeader">
@@ -123,7 +197,7 @@
                         </div>
                         <div class="swatchInfo">
                             <span class="colorCode">{{ swatch.code }}</span>
-                            <span class="colorName">{{ swatch.name }}</span>
+                            <!-- <span class="colorName">{{ swatch.name }}</span> -->
                         </div>
                     </div>
                 </div>
@@ -131,7 +205,7 @@
         </div>
         <div class="VariousApplicationsContainer paddingTop80 paddingBottom80">
             <div class="Container">
-                <h2 class="text-center">Various Applications</h2>
+                <h2 class="text-center">Characteristics</h2>
                 <br>
                 <br>
                 <div class="VariousApplicationsGridContainer marginTop20">
@@ -146,39 +220,19 @@
                 </div>
             </div>
         </div>
-        <div class="SurfaceContainer paddingTop80 paddingBottom80">
-            <div class="Container">
-                <h2>Surface</h2>
-                <div class="SurfaceGridContainer paddingTop80">
-                    <div class="SurfaceImageContainer">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/acoustic panel element.png"
-                            alt="">
-                    </div>
-                    <div class="SurfaceContentContainer">
-                        <div>
-                            <div>
-                                <h2>Eco-Friendly & Versatile</h2>
-                                <p>Acoustic Panel boards are made from Recycled Polyester Fiber and are meant to be used
-                                    for Wall Claddings, Ceilings and Paneling.</p>
-                            </div>
-                            <div>
-                                <h2>Performance</h2>
-                                <p>It can absorb 30% of Sound (0.3 NRC) when the panel is directly fixed onto the wall.
-                                </p>
-                            </div>
-                            <div>
-                                <h2>Features</h2>
-                                <p>Acoustical, Recycle, Fire-Rated, Printable, Ventilate, Decorative, Insulation, Light
-                                    Weight, Buffered,
-                                    Tack able, Easy Install, No Voc</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="LastGridImagesContainer">
+            <div class="Container paddingTop80 paddingBottom80">
+                <div class="HeaderContainerCommonAll">
+                <div>
+                    <h2>Optimized Spaces with Acoustic Tiles</h2>
+                </div>
+                <div>
+                    <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with
+                        aesthetics. Browse real-world installations to see how they transform a variety of spaces.</p>
                 </div>
             </div>
-        </div>
-        <div class="LastGridImagesContainer">
-            <div>
+
+            <div class="paddingTop80">
                 <div class="LastGridImagesGridContainer">
                     <div class="LastGridImagesGridItem" v-for="space in interiorSpaces" :key="space.id">
                         <div class="LastGridImagesImageContainer">
@@ -190,6 +244,7 @@
                         </div> -->
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -212,42 +267,42 @@ const onSwiper = (swiper) => {
 // Color swatches data
 const colorSwatches = [
     {
-        code: 'SF-01',
+        code: 'SF-04 White',
         name: 'Classic Beige',
         image: '/Images/FramesImages/Frame1.png'
     },
     {
-        code: 'SF-02',
+        code: 'SF-36 Light Grey',
         name: 'Modern Grey',
         image: '/Images/FramesImages/Frame2.svg'
     },
     {
-        code: 'SF-03',
+        code: 'SF-31 Banana Green',
         name: 'Rich Brown',
         image: '/Images/FramesImages/Frame3.svg'
     },
     {
-        code: 'SF-04',
+        code: 'SF-70 Strom Grey',
         name: 'Elegant Black',
         image: '/Images/FramesImages/Frame4.svg'
     },
     {
-        code: 'SF-05',
+        code: 'SF-74 Platinum',
         name: 'Soft Cream',
         image: '/Images/FramesImages/Frame5.svg'
     },
     {
-        code: 'SF-06',
+        code: 'SF-39 Dove',
         name: 'Warm Tan',
         image: '/Images/FramesImages/Frame6.svg'
     },
     {
-        code: 'SF-07',
+        code: 'SF-25 Pewter Gray',
         name: 'Cool Blue',
         image: '/Images/FramesImages/Frame7.svg'
     },
     {
-        code: 'SF-08',
+        code: 'SF-40 T Blue',
         name: 'Deep Green',
         image: '/Images/FramesImages/Frame8.svg'
     }
@@ -267,8 +322,8 @@ const applicationFeatures = [
     { id: 10, name: 'Ventilate', image: '/Images/VariousApplicationsIcons/ventilateIcon.svg' },
     { id: 11, name: 'Create Buffer', image: '/Images/VariousApplicationsIcons/createbufferIcon.svg' },
     { id: 12, name: 'Easy Install', image: '/Images/VariousApplicationsIcons/easyInstallICon.svg' },
-    { id: 13, name: 'STC', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
-    { id: 14, name: 'NRC', image: '/Images/VariousApplicationsIcons/NRCICon.svg' }
+    { id: 13, name: 'Sound Transmission Class (STC)', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
+    { id: 14, name: 'Noise Reduction Coefficient (NRC)', image: '/Images/VariousApplicationsIcons/NRCICon.svg' }
 ]
 const interiorSpaces = [
     {

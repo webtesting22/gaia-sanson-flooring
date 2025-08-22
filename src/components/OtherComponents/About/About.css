@@ -173,6 +173,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .SansonAboutContainerInner {
+        flex-direction: column;
+    }
+
     .expertSolutionsGrid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -195,9 +199,7 @@
     .expertSolutionCard {
         padding: 25px 20px;
     }
-
 }
-
 
 .AboutGaiaContainer {
     display: flex;
@@ -307,5 +309,8 @@
 
     .AboutGaiaContainer .AboutGaiaLeftSide h2 {
         font-size: 1.8rem;
+    }
+    .aboutGaiaFeatureGrid{
+        flex-direction: column;
     }
 }

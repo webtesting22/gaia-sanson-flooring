@@ -18,3 +18,12 @@
 .sansonTeamGrid>div{
     max-width: 300px;
 }
+
+@media (max-width: 768px) {
+    .sansonTeamGrid{
+        flex-direction: column;
+    }
+    .sansonTeamGrid>div{
+        max-width: 100%;
+    }
+}

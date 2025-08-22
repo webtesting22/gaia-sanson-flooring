@@ -93,34 +93,6 @@ const onSwiper = (swiper) => {
     swiperInstance.value = swiper
 }
 
-// Landscape Images for Carousel
-const landscapeImages = [
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Landscape Grass.png',
-        alt: 'Garden Landscape with Artificial Grass'
-    },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg',
-        alt: 'Outdoor Dining Area with Artificial Grass'
-    },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg',
-        alt: 'Outdoor Living Room with Artificial Grass'
-    },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg',
-        alt: 'Leisure Space with Artificial Grass'
-    },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg',
-        alt: 'Outdoor Living Room with Artificial Grass'
-    },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg',
-        alt: 'Leisure Space with Artificial Grass'
-    }
-]
-
 // Artificial Grass Data based on type
 const grassTypesData = {
     'landscape-grass': {
@@ -138,6 +110,28 @@ const grassTypesData = {
             'Customizable single/double layers & color backing (black or green).',
             'Made with 5500 ± 5% twisted yarn for a natural look and longer life.',
             'Other Stitch types available upon request for bespoke projects.'
+        ],
+        images: [
+            {
+                src: '/Images/GrassImages/landscapegrass1.jpg',
+                alt: 'Landscape Grass in Garden Setting'
+            },
+            {
+                src: '/Images/GrassImages/landscapegrass2.jpg',
+                alt: 'Landscape Grass on Terrace'
+            },
+            {
+                src: '/Images/GrassImages/landscapegrass3.jpg',
+                alt: 'Landscape Grass in Public Park'
+            },
+            {
+                src: '/Images/GrassImages/landscapegrass4.jpg',
+                alt: 'Landscape Grass at Hotel Lawn'
+            },
+            {
+                src: '/Images/GrassImages/landscapegrass5.jpg',
+                alt: 'Landscape Grass Villa Garden'
+            }
         ]
     },
     'sports-grass': {
@@ -155,6 +149,32 @@ const grassTypesData = {
             // 'Shock-absorbing technology for player safety and comfort.',
             // 'UV-stabilized fibers for long-lasting color and performance.',
             // 'Professional installation support and maintenance guidelines included.'
+        ],
+        images: [
+            {
+                src: '/Images/GrassImages/SportsGrass1.jpg',
+                alt: 'Sports Grass Football Field'
+            },
+            {
+                src: '/Images/GrassImages/SportsGrass2.jpg',
+                alt: 'Sports Grass Rugby Field'
+            },
+            {
+                src: '/Images/GrassImages/SportsGrass3.jpg',
+                alt: 'Sports Grass Training Field'
+            },
+            {
+                src: '/Images/GrassImages/SportsGrass4.jpg',
+                alt: 'Sports Grass School Ground'
+            },
+            {
+                src: '/Images/GrassImages/SportsGrass5.jpg',
+                alt: 'Sports Grass Athletic Track'
+            },
+            {
+                src: '/Images/GrassImages/SportsGrass6.jpg',
+                alt: 'Sports Grass Professional Stadium'
+            }
         ]
     },
     'multisports-grass': {
@@ -169,6 +189,32 @@ const grassTypesData = {
         specifications: [
             'compact 10-12.5-15mm pile height for fast-paced sports.',
             '5000 upwards +5% Dtex mono yarn for even texture and wear resistance.'
+        ],
+        images: [
+            {
+                src: '/Images/GrassImages/multisportgras1.jpg',
+                alt: 'Multisports Grass Tennis Court'
+            },
+            {
+                src: '/Images/GrassImages/multisportgras2.jpg',
+                alt: 'Multisports Grass Badminton Court'
+            },
+            {
+                src: '/Images/GrassImages/multisportgras3.jpg',
+                alt: 'Multisports Grass Gym Floor'
+            },
+            {
+                src: '/Images/GrassImages/multisportgras4.jpg',
+                alt: 'Multisports Grass Skating Zone'
+            },
+            {
+                src: '/Images/GrassImages/multisportgras5.jpg',
+                alt: 'Multisports Grass Indoor Sports Complex'
+            },
+            {
+                src: '/Images/GrassImages/multisportgras6.jpg',
+                alt: 'Multisports Grass Recreational Area'
+            }
         ]
     },
     'curly-grass': {
@@ -184,6 +230,28 @@ const grassTypesData = {
             '10mm pile height offers a soft but firm surface',
             '3000+ 5% Dtex mono yarn ideal for decorative & underlayer use',
             'Low friction surface reduces dust and wear'
+        ],
+        images: [
+            {
+                src: '/Images/GrassImages/curlygrass5.jpg',
+                alt: 'Curly Grass Walkway'
+            },
+            {
+                src: '/Images/GrassImages/curlygrass1.jpg',
+                alt: 'Curly Grass Balcony Layer'
+            },
+            {
+                src: '/Images/GrassImages/curlygrass2.png',
+                alt: 'Curly Grass Retail Display Zone'
+            },
+            {
+                src: '/Images/GrassImages/curlygrass3.png',
+                alt: 'Curly Grass Garden Border'
+            },
+            {
+                src: '/Images/GrassImages/curlygrass4.png',
+                alt: 'Curly Grass Decorative Accent'
+            }
         ]
     }
 }
@@ -192,6 +260,11 @@ const grassTypesData = {
 const grassData = computed(() => {
     const grassType = route.params.grassType || 'landscape-grass'
     return grassTypesData[grassType] || grassTypesData['landscape-grass']
+})
+
+// Dynamic landscape images based on selected grass type
+const landscapeImages = computed(() => {
+    return grassData.value.images || []
 })
 </script>
 

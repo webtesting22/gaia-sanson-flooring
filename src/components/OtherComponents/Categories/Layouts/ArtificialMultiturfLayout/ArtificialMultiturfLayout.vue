@@ -17,14 +17,18 @@
                             alt="">
                         <div class="ArtificialMultiturfGridItemText">
                             <h3>Landscape Grass</h3>
-                            <button>View More</button>
+                            <router-link to="/artificial-grass/landscape-grass">
+                                <button>View More</button>
+                            </router-link>
                         </div>
                     </div>
                     <div>
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg" alt="">
                         <div class="ArtificialMultiturfGridItemText">
-                            <h3>multisports Grass</h3>
-                            <button>View More</button>
+                            <h3>Sports Grass</h3>
+                            <router-link to="/artificial-grass/sports-grass">
+                                <button>View More</button>
+                            </router-link>
                         </div>
                     </div>
                 </div>
@@ -33,15 +37,19 @@
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg"
                             alt="">
                         <div class="ArtificialMultiturfGridItemText">
-                            <h3>Sports Grass</h3>
-                            <button>View More</button>
+                            <h3>Multisports Grass</h3>
+                            <router-link to="/artificial-grass/multisports-grass">
+                                <button>View More</button>
+                            </router-link>
                         </div>
                     </div>
                     <div>
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg" alt="">
                         <div class="ArtificialMultiturfGridItemText">
-                            <h3>curly Grass</h3>
-                            <button>View More</button>
+                            <h3>Curly Grass</h3>
+                            <router-link to="/artificial-grass/curly-grass">
+                                <button>View More</button>
+                            </router-link>
                         </div>
                     </div>
                 </div>
@@ -161,7 +169,7 @@ const onSwiper = (swiper) => {
 const DesignedData = [
     {
         image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Kids at Play.png',
-        title: 'Kids at Play',
+        title: 'Child-Friendly Play Lounge',
         description: 'Soft, safe, and always green – perfect turf for endless fun.'
     },
     {

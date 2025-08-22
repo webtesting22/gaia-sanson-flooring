@@ -4,6 +4,7 @@ import CategoriesRoutes from '../components/OtherComponents/Categories/Categorie
 import CategoryDetail from '../components/OtherComponents/Categories/CategoriesLayout/CategoryDetail.vue'
 import AnimationDemo from '../components/FramerAnimation/AnimationDemo.vue'
 import AboutUs from '../components/OtherComponents/About/About.vue'
+import DynamicArtificialPage from '../components/OtherComponents/Categories/Layouts/DynamicArtificialPage/DynamicArtificialPage.vue'
 
 const routes = [
     {
@@ -30,6 +31,12 @@ const routes = [
                 next()
             }
         }
+    },
+    {
+        path: '/artificial-grass/:grassType',
+        name: 'DynamicArtificialPage',
+        component: DynamicArtificialPage,
+        props: true
     },
     {
         path: '/demo',

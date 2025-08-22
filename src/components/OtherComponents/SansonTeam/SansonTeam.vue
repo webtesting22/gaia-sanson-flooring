@@ -11,7 +11,7 @@
                         <br>
                         <div style="display: flex; gap: 10px; align-items: center;">
                             <h3>{{ team.name }} </h3>
-                            <h4>({{ team.title }})</h4>
+                            <!-- <h4>({{ team.title }})</h4> -->
                         </div>
                         <br>
                         <p>{{ team.writup }}</p>

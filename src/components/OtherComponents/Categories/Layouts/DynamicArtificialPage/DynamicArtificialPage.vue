@@ -53,25 +53,19 @@
                     <h2 class="landscapeTitle">Designed for Every Landscape</h2>
                 </div>
                 <div class="headerRight">
-                    <p class="landscapeDescription">See how our grasses redefine outdoor spaces — creating vibrant, low-maintenance landscapes across diverse applications.</p>
+                    <p class="landscapeDescription">See how our grasses redefine outdoor spaces — creating vibrant,
+                        low-maintenance landscapes across diverse applications.</p>
                 </div>
             </div>
-            
+
             <div class="landscapeCarousel paddingTop80">
-                <swiper 
-                    @swiper="onSwiper" 
-                    :slidesPerView="4" 
-                    :spaceBetween="10" 
-                    :loop="true" 
-                    :speed="700"
-                    :modules="[SwiperNavigation, Autoplay]" 
-                    :breakpoints="{
+                <swiper @swiper="onSwiper" :slidesPerView="4" :spaceBetween="10" :loop="true" :speed="700"
+                    :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
                         320: { slidesPerView: 1, spaceBetween: 10 },
                         768: { slidesPerView: 2, spaceBetween: 10 },
                         1024: { slidesPerView: 3, spaceBetween: 10 },
                         1200: { slidesPerView: 4, spaceBetween: 10 }
-                    }"
-                >
+                    }">
                     <swiper-slide v-for="(image, index) in landscapeImages" :key="index" class="landscapeSlide">
                         <div class="landscapeImageContainer">
                             <img :src="image.src" :alt="image.alt" />
@@ -154,7 +148,7 @@ const grassTypesData = {
         mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg',
         insetImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg',
         overview: 'Engineered for maximum performance and resilience, our Sports Grass is the go-to solution for athletic surfaces.',
-        idealFor: ['Football', 'Rugby','Athletic Training Fields', 'School Grounds'],
+        idealFor: ['Football', 'Rugby', 'Athletic Training Fields', 'School Grounds'],
         specifications: [
             '23-stitch density at 50mm pile height for enhanced shock absorption and playbility ',
             'Made with 5% Dtex, ensuring turf durability and under intensive use',
@@ -170,14 +164,11 @@ const grassTypesData = {
         title: 'Multisports Grass',
         mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg',
         insetImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg',
-        overview: 'Versatile artificial grass designed to accommodate multiple sports and activities, perfect for schools, community centers, and facilities requiring flexibility.',
-        idealFor: ['School Playgrounds', 'Community Centers', 'Recreation Areas', 'Training Facilities'],
+        overview: 'For multi-use surfaces that demand versatility and safety, our  Multi Sports Grass balances performance with value.',
+        idealFor: ['Tennies', 'Badminton', 'Gym Floors', 'Skating Zones'],
         specifications: [
-            'Multi-purpose design supporting various sports and activities.',
-            'Balanced pile height (25-35mm) for universal compatibility.',
-            'Durable construction for high-traffic environments.',
-            'Easy maintenance and cleaning requirements.',
-            'Cost-effective solution for multi-use facilities.'
+            'compact 10-12.5-15mm pile height for fast-paced sports.',
+            '5000 upwards +5% Dtex mono yarn for even texture and wear resistance.'
         ]
     },
     'curly-grass': {
@@ -187,14 +178,12 @@ const grassTypesData = {
         title: 'Curly Grass',
         mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg',
         insetImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg',
-        overview: 'Specialized artificial grass with unique curly texture that provides distinctive aesthetics and performance characteristics for decorative and specialized applications.',
-        idealFor: ['Decorative Gardens', 'Indoor Applications', 'Specialized Landscaping', 'Aesthetic Installations'],
+        overview: 'With a textured, "thatched" look, Curly Grass is a great base for low-maintenance areas or accent zones.',
+        idealFor: ['Walkways', 'Balcony Layers', 'Retail Display Zones', 'Garden Borders'],
         specifications: [
-            'Unique curly fiber design for distinctive visual appeal.',
-            'Soft and comfortable texture for decorative applications.',
-            'Customizable pile heights (20-30mm) for design flexibility.',
-            'Specialized backing for indoor and outdoor use.',
-            'Bespoke customization options for unique projects.'
+            '10mm pile height offers a soft but firm surface',
+            '3000+ 5% Dtex mono yarn ideal for decorative & underlayer use',
+            'Low friction surface reduces dust and wear'
         ]
     }
 }

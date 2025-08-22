@@ -153,14 +153,14 @@ const grassTypesData = {
         title: 'Sports Grass',
         mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg',
         insetImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg',
-        overview: 'Professional-grade sports grass engineered for high-performance athletic activities, providing excellent traction, durability, and safety for competitive sports.',
-        idealFor: ['Football Fields', 'Soccer Pitches', 'Field Hockey', 'Multi-Sport Facilities'],
+        overview: 'Engineered for maximum performance and resilience, our Sports Grass is the go-to solution for athletic surfaces.',
+        idealFor: ['Football', 'Rugby','Athletic Training Fields', 'School Grounds'],
         specifications: [
-            'High-density construction with 30-50mm pile height for optimal performance.',
-            'Advanced backing system for superior stability and ball roll consistency.',
-            'Shock-absorbing technology for player safety and comfort.',
-            'UV-stabilized fibers for long-lasting color and performance.',
-            'Professional installation support and maintenance guidelines included.'
+            '23-stitch density at 50mm pile height for enhanced shock absorption and playbility ',
+            'Made with 5% Dtex, ensuring turf durability and under intensive use',
+            // 'Shock-absorbing technology for player safety and comfort.',
+            // 'UV-stabilized fibers for long-lasting color and performance.',
+            // 'Professional installation support and maintenance guidelines included.'
         ]
     },
     'multisports-grass': {

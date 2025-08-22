@@ -79,8 +79,10 @@
 
 .ArtificialMultiturfGridItemText h3 {
     color: white;
+    text-transform: uppercase;
 }
-.ArtificialMultiturfGridItemText button{
+
+.ArtificialMultiturfGridItemText button {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
@@ -94,9 +96,10 @@
    =========================================== */
 
 
-   .WhyChooseArtificialMultiturf{
+.WhyChooseArtificialMultiturf {
     background-color: white;
-   }
+}
+
 .WhyChooseArtificialMultiturf .why-choose-section {
     text-align: center;
     max-width: 1200px;
@@ -140,7 +143,8 @@
     width: 60px;
     height: 60px;
     object-fit: contain;
-    filter: brightness(0) invert(1); /* Makes icons white */
+    filter: brightness(0) invert(1);
+    /* Makes icons white */
 }
 
 /* Feature Titles */
@@ -170,7 +174,7 @@
     .WhyChooseArtificialMultiturf .features-grid {
         gap: 20px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-card {
         padding: 25px 15px;
     }
@@ -182,26 +186,26 @@
         font-size: 2rem;
         margin-bottom: 50px;
     }
-    
+
     .WhyChooseArtificialMultiturf .features-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-card {
         padding: 25px 15px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-icon {
         font-size: 2rem;
         margin-bottom: 15px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-card h3 {
         font-size: 1.1rem;
         margin-bottom: 12px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-card p {
         font-size: 0.9rem;
     }
@@ -213,26 +217,26 @@
         font-size: 1.8rem;
         margin-bottom: 40px;
     }
-    
+
     .WhyChooseArtificialMultiturf .features-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-card {
         padding: 20px 15px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-icon {
         font-size: 1.8rem;
         margin-bottom: 12px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-card h3 {
         font-size: 1rem;
         margin-bottom: 10px;
     }
-    
+
     .WhyChooseArtificialMultiturf .feature-card p {
         font-size: 0.85rem;
     }
@@ -244,7 +248,7 @@
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    
+
     .WhyChooseArtificialMultiturf .why-choose-section h2 {
         font-size: 1.6rem;
     }

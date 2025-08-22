@@ -52,21 +52,95 @@
             </div>
         </div>
 
+        <div class="propertiesLayoutContainer">
+            <div class="Container">
+                <h2 class="properties-title">Properties</h2>
+                <div class="properties-grid paddingTop80">
+                    <div class="property-card">
+                        <div class="property-icon">
+                            <img src="/Images/propertiesImages/Multi-Directional.png" alt="Multi-Directional" />
+                        </div>
+                        <span class="property-label">Multi-Directional</span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon">
+                            <img src="/Images/propertiesImages/Brick.png" alt="Brick" />
+                        </div>
+                        <span class="property-label">Brick</span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon">
+                            <img src="/Images/propertiesImages/Quarter Turn.png" alt="Quarter Turn" />
+                        </div>
+                        <span class="property-label">Quarter Turn</span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon">
+                            <img src="/Images/propertiesImages/Anti static.png" alt="Anti Static" />
+                        </div>
+                        <span class="property-label">Anti Static</span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon">
+                            <img src="/Images/propertiesImages/Non-Directional.png" alt="Non-Directional" />
+                        </div>
+                        <span class="property-label">Non-Directional</span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon">
+                            <img src="/Images/propertiesImages/Underfloor Heating.png" alt="Underfloor Heating" />
+                        </div>
+                        <span class="property-label">Underfloor Heating</span>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-icon">
+                            <img src="/Images/propertiesImages/Fire Resistant.png" alt="Fire Resistant" />
+                        </div>
+                        <span class="property-label">Fire Resistant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="paddingTop80 Container paddingBottom80">
             <div>
                 <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>
                 <h3>We create custom carpet tiles that are tailored entirely to your vision, delivering results that are
                     exclusive to your requirements.</h3>
+                <br>
+                <p>If you have a specific product or design in mind, we can develop and customize it to match your exact
+                    requirements. We offer personalization in backing, pile height, stitch density, and yarn quality.
+                    Please note that a minimum order quantity (MOQ) applies for custom orders. We're happy to work with
+                    you to create a product that fits your needs. Let us know your ideas, and we’ll help turn them into
+                    reality.</p>
             </div>
         </div>
-        <div class="girdImagesContainer">
-            <div>
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesLayoutImage1.png"
-                    alt="">
+        <div class="gridImagesContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <div class="gridImagesContainerText">
+                <h2 class="blackColor ">Our Work in Spaces</h2>
+                <p>Transform your workspace with carpet tiles that combine <br> design, comfort, and durability.</p>
             </div>
-            <div>
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesLayoutImage2.png"
-                    alt="">
+            <div class="girdImagesContainer paddingTop80">
+                <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace2.jpg  " alt="">
+                </div>
+                <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace4.jpg" alt="">
+                </div>
+            </div>
             </div>
         </div>
     </div>

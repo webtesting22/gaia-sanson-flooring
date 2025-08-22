@@ -73,12 +73,13 @@
 .HomeProductsContainer .card-top-section {
     padding: 25px 25px 15px 25px;
     flex-shrink: 0;
+    width: 70%;
 }
 
 .HomeProductsContainer .card-description {
-    font-size: 0.85rem;
+    font-size: 12px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 0;

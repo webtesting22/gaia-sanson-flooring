@@ -68,20 +68,16 @@ export default {
 
                 <!-- Swiper Container -->
                 <div class="products-swiper-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <swiper @swiper="onSwiper" :slidesPerView="1" :spaceBetween="30" :centeredSlides="true" :loop="true"
-                        :autoplay="{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }" :speed="800" :modules="modules" class="products-swiper" :breakpoints="{
-                            768: {
-                                slidesPerView: 2,
-                                spaceBetween: 30,
-                            },
-                            1024: {
-                                slidesPerView: 3,
-                                spaceBetween: 30,
-                            }
-                        }">
+                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="30" :loop="true" :speed="800" :modules="modules" class="products-swiper" :breakpoints="{
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        }
+                    }">
                         <swiper-slide v-for="product in productsData" :key="product.id">
                             <div class="product-card" :style="{ backgroundColor: product.bgColor }">
                                 <!-- Top Section - Description -->
@@ -102,9 +98,9 @@ export default {
                                 <!-- Bottom Section - Title and Arrow -->
                                 <div class="card-bottom-section">
                                     <div class="card-title-section">
-                                        <h3 class="card-title" :style="{ color: product.textColor }">
+                                        <h4 class="card-title" :style="{ color: product.textColor }">
                                             {{ product.title }}
-                                        </h3>
+                                        </h4>
                                         <div class="card-arrow">
                                             <span class="arrow-icon">→</span>
                                         </div>

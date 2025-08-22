@@ -39,6 +39,7 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
+    min-height: 200px;
 }
 
 .BottomCardsContainer .card-item:hover {

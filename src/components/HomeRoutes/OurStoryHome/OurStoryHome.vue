@@ -58,14 +58,14 @@ export default {
                 <!-- Right Side - Content with Navigation -->
                 <div class="story-content-container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                     <!-- Navigation Buttons -->
-                    <div class="story-navigation" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <!-- <div class="story-navigation" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                         <button @click="goToPrevSlide" class="nav-btn prev-btn" :disabled="isAnimating">
                             PREV
                         </button>
                         <button @click="goToNextSlide" class="nav-btn next-btn" :disabled="isAnimating">
                             NEXT
                         </button>
-                    </div>
+                    </div> -->
 
                     <!-- Content with Animation -->
                     <div class="story-content">
@@ -73,16 +73,24 @@ export default {
                             <div :key="currentSlide" class="content-wrapper" :class="{ 'animating': isAnimating }">
                                 <h3 class="story-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">{{ currentStoryItem.title }}</h3>
                                 <div class="story-description" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600" v-html="currentStoryItem.description"></div>
-                                
+                                <router-link to="/about-us"><button class="common-btn know-more-btn" data-aos="zoom-in"
+                                    data-aos-duration="600" data-aos-delay="500">
+                                    Know More
+                                    <span class="btn-arrow">↗</span>
+                                </button></router-link>
+                                <br>
                                 <!-- Progress Indicator -->
-                                <div class="progress-indicator" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
+                                <!-- <div class="progress-indicator" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
                                     <span class="current-slide">{{ String(currentSlide + 1).padStart(2, '0') }}</span>
                                     <span class="divider">/</span>
                                     <span class="total-slides">{{ String(storyData.length).padStart(2, '0') }}</span>
-                                </div>
+                                </div> -->
                             </div>
                         </transition>
+                       
                     </div>
+
+
                 </div>
             </div>
         </div>

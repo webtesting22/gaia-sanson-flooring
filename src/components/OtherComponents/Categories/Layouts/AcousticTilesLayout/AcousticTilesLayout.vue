@@ -6,12 +6,33 @@
 
         <div class="BlueBackContainer paddingTop80 paddingBottom80">
             <div class="Container">
-                <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals</h2>
-                <br>
-                <h3 class="whiteColor">Get ready for our latest additions:
-                </h3>
-                <!-- <br> -->
-                <h3 class="whiteColor">Non-Woven (Felt) and Machine Woven Carpets. </h3>
+                <div>
+                    <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals
+                    </h2>
+                    <br>
+                    <h3 class="whiteColor">Get ready for our latest additions:
+                    </h3>
+                    <!-- <br> -->
+                    <h3 class="whiteColor">Non-Woven (Felt) and Machine Woven Carpets. </h3>
+                </div>
+                <div class="EditContainerContent paddingTop80">
+                    <div class="width100">
+                        <div>
+                            <h2 class="whiteColor">Manufactured in India</h2>
+                            <h3 class="whiteColor">India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.</h3>
+                        </div>
+                    </div>
+                    <div class="width100 EditContainerContentImage">
+                        <div>
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                                alt="">
+                        </div>
+                        <div>
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -95,51 +116,51 @@
         <div class=" paddingTop80 paddingBottom80" style="background: white;">
             <div class="Container">
                 <div class="HeaderContainerCommonAll">
-                <h2>Features</h2>
-                <p>Every Detail Designed to Deliver Silence, Style, and Performance</p>
-            </div>
-            <br><br>
-            <div class="featuresLayout ">
-                <!-- Left Side - Features List -->
-                <div class="featuresContent">
-                    <div class="featureItem">
-                        <div class="featureIcon">✓</div>
-                        <div class="featureDetails">
-                            <h3>Density: 1350-4000 g/m3</h3>
-                            <ul class="featureSpecs">
-                                <li>9mm X 1220mm X 2440mm (0.35" X 4.00' X 8.00'),<br> Standard 1650gsm</li>
-                                <li>12mm X 1220mm X 2440mm (0.47" X 4.00' X 8.00'),<br> Standard 2400gsm</li>
-                            </ul>
+                    <h2>Features</h2>
+                    <p>Every Detail Designed to Deliver Silence, Style, and Performance</p>
+                </div>
+                <br><br>
+                <div class="featuresLayout ">
+                    <!-- Left Side - Features List -->
+                    <div class="featuresContent">
+                        <div class="featureItem">
+                            <div class="featureIcon">✓</div>
+                            <div class="featureDetails">
+                                <h3>Density: 1350-4000 g/m3</h3>
+                                <ul class="featureSpecs">
+                                    <li>9mm X 1220mm X 2440mm (0.35" X 4.00' X 8.00'),<br> Standard 1650gsm</li>
+                                    <li>12mm X 1220mm X 2440mm (0.47" X 4.00' X 8.00'),<br> Standard 2400gsm</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="featureItem">
+                            <div class="featureIcon">✓</div>
+                            <div class="featureDetails">
+                                <h3>Different GSM sheet can be made</h3>
+                            </div>
+                        </div>
+
+                        <div class="featureItem">
+                            <div class="featureIcon">✓</div>
+                            <div class="featureDetails">
+                                <h3>Thickness 9mm to 24mm available</h3>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="featureItem">
-                        <div class="featureIcon">✓</div>
-                        <div class="featureDetails">
-                            <h3>Different GSM sheet can be made</h3>
-                        </div>
-                    </div>
-
-                    <div class="featureItem">
-                        <div class="featureIcon">✓</div>
-                        <div class="featureDetails">
-                            <h3>Thickness 9mm to 24mm available</h3>
-                        </div>
+                    <!-- Right Side - Image -->
+                    <div class="featuresImage">
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/FeaturesImages.png"
+                            alt="Modern Conference Room with Acoustic Solutions" />
                     </div>
                 </div>
+            </div>
 
-                <!-- Right Side - Image -->
-                <div class="featuresImage">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-                        alt="Modern Conference Room with Acoustic Solutions" />
-                </div>
-            </div>
-            </div>
-            
         </div>
 
 
-        
+
         <div class="SurfaceContainer paddingTop80 paddingBottom80">
             <div class="Container">
                 <h2>Various Aplications</h2>
@@ -223,32 +244,34 @@
         <div class="LastGridImagesContainer">
             <div class="Container paddingTop80 paddingBottom80">
                 <div class="HeaderContainerCommonAll">
-                <div>
-                    <h2>Optimized Spaces with Acoustic Tiles</h2>
+                    <div>
+                        <h2>Optimized Spaces with Acoustic Tiles</h2>
+                    </div>
+                    <div>
+                        <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with
+                            aesthetics. Browse real-world installations to see how they transform a variety of spaces.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with
-                        aesthetics. Browse real-world installations to see how they transform a variety of spaces.</p>
-                </div>
-            </div>
 
-            <div class="paddingTop80">
-                <div class="LastGridImagesGridContainer">
-                    <div class="LastGridImagesGridItem" v-for="space in interiorSpaces" :key="space.id">
-                        <div class="LastGridImagesImageContainer">
-                            <img :src="space.image" :alt="space.name">
-                        </div>
-                        <!-- <div class="LastGridImagesContentContainer">
+                <div class="paddingTop80">
+                    <div class="LastGridImagesGridContainer">
+                        <div class="LastGridImagesGridItem" v-for="space in interiorSpaces" :key="space.id">
+                            <div class="LastGridImagesImageContainer">
+                                <img :src="space.image" :alt="space.name">
+                            </div>
+                            <!-- <div class="LastGridImagesContentContainer">
                             <h2>{{ space.name }}</h2>
                             <p>{{ space.description }}</p>
                         </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
     </div>
-    <GetInTouch />
+    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
+        description="Connect with us to create acoustic tile solutions customized for your space, style, and sound needs." />
 </template>
 
 <script setup>

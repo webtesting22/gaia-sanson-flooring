@@ -1,0 +1,376 @@
+/* ===========================================
+   HOME GALLERY CONTAINER
+   =========================================== */
+
+.HomeGalleryParentContainer {
+    background-color: #f8f9fa;
+}
+
+.HomeGalleryContainer {
+    width: 100%;
+    position: relative;
+}
+
+/* ===========================================
+   HEADER SECTION
+   =========================================== */
+
+.HomeGalleryContainer .gallery-header {
+    text-align: center;
+}
+
+.HomeGalleryContainer .gallery-title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.HomeGalleryContainer .gallery-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* ===========================================
+   SWIPER CONTAINER
+   =========================================== */
+
+.HomeGalleryContainer .gallery-swiper-container {
+    position: relative;
+    padding: 0 20px;
+}
+
+.HomeGalleryContainer .gallery-swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* ===========================================
+   GALLERY SLIDE DESIGN
+   =========================================== */
+
+.HomeGalleryContainer .gallery-slide {
+    height: 300px;
+}
+
+.HomeGalleryContainer .gallery-item {
+    height: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.HomeGalleryContainer .gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.HomeGalleryContainer .image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.HomeGalleryContainer .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.HomeGalleryContainer .gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+/* ===========================================
+   IMAGE OVERLAY
+   =========================================== */
+
+.HomeGalleryContainer .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.HomeGalleryContainer .gallery-item:hover .image-overlay {
+    opacity: 1;
+}
+
+.HomeGalleryContainer .overlay-content {
+    text-align: center;
+    color: white;
+}
+
+.HomeGalleryContainer .view-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.HomeGalleryContainer .image-caption {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ===========================================
+   NAVIGATION BUTTONS
+   =========================================== */
+
+.HomeGalleryContainer .gallery-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.HomeGalleryContainer .nav-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #2c3e50;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeGalleryContainer .nav-btn:hover {
+    background: #34495e;
+    transform: scale(1.1);
+}
+
+.HomeGalleryContainer .nav-btn:active {
+    transform: scale(0.95);
+}
+
+/* ===========================================
+   LIGHTBOX MODAL
+   =========================================== */
+
+.HomeGalleryContainer .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.HomeGalleryContainer .lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.HomeGalleryContainer .lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background 0.3s ease;
+}
+
+.HomeGalleryContainer .lightbox-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.HomeGalleryContainer .lightbox-image-container {
+    position: relative;
+}
+
+.HomeGalleryContainer .lightbox-image {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.HomeGalleryContainer .lightbox-caption {
+    padding: 20px;
+    background: white;
+}
+
+.HomeGalleryContainer .lightbox-caption h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.HomeGalleryContainer .lightbox-caption p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===========================================
+   LIGHTBOX NAVIGATION
+   =========================================== */
+
+.HomeGalleryContainer .lightbox-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.HomeGalleryContainer .lightbox-nav-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+}
+
+.HomeGalleryContainer .lightbox-nav-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 768px) {
+    .HomeGalleryContainer .gallery-title {
+        font-size: 2rem;
+    }
+    
+    .HomeGalleryContainer .gallery-subtitle {
+        font-size: 1rem;
+    }
+    
+    .HomeGalleryContainer .gallery-slide {
+        height: 250px;
+    }
+    
+    .HomeGalleryContainer .lightbox-content {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+    
+    .HomeGalleryContainer .lightbox-caption {
+        padding: 15px;
+    }
+    
+    .HomeGalleryContainer .lightbox-caption h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .HomeGalleryContainer .gallery-title {
+        font-size: 1.8rem;
+    }
+    
+    .HomeGalleryContainer .gallery-slide {
+        height: 200px;
+    }
+    
+    .HomeGalleryContainer .nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .HomeGalleryContainer .lightbox-nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+/* ===========================================
+   SWIPER PAGINATION CUSTOMIZATION
+   =========================================== */
+
+.HomeGalleryContainer .swiper-pagination-bullet {
+    background: #2c3e50;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.HomeGalleryContainer .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #34495e;
+    transform: scale(1.2);
+}
+
+/* ===========================================
+   ANIMATIONS
+   =========================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.HomeGalleryContainer .gallery-item {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.HomeGalleryContainer .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+.HomeGalleryContainer .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+.HomeGalleryContainer .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+.HomeGalleryContainer .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+.HomeGalleryContainer .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+.HomeGalleryContainer .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+
+
+.HomeGalleryParentContainer{
+    background-color: white !important;
+    position: relative;
+    z-index: 7;
+}

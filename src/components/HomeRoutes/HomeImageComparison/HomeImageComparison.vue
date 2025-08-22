@@ -5,7 +5,7 @@ export default {
     data() {
         return {
             comparisonData: {
-                title: "SHOWCASING OUR CARPETS IN VARIOUS SETTINGS FOR EASY COMPARISON",
+                title: "Showcasing our products in various settings for easy comparison",
                 leftImage: {
                     src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SHOWCASINGOURCARPETS1.png",
                     label: "CARPET TILE"

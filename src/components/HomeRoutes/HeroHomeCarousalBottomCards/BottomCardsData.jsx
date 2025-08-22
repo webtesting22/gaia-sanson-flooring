@@ -7,14 +7,14 @@ const BottomCardsData = [
     },
     {
         id: 2,
-        title: "ADAPTIBILITY",
-        description: "Made to move with your space, your style, and your needs.",
+        title: "ADAPTABILITY",
+        description: "Made to move with your space, your style, and your needs",
         image: "/Images/HeroHomeIcons/ADAPTIBILITY.svg"
     },
     {
         id: 3,
         title: "GLOBAL QUALITY",
-        description: "Consistent quality, from our floors to your world.",
+        description: "Consistent quality, from our floors to your world",
         image: "/Images/HeroHomeIcons/GLOBALQUALITY.svg"
     }
 ]

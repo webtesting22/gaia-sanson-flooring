@@ -7,6 +7,7 @@ import HomeProducts from './HomeProducts/HomeProducts.vue';
 import HandCraftedCommon from './HandCraftedCommon/HandCraftedCommon.vue';
 import SetsAPart from './SetsAPart/SetsAPart.vue';
 import HomeImageComparison from './HomeImageComparison/HomeImageComparison.vue';
+import HomeGallery from './HomeGallery/HomeGallery.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import HomeImageComparison from './HomeImageComparison/HomeImageComparison.vue';
     <HandCraftedCommon />
     <SetsAPart />
     <HomeImageComparison />
+    <HomeGallery />
 </template>
 
 <style scoped></style>

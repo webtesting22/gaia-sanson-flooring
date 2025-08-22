@@ -136,7 +136,7 @@ const grassTypesData = {
         landscapeDescription: 'See how our Landscape Grass transforms outdoor spaces — creating lush, natural-looking gardens and terraces that enhance any property.'
     },
     'sports-grass': {
-        heading: 'Sports Grass - Professional Performance for Athletic Fields',
+        heading: 'Durable Sports Grass for All-Weather Play',
         imageSrc: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg',
         imageAlt: 'Sports Grass',
         title: 'Sports Grass',
@@ -177,11 +177,11 @@ const grassTypesData = {
                 alt: 'Sports Grass Professional Stadium'
             }
         ],
-        landscapeTitle: 'Engineered for Peak Performance',
-        landscapeDescription: 'High-Performance Sports Grass for Every Field'
+        landscapeTitle: 'Explore Sports Grass Installations',
+        landscapeDescription: 'Explore our sports grass installations, engineered for durability, performance, and excellence across various sports fields.'
     },
     'multisports-grass': {
-        heading: 'Multisports Grass - Versatile Solution for Multiple Activities',
+        heading: 'High-Performance Turf for Multi-Sport Fields',
         imageSrc: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg',
         imageAlt: 'Multisports Grass',
         title: 'Multisports Grass',
@@ -219,11 +219,11 @@ const grassTypesData = {
                 alt: 'Multisports Grass Recreational Area'
             }
         ],
-        landscapeTitle: 'Versatile Solutions for Multiple Activities',
-        landscapeDescription: 'Optimized Turf for Multi-Sport Environments.'
+        landscapeTitle: 'Multi-Grass: Versatility in Every Installation',
+        landscapeDescription: 'Discover our multi-sports grass installations, designed to withstand the demands of various sports while providing superior performance and durability.'
     },
     'curly-grass': {
-        heading: 'Curly Grass - Unique Texture for Specialized Applications',
+        heading: 'Elevate Your Outdoors with Curly Grass Turf',
         imageSrc: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg',
         imageAlt: 'Curly Grass',
         title: 'Curly Grass',
@@ -258,8 +258,8 @@ const grassTypesData = {
                 alt: 'Curly Grass Decorative Accent'
             }
         ],
-        landscapeTitle: 'Designed for Every Landscape',
-        landscapeDescription: 'Transformative Applications of Artificial Curly Grass'
+        landscapeTitle: 'Transforming Spaces with Curly Grass',
+        landscapeDescription: 'Browse our curly grass installations, offering natural beauty and texture, perfect for transforming both residential and commercial landscapes.'
     }
 }
 

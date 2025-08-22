@@ -5,7 +5,8 @@ const HomeProductsData = [
         description: "Modular, durable, and design-forward flooring made for flexibility and easy installation.",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesupdatedImage.png",
         bgColor: "#d4c4b0",
-        textColor: "#8b6f47"
+        textColor: "#8b6f47",
+        link: "/categories/carpet-tiles"
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const HomeProductsData = [
         description: "Elegant, full-width carpeting for a rich and cohesive interior look.",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HeroHome1.png",
         bgColor: "#8b7355",
-        textColor: "#f5f5f0"
+        textColor: "#f5f5f0",
+        link: "/categories/broadloom-carpets"
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const HomeProductsData = [
         description: "Control sound beautifully with tiles that absorb noise and elevate interior design.",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AcousticTilesUpdateImage.png",
         bgColor: "#f5f5f0",
-        textColor: "#8b6f47"
+        textColor: "#8b6f47",
+        link: "/categories/acoustic-tiles"
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const HomeProductsData = [
         description: "Lush, low-maintenance turf designed for outdoor appeal and everyday performance.",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Artificial & multiturfCaroslImage.png",
         bgColor: "#e8d5c4",
-        textColor: "#6b5b47"
+        textColor: "#6b5b47",
+        link: "/categories/artificial-multiturf"
     },
 ]
 

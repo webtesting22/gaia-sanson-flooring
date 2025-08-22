@@ -1,7 +1,7 @@
 <template>
     <div class="aboutPage paddingBottom80">
         <CommonTopLayout heading="About Us"
-            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HeroHome1.png"
+            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsBannerImage.png"
             imageAlt="Acoustic Solutions" />
 
         <div class="SansonAboutContainer Container paddingTop80">
@@ -10,7 +10,7 @@
                     <div class="SansonLogoContainer">
                         <img src="./SansonLogo.svg" alt="">
                     </div>
-                    <img src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsImageNew.png"
                         alt="">
                 </div>
                 <div class="RightSideContentContainer">
@@ -100,12 +100,13 @@
                             elegant, and future-ready solutions that meet the evolving needs of modern spaces.</p> -->
                     </div>
                     <div class="AboutGaiaRightSide">
-                        <img src="https://images.unsplash.com/photo-1681949101473-9aea8b928a55?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUs2Image.png"
                             alt="GAIA Flooring Fashion">
                     </div>
                 </div>
             </div>
         </div>
+      
         <div class=" paddingTop80 paddingBottom80" style="background-color: white;">
             <div class="Container aboutGaiaFeatureGrid">
                 <div>
@@ -123,14 +124,17 @@
             </div>
         </div>
         <SansonTeam />
+        <YearsOfExperience />
+        <OurVision />
+  
         <HomeProducts title="What we make"
             subtitle="Discover our comprehensive collection of premium flooring solutions" />
         <div class=" paddingTop80 paddingBottom80 CategoriesClientContainers">
             <div class="expertSolutionsSection Container">
                 <div class="expertSolutionsHeader">
                     <h2>Our Brands From Our Group</h2>
-                    <p>Our Group has a diverse range of brands that cater to different industries and needs.
-                    </p>
+                    <!-- <p>Our Group has a diverse range of brands that cater to different industries and needs.
+                    </p> -->
                 </div>
                 <div class="expertSolutionsGrid">
                     <div class="expertSolutionCard" data-aos="fade-up" data-aos-delay="200">
@@ -177,6 +181,8 @@
 import CommonTopLayout from '../../OtherComponents/Categories/CommonTopLayout/CommonTopLayout.vue';
 import SansonTeam from '../SansonTeam/SansonTeam.vue';
 import HomeProducts from "../../HomeRoutes/HomeProducts/HomeProducts.vue";
+import YearsOfExperience from "./YearsOfExperience/YearsOfExperience.vue";
+import OurVision from "../OurVision/OurVision.vue";
 import "./About.css"
 </script>
 

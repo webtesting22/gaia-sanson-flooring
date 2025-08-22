@@ -5,7 +5,7 @@
                 <!-- Left Section - Image -->
                 <div class="visionImage">
                     <div>
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OurVision.png" 
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OurVisionImageUpdat.png" 
                              alt="Cozy carpet with book and coffee mug" />
                     </div>
                 </div>

@@ -21,10 +21,10 @@ export default {
             type: String,
             default: "OUR PRODUCT RANGE"
         },
-        subtitle: {
-            type: String,
-            default: "Discover our comprehensive collection of premium flooring solutions"
-        }
+        // subtitle: {
+        //     type: String,
+        //     default: "Discover our comprehensive collection of premium flooring solutions"
+        // }
     },
     data() {
         return {
@@ -50,6 +50,9 @@ export default {
             if (this.swiperInstance) {
                 this.swiperInstance.slideNext();
             }
+        },
+        navigateToProduct(link) {
+            this.$router.push(link);
         }
     }
 };
@@ -63,23 +66,25 @@ export default {
                 <div class="products-header marginBottom80" data-aos="fade-down" data-aos-duration="800"
                     data-aos-delay="100">
                     <h2 class="products-title">{{ title }}</h2>
-                    <p class="products-subtitle">{{ subtitle }}</p>
+                    <!-- <p class="products-subtitle">{{ subtitle }}</p> -->
                 </div>
 
                 <!-- Swiper Container -->
                 <div class="products-swiper-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="30" :loop="true" :speed="800" :modules="modules" class="products-swiper" :breakpoints="{
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 30,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
-                        }
-                    }">
+                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="30" :loop="true" :speed="800"
+                        :modules="modules" class="products-swiper" :breakpoints="{
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 30,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                            }
+                        }">
                         <swiper-slide v-for="product in productsData" :key="product.id">
-                            <div class="product-card" :style="{ backgroundColor: product.bgColor }">
+                            <div class="product-card" :style="{ backgroundColor: product.bgColor }"
+                                @click="navigateToProduct(product.link)">
                                 <!-- Top Section - Description -->
                                 <div class="card-top-section">
                                     <p class="card-description" :style="{ color: product.textColor }">

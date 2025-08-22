@@ -43,7 +43,7 @@ export default {
                     </h2>
                     
                     <p class="handcrafted-description" data-aos="fade-up" data-aos-delay="800">
-                        Our carpets, made from locally sourced materials using advanced manufacturing processes, reflect India's quality and commitment to sustainability. By choosing them, you support the Make in India movement and strengthen the local economy.
+                        At GAIA, we proudly contribute to the Make in India initiative by producing high-quality flooring solutions with advanced machinery right here in India. Our commitment to local manufacturing ensures we deliver top-tier products that meet global standards, supporting India’s vision for innovation and self-reliance.
                     </p>
                     <div class="sets-apart-logos-Container">
               <div class="sets-apart-logos-Container-item">

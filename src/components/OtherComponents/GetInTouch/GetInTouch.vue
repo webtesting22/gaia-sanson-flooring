@@ -5,8 +5,8 @@
             <div class="content-wrapper">
                 <!-- Left Section - Contact Form -->
                 <div class="contact-form-section">
-                    <h1 style="color: black;">Get In Touch!</h1>
-                    <p>Tell Us What You Need for Your Perfect Carpet</p>
+                    <h1 style="color: black;">{{ title }}</h1>
+                    <p>{{ subtitle }}</p>
                     <br>
                     <div class="input-group">
                         <input type="email" placeholder="Your email address" class="email-input" />
@@ -16,11 +16,10 @@
                     </div>
                 </div>
 
-                <!-- Right Section - Descriptive Text -->
+                <!-- Right Section - Dynamic Descriptive Text -->
                 <div class="description-section">
                     <h3>
-                        We customize carpets — including artificial grass — to your size, color, and design. Tell us
-                        your idea, we'll make it real.
+                        {{ description }}
                     </h3>
                 </div>
             </div>
@@ -29,7 +28,21 @@
 </template>
 
 <script setup>
-// Component logic can be added here if needed
+// Define props for dynamic content
+defineProps({
+    title: {
+        type: String,
+        default: "Get In Touch!"
+    },
+    subtitle: {
+        type: String,
+        default: "Tell Us What You Need for Your Perfect Carpet"
+    },
+    description: {
+        type: String,
+        default: "We customize carpets — including artificial grass — to your size, color, and design. Tell us your idea, we'll make it real."
+    }
+})
 </script>
 
 <style scoped>

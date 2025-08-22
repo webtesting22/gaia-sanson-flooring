@@ -115,9 +115,7 @@
                 <div class="width100">
                     <div class="max-width-800">
                         <h2 class="text-center">Designed for Every Space</h2>
-                        <p class="text-center">Our artificial grass enhances environments of all sizes, offering
-                            durability, comfort, and
-                            year-round greenery</p>
+                        <p class="text-center">Versatile solutions that enhance every environment.</p>
                     </div>
                     <div class="paddingTop80">
                         <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50" :loop="true" :speed="700"
@@ -148,7 +146,7 @@
             </div>
         </div>
     </div>
-    <GetInTouch />
+    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet" description="Get in touch with us to design and customize your perfect artificial grass space, tailored to your needs." />
 </template>
 
 <script setup>

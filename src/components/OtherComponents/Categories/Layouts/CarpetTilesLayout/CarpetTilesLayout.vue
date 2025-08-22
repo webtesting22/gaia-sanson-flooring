@@ -144,7 +144,7 @@
             </div>
         </div>
     </div>
-    <GetInTouch />
+    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet" description="Connect with our team to discuss premium carpet tile solutions — including fully customizable options to meet your project requirements." />
 </template>
 
 <script setup>

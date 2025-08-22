@@ -2,13 +2,14 @@
 .grassDetailLayout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 50px;
     align-items: start;
 }
 
 /* Left Side - Image Section */
 .grassImageSection {
     position: relative;
+    height: 100%;
 }
 
 .mainImageContainer {
@@ -18,6 +19,7 @@
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .mainImage {
@@ -203,5 +205,139 @@
     
     .grassContentSection {
         gap: 30px;
+    }
+}
+
+/* Landscape Section Styles */
+.landscapeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    /* margin-bottom: 60px; */
+}
+
+.headerLeft {
+    flex: 1;
+}
+
+
+
+.headerRight {
+    flex: 1;
+    /* text-align: right; */
+}
+
+.landscapeDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+.landscapeCarousel {
+    width: 100%;
+}
+
+
+.landscapeImageContainer {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.landscapeImageContainer {
+    /* min-height: 300px; */
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landscapeImageContainer:hover {
+    transform: translateY(-5px);
+}
+
+.landscapeImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Swiper Navigation Styles */
+:deep(.swiper-button-next),
+:deep(.swiper-button-prev) {
+    color: #1e3a8a;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+:deep(.swiper-button-next:hover),
+:deep(.swiper-button-prev:hover) {
+    background: #1e3a8a;
+    color: white;
+}
+
+:deep(.swiper-button-next::after),
+:deep(.swiper-button-prev::after) {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive Design for Landscape Section */
+@media (max-width: 1024px) {
+    .landscapeHeader {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+  
+    .landscapeTitle {
+        font-size: 2rem;
+    }
+    
+    .landscapeSlide {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landscapeTitle {
+        font-size: 1.8rem;
+    }
+    
+    .landscapeDescription {
+        font-size: 1rem;
+    }
+    
+    .landscapeSlide {
+        height: 300px;
+    }
+    
+    .landscapeHeader {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .landscapeTitle {
+        font-size: 1.5rem;
+    }
+    
+    .landscapeSlide {
+        height: 250px;
+    }
+    
+    .landscapeHeader {
+        margin-bottom: 30px;
     }
 }

@@ -45,15 +45,87 @@
                 </div>
             </div>
         </div>
+
+        <!-- Second Container - Designed for Every Landscape -->
+        <div class="Container paddingTop80 paddingBottom80">
+            <div class="landscapeHeader">
+                <div class="headerLeft">
+                    <h2 class="landscapeTitle">Designed for Every Landscape</h2>
+                </div>
+                <div class="headerRight">
+                    <p class="landscapeDescription">See how our grasses redefine outdoor spaces — creating vibrant, low-maintenance landscapes across diverse applications.</p>
+                </div>
+            </div>
+            
+            <div class="landscapeCarousel paddingTop80">
+                <swiper 
+                    @swiper="onSwiper" 
+                    :slidesPerView="4" 
+                    :spaceBetween="10" 
+                    :loop="true" 
+                    :speed="700"
+                    :modules="[SwiperNavigation, Autoplay]" 
+                    :breakpoints="{
+                        320: { slidesPerView: 1, spaceBetween: 10 },
+                        768: { slidesPerView: 2, spaceBetween: 10 },
+                        1024: { slidesPerView: 3, spaceBetween: 10 },
+                        1200: { slidesPerView: 4, spaceBetween: 10 }
+                    }"
+                >
+                    <swiper-slide v-for="(image, index) in landscapeImages" :key="index" class="landscapeSlide">
+                        <div class="landscapeImageContainer">
+                            <img :src="image.src" :alt="image.alt" />
+                        </div>
+                    </swiper-slide>
+                </swiper>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation as SwiperNavigation, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 
 const route = useRoute()
+const swiperInstance = ref(null)
+
+const onSwiper = (swiper) => {
+    swiperInstance.value = swiper
+}
+
+// Landscape Images for Carousel
+const landscapeImages = [
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Landscape Grass.png',
+        alt: 'Garden Landscape with Artificial Grass'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg',
+        alt: 'Outdoor Dining Area with Artificial Grass'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg',
+        alt: 'Outdoor Living Room with Artificial Grass'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg',
+        alt: 'Leisure Space with Artificial Grass'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg',
+        alt: 'Outdoor Living Room with Artificial Grass'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg',
+        alt: 'Leisure Space with Artificial Grass'
+    }
+]
 
 // Artificial Grass Data based on type
 const grassTypesData = {

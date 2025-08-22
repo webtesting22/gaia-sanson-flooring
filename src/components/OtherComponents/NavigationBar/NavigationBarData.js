@@ -19,15 +19,16 @@ const navigationBarData = [
                 path: '/categories/artificial-multiturf',
                 description: 'Modular carpet solutions for flexible installations'
             },
-            // {
-            //     name: 'Broadloom Carpets',
-            //     path: '/categories/broadloom-carpets',
-            //     description: 'Seamless wall-to-wall carpeting solutions'
-            // },
+
             {
                 name: 'Acoustic Tiles',
                 path: '/categories/acoustic-tiles',
                 description: 'Sound-absorbing flooring for noise control'
+            },
+            {
+                name: 'Broadloom Carpets',
+                path: '/categories/broadloom-carpets',
+                description: 'Seamless wall-to-wall carpeting solutions'
             },
             // {
             //     name: 'Artificial & Multiturf',

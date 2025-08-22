@@ -97,11 +97,11 @@ const onSwiper = (swiper) => {
 const grassTypesData = {
     'landscape-grass': {
         heading: 'Landscape Grass - Natural Beauty for Outdoor Spaces',
-        imageSrc: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Landscape Grass.png',
+        imageSrc: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg',
         imageAlt: 'Landscape Grass',
         title: 'Landscape Grass',
-        mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Landscape Grass.png',
-        insetImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Landscape Grass.png',
+        mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg',
+        insetImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg',
         overview: 'Perfect for lush gardens, terraces, and outdoor aesthetics, our Landscape Grass combines premium softness with lasting durability.',
         idealFor: ['Villas', 'Rooftops', 'Hotel Lawns', 'Public Parks'],
         specifications: [

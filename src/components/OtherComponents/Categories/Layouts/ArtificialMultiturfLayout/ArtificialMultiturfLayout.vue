@@ -13,7 +13,7 @@
             <div class="ArtificialMultiturfGrid paddingTop80">
                 <div class="ArtificialMultiturfGridItem">
                     <div>
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Landscape Grass.png"
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg"
                             alt="">
                         <div class="ArtificialMultiturfGridItemText">
                             <h3>Landscape Grass</h3>

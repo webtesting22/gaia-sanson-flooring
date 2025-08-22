@@ -20,18 +20,18 @@ export default {
             <!-- Left Side - Content -->
             <div class="sets-apart-content" data-aos="fade-right" data-aos-delay="200">
                 <div class="content-wrapper">
-                    <h3 class="sets-apart-subtitle" data-aos="fade-up" data-aos-delay="400">{{ setsApartData.subtitle }}</h3>
-                    <h2 class="sets-apart-title" data-aos="fade-up" data-aos-delay="600">{{ setsApartData.title }}</h2>
+                    <h3 class="sets-apart-subtitle text-center" data-aos="fade-up" data-aos-delay="400">{{ setsApartData.subtitle }}</h3>
+                    <h2 class="sets-apart-title text-center" data-aos="fade-up" data-aos-delay="600">{{ setsApartData.title }}</h2>
                 </div>
             </div>
 
             <!-- Right Side - Smaller Image -->
-            <div class="sets-apart-image" data-aos="fade-left" data-aos-delay="300">
+            <!-- <div class="sets-apart-image" data-aos="fade-left" data-aos-delay="300">
                 <div class="image-wrapper">
                     <img :src="setsApartData.image" alt="High-performance interiors" class="office-image" />
                     <div class="image-overlay"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

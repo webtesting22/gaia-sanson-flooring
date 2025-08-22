@@ -3,6 +3,8 @@
    =========================================== */
 .HandCraftedCommonContainerParent {
     background-color: #ECEDEE !important;
+    position: sticky;
+    top: 50px;
 }
 
 .HandCraftedCommonContainer {

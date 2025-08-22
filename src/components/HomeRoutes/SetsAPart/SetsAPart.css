@@ -3,11 +3,11 @@
    =========================================== */
 
 .SetsApartContainer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 2fr 1fr; */
     gap: 60px;
     align-items: center;
-    min-height: 400px;
+    /* min-height: 400px; */
     /* background: #fafafa; */
     /* border-radius: 12px; */
     overflow: hidden;
@@ -20,11 +20,12 @@
 
 .SetsApartContainer .sets-apart-content {
     /* padding: 60px 140px; */
-    max-width: 900px;
+    /* max-width: 900px; */
     /* background: #ffffff; */
     display: flex;
     align-items: center;
-    margin-left: auto;
+    justify-content: center;
+    /* margin-left: auto; */
     /* justify-content: center; */
 }
 
@@ -126,6 +127,12 @@
 
 .SetsApartContainer .content-wrapper:hover .sets-apart-subtitle {
     color: #555;
+}
+
+.SetsApartContainerParent{
+    background-color: #FFFAF2 !important;
+    position: sticky !important;
+    z-index: 6 !important;
 }
 
 /* ===========================================

@@ -4,6 +4,8 @@
 
 .HomeImageComparisonContainerParent {
     background-color: white !important;
+    position: relative;
+    z-index: 6;
 }
 
 .HomeImageComparisonContainer {

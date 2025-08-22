@@ -50,11 +50,10 @@
         <div class="Container paddingTop80 paddingBottom80">
             <div class="landscapeHeader">
                 <div class="headerLeft">
-                    <h2 class="landscapeTitle">Designed for Every Landscape</h2>
+                    <h2 class="landscapeTitle">{{ grassData.landscapeTitle }}</h2>
                 </div>
                 <div class="headerRight">
-                    <p class="landscapeDescription">See how our grasses redefine outdoor spaces — creating vibrant,
-                        low-maintenance landscapes across diverse applications.</p>
+                    <p class="landscapeDescription">{{ grassData.landscapeDescription }}</p>
                 </div>
             </div>
 
@@ -100,7 +99,7 @@ const grassTypesData = {
         imageSrc: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg',
         imageAlt: 'Landscape Grass',
         title: 'Landscape Grass',
-        mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg',
+        mainImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassnewIage.png',
         insetImage: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg',
         overview: 'Perfect for lush gardens, terraces, and outdoor aesthetics, our Landscape Grass combines premium softness with lasting durability.',
         idealFor: ['Villas', 'Rooftops', 'Hotel Lawns', 'Public Parks'],
@@ -132,7 +131,9 @@ const grassTypesData = {
                 src: '/Images/GrassImages/landscapegrass5.jpg',
                 alt: 'Landscape Grass Villa Garden'
             }
-        ]
+        ],
+        landscapeTitle: 'Designed for Every Landscape',
+        landscapeDescription: 'See how our Landscape Grass transforms outdoor spaces — creating lush, natural-looking gardens and terraces that enhance any property.'
     },
     'sports-grass': {
         heading: 'Sports Grass - Professional Performance for Athletic Fields',
@@ -175,7 +176,9 @@ const grassTypesData = {
                 src: '/Images/GrassImages/SportsGrass6.jpg',
                 alt: 'Sports Grass Professional Stadium'
             }
-        ]
+        ],
+        landscapeTitle: 'Engineered for Peak Performance',
+        landscapeDescription: 'High-Performance Sports Grass for Every Field'
     },
     'multisports-grass': {
         heading: 'Multisports Grass - Versatile Solution for Multiple Activities',
@@ -215,7 +218,9 @@ const grassTypesData = {
                 src: '/Images/GrassImages/multisportgras6.jpg',
                 alt: 'Multisports Grass Recreational Area'
             }
-        ]
+        ],
+        landscapeTitle: 'Versatile Solutions for Multiple Activities',
+        landscapeDescription: 'Optimized Turf for Multi-Sport Environments.'
     },
     'curly-grass': {
         heading: 'Curly Grass - Unique Texture for Specialized Applications',
@@ -252,7 +257,9 @@ const grassTypesData = {
                 src: '/Images/GrassImages/curlygrass4.png',
                 alt: 'Curly Grass Decorative Accent'
             }
-        ]
+        ],
+        landscapeTitle: 'Designed for Every Landscape',
+        landscapeDescription: 'Transformative Applications of Artificial Curly Grass'
     }
 }
 

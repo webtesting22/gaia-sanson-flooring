@@ -126,7 +126,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
-
+import "./BroadloomCarpetsLayout.css"
 const swiperInstance = ref(null)
 
 const onSwiper = (swiper) => {
@@ -184,7 +184,7 @@ const designSwatches = [
 const DesignedData = [
     {
         image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Kids at Play.png',
-        title: 'Kids at Play',
+        title: 'Child-Friendly Play Lounge',
         description: 'Soft, safe, and always green – perfect turf for endless fun.'
     },
     {

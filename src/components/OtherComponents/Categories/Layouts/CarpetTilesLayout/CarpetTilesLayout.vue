@@ -111,14 +111,14 @@
         <div class="paddingTop80 Container paddingBottom80">
             <div>
                 <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>
-                <h3>We create custom carpet tiles that are tailored entirely to your vision, delivering results that are
-                    exclusive to your requirements.</h3>
+                <!-- <h3>We create custom carpet tiles that are tailored entirely to your vision, delivering results that are
+                    exclusive to your requirements.</h3> -->
                 <br>
-                <p>If you have a specific product or design in mind, we can develop and customize it to match your exact
+                <h3 style="font-weight: 400;">If you have a specific product or design in mind, we can develop and customize it to match your exact
                     requirements. We offer personalization in backing, pile height, stitch density, and yarn quality.
                     Please note that a minimum order quantity (MOQ) applies for custom orders. We're happy to work with
                     you to create a product that fits your needs. Let us know your ideas, and we’ll help turn them into
-                    reality.</p>
+                    reality.</h3>
             </div>
         </div>
         <div class="gridImagesContainer paddingTop80 paddingBottom80">

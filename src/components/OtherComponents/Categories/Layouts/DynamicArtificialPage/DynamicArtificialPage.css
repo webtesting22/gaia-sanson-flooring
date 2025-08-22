@@ -19,7 +19,8 @@
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    height: 100%;
+    max-height: 700px;
+    /* min-height: 600px; */
 }
 
 .mainImage {

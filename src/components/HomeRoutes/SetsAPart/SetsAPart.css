@@ -129,7 +129,7 @@
     color: #555;
 }
 
-.SetsApartContainerParent{
+.SetsApartContainerParent {
     background-color: #FFFAF2 !important;
     position: sticky !important;
     z-index: 6 !important;
@@ -138,6 +138,32 @@
 /* ===========================================
    RESPONSIVE DESIGN
    =========================================== */
+.sets-apart-logos-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.sets-apart-logos-Container>div{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid #faf1e1;
+   
+}
+.sets-apart-logos-Container img {
+    width:80% ;
+    height: 100%;
+    object-fit: contain;
+    /* object-fit: cover; */
+    background-color: white;
+
+}
 
 /* Tablet View */
 @media (max-width: 768px) {
@@ -146,20 +172,20 @@
         gap: 0;
         min-height: auto;
     }
-    
+
     .SetsApartContainer .sets-apart-content {
         padding: 40px 30px;
     }
-    
+
     .SetsApartContainer .sets-apart-image {
         height: 300px;
     }
-    
+
     .SetsApartContainer .sets-apart-title {
         font-size: 1.8rem;
         line-height: 1.4;
     }
-    
+
     .SetsApartContainer .sets-apart-subtitle {
         font-size: 0.9rem;
         margin-bottom: 15px;
@@ -171,30 +197,31 @@
     .SetsApartContainer {
         border-radius: 8px;
     }
-    
+
     .SetsApartContainer .sets-apart-content {
         padding: 30px 0px;
         padding-top: 0px !important;
     }
-    
+
     .SetsApartContainer .sets-apart-image {
         height: 250px;
     }
-    
+
     .SetsApartContainer .sets-apart-title {
         font-size: 1.5rem;
         line-height: 1.3;
     }
-    
+
     .SetsApartContainer .sets-apart-subtitle {
         font-size: 0.85rem;
         margin-bottom: 12px;
     }
-    
+
     .SetsApartContainer .content-wrapper {
         max-width: 100%;
     }
-    .SetsApartContainerParent{
+
+    .SetsApartContainerParent {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
@@ -220,11 +247,12 @@
 
 /* Reduced motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+
     .SetsApartContainer .office-image,
     .SetsApartContainer .image-wrapper::before {
         transition: none;
     }
-    
+
     .SetsApartContainer .image-wrapper:hover .office-image {
         transform: none;
     }
@@ -239,7 +267,7 @@
         box-shadow: none;
         border: 1px solid #ddd;
     }
-    
+
     .SetsApartContainer .image-overlay {
         display: none;
     }

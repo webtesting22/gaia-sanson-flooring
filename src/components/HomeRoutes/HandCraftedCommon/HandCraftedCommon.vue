@@ -45,7 +45,18 @@ export default {
                     <p class="handcrafted-description" data-aos="fade-up" data-aos-delay="800">
                         Our carpets, made from locally sourced materials using advanced manufacturing processes, reflect India's quality and commitment to sustainability. By choosing them, you support the Make in India movement and strengthen the local economy.
                     </p>
+                    <div class="sets-apart-logos-Container">
+              <div class="sets-apart-logos-Container-item">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png" alt="">
+              </div>
+              <div class="sets-apart-logos-Container-item">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp" alt="">
+              </div>
+            </div>
                 </div>
+            </div>
+            <div>
+                
             </div>
         </div>
     </div>

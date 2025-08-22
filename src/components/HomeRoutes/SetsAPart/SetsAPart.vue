@@ -20,9 +20,19 @@ export default {
             <!-- Left Side - Content -->
             <div class="sets-apart-content" data-aos="fade-right" data-aos-delay="200">
                 <div class="content-wrapper">
-                    <h3 class="sets-apart-subtitle text-center" data-aos="fade-up" data-aos-delay="400">{{ setsApartData.subtitle }}</h3>
-                    <h2 class="sets-apart-title text-center" data-aos="fade-up" data-aos-delay="600">{{ setsApartData.title }}</h2>
+                    <h3 class="sets-apart-subtitle text-center" data-aos="fade-up" data-aos-delay="400">{{
+                        setsApartData.subtitle }}</h3>
+                    <h2 class="sets-apart-title text-center" data-aos="fade-up" data-aos-delay="600">{{
+                        setsApartData.title }}</h2>
                 </div>
+            </div>
+            <div class="sets-apart-logos-Container">
+              <div class="sets-apart-logos-Container-item">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png" alt="">
+              </div>
+              <div class="sets-apart-logos-Container-item">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp" alt="">
+              </div>
             </div>
 
             <!-- Right Side - Smaller Image -->

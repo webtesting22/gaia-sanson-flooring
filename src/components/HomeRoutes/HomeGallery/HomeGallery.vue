@@ -1,9 +1,9 @@
 <template>
     <div class="HomeGalleryParentContainer">
-        <div class="Container paddingTop80 paddingBottom80">
+        <div class="Container paddingTop60 paddingBottom80">
             <div class="HomeGalleryContainer">
                 <!-- Header Section -->
-                <div class="gallery-header marginBottom80" data-aos="fade-down" data-aos-duration="800"
+                <div class="gallery-header " data-aos="fade-down" data-aos-duration="800"
                     data-aos-delay="100">
                     <h2>Gallery</h2>
                     <!-- <p>Explore our diverse portfolio of flooring installations across various
@@ -11,8 +11,12 @@
                 </div>
 
                 <!-- Swiper Gallery Container -->
-                <div class="gallery-swiper-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="20" :loop="true" :speed="600"
+                <div class="gallery-swiper-container paddingTop60" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="20":autoplay="{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }" :loop="true" :speed="600"
                         :modules="modules" class="gallery-swiper" :breakpoints="{
                             320: {
                                 slidesPerView: 1,

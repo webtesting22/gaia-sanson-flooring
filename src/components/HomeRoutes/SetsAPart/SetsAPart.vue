@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <div class="paddingTop80 paddingBottom80 SetsApartContainerParent">
+    <div class="marginTop60 paddingBottom80 SetsApartContainerParent">
         <div class="SetsApartContainer">
             <!-- Left Side - Content -->
             <div class="sets-apart-content" data-aos="fade-right" data-aos-delay="200">
@@ -31,7 +31,7 @@ export default {
                 <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png" alt="">
               </div>
               <div class="sets-apart-logos-Container-item">
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp" alt="">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png" alt="">
               </div>
             </div>
 

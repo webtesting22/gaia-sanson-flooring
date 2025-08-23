@@ -101,7 +101,7 @@ export default {
 
 <template>
     <div class="HomeImageComparisonContainerParent">
-        <div class="Container paddingTop80 paddingBottom80">
+        <div class="Container paddingTop60 paddingBottom80">
             <div class="HomeImageComparisonContainer">
                 <!-- Header -->
                 <div class="comparison-header" data-aos="fade-up" data-aos-delay="200">

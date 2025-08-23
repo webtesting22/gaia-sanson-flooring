@@ -26,7 +26,7 @@ export default {
 
                     <!-- Card Content -->
                     <div class="card-content">
-                        <h3 class="card-title whiteColor paddingBottom20 text-center ">{{ card.title }}</h3>
+                        <h3 class="card-title whiteColor  text-center ">{{ card.title }}</h3>
                         <p class="card-description whiteColor text-center">{{ card.description }}</p>
                     </div>
                 </div>

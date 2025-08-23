@@ -20,13 +20,13 @@ export default {
         <div class="Container paddingBottom80">
             <div class="YourVisionContainer">
                 <!-- Main Heading -->
-                <div class="vision-header marginBottom80" data-aos="fade-down" data-aos-duration="800"
+                <div class="vision-header " data-aos="fade-down" data-aos-duration="800"
                     data-aos-delay="100">
                     <h2 class="vision-title">{{ visionData.title }}</h2>
                 </div>
 
                 <!-- Main Content Grid -->
-                <div class="vision-content-grid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="vision-content-grid marginTop60" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <!-- Left Side - Main Image -->
                     <div class="vision-main-image-container" data-aos="fade-right" data-aos-duration="700"
                         data-aos-delay="300">

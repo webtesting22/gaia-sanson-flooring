@@ -126,24 +126,25 @@
     line-height: 1.2;
 }
 
-.statisticsGrid h2{
+.statisticsGrid h2 {
     font-weight: 500 !important;
 }
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .YearsOfExperienceGrid {
         gap: 60px;
     }
 
-    .circleBackground::before{
+    .circleBackground::before {
         display: none !important;
     }
 
-   
+
 }
 
 @media (max-width: 768px) {
-  
+
 
     .YearsOfExperienceGrid {
         grid-template-columns: 1fr;
@@ -171,13 +172,13 @@
 }
 
 @media (max-width: 480px) {
-    
-.circleBackground{
-    width: 200px;
-    height: 200px;
-}
 
-   
+    .circleBackground {
+        width: 200px;
+        height: 200px;
+    }
+
+
 
     .experienceText {
         font-size: 0.9rem;

@@ -41,7 +41,7 @@
 
 .HomeGalleryContainer .gallery-swiper-container {
     position: relative;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .HomeGalleryContainer .gallery-swiper {
@@ -68,7 +68,7 @@
 
 .HomeGalleryContainer .gallery-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
 }
 
 .HomeGalleryContainer .image-container {

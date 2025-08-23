@@ -118,7 +118,11 @@
                         <p class="text-center">Versatile solutions that enhance every environment.</p>
                     </div>
                     <div class="paddingTop80">
-                        <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50" :loop="true" :speed="700"
+                        <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50":autoplay="{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }" :loop="true" :speed="700"
                             :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
                                 320: { slidesPerView: 1, spaceBetween: 15 },
                                 768: { slidesPerView: 2, spaceBetween: 20 },

@@ -16,8 +16,8 @@ export default {
 </script>
 
 <template>
-    <div class="width100 YourVisionContainer marginTop80">
-        <div class="Container paddingTop80 paddingBottom80">
+    <div class="width100 YourVisionContainer paddingTop80">
+        <div class="Container paddingBottom80">
             <div class="YourVisionContainer">
                 <!-- Main Heading -->
                 <div class="vision-header marginBottom80" data-aos="fade-down" data-aos-duration="800"

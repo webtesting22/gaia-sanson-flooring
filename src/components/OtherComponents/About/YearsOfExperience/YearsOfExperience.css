@@ -135,20 +135,11 @@
         gap: 60px;
     }
 
-    .yearsNumber {
-        font-size: 3.5rem;
-    }
     .circleBackground::before{
         display: none !important;
     }
 
-    .yearsText {
-        font-size: 1.3rem;
-    }
-
-    .statNumber {
-        font-size: 2.2rem;
-    }
+   
 }
 
 @media (max-width: 768px) {
@@ -161,13 +152,6 @@
     }
 
 
-    .yearsNumber {
-        font-size: 3rem;
-    }
-
-    .yearsText {
-        font-size: 1.2rem;
-    }
 
     .statisticsGrid {
         gap: 30px;
@@ -188,15 +172,12 @@
 
 @media (max-width: 480px) {
     
+.circleBackground{
+    width: 200px;
+    height: 200px;
+}
 
-
-    .yearsNumber {
-        font-size: 2.5rem;
-    }
-
-    .yearsText {
-        font-size: 1rem;
-    }
+   
 
     .experienceText {
         font-size: 0.9rem;

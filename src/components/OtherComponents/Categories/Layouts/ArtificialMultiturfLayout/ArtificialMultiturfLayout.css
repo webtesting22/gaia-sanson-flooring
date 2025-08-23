@@ -213,6 +213,9 @@
 
 /* Mobile */
 @media (max-width: 480px) {
+    .ArtificialMultiturfGrid{
+        flex-direction: column;
+    }
     .WhyChooseArtificialMultiturf .why-choose-section h2 {
         font-size: 1.8rem;
         margin-bottom: 40px;

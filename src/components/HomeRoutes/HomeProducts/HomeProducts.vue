@@ -71,8 +71,12 @@ export default {
 
                 <!-- Swiper Container -->
                 <div class="products-swiper-container paddingTop80" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <swiper @swiper="onSwiper" :slidesPerView="1" :spaceBetween="30" :loop="true" :speed="800"
-                        :modules="modules" class="products-swiper" :breakpoints="{
+                    <swiper @swiper="onSwiper" :slidesPerView="1":spaceBetween="30" :loop="true" :speed="800"
+                        :modules="modules":autoplay="{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }"  class="products-swiper" :breakpoints="{
                             768: {
                                 slidesPerView: 2,
                                 spaceBetween: 30,

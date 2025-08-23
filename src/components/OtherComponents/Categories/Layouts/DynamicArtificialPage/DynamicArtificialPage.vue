@@ -58,7 +58,11 @@
             </div>
 
             <div class="landscapeCarousel paddingTop80">
-                <swiper @swiper="onSwiper" :slidesPerView="4" :spaceBetween="10" :loop="true" :speed="700"
+                <swiper @swiper="onSwiper" :slidesPerView="4" :spaceBetween="10":autoplay="{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }" :loop="true" :speed="700"
                     :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
                         320: { slidesPerView: 1, spaceBetween: 10 },
                         768: { slidesPerView: 2, spaceBetween: 10 },

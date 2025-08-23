@@ -20,6 +20,9 @@
 }
 
 @media (max-width: 768px) {
+    .sansonTeamImageContainer{
+        width: 100%;
+    }
     .sansonTeamGrid{
         flex-direction: column;
     }

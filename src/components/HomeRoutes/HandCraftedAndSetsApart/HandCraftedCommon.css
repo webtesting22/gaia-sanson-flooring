@@ -6,13 +6,6 @@
     background: linear-gradient(180deg, #ECEDEE 0%, #f8f9fa 50%, #ECEDEE 100%);
 }
 
-/* ===========================================
-   HANDCRAFTED COMMON CONTAINER - SPLIT LAYOUT
-   =========================================== */
-.HandCraftedCommonContainerParent {
-    background-color: #ECEDEE !important;
-   
-}
 
 .HandCraftedCommonContainer {
     display: grid;

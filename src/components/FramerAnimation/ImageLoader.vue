@@ -22,7 +22,7 @@
         class="image-placeholder"
       >
         <div class="placeholder-content">
-          <div class="placeholder-icon">📷</div>
+          <div class="placeholder-icon"><img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetIcon.png" alt=""></div>
           <div class="placeholder-text">Loading...</div>
         </div>
       </div>
@@ -115,7 +115,10 @@ preloadImage()
   margin-bottom: 0.5rem;
   opacity: 0.7;
 }
-
+.placeholder-icon img{
+  width: 50px;
+  height: 50px;
+}
 .placeholder-text {
   font-size: 0.875rem;
   font-weight: 500;

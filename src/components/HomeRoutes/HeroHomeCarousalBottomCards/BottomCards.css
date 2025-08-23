@@ -32,8 +32,8 @@
 
 .BottomCardsContainer .card-item {
     background: #293A42;
-    /* border-radius: 12px; */
-    padding: 30px 25px;
+    border-radius: 10px;
+    padding: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -109,9 +109,7 @@
         gap: 20px;
     }
     
-    .BottomCardsContainer .card-item {
-        padding: 25px 20px;
-    }
+   
     
     .BottomCardsContainer .card-image-placeholder {
         height: 150px;
@@ -130,6 +128,9 @@
 
 /* Mobile View */
 @media (max-width: 480px) {
+    .BottomCardsContainer {
+        margin-top: -4rem;
+    }
     .CommonLayoutContainer {
         padding: 30px 0px;
     }
@@ -137,10 +138,6 @@
     .BottomCardsContainer .cards-grid {
         grid-template-columns: 1fr;
         gap: 15px;
-    }
-    
-    .BottomCardsContainer .card-item {
-        padding: 20px 15px;
     }
     
     .BottomCardsContainer .card-image-placeholder {

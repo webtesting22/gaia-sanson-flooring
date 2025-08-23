@@ -194,6 +194,12 @@
 
 /* Mobile View */
 @media (max-width: 480px) {
+    .sets-apart-logos-Container {
+        gap: 5px;
+    }
+    .sets-apart-logos-Container>div{
+        width: 100%;
+    }
     .SetsApartContainer {
         border-radius: 8px;
     }

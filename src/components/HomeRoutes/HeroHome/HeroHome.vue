@@ -85,7 +85,11 @@ export default {
 
             <!-- Carousel container -->
             <div class="carousel-container">
-                <swiper @swiper="onSwiper" :spaceBetween="0" :centeredSlides="true" :loop="true"  :modules="modules" :speed="800" class="mySwiper">
+                <swiper @swiper="onSwiper" :spaceBetween="0" :centeredSlides="true" :loop="true" :autoplay="{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }" :modules="modules" :speed="800" class="mySwiper">
                     <swiper-slide v-for="item in carouselData" :key="item.id">
                         <div class="slide-content">
                             <ImageLoader :src="item.image" :alt="item.title" />

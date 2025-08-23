@@ -63,15 +63,15 @@ export default {
         <div class="Container paddingTop80 paddingBottom80 ">
             <div class="HomeProductsContainer">
                 <!-- Header Section -->
-                <div class="products-header marginBottom80" data-aos="fade-down" data-aos-duration="800"
+                <div class="products-header" data-aos="fade-down" data-aos-duration="800"
                     data-aos-delay="100">
                     <h2 class="products-title">{{ title }}</h2>
                     <!-- <p class="products-subtitle">{{ subtitle }}</p> -->
                 </div>
 
                 <!-- Swiper Container -->
-                <div class="products-swiper-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="30" :loop="true" :speed="800"
+                <div class="products-swiper-container paddingTop80" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <swiper @swiper="onSwiper" :slidesPerView="1" :spaceBetween="30" :loop="true" :speed="800"
                         :modules="modules" class="products-swiper" :breakpoints="{
                             768: {
                                 slidesPerView: 2,

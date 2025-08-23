@@ -11,7 +11,19 @@
     /* background: #fafafa; */
     /* border-radius: 12px; */
     overflow: hidden;
+    position: relative;
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+}
+
+.BackgoundOverlayImage img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.09;
+    margin-top: -100px;
 }
 
 /* ===========================================
@@ -130,7 +142,7 @@
 }
 
 .SetsApartContainerParent {
-    background-color: #FFFAF2 !important;
+    background-color: white !important;
     position: sticky !important;
     z-index: 6 !important;
 }
@@ -144,7 +156,8 @@
     justify-content: center;
     gap: 30px;
 }
-.sets-apart-logos-Container>div{
+
+.sets-apart-logos-Container>div {
     height: 150px;
     width: 300px;
     background-color: white;
@@ -153,12 +166,13 @@
     justify-content: center;
     margin-top: 50px;
     border-radius: 10px;
-    border:1px solid #a6880173;
+    border: 1px solid #a6880173;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
-   
+
 }
+
 .sets-apart-logos-Container img {
-    width:80% ;
+    width: 80%;
     height: 100%;
     object-fit: contain;
     /* object-fit: cover; */
@@ -198,10 +212,12 @@
     .sets-apart-logos-Container {
         gap: 5px;
     }
-    .sets-apart-logos-Container>div{
+
+    .sets-apart-logos-Container>div {
         width: 100%;
-        margin-top: 0px ;
+        margin-top: 0px;
     }
+
     .SetsApartContainer {
         border-radius: 8px;
     }

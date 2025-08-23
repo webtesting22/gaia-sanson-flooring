@@ -25,7 +25,8 @@ export default {
 </script>
 
 <template>
-    <div class=" paddingTop80 paddingBottom80 HandCraftedCommonContainerParent">
+    <div class=" HandCraftedCommonContainerParent">
+       
         <div class="HandCraftedContainer">
             <div class="CompanyDetailsContainer paddingBottom80 ">
                 <div class="Container">

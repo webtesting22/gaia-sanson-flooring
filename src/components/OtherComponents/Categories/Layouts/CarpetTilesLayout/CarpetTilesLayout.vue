@@ -55,7 +55,7 @@
         <div class="propertiesLayoutContainer">
             <div class="Container">
                 <h2 class="properties-title">Properties</h2>
-                <div class="properties-grid paddingTop80">
+                <div class="properties-grid paddingTop60">
                     <div class="property-card">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Multi-Directional.png" alt="Multi-Directional" />
@@ -111,40 +111,39 @@
         <div class="paddingTop80 Container paddingBottom80">
             <div>
                 <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>
-                <!-- <h3>We create custom carpet tiles that are tailored entirely to your vision, delivering results that are
-                    exclusive to your requirements.</h3> -->
                 <br>
-                <h3 style="font-weight: 400;">If you have a specific product or design in mind, we can develop and customize it to match your exact
-                    requirements. We offer personalization in backing, pile height, stitch density, and yarn quality.
-                    Please note that a minimum order quantity (MOQ) applies for custom orders. We're happy to work with
-                    you to create a product that fits your needs. Let us know your ideas, and we’ll help turn them into
-                    reality.</h3>
+                <h3 style="font-weight: 400;">If you have a specific product or design in mind, we can develop and
+                    customize it to match your exact requirements. We offer personalization in backing, pile height,
+                    stitch density, and yarn quality. Please note that a minimum order quantity (MOQ) applies for custom
+                    orders. We're happy to work with you to create a product that fits your needs. Let us know your
+                    ideas, and we’ll help turn them into reality.</h3>
             </div>
         </div>
         <div class="gridImagesContainer paddingTop80 paddingBottom80">
             <div class="Container">
                 <div class="gridImagesContainerText">
-                <h2 class="blackColor ">Our Work in Spaces</h2>
-                <p>Transform your workspace with carpet tiles that combine <br> design, comfort, and durability.</p>
-            </div>
-            <div class="girdImagesContainer paddingTop80">
-                <div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace1.jpg" alt="">
+                    <h2 class="blackColor ">Our Work in Spaces</h2>
+                    <p>Transform your workspace with carpet tiles that <br> combine design, comfort, and durability.</p>
                 </div>
-                <div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace2.jpg  " alt="">
+                <div class="girdImagesContainer paddingTop60">
+                    <div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace2.jpg  " alt="">
+                    </div>
+                    <div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace3.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace4.jpg" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace4.jpg" alt="">
-                </div>
-            </div>
             </div>
         </div>
     </div>
-    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet" description="Connect with our team to discuss premium carpet tile solutions — including fully customizable options to meet your project requirements." />
+    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
+        description="Connect with our team to discuss premium carpet tile solutions — including fully customizable options to meet your project requirements." />
 </template>
 
 <script setup>

@@ -53,9 +53,9 @@
     padding: 20px 0px;
 }
 
-.ChooseDesignsContainer {
+/* .ChooseDesignsContainer {
     background: #ECEDEE;
-}
+} */
 
 .CarpertTilesImage {
     display: flex;
@@ -80,13 +80,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 5px solid #a4870565;
 }
 
 /* Properties Section Styles */
 .propertiesLayoutContainer {
     width: 100%;
     padding: 80px 0;
-    background: #f8f9fa;
+    background: #ECEDEE;
 }
 
 .propertiesLayoutContainer .Container {

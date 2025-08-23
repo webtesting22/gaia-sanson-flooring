@@ -8,22 +8,25 @@
                 <div class="ChooseDesignsContainer">
                     <div class="CommonHeader">
                         <h2 class="blackColor marginBottom20">Choose a design to preview</h2>
-                        <div class="SwiperNavigation">
-                            <button class="common-btn secondary swiper-button-prev-custom">
-                                <span>&lt;</span>
-                            </button>
-                            <button class="common-btn secondary swiper-button-next-custom">
-                                <span>&gt;</span>
-                            </button>
+                        <div class="SwiperNavigationContainerDesktopOnly">
+                            <div class="SwiperNavigation">
+                                <button class="common-btn secondary swiper-button-prev-custom">
+                                    <span>←</span>
+                                </button>
+                                <button class="common-btn secondary swiper-button-next-custom">
+                                    <span>→</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <swiper :modules="[SwiperNavigation, Autoplay]" :slides-per-view="7" :space-between="20"
-                        :loop="true" :speed="700" :autoplay="{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                            pauseOnMouseEnter: true,
-                        }" :navigation="{
+                    <div class="paddingTop60">
+                        <swiper :modules="[SwiperNavigation, Autoplay]" :slides-per-view="7" :space-between="20"
+                            :loop="true" :speed="700" :autoplay="{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
+                            }" :navigation="{
                             nextEl: '.swiper-button-next-custom',
                             prevEl: '.swiper-button-prev-custom'
                         }" :breakpoints="{
@@ -32,13 +35,24 @@
                             1024: { slidesPerView: 6, spaceBetween: 20 },
                             1200: { slidesPerView: 8, spaceBetween: 20 }
                         }" class="DesignSwiper">
-                        <swiper-slide v-for="(design, index) in designSwatches" :key="index" class="DesignSlide">
-                            <div class="DesignSwatch">
-                                <img :src="design.image" :alt="design.name" class="SwatchImage">
-                                <p class="SwatchCode">{{ design.code }}</p>
-                            </div>
-                        </swiper-slide>
-                    </swiper>
+                            <swiper-slide v-for="(design, index) in designSwatches" :key="index" class="DesignSlide">
+                                <div class="DesignSwatch">
+                                    <img :src="design.image" :alt="design.name" class="SwatchImage">
+                                    <p class="SwatchCode">{{ design.code }}</p>
+                                </div>
+                            </swiper-slide>
+                        </swiper>
+                    </div>
+                    <div class="SwiperNavigationContainerMobileOnly">
+                        <div class="SwiperNavigation">
+                            <button class="common-btn secondary swiper-button-prev-custom">
+                                <span>←</span>
+                            </button>
+                            <button class="common-btn secondary swiper-button-next-custom">
+                                <span>→</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,7 +60,7 @@
         <div style="background-color: white;">
             <div class="paddingTop80 Container paddingBottom80">
                 <h2 class="blackColor marginBottom20">Discover Our Carpet Collection</h2>
-                <div class="paddingTop80 CarpertTilesImage">
+                <div class="paddingTop60 CarpertTilesImage">
                     <img src="/Images/CarpetImages/carpet.svg" alt="">
                 </div>
             </div>
@@ -108,15 +122,18 @@
             </div>
         </div>
 
-        <div class="paddingTop80 Container paddingBottom80">
-            <div>
-                <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>
-                <br>
-                <h3 style="font-weight: 400;">If you have a specific product or design in mind, we can develop and
-                    customize it to match your exact requirements. We offer personalization in backing, pile height,
-                    stitch density, and yarn quality. Please note that a minimum order quantity (MOQ) applies for custom
-                    orders. We're happy to work with you to create a product that fits your needs. Let us know your
-                    ideas, and we’ll help turn them into reality.</h3>
+        <div class="BackgrounStylesAppling">
+            <div class="paddingTop80 Container paddingBottom80">
+                <div>
+                    <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>
+                    <br>
+                    <h3 style="font-weight: 400;">If you have a specific product or design in mind, we can develop and
+                        customize it to match your exact requirements. We offer personalization in backing, pile height,
+                        stitch density, and yarn quality. Please note that a minimum order quantity (MOQ) applies for
+                        custom
+                        orders. We're happy to work with you to create a product that fits your needs. Let us know your
+                        ideas, and we’ll help turn them into reality.</h3>
+                </div>
             </div>
         </div>
         <div class="gridImagesContainer paddingTop80 paddingBottom80">

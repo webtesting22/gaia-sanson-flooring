@@ -70,7 +70,7 @@ export default {
                 </div>
 
                 <!-- Swiper Container -->
-                <div class="products-swiper-container paddingTop80" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="products-swiper-container paddingTop60" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <swiper @swiper="onSwiper" :slidesPerView="1":spaceBetween="30" :loop="true" :speed="800"
                         :modules="modules":autoplay="{
                     delay: 2500,

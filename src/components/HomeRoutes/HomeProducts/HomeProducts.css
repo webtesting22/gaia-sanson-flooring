@@ -38,12 +38,11 @@
 
 .HomeProductsContainer .products-swiper-container {
     position: relative;
-    padding: 0 0px;
 }
 
 .HomeProductsContainer .products-swiper {
     width: 100%;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 /* ===========================================
@@ -328,9 +327,7 @@
     .HomeProductsContainer .image-wrapper {
         width: 100% !important;
     }
-    .HomeProductsContainer .products-swiper-container {
-        padding: 0 0px;
-    }
+   
     
     .HomeProductsContainer .product-card {
         height: 400px;

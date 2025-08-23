@@ -167,7 +167,21 @@ h2 {
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
+}
+
+h2::before{
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  display: inline-block;
+  background: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetIcon.png");
+  background-size: cover;
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
@@ -322,5 +336,11 @@ h2 {
 
   .marginBottom80 {
     margin-bottom: 30px;
+  }
+  h2::before{
+    display: none !important;
+  }
+  .paddingTop60{
+    padding-top: 30px;
   }
 }

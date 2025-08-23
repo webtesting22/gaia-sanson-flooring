@@ -43,7 +43,7 @@ export default {
                 <!-- Left Side - Image with Animation -->
                 <div class="story-image-container" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
                     <div class="story-header" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200">
-                        <h2 class="story-main-title">Our<br>Story</h2>
+                        <h2 class="story-main-title">Our Story</h2>
                         <div class="story-arrow-icon">↗</div>
                     </div>
                     

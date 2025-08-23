@@ -128,6 +128,9 @@
 .SetsApartContainer .sets-apart-title {
     transition: color 0.3s ease;
 }
+.SetsApartContainer .sets-apart-title::before{
+    display: none !important;
+}
 
 .SetsApartContainer .content-wrapper:hover .sets-apart-title {
     color: #1a252f;
@@ -145,6 +148,7 @@
     background-color: white !important;
     position: sticky !important;
     z-index: 6 !important;
+    overflow: hidden;
 }
 
 /* ===========================================

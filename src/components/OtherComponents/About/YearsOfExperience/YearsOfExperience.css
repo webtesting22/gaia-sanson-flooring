@@ -1,195 +1,419 @@
-.YearsOfExperienceContainer {
-    background-color: #ffffff;
-    /* padding: 80px 0; */
-}
+/* ===== YEARS OF EXPERIENCE SECTION - PROFESSIONAL DESIGN ===== */
 
-.YearsOfExperienceGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-    /* max-width: 1000px; */
-    margin: 0 auto;
-}
-
-/* Left Section - Circular Graphic */
-.experienceCircle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circleBackground {
+/* Section Container */
+.experienceSection {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    border: 3px solid #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 20px #ab813e6b;
+    overflow: hidden;
 }
 
-.goldenCrescent {
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(135deg, #AB813E 0%, #AB813E 100%);
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.circleContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
-    position: sticky;
-    background: white;
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-}
-
-.circleBackground::before {
+.experienceSection::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -50px;
-    width: 300px;
-    height: 300px;
-    background-color: #AB813E;
-    border-radius: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(163, 135, 3, 0.02) 0%, rgba(163, 135, 3, 0.05) 100%);
+    pointer-events: none;
 }
 
-.yearsNumber {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #AB813E;
-    line-height: 1;
-    margin-bottom: 5px;
+/* Section Header */
+.experienceHeader {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
 }
 
-.yearsText {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #AB813E;
-    line-height: 1;
-    margin-bottom: 5px;
-}
 
-.experienceText {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #333333;
-    line-height: 1;
-}
-
-/* Right Section - Statistics Grid */
-.statisticsGrid {
+/* Main Grid Layout */
+.experienceGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
-.statColumn {
+/* === LEFT SECTION - CIRCULAR DISPLAY === */
+.experienceCircleSection {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.statItem {
+.circleContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experienceCircle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animated Ring */
+.circleRing {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, #A38703, #c4a304, #A38703);
+    padding: 8px;
+    animation: rotate 20s linear infinite;
+}
+
+.circleRing::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Circle Center Content */
+.circleCenter {
+    position: relative;
+    z-index: 2;
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 60px rgba(163, 135, 3, 0.15);
+}
+
+.yearsDisplay {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
 }
 
-.statNumber {
-    font-size: 2.5rem;
+.yearsNumber {
+    font-size: 4.5rem;
     font-weight: 700;
-    color: #AB813E;
+    color: #A38703;
     line-height: 1;
+    text-shadow: 0 4px 8px rgba(163, 135, 3, 0.2);
+    background: linear-gradient(135deg, #A38703 0%, #c4a304 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.yearsText {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #A38703;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.experienceText {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #5a6c7d;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Floating Badge */
+.floatingBadge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: linear-gradient(135deg, #A38703 0%, #c4a304 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 15px 35px rgba(163, 135, 3, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* === RIGHT SECTION - STATISTICS === */
+.statisticsSection {
+    position: relative;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Stat Card */
+.statCard {
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    padding: 30px 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.statCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(163, 135, 3, 0.02) 0%, rgba(163, 135, 3, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(163, 135, 3, 0.15);
+    border-color: rgba(163, 135, 3, 0.2);
+}
+
+.statCard:hover::before {
+    opacity: 1;
+}
+
+/* Stat Icon */
+.statIcon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #A38703 0%, #c4a304 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 10px 25px rgba(163, 135, 3, 0.25);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.statCard:hover .statIcon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 35px rgba(163, 135, 3, 0.35);
+}
+
+/* Stat Content */
+.statContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.statNumber {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #A38703;
+    line-height: 1;
+    text-shadow: 0 2px 4px rgba(163, 135, 3, 0.1);
 }
 
 .statLabel {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #333333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
     line-height: 1.2;
+    transition: color 0.3s ease;
 }
 
-.statisticsGrid h2 {
-    font-weight: 500 !important;
+.statCard:hover .statLabel {
+    color: #A38703;
+}
+
+.statDescription {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-weight: 400;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.statCard:hover .statDescription {
+    color: #5a6c7d;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .YearsOfExperienceGrid {
+    .experienceGrid {
         gap: 60px;
     }
 
-    .circleBackground::before {
-        display: none !important;
+    .experienceCircle {
+        width: 300px;
+        height: 300px;
     }
 
+    .circleCenter {
+        width: 240px;
+        height: 240px;
+    }
 
+    .yearsNumber {
+        font-size: 3.5rem;
+    }
+
+    .yearsText {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .statContent{
+        align-items: start !important;
+    }
+    .experienceHeader h2 {
+        font-size: 2.2rem;
+    }
 
+    .experienceHeader p {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
 
-    .YearsOfExperienceGrid {
+    .experienceGrid {
         grid-template-columns: 1fr;
         gap: 50px;
         text-align: center;
     }
 
-
-
-    .statisticsGrid {
-        gap: 30px;
+    .experienceCircle {
+        width: 280px;
+        height: 280px;
     }
 
-    .statColumn {
+    .circleCenter {
+        width: 220px;
+        height: 220px;
+    }
+
+    .yearsNumber {
+        font-size: 3rem;
+    }
+
+    .yearsText {
+        font-size: 1.3rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
         gap: 25px;
     }
 
-    .statItem {
-        align-items: center;
+    .statCard {
+        padding: 25px 20px;
+    }
+
+    .statIcon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
     }
 
     .statNumber {
         font-size: 2rem;
     }
+
+    .statLabel {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
-
-    .circleBackground {
-        width: 200px;
-        height: 200px;
+    .experienceHeader h2 {
+        font-size: 1.9rem;
     }
 
+    .experienceHeader p {
+        font-size: 1rem;
+    }
 
+    .experienceCircle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .circleCenter {
+        width: 180px;
+        height: 180px;
+    }
+
+    .yearsNumber {
+        font-size: 2.5rem;
+    }
+
+    .yearsText {
+        font-size: 1.1rem;
+    }
 
     .experienceText {
         font-size: 0.9rem;
     }
 
-    .statisticsGrid {
-        gap: 25px;
+    .floatingBadge {
+        padding: 10px 16px;
+        font-size: 0.8rem;
+        top: -15px;
+        right: -15px;
     }
 
-    .statColumn {
-        gap: 20px;
+    .statCard {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .statIcon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
     }
 
     .statNumber {
@@ -197,6 +421,56 @@
     }
 
     .statLabel {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
+
+    .statDescription {
+        font-size: 0.85rem;
+    }
+}
+
+/* Counter Animation (requires JavaScript) */
+.statNumber[data-count] {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional Professional Touches */
+.experienceSection .Container {
+    position: relative;
+}
+
+.experienceSection .Container::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(163, 135, 3, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.experienceSection .Container::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(163, 135, 3, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }

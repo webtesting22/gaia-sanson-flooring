@@ -1,20 +1,68 @@
 <template>
-    <div class="sansonTeamContainer paddingTop80 paddingBottom80">
+    <div class="sansonTeamSection paddingTop80 paddingBottom80">
         <div class="Container">
-            <h2 class="text-center">Meet the Team</h2>
-            <div class="Container paddingTop80 ">
-                <div class="sansonTeamGrid">
-                    <div v-for="team in sansonTeamData" :key="team.name">
-                        <div class="sansonTeamImageContainer">
-                            <img :src="team.image" alt="Sanson Team">
+            <!-- Section Header -->
+            <div class="teamSectionHeader" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <h2>Leadership Excellence</h2>
+                <p style="text-align: start;">Meet the visionaries driving innovation and growth at Sanson Group</p>
+                <!-- <div class="titleUnderline"></div> -->
+            </div>
+
+            <!-- Team Grid -->
+            <div class="teamGrid paddingTop60">
+                <div 
+                    v-for="(team, index) in sansonTeamData" 
+                    :key="team.name"
+                    class="teamCard"
+                    :data-aos="'fade-up'"
+                    :data-aos-duration="600"
+                    :data-aos-delay="200 + (index * 150)"
+                >
+                    <div class="teamCardInner">
+                        <!-- Image Container -->
+                        <div class="teamImageWrapper">
+                            <div class="teamImageContainer">
+                                <img :src="team.image" :alt="team.name" />
+                                <div class="imageOverlay">
+                                    <!-- <div class="overlayContent">
+                                        <div class="socialLinks">
+                                            <div class="socialIcon">
+                                                <i class="fas fa-linkedin"></i>
+                                            </div>
+                                            <div class="socialIcon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="teamBadge">
+                                <span class="badgeText">{{ team.title }}</span>
+                            </div>
                         </div>
-                        <br>
-                        <div style="display: flex; gap: 10px; align-items: center;">
-                            <h3>{{ team.name }} </h3>
-                            <!-- <h4>({{ team.title }})</h4> -->
+
+                        <!-- Content Container -->
+                        <div class="teamContent">
+                            <div class="teamHeader">
+                                <h3 class="teamName">{{ team.name }}</h3>
+                                <div class="teamTitle">{{ team.title }}</div>
+                            </div>
+                            
+                            <!-- <div class="teamDescription">
+                                <p>{{ team.writup }}</p>
+                            </div>
+
+                            <div class="teamStats">
+                                <div class="statItem">
+                                    <span class="statNumber">{{ team.experience }}+</span>
+                                    <span class="statLabel">Years Experience</span>
+                                </div>
+                                <div class="statItem">
+                                    <span class="statNumber">{{ team.projects }}+</span>
+                                    <span class="statLabel">Projects Led</span>
+                                </div>
+                            </div> -->
                         </div>
-                        <br>
-                        <p>{{ team.writup }}</p>
                     </div>
                 </div>
             </div>

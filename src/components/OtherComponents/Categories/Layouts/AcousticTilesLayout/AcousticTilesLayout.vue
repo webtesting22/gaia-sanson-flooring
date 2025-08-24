@@ -4,22 +4,21 @@
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic TilesImagesBackground.png"
             imageAlt="Acoustic Solutions" />
 
-        <div class="BlueBackContainer paddingTop80 paddingBottom80">
+        <div class="MadeIndiaWrittenContainer paddingTop80">
+            <div class="Container EditContainerContent">
+                <h2>Manufactured in India</h2>
+                <h3>India's first startup offering integrated solutions in floorings and
+                    acoustic panels for high-performance interiors.</h3>
+            </div>
+        </div>
+        <!-- <div class="EditContainerContent paddingTop80">
             <div class="Container">
                 <div>
-                    <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals
-                    </h2>
-                    <br>
-                    <h3 class="whiteColor">Get ready for our latest additions:
-                    </h3>
-                    <!-- <br> -->
-                    <h3 class="whiteColor">Non-Woven (Felt) and Machine Woven Carpets. </h3>
-                </div>
-                <div class="EditContainerContent paddingTop80">
-                    <div class="width100">
+                    <div>
                         <div>
-                            <h2 class="whiteColor">Manufactured in India</h2>
-                            <h3 class="whiteColor">India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.</h3>
+                            <h2>Manufactured in India</h2>
+                            <h3>India's first startup offering integrated solutions in floorings and
+                                acoustic panels for high-performance interiors.</h3>
                         </div>
                     </div>
                     <div class="width100 EditContainerContentImage">
@@ -34,8 +33,22 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <div class="BlueBackContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <div>
+                    <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals
+                    </h2>
+                    <br>
+                    <h3 class="whiteColor">Get ready for our latest additions:
+                    </h3>
+                    <h3 class="whiteColor">Non-Woven (Felt) and Machine Woven Carpets. </h3>
+                </div>
+
+            </div>
+
+        </div> -->
+
 
         <!-- Grid Layout Section -->
         <div class="gridSection paddingTop80 paddingBottom80">

@@ -10,7 +10,7 @@
 
         <div class="width100 ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container">
             <h2>Explore our Artificial Grass collection</h2>
-            <div class="ArtificialMultiturfGrid paddingTop80">
+            <div class="ArtificialMultiturfGrid paddingTop60">
                 <div class="ArtificialMultiturfGridItem">
                     <div>
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg"
@@ -59,7 +59,7 @@
         <div class="width100 WhyChooseArtificialMultiturf paddingTop80 paddingBottom80 ">
             <div class="why-choose-section Container">
                 <h2>Why Choose Our Artificial Grass?</h2>
-                <div class="features-grid">
+                <div class="features-grid paddingTop60">
                     <div class="feature-card">
                         <div class="feature-icon">
                             <img src="/Images/WhyChooseIcons/UV-Stabilized.svg" alt="UV-Stabilized" />
@@ -114,7 +114,7 @@
             <div class="CommonHeader paddingTop80 paddingBottom80 Container">
                 <div class="width100">
                     <div class="max-width-800">
-                        <h2 class="text-center">Designed for Every Space</h2>
+                        <h2 class="text-center" style="justify-content: center;">Designed for Every Space</h2>
                         <p class="text-center">Versatile solutions that enhance every environment.</p>
                     </div>
                     <div class="paddingTop80">

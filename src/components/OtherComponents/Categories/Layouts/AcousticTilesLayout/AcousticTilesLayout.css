@@ -610,6 +610,7 @@
     flex-direction: column;
     gap: 40px;
 }
+
 @media (max-width: 768px) {
     .EditContainerContent{
         display: flex;
@@ -638,4 +639,11 @@
         width: 100%;
     }
     
+}
+
+
+.EditContainerContent{
+    min-height: 400px;
+    /* background-color: #1e3a8a; */
+    border-radius: 10px;
 }

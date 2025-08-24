@@ -4,11 +4,36 @@
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic TilesImagesBackground.png"
             imageAlt="Acoustic Solutions" />
 
-        <div class="MadeIndiaWrittenContainer paddingTop80">
+
+        <!-- <div class="BlueBackContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <div>
+                    <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals
+                    </h2>
+                    <br>
+                    <h3 class="whiteColor">Get ready for our latest additions:
+                    </h3>
+                    <h3 class="whiteColor">Non-Woven (Felt) and Machine Woven Carpets. </h3>
+                </div>
+
+            </div>
+
+        </div> -->
+        <div class="MadeIndiaWrittenContainer paddingTop80 paddingBottom80">
             <div class="Container EditContainerContent">
                 <h2>Manufactured in India</h2>
                 <h3>India's first startup offering integrated solutions in floorings and
                     acoustic panels for high-performance interiors.</h3>
+                <!-- <div class="sets-apart-logos-Container" style="justify-content: start;">
+                    <div class="sets-apart-logos-Container-item">
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                            alt="">
+                    </div>
+                    <div class="sets-apart-logos-Container-item">
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                            alt="">
+                    </div>
+                </div> -->
             </div>
         </div>
         <!-- <div class="EditContainerContent paddingTop80">
@@ -260,12 +285,13 @@
                     <div>
                         <h2>Optimized Spaces with Acoustic Tiles</h2>
                     </div>
-                    <div>
-                        <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with
+                   
+                </div>
+                <div>
+                        <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with <br>
                             aesthetics. Browse real-world installations to see how they transform a variety of spaces.
                         </p>
                     </div>
-                </div>
 
                 <div class="paddingTop80">
                     <div class="LastGridImagesGridContainer">

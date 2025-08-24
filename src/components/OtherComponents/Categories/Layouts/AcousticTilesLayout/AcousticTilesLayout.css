@@ -219,6 +219,10 @@
     }
 }
 
+.acousticTilesLayout{
+    overflow: hidden;
+}
+
 .VariousApplicationsContainer {
     background-color: #FFFAF2;
 }

@@ -202,6 +202,7 @@ padding-right: 20px;
     z-index: 1;
 }
 
+
 .qualityFeaturesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -325,7 +326,7 @@ padding-right: 20px;
     content: "\201C";
     position: absolute;
     top: 10px;
-    left: 5px;
+    left: 2px;
     font-size: 3rem;
     color: #A38703;
     opacity: 0.3;
@@ -481,6 +482,10 @@ padding-right: 20px;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+    .qualityFeaturesHeader p{
+        text-align: start;
+    }
+    
     .SansonAboutContainerInner {
         flex-direction: column;
         gap: 40px;

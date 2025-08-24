@@ -47,7 +47,7 @@
         <div class="qualityFeaturesSection Container paddingTop80 paddingBottom80">
             <div class="qualityFeaturesHeader" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <h2>Why Choose Sanson Group</h2>
-                <p style="text-align: start;">Our commitment to excellence drives everything we do</p>
+                <p>Our commitment to excellence drives everything we do</p>
             </div>
             <div class="qualityFeaturesGrid">
                 <div class="qualityFeatureCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">

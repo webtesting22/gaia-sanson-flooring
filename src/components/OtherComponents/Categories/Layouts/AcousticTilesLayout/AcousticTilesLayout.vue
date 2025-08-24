@@ -201,7 +201,7 @@
 
         <div class="SurfaceContainer paddingTop80 paddingBottom80">
             <div class="Container">
-                <h2>Various Aplications</h2>
+                <h2>Various Applications</h2>
                 <div class="SurfaceGridContainer paddingTop80">
                     <div class="SurfaceImageContainer">
                         <img src="/Images/VariousAplicationsUpdateImage.svg" alt="">

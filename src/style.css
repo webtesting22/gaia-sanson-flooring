@@ -91,17 +91,17 @@ p {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
 }
-
+/* 
 i {
   font-style: italic !important;
-}
+} */
 
 .paddingTop80 {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .paddingBottom80 {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .marginTop80 {

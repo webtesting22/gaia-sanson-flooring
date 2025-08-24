@@ -67,7 +67,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: conic-gradient(from 0deg, #A38703, #c4a304, #A38703);
+    background: #AB813E;
     padding: 8px;
     animation: rotate 20s linear infinite;
 }
@@ -85,6 +85,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -118,7 +119,7 @@
     color: #A38703;
     line-height: 1;
     text-shadow: 0 4px 8px rgba(163, 135, 3, 0.2);
-    background: linear-gradient(135deg, #A38703 0%, #c4a304 100%);
+    background: #A38703;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -147,7 +148,7 @@
     position: absolute;
     top: -20px;
     right: -20px;
-    background: linear-gradient(135deg, #A38703 0%, #c4a304 100%);
+    background: #A38703;
     color: white;
     padding: 12px 20px;
     border-radius: 25px;
@@ -160,9 +161,12 @@
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -221,7 +225,7 @@
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #A38703 0%, #c4a304 100%);
+    background: #AB813E;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -307,9 +311,10 @@
 }
 
 @media (max-width: 768px) {
-    .statContent{
+    .statContent {
         align-items: start !important;
     }
+
     .experienceHeader h2 {
         font-size: 2.2rem;
     }
@@ -440,6 +445,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

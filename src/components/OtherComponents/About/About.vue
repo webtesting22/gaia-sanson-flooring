@@ -203,6 +203,7 @@
         <SansonTeam />
         <YearsOfExperience />
         <OurVision />
+        <ImageGallery />
 
         <HomeProducts title="What we make"
             subtitle="Discover our comprehensive collection of premium flooring solutions" />
@@ -260,6 +261,7 @@ import SansonTeam from '../SansonTeam/SansonTeam.vue';
 import HomeProducts from "../../HomeRoutes/HomeProducts/HomeProducts.vue";
 import YearsOfExperience from "./YearsOfExperience/YearsOfExperience.vue";
 import OurVision from "../OurVision/OurVision.vue";
+import ImageGallery from "../ImageGallery/ImageGallery.vue";
 import "./About.css"
 </script>
 

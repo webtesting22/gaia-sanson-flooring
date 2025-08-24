@@ -1,5 +1,5 @@
 <template>
-    <div class="ImageGalleryContainer">
+    <div class="ImageGalleryContainer paddingTop60">
         <div class="Container">
             <div class="galleryHeader">
                 <h2>Gallery</h2>

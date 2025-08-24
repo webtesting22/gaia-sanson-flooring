@@ -27,14 +27,14 @@
                                 disableOnInteraction: false,
                                 pauseOnMouseEnter: true,
                             }" :navigation="{
-                            nextEl: '.swiper-button-next-custom',
-                            prevEl: '.swiper-button-prev-custom'
-                        }" :breakpoints="{
-                            320: { slidesPerView: 3, spaceBetween: 15 },
-                            768: { slidesPerView: 6, spaceBetween: 20 },
-                            1024: { slidesPerView: 6, spaceBetween: 20 },
-                            1200: { slidesPerView: 8, spaceBetween: 20 }
-                        }" class="DesignSwiper">
+                                nextEl: '.swiper-button-next-custom',
+                                prevEl: '.swiper-button-prev-custom'
+                            }" :breakpoints="{
+                                320: { slidesPerView: 3, spaceBetween: 15 },
+                                768: { slidesPerView: 6, spaceBetween: 20 },
+                                1024: { slidesPerView: 6, spaceBetween: 20 },
+                                1200: { slidesPerView: 8, spaceBetween: 20 }
+                            }" class="DesignSwiper">
                             <swiper-slide v-for="(design, index) in designSwatches" :key="index" class="DesignSlide">
                                 <div class="DesignSwatch">
                                     <img :src="design.image" :alt="design.name" class="SwatchImage">
@@ -60,8 +60,40 @@
         <div style="background-color: white;">
             <div class="paddingTop80 Container paddingBottom80">
                 <h2 class="blackColor marginBottom20">Discover Our Carpet Collection</h2>
-                <div class="paddingTop60 CarpertTilesImage">
-                    <img src="/Images/CarpetImages/carpet.svg" alt="">
+                <div class="AnimatedImageContainerMainContainer">
+                    <div class="AnimatedImageContainer">
+                        <div class="FirstImage">
+
+                        </div>
+                        <div class="SecondImage">
+
+                        </div>
+                        <div class="ThirdImage">
+
+                        </div>
+                        <div class="FourthImage"> </div>
+                        <div class="FifthImage">
+                            <div class="FifthFirstImage">
+
+                            </div>
+                            <div class="FifthSecondImage">
+
+                            </div>
+                            <div class="FifthThirdImage"></div>
+                        </div>
+                        <div class="SixthImage">
+
+                        </div>
+                        <div class="SeventhImage">
+
+                        </div>
+                        <div class="EighthImage">
+
+                        </div>
+                        <div class="NinthImage">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,7 +196,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation as SwiperNavigation, Autoplay } from 'swiper/modules'
@@ -173,6 +205,87 @@ import 'swiper/css/navigation'
 import CategoriesData from '../../CategoriesLayout/Categories'
 import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
+
+// Scroll animation variables
+let animationContainers = []
+
+// Initialize AOS-style fade-in animations
+onMounted(() => {
+    // Get all animated containers
+    animationContainers = document.querySelectorAll('.AnimatedImageContainer > div')
+    
+    // Set initial offsets (responsive based on screen size)
+    const isMobile = window.innerWidth <= 768
+    const isSmallMobile = window.innerWidth <= 480
+    
+    const offsets = isMobile ? [
+        // Mobile offsets - smaller values for compact layout
+        { x: -30, y: -20 },  // FirstImage
+        { x: 25, y: -35 },   // SecondImage  
+        { x: -25, y: 20 },   // ThirdImage
+        { x: 30, y: 15 },    // FourthImage
+        { x: -20, y: -25 },  // FifthImage
+        { x: 20, y: 30 },    // SixthImage
+        { x: -35, y: -15 },  // SeventhImage
+        { x: 25, y: -20 },   // EighthImage
+        { x: -20, y: 25 }    // NinthImage
+    ] : [
+        // Desktop offsets - original values
+        { x: -50, y: -30 },  // FirstImage
+        { x: 40, y: -50 },   // SecondImage  
+        { x: -45, y: 35 },   // ThirdImage
+        { x: 50, y: 25 },    // FourthImage
+        { x: -30, y: -40 },  // FifthImage
+        { x: 35, y: 50 },    // SixthImage
+        { x: -55, y: -25 },  // SeventhImage
+        { x: 45, y: -35 },   // EighthImage
+        { x: -40, y: 45 }    // NinthImage
+    ]
+    
+    // Apply initial transforms
+    animationContainers.forEach((container, index) => {
+        if (offsets[index]) {
+            container.style.transform = `translate(${offsets[index].x}px, ${offsets[index].y}px)`
+            container.style.opacity = '0'
+            container.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+        }
+    })
+    
+    // Create intersection observer for viewport-based animations (AOS style)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const container = entry.target
+                const index = Array.from(animationContainers).indexOf(container)
+                
+                // Animate to final position with delay based on index
+                setTimeout(() => {
+                    container.style.transform = 'translate(0px, 0px)'
+                    container.style.opacity = '1'
+                }, index * 100) // Stagger animation by 100ms per container
+            }
+        })
+    }, {
+        threshold: 0.3, // Trigger when 30% of container is visible
+        rootMargin: '0px 0px -50px 0px' // Trigger slightly before container enters viewport
+    })
+    
+    // Observe all containers
+    animationContainers.forEach(container => {
+        observer.observe(container)
+    })
+    
+    // Cleanup function
+    return () => {
+        observer.disconnect()
+    }
+})
+
+onUnmounted(() => {
+    // Cleanup scroll listeners
+    window.removeEventListener('scroll', () => {})
+})
+
 const route = useRoute()
 const category = computed(() => {
     const slug = route.params.slug

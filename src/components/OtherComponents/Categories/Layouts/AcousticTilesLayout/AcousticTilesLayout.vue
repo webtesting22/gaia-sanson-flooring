@@ -285,13 +285,13 @@
                     <div>
                         <h2>Optimized Spaces with Acoustic Tiles</h2>
                     </div>
-                   
+
                 </div>
                 <div>
-                        <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with <br>
-                            aesthetics. Browse real-world installations to see how they transform a variety of spaces.
-                        </p>
-                    </div>
+                    <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with <br>
+                        aesthetics. Browse real-world installations to see how they transform a variety of spaces.
+                    </p>
+                </div>
 
                 <div class="paddingTop80">
                     <div class="LastGridImagesGridContainer">

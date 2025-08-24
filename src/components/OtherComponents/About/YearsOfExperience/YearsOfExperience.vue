@@ -49,7 +49,7 @@
                                     <i class="fas fa-project-diagram"></i>
                                 </div>
                                 <div class="statContent">
-                                    <span class="statNumber" data-count="1000">1000+ </span>
+                                    <span class="statNumber" data-count="1000+">1000+ </span>
                                     <span class="statLabel">Projects</span>
                                     <span class="statDescription">Successfully completed</span>
                                 </div>
@@ -60,7 +60,7 @@
                                     <i class="fas fa-handshake"></i>
                                 </div>
                                 <div class="statContent">
-                                    <span class="statNumber" data-count="100">100+</span>
+                                    <span class="statNumber" data-count="100+">100+</span>
                                     <span class="statLabel">Clients</span>
                                     <span class="statDescription">Satisfied customers</span>
                                 </div>

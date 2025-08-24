@@ -9,10 +9,10 @@
             imageAlt="Artificial grass background image" />
 
         <div class="width100 ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container">
-            <h2>Explore our Artificial Grass collection</h2>
+            <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Explore our Artificial Grass collection</h2>
             <div class="ArtificialMultiturfGrid paddingTop60">
                 <div class="ArtificialMultiturfGridItem">
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg"
                             alt="">
                         <div class="ArtificialMultiturfGridItemText">
@@ -22,7 +22,7 @@
                             </router-link>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg" alt="">
                         <div class="ArtificialMultiturfGridItemText">
                             <h3>Sports Grass</h3>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="ArtificialMultiturfGridItem">
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg"
                             alt="">
                         <div class="ArtificialMultiturfGridItemText">
@@ -43,7 +43,7 @@
                             </router-link>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg" alt="">
                         <div class="ArtificialMultiturfGridItemText">
                             <h3>Curly Grass</h3>
@@ -58,9 +58,9 @@
 
         <div class="width100 WhyChooseArtificialMultiturf paddingTop80 paddingBottom80 ">
             <div class="why-choose-section Container">
-                <h2>Why Choose Our Artificial Grass?</h2>
+                <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Why Choose Our Artificial Grass?</h2>
                 <div class="features-grid paddingTop60">
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <div class="feature-icon">
                             <img src="/Images/WhyChooseIcons/UV-Stabilized.svg" alt="UV-Stabilized" />
                         </div>
@@ -68,7 +68,7 @@
                         <p>Engineered for lasting color</p>
                     </div>
 
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                         <div class="feature-icon">
                             <img src="/Images/WhyChooseIcons/Eco-Conscious.svg" alt="Eco-Conscious" />
                         </div>
@@ -76,7 +76,7 @@
                         <p>Less water, no fertilizers, low maintenance</p>
                     </div>
 
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                         <div class="feature-icon">
                             <img src="/Images/WhyChooseIcons/Pet & Child-Friendly.svg" alt="Pet & Child-Friendly" />
                         </div>
@@ -84,7 +84,7 @@
                         <p>Safe for pets and children, 100% Lead Free</p>
                     </div>
 
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
                         <div class="feature-icon">
                             <img src="/Images/WhyChooseIcons/Weatherproof.svg" alt="Weatherproof & Drainage-Ready" />
                         </div>
@@ -92,7 +92,7 @@
                         <p>Engineered to withstand every climate</p>
                     </div>
 
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
                         <div class="feature-icon">
                             <img src="/Images/WhyChooseIcons/Custom Cuts.svg" alt="Custom Cuts & Install Support" />
                         </div>
@@ -114,21 +114,20 @@
             <div class="CommonHeader paddingTop80 paddingBottom80 Container">
                 <div class="width100">
                     <div class="max-width-800">
-                        <h2 class="text-center" style="justify-content: center;">Designed for Every Space</h2>
-                        <p class="text-center">Versatile solutions that enhance every environment.</p>
+                        <h2 class="text-center" style="justify-content: center;" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Designed for Every Space</h2>
+                        <p class="text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Versatile solutions that enhance every environment.</p>
                     </div>
-                    <div class="paddingTop80">
-                        <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50":autoplay="{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                }" :loop="true" :speed="700"
-                            :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
-                                320: { slidesPerView: 1, spaceBetween: 15 },
-                                768: { slidesPerView: 2, spaceBetween: 20 },
-                                1024: { slidesPerView: 2, spaceBetween: 30 },
-                                1200: { slidesPerView: 3, spaceBetween: 100 }
-                            }" :navigation="{
+                    <div class="paddingTop80" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50" :autoplay="{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: true,
+                        }" :loop="true" :speed="700" :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
+                    320: { slidesPerView: 1, spaceBetween: 15 },
+                    768: { slidesPerView: 2, spaceBetween: 20 },
+                    1024: { slidesPerView: 2, spaceBetween: 30 },
+                    1200: { slidesPerView: 3, spaceBetween: 100 }
+                }" :navigation="{
                                 nextEl: '.swiper-button-next-custom',
                                 prevEl: '.swiper-button-prev-custom'
                             }">
@@ -150,7 +149,8 @@
             </div>
         </div>
     </div>
-    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet" description="Get in touch with us to design and customize your perfect artificial grass space, tailored to your needs." />
+    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
+        description="Get in touch with us to design and customize your perfect artificial grass space, tailored to your needs." />
 </template>
 
 <script setup>

@@ -100,51 +100,52 @@
 
         <div class="propertiesLayoutContainer">
             <div class="Container">
-                <h2 class="properties-title">Properties</h2>
+                <h2 class="properties-title" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+                    Properties</h2>
                 <div class="properties-grid paddingTop60">
-                    <div class="property-card">
+                    <div class="property-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Multi-Directional.png" alt="Multi-Directional" />
                         </div>
                         <p class="property-label">Multi-Directional</p>
                     </div>
 
-                    <div class="property-card">
+                    <div class="property-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Brick.png" alt="Brick" />
                         </div>
                         <p class="property-label">Brick</p>
                     </div>
 
-                    <div class="property-card">
+                    <div class="property-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Quarter Turn.png" alt="Quarter Turn" />
                         </div>
                         <p class="property-label">Quarter Turn</p>
                     </div>
 
-                    <div class="property-card">
+                    <div class="property-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Anti static.png" alt="Anti Static" />
                         </div>
                         <p class="property-label">Anti Static</p>
                     </div>
 
-                    <div class="property-card">
+                    <div class="property-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Non-Directional.png" alt="Non-Directional" />
                         </div>
                         <p class="property-label">Non-Directional</p>
                     </div>
 
-                    <div class="property-card">
+                    <div class="property-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Underfloor Heating.png" alt="Underfloor Heating" />
                         </div>
                         <p class="property-label">Underfloor Heating</p>
                     </div>
 
-                    <div class="property-card">
+                    <div class="property-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Fire Resistant.png" alt="Fire Resistant" />
                         </div>
@@ -157,34 +158,38 @@
         <div class="BackgrounStylesAppling">
             <div class="paddingTop80 Container paddingBottom80">
                 <div>
-                    <h2 class="blackColor marginBottom20">Where Your Vision Meets Our Design Expertise</h2>
+                    <h2 class="blackColor marginBottom20" data-aos="fade-down" data-aos-duration="800"
+                        data-aos-delay="100">Where Your Vision Meets Our Design Expertise</h2>
                     <br>
-                    <h3 style="font-weight: 400;">If you have a specific product or design in mind, we can develop and
+                    <h3 style="font-weight: 400;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">If you
+                        have a specific product or design in mind, we can develop and
                         customize it to match your exact requirements. We offer personalization in backing, pile height,
                         stitch density, and yarn quality. Please note that a minimum order quantity (MOQ) applies for
                         custom
                         orders. We're happy to work with you to create a product that fits your needs. Let us know your
-                        ideas, and we’ll help turn them into reality.</h3>
+                        ideas, and we'll help turn them into reality.</h3>
                 </div>
             </div>
         </div>
         <div class="gridImagesContainer paddingTop80 paddingBottom80">
             <div class="Container">
                 <div class="gridImagesContainerText">
-                    <h2 class="blackColor ">Our Work in Spaces</h2>
-                    <p>Transform your workspace with carpet tiles that <br> combine design, comfort, and durability.</p>
+                    <h2 class="blackColor" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Our Work in
+                        Spaces</h2>
+                    <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Transform your workspace with
+                        carpet tiles that <br> combine design, comfort, and durability.</p>
                 </div>
                 <div class="girdImagesContainer paddingTop60">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace1.jpg" alt="">
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace2.jpg  " alt="">
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace3.jpg" alt="">
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace4.jpg" alt="">
                     </div>
                 </div>
@@ -213,11 +218,11 @@ let animationContainers = []
 onMounted(() => {
     // Get all animated containers
     animationContainers = document.querySelectorAll('.AnimatedImageContainer > div')
-    
+
     // Set initial offsets (responsive based on screen size)
     const isMobile = window.innerWidth <= 768
     const isSmallMobile = window.innerWidth <= 480
-    
+
     const offsets = isMobile ? [
         // Mobile offsets - smaller values for compact layout
         { x: -30, y: -20 },  // FirstImage
@@ -241,7 +246,7 @@ onMounted(() => {
         { x: 45, y: -35 },   // EighthImage
         { x: -40, y: 45 }    // NinthImage
     ]
-    
+
     // Apply initial transforms
     animationContainers.forEach((container, index) => {
         if (offsets[index]) {
@@ -250,14 +255,14 @@ onMounted(() => {
             container.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
         }
     })
-    
+
     // Create intersection observer for viewport-based animations (AOS style)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const container = entry.target
                 const index = Array.from(animationContainers).indexOf(container)
-                
+
                 // Animate to final position with delay based on index
                 setTimeout(() => {
                     container.style.transform = 'translate(0px, 0px)'
@@ -269,12 +274,12 @@ onMounted(() => {
         threshold: 0.3, // Trigger when 30% of container is visible
         rootMargin: '0px 0px -50px 0px' // Trigger slightly before container enters viewport
     })
-    
+
     // Observe all containers
     animationContainers.forEach(container => {
         observer.observe(container)
     })
-    
+
     // Cleanup function
     return () => {
         observer.disconnect()
@@ -283,7 +288,7 @@ onMounted(() => {
 
 onUnmounted(() => {
     // Cleanup scroll listeners
-    window.removeEventListener('scroll', () => {})
+    window.removeEventListener('scroll', () => { })
 })
 
 const route = useRoute()

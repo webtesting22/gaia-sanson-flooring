@@ -21,8 +21,8 @@
         </div> -->
         <div class="MadeIndiaWrittenContainer paddingTop80 paddingBottom80">
             <div class="Container EditContainerContent">
-                <h2>Manufactured in India</h2>
-                <h3>India's first startup offering integrated solutions in floorings and
+                <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Manufactured in India</h2>
+                <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">India's first startup offering integrated solutions in floorings and
                     acoustic panels for high-performance interiors.</h3>
                 <!-- <div class="sets-apart-logos-Container" style="justify-content: start;">
                     <div class="sets-apart-logos-Container-item">
@@ -79,11 +79,11 @@
         <div class="gridSection paddingTop80 paddingBottom80">
             <div class="Container">
                 <div class="gridContainer">
-                    <div class="leftImage">
+                    <div class="leftImage" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SpecificationAboutusimage.jpg"
                             alt="Specification Image" />
                     </div>
-                    <div class="rightContent">
+                    <div class="rightContent" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
                         <h2>Specification</h2>
                         <ul>
                             <li>Acoustic Panel boards are made from Recycled Polyester Fiber and are meant to be
@@ -153,14 +153,14 @@
         <!-- Features Container -->
         <div class=" paddingTop80 paddingBottom80" style="background: white;">
             <div class="Container">
-                <div class="HeaderContainerCommonAll">
+                <div class="HeaderContainerCommonAll" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
                     <h2>Features</h2>
                     <p>Every Detail Designed to Deliver Silence, Style, and Performance</p>
                 </div>
                 <br><br>
                 <div class="featuresLayout ">
                     <!-- Left Side - Features List -->
-                    <div class="featuresContent">
+                    <div class="featuresContent" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                         <div class="featureItem">
                             <div class="featureIcon">✓</div>
                             <div class="featureDetails">
@@ -188,7 +188,7 @@
                     </div>
 
                     <!-- Right Side - Image -->
-                    <div class="featuresImage">
+                    <div class="featuresImage" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/FeaturesImages.png"
                             alt="Modern Conference Room with Acoustic Solutions" />
                     </div>
@@ -201,9 +201,9 @@
 
         <div class="SurfaceContainer paddingTop80 paddingBottom80">
             <div class="Container">
-                <h2>Various Applications</h2>
+                <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Various Applications</h2>
                 <div class="SurfaceGridContainer paddingTop80">
-                    <div class="SurfaceImageContainer">
+                    <div class="SurfaceImageContainer" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                         <img src="/Images/VariousAplicationsUpdateImage.svg" alt="">
                     </div>
                     <!-- <div class="SurfaceContentContainer">
@@ -231,16 +231,16 @@
         </div>
         <div class="OurColoursCardContainer">
             <div class="Container">
-                <div class="ourColorsHeader">
+                <div class="ourColorsHeader" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
                     <h2>Our Colors</h2>
                     <div class="navigationArrows">
-                        <button class="navArrow leftArrow">
+                        <button class="navArrow leftArrow" @click="prevPage">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <button class="navArrow rightArrow">
+                        <button class="navArrow rightArrow" @click="nextPage">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -249,7 +249,7 @@
                     </div>
                 </div>
 
-                <div class="colorSwatchesGrid">
+                <div class="colorSwatchesGrid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="colorSwatch" v-for="swatch in colorSwatches" :key="swatch.code">
                         <div class="swatchImage">
                             <img :src="swatch.image" :alt="swatch.name" />
@@ -264,11 +264,14 @@
         </div>
         <div class="VariousApplicationsContainer paddingTop80 paddingBottom80">
             <div class="Container">
-                <h2 class="text-center">Characteristics</h2>
+                <h2 class="text-center" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Characteristics</h2>
                 <br>
                 <br>
                 <div class="VariousApplicationsGridContainer marginTop20">
-                    <div class="VariousApplicationsGridItem" v-for="feature in applicationFeatures" :key="feature.id">
+                    <div class="VariousApplicationsGridItem" v-for="(feature, index) in applicationFeatures" :key="feature.id"
+                         data-aos="fade-up" 
+                         :data-aos-duration="600" 
+                         :data-aos-delay="200 + (index * 50)">
                         <div class="featureIcon">
                             <img :src="feature.image" :alt="feature.name" class="application-icon">
                         </div>
@@ -281,13 +284,13 @@
         </div>
         <div class="LastGridImagesContainer">
             <div class="Container paddingTop80 paddingBottom80">
-                <div class="HeaderContainerCommonAll">
+                <div class="HeaderContainerCommonAll" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
                     <div>
                         <h2>Optimized Spaces with Acoustic Tiles</h2>
                     </div>
 
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with <br>
                         aesthetics. Browse real-world installations to see how they transform a variety of spaces.
                     </p>
@@ -295,7 +298,10 @@
 
                 <div class="paddingTop80">
                     <div class="LastGridImagesGridContainer">
-                        <div class="LastGridImagesGridItem" v-for="space in interiorSpaces" :key="space.id">
+                        <div class="LastGridImagesGridItem" v-for="(space, index) in interiorSpaces" :key="space.id"
+                             data-aos="zoom-in" 
+                             :data-aos-duration="600" 
+                             :data-aos-delay="300 + (index * 150)">
                             <div class="LastGridImagesImageContainer">
                                 <img :src="space.image" :alt="space.name">
                             </div>
@@ -314,7 +320,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
@@ -327,48 +333,204 @@ const onSwiper = (swiper) => {
 }
 
 // Color swatches data
-const colorSwatches = [
+const allColorSwatches = [
     {
-        code: 'SF-04 White',
-        name: 'Classic Beige',
-        image: '/Images/FramesImages/Frame1.png'
+        code: 'Aqua Blue',
+        name: 'Aqua Blue',
+        image: '/Images/TexturePatterImages/Aqua Blue.png'
     },
     {
-        code: 'SF-36 Light Grey',
-        name: 'Modern Grey',
-        image: '/Images/FramesImages/Frame2.svg'
+        code: 'Banana Green',
+        name: 'Banana Green',
+        image: '/Images/TexturePatterImages/Banana Green.png'
     },
     {
-        code: 'SF-31 Banana Green',
-        name: 'Rich Brown',
-        image: '/Images/FramesImages/Frame3.svg'
+        code: 'Banana Orange',
+        name: 'Banana Orange',
+        image: '/Images/TexturePatterImages/Banana Orange.png'
     },
     {
-        code: 'SF-70 Strom Grey',
-        name: 'Elegant Black',
-        image: '/Images/FramesImages/Frame4.svg'
+        code: 'Canna',
+        name: 'Canna',
+        image: '/Images/TexturePatterImages/Canna.png'
     },
     {
-        code: 'SF-74 Platinum',
-        name: 'Soft Cream',
-        image: '/Images/FramesImages/Frame5.svg'
+        code: 'Copper',
+        name: 'Copper',
+        image: '/Images/TexturePatterImages/Copper.png'
     },
     {
-        code: 'SF-39 Dove',
-        name: 'Warm Tan',
-        image: '/Images/FramesImages/Frame6.svg'
+        code: 'Grey-286',
+        name: 'Grey-286',
+        image: '/Images/TexturePatterImages/Grey-286.png'
     },
     {
-        code: 'SF-25 Pewter Gray',
-        name: 'Cool Blue',
-        image: '/Images/FramesImages/Frame7.svg'
+        code: 'Grey-719',
+        name: 'Grey-719',
+        image: '/Images/TexturePatterImages/Grey-719.png'
     },
     {
-        code: 'SF-40 T Blue',
-        name: 'Deep Green',
-        image: '/Images/FramesImages/Frame8.svg'
+        code: 'Grey-1284',
+        name: 'Grey-1284',
+        image: '/Images/TexturePatterImages/Grey-1284.png'
+    },
+    {
+        code: 'SF-05',
+        name: 'SF-05',
+        image: '/Images/TexturePatterImages/SF-05.png'
+    },
+    {
+        code: 'SF-07',
+        name: 'SF-07',
+        image: '/Images/TexturePatterImages/SF-07.png'
+    },
+    {
+        code: 'SF-08',
+        name: 'SF-08',
+        image: '/Images/TexturePatterImages/SF-08.png'
+    },
+    {
+        code: 'SF-10 Winter Sky',
+        name: 'SF-10 Winter Sky',
+        image: '/Images/TexturePatterImages/SF-10 Winter Sky.png'
+    },
+    {
+        code: 'SF-17 Deep Red',
+        name: 'SF-17 Deep Red',
+        image: '/Images/TexturePatterImages/SF-17 Deep Red.png'
+    },
+    {
+        code: 'SF-18 Magenta',
+        name: 'SF-18 Magenta',
+        image: '/Images/TexturePatterImages/SF-18 Magenta.png'
+    },
+    {
+        code: 'SF-19 Purple',
+        name: 'SF-19 Purple',
+        image: '/Images/TexturePatterImages/SF-19 Purple.png'
+    },
+    {
+        code: 'SF-27 Black',
+        name: 'SF-27 Black',
+        image: '/Images/TexturePatterImages/SF-27 Black.png'
+    },
+    {
+        code: 'SF-28 Dark Grey',
+        name: 'SF-28 Dark Grey',
+        image: '/Images/TexturePatterImages/SF-28 Dark Grey.png'
+    },
+    {
+        code: 'SF-30 Camel-323',
+        name: 'SF-30 Camel-323',
+        image: '/Images/TexturePatterImages/SF-30 Camel-323.png'
+    },
+    {
+        code: 'SF-33 P. Blue',
+        name: 'SF-33 P. Blue',
+        image: '/Images/TexturePatterImages/SF-33 P. Blue.png'
+    },
+    {
+        code: 'SF-36',
+        name: 'SF-36',
+        image: '/Images/TexturePatterImages/SF-36.png'
+    },
+    {
+        code: 'SF-38',
+        name: 'SF-38',
+        image: '/Images/TexturePatterImages/SF-38.png'
+    },
+    {
+        code: 'SF-39 Harbor Burst',
+        name: 'SF-39 Harbor Burst',
+        image: '/Images/TexturePatterImages/SF-39 Harbor Burst.png'
+    },
+    {
+        code: 'SF-53 Purple Green',
+        name: 'SF-53 Purple Green',
+        image: '/Images/TexturePatterImages/SF-53 Purple Green.png'
+    },
+    {
+        code: 'SF-59',
+        name: 'SF-59',
+        image: '/Images/TexturePatterImages/SF-59.png'
+    },
+    {
+        code: 'SF-64 T. Red',
+        name: 'SF-64 T. Red',
+        image: '/Images/TexturePatterImages/SF-64 T. Red.png'
+    },
+    {
+        code: 'SF-66 Agar wood',
+        name: 'SF-66 Agar wood',
+        image: '/Images/TexturePatterImages/SF-66 Agar wood.png'
+    },
+    {
+        code: 'SF-70 Fire Place',
+        name: 'SF-70 Fire Place',
+        image: '/Images/TexturePatterImages/SF-70 Fire Place.png'
+    },
+    {
+        code: 'SF-73',
+        name: 'SF-73',
+        image: '/Images/TexturePatterImages/SF-73.png'
+    },
+    {
+        code: 'SF-73-2',
+        name: 'SF-73-2',
+        image: '/Images/TexturePatterImages/SF-73-2.png'
+    },
+    {
+        code: 'Ocean Blue',
+        name: 'Ocean Blue',
+        image: '/Images/TexturePatterImages/Ocean Blue.png'
+    },
+    {
+        code: 'Orange',
+        name: 'Orange',
+        image: '/Images/TexturePatterImages/Orange.png'
+    },
+    {
+        code: 'Oxford Blue',
+        name: 'Oxford Blue',
+        image: '/Images/TexturePatterImages/Oxford Blue.png'
+    },
+    {
+        code: 'Raven',
+        name: 'Raven',
+        image: '/Images/TexturePatterImages/Rav en.png'
+    },
+    {
+        code: 'Sapphire Blue',
+        name: 'Sapphire Blue',
+        image: '/Images/TexturePatterImages/Sapphire Blue.png'
+    },
+    {
+        code: 'T. Blue 749',
+        name: 'T. Blue 749',
+        image: '/Images/TexturePatterImages/T. Blue 749.png'
     }
 ]
+
+// Pagination state
+const currentPage = ref(0)
+const itemsPerPage = 8
+
+// Computed property for current visible swatches
+const colorSwatches = computed(() => {
+    const startIndex = currentPage.value * itemsPerPage
+    return allColorSwatches.slice(startIndex, startIndex + itemsPerPage)
+})
+
+// Navigation functions
+const nextPage = () => {
+    const totalPages = Math.ceil(allColorSwatches.length / itemsPerPage)
+    currentPage.value = (currentPage.value + 1) % totalPages
+}
+
+const prevPage = () => {
+    const totalPages = Math.ceil(allColorSwatches.length / itemsPerPage)
+    currentPage.value = currentPage.value === 0 ? totalPages - 1 : currentPage.value - 1
+}
 
 // Application features data
 const applicationFeatures = [

@@ -200,9 +200,13 @@
     .featureText  {
      display: flex;
     }
-
+   
     /* Responsive for Various Applications */
     @media (max-width: 768px) {
+        .featureText span{
+            text-align: center;
+        }
+    
         .acousticTilesLayout .VariousApplicationsGridContainer {
             grid-template-columns: repeat(2, 1fr) !important;
             gap: 20px;

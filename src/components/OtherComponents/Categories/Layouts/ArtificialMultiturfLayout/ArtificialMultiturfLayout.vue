@@ -8,7 +8,7 @@
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/ArtificialGrassImage.png"
             imageAlt="Artificial grass background image" />
 
-        <div class="width100 ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container">
+        <div class=" ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container">
             <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Explore our Artificial Grass collection</h2>
             <div class="ArtificialMultiturfGrid paddingTop60">
                 <div class="ArtificialMultiturfGridItem">

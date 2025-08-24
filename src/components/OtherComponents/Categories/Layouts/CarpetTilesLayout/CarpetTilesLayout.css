@@ -549,7 +549,7 @@
         width: 100%;
         min-height: 500px;
         margin-top: 50px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     
     /* Mobile layout - stack containers more vertically */

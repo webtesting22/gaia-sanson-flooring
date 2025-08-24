@@ -64,4 +64,8 @@
     .OverlayHeadingContainer {
         padding: 0px 10px;
     }
+    .CommonTopLayoutContainer{
+        min-height: 400px ;
+        max-height: 400px;
+    }
 }

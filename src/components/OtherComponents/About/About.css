@@ -565,8 +565,9 @@ padding-right: 20px;
 
 @media (max-width: 480px) {
     .SansonAboutContainerInner {
-        padding: 30px 20px;
+        padding: 0px 00px;
         gap: 30px;
+        background-color: transparent !important;
     }
 
     .SansonAboutContainerInner .LeftSideImageContainer {

@@ -106,49 +106,49 @@
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Multi-Directional.png" alt="Multi-Directional" />
                         </div>
-                        <span class="property-label">Multi-Directional</span>
+                        <p class="property-label">Multi-Directional</p>
                     </div>
 
                     <div class="property-card">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Brick.png" alt="Brick" />
                         </div>
-                        <span class="property-label">Brick</span>
+                        <p class="property-label">Brick</p>
                     </div>
 
                     <div class="property-card">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Quarter Turn.png" alt="Quarter Turn" />
                         </div>
-                        <span class="property-label">Quarter Turn</span>
+                        <p class="property-label">Quarter Turn</p>
                     </div>
 
                     <div class="property-card">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Anti static.png" alt="Anti Static" />
                         </div>
-                        <span class="property-label">Anti Static</span>
+                        <p class="property-label">Anti Static</p>
                     </div>
 
                     <div class="property-card">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Non-Directional.png" alt="Non-Directional" />
                         </div>
-                        <span class="property-label">Non-Directional</span>
+                        <p class="property-label">Non-Directional</p>
                     </div>
 
                     <div class="property-card">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Underfloor Heating.png" alt="Underfloor Heating" />
                         </div>
-                        <span class="property-label">Underfloor Heating</span>
+                        <p class="property-label">Underfloor Heating</p>
                     </div>
 
                     <div class="property-card">
                         <div class="property-icon">
                             <img src="/Images/propertiesImages/Fire Resistant.png" alt="Fire Resistant" />
                         </div>
-                        <span class="property-label">Fire Resistant</span>
+                        <p class="property-label">Fire Resistant</p>
                     </div>
                 </div>
             </div>

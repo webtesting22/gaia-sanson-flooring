@@ -1,6 +1,6 @@
 <template>
     <div class="width100 acousticTilesLayout">
-        <CommonTopLayout heading="Acoustic Tiles — Redefining Spaces with Elegance"
+        <CommonTopLayout heading="Acoustic PET Panels — Redefining Spaces with Elegance"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic TilesImagesBackground.png"
             imageAlt="Acoustic Solutions" />
 
@@ -286,12 +286,12 @@
             <div class="Container paddingTop80 paddingBottom80">
                 <div class="HeaderContainerCommonAll" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
                     <div>
-                        <h2>Optimized Spaces with Acoustic Tiles</h2>
+                        <h2>Optimized Spaces with Acoustic PET Panels</h2>
                     </div>
 
                 </div>
                 <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                    <p>Designed to reduce noise and enhance interiors, our acoustic tiles combine performance with <br>
+                    <p>Designed to reduce noise and enhance interiors, our acoustic PET panels combine performance with <br>
                         aesthetics. Browse real-world installations to see how they transform a variety of spaces.
                     </p>
                 </div>

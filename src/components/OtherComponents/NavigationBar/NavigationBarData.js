@@ -5,7 +5,7 @@ const navigationBarData = [
     //     hasDropdown: false
     // },
     {
-        name: 'Our Categories',
+        name: 'Our Products',
         path: '',
         hasDropdown: true,
         dropdownItems: [
@@ -21,7 +21,7 @@ const navigationBarData = [
             },
 
             {
-                name: 'Acoustic Tiles',
+                name: 'Acoustic PET Panels',
                 path: '/categories/acoustic-tiles',
                 description: 'Sound-absorbing flooring for noise control'
             },

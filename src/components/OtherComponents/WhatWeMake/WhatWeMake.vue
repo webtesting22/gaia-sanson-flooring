@@ -5,7 +5,8 @@
                 <div>
                     <h2>What We Make</h2>
                     <p>Discover our comprehensive range of innovative flooring products that combine cutting-edge
-                        technology with timeless design. From acoustic tiles to luxury carpets, we craft solutions that
+                        technology with timeless design. From acoustic PET panels to luxury carpets, we craft solutions
+                        that
                         transform spaces and enhance lives.</p>
                 </div>
                 <div class="CategoriesGrid paddingTop80">
@@ -18,10 +19,8 @@
                 </div>
             </div>
         </div>
-        <HomeProducts 
-            title="WHAT WE MANUFACTURE" 
-            subtitle="Explore our diverse range of innovative flooring products crafted with precision and excellence"
-        />
+        <HomeProducts title="WHAT WE MANUFACTURE"
+            subtitle="Explore our diverse range of innovative flooring products crafted with precision and excellence" />
     </div>
 </template>
 

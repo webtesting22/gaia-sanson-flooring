@@ -197,16 +197,16 @@
         transform: scale(1.1);
     }
 
-    .featureText  {
-     display: flex;
+    .featureText {
+        display: flex;
     }
-   
+
     /* Responsive for Various Applications */
     @media (max-width: 768px) {
-        .featureText span{
+        .featureText span {
             text-align: center;
         }
-    
+
         .acousticTilesLayout .VariousApplicationsGridContainer {
             grid-template-columns: repeat(2, 1fr) !important;
             gap: 20px;
@@ -214,12 +214,12 @@
 
         .acousticTilesLayout .VariousApplicationsGridItem {
             padding: 20px 15px;
-      
+
         }
     }
 }
 
-.acousticTilesLayout{
+.acousticTilesLayout {
     overflow: hidden;
 }
 
@@ -265,9 +265,10 @@
 }
 
 @media (max-width: 768px) {
-    .VariousApplicationsGridItem{
+    .VariousApplicationsGridItem {
         flex-direction: column;
     }
+
     .SurfaceGridContainer {
         flex-direction: column;
     }
@@ -374,9 +375,10 @@
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
-    .acousticTilesLayout .VariousApplicationsGridContainer{
+    .acousticTilesLayout .VariousApplicationsGridContainer {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+
     .acoustic-benefits-wrapper {
         flex-direction: column;
         /* margin: 0 20px; */
@@ -589,9 +591,10 @@
     /* flex-direction: column; */
 }
 
-.HeaderContainerCommonAll h2{
+.HeaderContainerCommonAll h2 {
     text-align: start;
 }
+
 /* .HeaderContainerCommonAll div:nth-child(1){
     width: 40%;
 }
@@ -599,62 +602,70 @@
     width: 40%;
 } */
 
-.LastGridImagesContainer{
+.LastGridImagesContainer {
     background-color: white !important;
 }
 
-.EditContainerContentImage>div img{
-    width:300px;
+.EditContainerContentImage>div img {
+    width: 300px;
     background-color: white;
     border-radius: 10px;
 }
-.EditContainerContentImage>div{
+
+.EditContainerContentImage>div {
     display: flex;
     justify-content: center;
 }
-.EditContainerContentImage{
+
+.EditContainerContentImage {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.MadeIndiaWrittenContainer{
+.MadeIndiaWrittenContainer {
     background-color: white;
 }
 
 @media (max-width: 768px) {
- 
-    .EditContainerContent{
+
+    .EditContainerContent {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-    
+
     }
-    .HeaderContainerCommonAll{
+
+    .HeaderContainerCommonAll {
         flex-direction: column;
         align-items: start;
         gap: 10px;
     }
-    .EditContainerContentImage>div img{
+
+    .EditContainerContentImage>div img {
         width: 100% !important;
     }
-    .EditContainerContentImage{
+
+    .EditContainerContentImage {
         margin-top: 50px;
     }
-    .HeaderContainerCommonAll h2{
+
+    .HeaderContainerCommonAll h2 {
         text-align: start;
     }
-    .HeaderContainerCommonAll div:nth-child(1){
+
+    .HeaderContainerCommonAll div:nth-child(1) {
         width: 100%;
     }
-    .HeaderContainerCommonAll div:nth-child(2){
+
+    .HeaderContainerCommonAll div:nth-child(2) {
         width: 100%;
     }
-    
+
 }
 
 
-.EditContainerContent{
+.EditContainerContent {
     /* min-height: 400px; */
     /* background-color: #1e3a8a; */
     border-radius: 10px;

@@ -19,7 +19,7 @@ const HomeProductsData = [
     },
     {
         id: 3,
-        title: "Acoustic Tiles",
+        title: "Acoustic PET Panels",
         description: "Control sound beautifully with tiles that absorb noise and elevate interior design.",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AcousticTilesUpdateImage.png",
         bgColor: "#f5f5f0",

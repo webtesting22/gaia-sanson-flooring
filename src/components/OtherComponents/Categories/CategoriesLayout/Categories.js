@@ -64,10 +64,10 @@ const CategoriesData = [
     },
     {
         id: 3,
-        name: 'Acoustic Tiles',
+        name: 'Acoustic PET Panels',
         slug: 'acoustic-tiles',
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        description: 'Specialized acoustic tiles designed to reduce noise and improve sound quality in any environment.',
+        description: 'Specialized acoustic PET panels designed to reduce noise and improve sound quality in any environment.',
         features: [
             'Superior sound absorption',
             'Easy to install and maintain',

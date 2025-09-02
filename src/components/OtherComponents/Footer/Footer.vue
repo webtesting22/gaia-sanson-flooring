@@ -17,15 +17,15 @@ import "./Footer.css"
                 <h3 class="section-title">CONTACT US</h3>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="contact-icon">📞</span>
-                        <span class="contact-text">+91-9910921119</span>
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-text">+91-99109 21119</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">✉️</span>
+                        <i class="fas fa-envelope"></i>
                         <span class="contact-text">contact@sansonfloorings.com</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">🌐</span>
+                    <i class="fas fa-globe"></i>
                         <span class="contact-text">www.sansonfloorings.com</span>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ import "./Footer.css"
                         <div v-if="navItem.hasDropdown && navItem.dropdownItems" class="sub-links">
                             <router-link v-for="subItem in navItem.dropdownItems" :key="subItem.name" :to="subItem.path"
                                 class="nav-link sub-link">
-                                {{ subItem.name }}
+                                - {{ subItem.name }}
                             </router-link>
                         </div>
                     </div>

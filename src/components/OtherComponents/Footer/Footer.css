@@ -156,6 +156,7 @@
     font-weight: 400;
     transition: color 0.3s ease;
     display: block;
+    padding: 0px ;
 }
 
 .nav-link:hover {

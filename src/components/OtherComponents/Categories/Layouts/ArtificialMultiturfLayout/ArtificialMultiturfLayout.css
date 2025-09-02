@@ -213,9 +213,10 @@
 
 /* Mobile */
 @media (max-width: 480px) {
-    .ArtificialMultiturfGrid{
+    .ArtificialMultiturfGrid {
         flex-direction: column;
     }
+
     .WhyChooseArtificialMultiturf .why-choose-section h2 {
         font-size: 1.8rem;
         margin-bottom: 40px;
@@ -243,16 +244,32 @@
     .WhyChooseArtificialMultiturf .feature-card p {
         font-size: 0.85rem;
     }
-}
-
-/* Small Mobile */
-@media (max-width: 360px) {
-    .WhyChooseArtificialMultiturf .features-grid {
-        grid-template-columns: 1fr;
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-    }
-
-    .WhyChooseArtificialMultiturf .why-choose-section h2 {
-        font-size: 1.6rem;
-    }
+      }
+    
+      .features-grid .feature-card {
+        padding: 20px 15px;
+      }
+    
+      .features-grid .feature-icon {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+      }
+    
+      .features-grid .feature-card h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+    
+      .features-grid .feature-card p {
+        font-size: 0.85rem;
+      }
+    
+      /* 👉 Make the last card span both columns */
+      .features-grid .feature-card:last-child {
+        grid-column: 1 / -1;
+      }
 }

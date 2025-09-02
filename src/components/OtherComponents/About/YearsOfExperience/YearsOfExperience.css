@@ -26,6 +26,9 @@
     z-index: 1;
 }
 
+.experienceHeader p {
+    text-align: start;
+}
 
 /* Main Grid Layout */
 .experienceGrid {
@@ -311,6 +314,7 @@
 }
 
 @media (max-width: 768px) {
+
     .statContent {
         align-items: start !important;
     }
@@ -322,6 +326,7 @@
     .experienceHeader p {
         font-size: 1.1rem;
         padding: 0 20px;
+        text-align: center;
     }
 
     .experienceGrid {
@@ -350,7 +355,7 @@
 
     .statsGrid {
         /* grid-template-columns: ; */
-        gap: 25px;
+        gap: 10px;
     }
 
     .statCard {

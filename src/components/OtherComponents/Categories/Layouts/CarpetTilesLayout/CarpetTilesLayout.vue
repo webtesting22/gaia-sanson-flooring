@@ -22,11 +22,15 @@
 
                     <div class="paddingTop60">
                         <swiper :modules="[SwiperNavigation, Autoplay]" :slides-per-view="7" :space-between="20"
-                            :loop="true" :speed="700"  :navigation="{
+                            :loop="true" :speed="700" :autoplay="{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
+                            }" :navigation="{
                                 nextEl: '.swiper-button-next-custom',
                                 prevEl: '.swiper-button-prev-custom'
                             }" :breakpoints="{
-                                320: { slidesPerView: 5, spaceBetween: 15 },
+                                320: { slidesPerView: 3, spaceBetween: 15 },
                                 768: { slidesPerView: 6, spaceBetween: 20 },
                                 1024: { slidesPerView: 6, spaceBetween: 20 },
                                 1200: { slidesPerView: 8, spaceBetween: 20 }
@@ -39,7 +43,7 @@
                             </swiper-slide>
                         </swiper>
                     </div>
-                    <!-- <div class="SwiperNavigationContainerMobileOnly">
+                    <div class="SwiperNavigationContainerMobileOnly">
                         <div class="SwiperNavigation">
                             <button class="common-btn secondary swiper-button-prev-custom">
                                 <span>←</span>
@@ -48,7 +52,7 @@
                                 <span>→</span>
                             </button>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>

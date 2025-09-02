@@ -5,6 +5,7 @@ import Footer from "./components/OtherComponents/Footer/Footer.vue"
 import NavigationBar from "./components/OtherComponents/NavigationBar/NavigationBar.vue"
 import PageTransition from "./components/FramerAnimation/PageTransition.vue"
 import WhatsappBtn from "./components/OtherComponents/WhatsappBtn/WhatsappBtn.vue"
+import "primeicons/primeicons.css";
 </script>
 
 <template>

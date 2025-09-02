@@ -62,16 +62,33 @@
 }
 
 @media (max-width: 768px) {
-    .FlexContainerEdit{
+    .FlexContainerEdit {
         flex-direction: column;
     }
-    .LogoContainerEdit>div img{
+
+    .LogoContainerEdit>div img {
         width: 150px;
         aspect-ratio: 3/2;
         object-fit: contain;
     }
-    .LogoContainerEdit{
+
+    .LogoContainerEdit {
         padding-top: 30px;
         gap: 10px;
+        width: 100%;
+    }
+
+    .LogoContainerEdit>div {
+        width: 100%;
+    }
+
+    .CompanyDetailsContainer .FlexContainerEdit {
+        padding: 0px 80px !important;
+    }
+}
+
+@media (min-width:600px) and (max-width:1100px) {
+    .HandCraftedContainer {
+        background-attachment: scroll !important;
     }
 }

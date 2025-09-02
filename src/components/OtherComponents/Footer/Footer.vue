@@ -65,7 +65,7 @@ import "./Footer.css"
         </div>
 
         <!-- Bottom Footer Section -->
-        <div class="footer-bottom Container" data-aos="fade-up" data-aos-delay="500">
+        <div class="footer-bottom Container">
             <div class="footer-bottom-content">
                 <div class="legal-links">
                     <a href="#" class="legal-link">Terms & Services</a>

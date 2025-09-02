@@ -44,9 +44,9 @@ export default {
                 <div class="story-image-container" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
                     <div class="story-header" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200">
                         <h2 class="story-main-title">Our Story</h2>
-                        <div class="story-arrow-icon">↗</div>
+                        <div class="story-arrow-icon"> <i class="pi pi-arrow-up-right"></i></div>
                     </div>
-                    
+
                     <transition name="slide-image" mode="out-in">
                         <div :key="currentSlide" class="story-image-wrapper" :class="{ 'animating': isAnimating }">
                             <img :src="currentStoryItem.image" :alt="currentStoryItem.title" class="story-image" />
@@ -71,13 +71,16 @@ export default {
                     <div class="story-content">
                         <transition name="slide-content" mode="out-in">
                             <div :key="currentSlide" class="content-wrapper" :class="{ 'animating': isAnimating }">
-                                <h3 class="story-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">{{ currentStoryItem.title }}</h3>
-                                <div class="story-description" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600" v-html="currentStoryItem.description"></div>
+                                <h3 class="story-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
+                                    {{ currentStoryItem.title }}</h3>
+                                <br>
+                                <div class="story-description" data-aos="fade-up" data-aos-duration="700"
+                                    data-aos-delay="600" v-html="currentStoryItem.description"></div>
                                 <router-link to="/about-us"><button class="common-btn know-more-btn" data-aos="zoom-in"
-                                    data-aos-duration="600" data-aos-delay="500">
-                                    Know More
-                                    <span class="btn-arrow">↗</span>
-                                </button></router-link>
+                                        data-aos-duration="600" data-aos-delay="500">
+                                        Know More
+                                        <i class="pi pi-arrow-up-right"></i>
+                                    </button></router-link>
                                 <br>
                                 <!-- Progress Indicator -->
                                 <!-- <div class="progress-indicator" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
@@ -87,7 +90,7 @@ export default {
                                 </div> -->
                             </div>
                         </transition>
-                       
+
                     </div>
 
 

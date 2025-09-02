@@ -46,7 +46,7 @@ export default {
                             <router-link to="/about-us"><button class="common-btn know-more-btn" data-aos="zoom-in"
                                     data-aos-duration="600" data-aos-delay="500">
                                     Know More
-                                    <span class="btn-arrow">↗</span>
+                                    <i class="pi pi-arrow-up-right"></i>
                                 </button></router-link>
                         </div>
 

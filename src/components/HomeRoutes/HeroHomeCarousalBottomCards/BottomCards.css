@@ -124,6 +124,16 @@
     .BottomCardsContainer .card-description {
         font-size: 0.95rem;
     }
+    .BottomCardsContainer .card-item{
+        width: 80%;
+        min-height: unset !important;
+        padding: 20px 0px;
+    }
+    .BottomCardsContainer .cards-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Mobile View */
@@ -138,10 +148,11 @@
     .BottomCardsContainer .cards-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+        
     }
     
     .BottomCardsContainer .card-image-placeholder {
-        height: 120px;
+        height: 60px;
         margin-bottom: 12px;
     }
     

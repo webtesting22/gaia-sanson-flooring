@@ -206,6 +206,7 @@
     .SwiperNavigation {
         /* justify-content: center; */
         margin-top: 20px;
+        justify-content: space-between !important;
     }
 
     .gridImagesContainerText {
@@ -225,12 +226,12 @@
     }
 
     .ChooseDesignsContainer .swiper {
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     .SwatchImage {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
     }
 
     .girdImagesContainer {
@@ -326,7 +327,7 @@
     left: 300px;
     width: 200px;
     height: 800px;
-    background-image: url('/Images/TexturesImages/Texture1-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -345,7 +346,7 @@
     left: 200px;
     width: 200px;
     height: 500px;
-    background-image: url('/Images/TexturesImages/Texture3-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -358,7 +359,7 @@
     left: 100px;
     width: 200px;
     height: 200px;
-    background-image: url('/Images/TexturesImages/Texture4-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -371,7 +372,7 @@
     left: 70px;
     width: 200px;
     height: 350px;
-    background-image: url('/Images/TexturesImages/Texture6-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImageImage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -408,7 +409,7 @@
     /* position: absolute; */
     /* top: 0;
     left: 0; */
-    background-image: url('/Images/TexturesImages/Texture1-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage4.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -421,7 +422,7 @@
     /* position: absolute; */
     /* top: 0;
     left: 0; */
-    background-image: url('/Images/TexturesImages/Texture3-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage5.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -434,7 +435,7 @@
     /* position: absolute; */
     /* top: 0;
     left: 0; */
-    background-image: url('/Images/TexturesImages/Texture4-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage6.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -449,7 +450,7 @@
     left: 530px;
     width: 250px;
     height: 300px;
-    background-image: url('/Images/TexturesImages/Texture6-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage10.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -461,7 +462,7 @@
     left: 480px;
     width: 200px;
     height: 650px;
-    background-image: url('/Images/TexturesImages/Texture1-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage7.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -474,7 +475,7 @@
     left: 400px;
     width: 600px;
     height: 200px;
-    background-image: url('/Images/TexturesImages/Texture3-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage8.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -486,11 +487,11 @@
     left: 390px;
     width: 400px;
     height: 200px;
-    background-image: url('/Images/TexturesImages/Texture4-min.jpg');
+    background-image: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage9.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 2;
+    z-index: 6;
 }
 
 /* Responsive Design for Animated Container */

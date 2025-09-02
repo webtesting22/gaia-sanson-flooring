@@ -12,7 +12,7 @@ export default {
                 },
                 rightImage: {
                     src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SHOWCASINGOURCARPETS2.png",
-                    label: "ACOUSTIC PANEL"
+                    label: "ACOUSTIC PET PANEL"
                 }
             },
             dividerPosition: 50,

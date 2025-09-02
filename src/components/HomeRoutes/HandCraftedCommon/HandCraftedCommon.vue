@@ -33,6 +33,7 @@ export default {
                     <div class="FlexContainerEdit">
                         <div class="Width50">
                         <h2 class="whiteColor">Manufactured in India</h2>
+                        <br>
                         <p class="whiteColor">At GAIA, we proudly contribute to the Make in India initiative by
                             producing high-quality
                             flooring

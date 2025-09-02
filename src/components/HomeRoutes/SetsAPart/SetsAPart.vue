@@ -96,7 +96,7 @@ export default {
                         setsApartData.title }}</h2>
                 </div>
             </div>
-            <div class="sets-apart-logos-Container">
+            <!-- <div class="sets-apart-logos-Container">
                 <div class="sets-apart-logos-Container-item">
                     <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
                         alt="">
@@ -105,7 +105,7 @@ export default {
                     <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
                         alt="">
                 </div>
-            </div>
+            </div> -->
 
             <!-- Right Side - Smaller Image -->
             <!-- <div class="sets-apart-image" data-aos="fade-left" data-aos-delay="300">

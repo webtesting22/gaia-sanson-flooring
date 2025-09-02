@@ -161,13 +161,13 @@
                     <h2 class="blackColor marginBottom20" data-aos="fade-down" data-aos-duration="800"
                         data-aos-delay="100">Where Your Vision Meets Our Design Expertise</h2>
                     <br>
-                    <h3 style="font-weight: 400;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">If you
+                    <p style="font-weight: 400;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">If you
                         have a specific product or design in mind, we can develop and
                         customize it to match your exact requirements. We offer personalization in backing, pile height,
                         stitch density, and yarn quality. Please note that a minimum order quantity (MOQ) applies for
                         custom
                         orders. We're happy to work with you to create a product that fits your needs. Let us know your
-                        ideas, and we'll help turn them into reality.</h3>
+                        ideas, and we'll help turn them into reality.</p>
                 </div>
             </div>
         </div>

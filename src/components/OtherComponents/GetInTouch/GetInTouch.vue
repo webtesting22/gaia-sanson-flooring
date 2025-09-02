@@ -6,7 +6,7 @@
                 <!-- Left Section - Contact Form -->
                 <div class="contact-form-section">
                     <h1 style="color: black;">{{ title }}</h1>
-                    <p>{{ subtitle }}</p>
+                    <p> &nbsp;&nbsp;{{ subtitle }}</p>
                     <br>
                     <div class="input-group">
                         <input type="email" placeholder="Your email address" class="email-input" />

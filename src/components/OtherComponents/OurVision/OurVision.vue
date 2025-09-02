@@ -13,6 +13,7 @@
                 <!-- Right Section - Text Content -->
                 <div class="visionContent">
                     <h2 class="whiteColor">Our Vision</h2>
+                    <br>
                     <p class="whiteColor">To be the most admired name in the Premia Industry by evolving the world of ideas & innovations.</p>
                 </div>
             </div>

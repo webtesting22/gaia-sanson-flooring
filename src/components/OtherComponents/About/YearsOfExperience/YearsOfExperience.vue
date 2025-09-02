@@ -4,7 +4,7 @@
             <!-- Section Header -->
             <div class="experienceHeader" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <h2>Our Journey of Growth</h2>
-                <br>
+                <!-- <br> -->
                 <p>Twenty-five years of innovation, excellence, and unwavering commitment to
                     quality</p>
             </div>

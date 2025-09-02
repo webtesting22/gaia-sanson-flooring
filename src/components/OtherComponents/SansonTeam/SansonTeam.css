@@ -294,9 +294,13 @@
     letter-spacing: 0.5px;
 } 
 .teamSectionHeader p{
-    text-align: start;
+    text-align: center;
 }
 
+.teamSectionHeader h2{
+    text-align: center;
+    justify-content: center;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .teamSectionHeader p{

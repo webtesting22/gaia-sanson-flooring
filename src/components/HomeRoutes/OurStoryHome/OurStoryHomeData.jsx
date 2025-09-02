@@ -2,7 +2,7 @@ const OurStoryHomeData = [
     {
         id: 1,
         title: "Introducing GAIA: A New Era in Flooring Fashion",
-        description: "<p>From Gaia, the Greek goddess — Mother Earth, origin of life — to Prithvi, the vast and grounding force in Indian tradition.</p><p>Across cultures, Earth has always been revered as the ultimate source of creation and balance.</p><p>At Sanson Group, we honor this legacy by combining innovation with purpose. Today, we're proud to unveil our newest label: GAIA – The New World of Flooring Fashion.</p>",
+        description: "<p>Across cultures, Earth has always been more than just ground beneath our feet — it has been the source of creation, balance, and life itself.</p><br /><p>That inspiration is at the heart of GAIA. Rooted in tradition, powered by innovation, GAIA is India’s first brand to bring integrated flooring and acoustic solutions — where design meets performance, and every space is elevated from the ground up</p>",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OurStoryImageUpdated.png"
     },
     // {

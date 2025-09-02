@@ -4,7 +4,7 @@
             <!-- Section Header -->
             <div class="teamSectionHeader" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <h2>Leadership Excellence</h2>
-                <br>
+                <!-- <br> -->
                 <p>Meet the visionaries driving innovation and growth at Sanson Group</p>
                 <!-- <div class="titleUnderline"></div> -->
             </div>

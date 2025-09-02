@@ -28,20 +28,13 @@ export default {
     <div class=" HandCraftedCommonContainerParent">
        
         <div class="HandCraftedContainer">
-            <div class="CompanyDetailsContainer paddingBottom80 ">
+            <div class="CompanyDetailsContainer ">
                 <div class="Container">
                     <div class="FlexContainerEdit">
                         <div class="Width50">
                         <h2 class="whiteColor">Manufactured in India</h2>
                         <br>
-                        <p class="whiteColor">At GAIA, we proudly contribute to the Make in India initiative by
-                            producing high-quality
-                            flooring
-                            solutions with advanced machinery right here in India. Our commitment to local manufacturing
-                            ensures
-                            we deliver top-tier products that meet global standards, supporting India’s vision for
-                            innovation
-                            and self-reliance.</p>
+                        <p class="whiteColor">GAIA stands as a proud contributor to the Make in India initiative. By producing world-class flooring solutions with advanced machinery in India, we combine global standards with local strength — driving innovation, self-reliance, and progress from the ground up.</p>
                     </div>
                     <div class="LogoContainerEdit">
                         <div>

@@ -31,6 +31,9 @@
    =========================================== */
 
 .BottomCardsContainer .card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: #293A42;
     border-radius: 10px;
     padding: 10px;
@@ -48,23 +51,16 @@
     border-color: rgba(0, 0, 0, 0.1);
 }
 
-/* ===========================================
-   IMAGE PLACEHOLDER (FOR FUTURE USE)
-   =========================================== */
-
-
-/* ===========================================
-   CARD CONTENT STYLING
-   =========================================== */
-
 .BottomCardsContainer .card-content {
     text-align: left;
 }
-.card-image-placeholder{
+
+.card-image-placeholder {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 /* ===========================================
    HOVER ANIMATIONS & MICRO-INTERACTIONS
    =========================================== */
@@ -103,33 +99,35 @@
     .CommonLayoutContainer {
         padding: 40px 15px;
     }
-    
+
     .BottomCardsContainer .cards-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
-   
-    
+
+
+
     .BottomCardsContainer .card-image-placeholder {
         height: 150px;
         margin-bottom: 15px;
     }
-    
+
     .BottomCardsContainer .card-title {
         font-size: 1.2rem;
         margin-bottom: 12px;
     }
-    
+
     .BottomCardsContainer .card-description {
         font-size: 0.95rem;
     }
-    .BottomCardsContainer .card-item{
+
+    .BottomCardsContainer .card-item {
         width: 80%;
         min-height: unset !important;
         padding: 20px 0px;
     }
-    .BottomCardsContainer .cards-grid{
+
+    .BottomCardsContainer .cards-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -141,26 +139,27 @@
     .BottomCardsContainer {
         margin-top: -4rem;
     }
+
     .CommonLayoutContainer {
         padding: 30px 0px;
     }
-    
+
     .BottomCardsContainer .cards-grid {
         grid-template-columns: 1fr;
         gap: 15px;
-        
+
     }
-    
+
     .BottomCardsContainer .card-image-placeholder {
         height: 60px;
         margin-bottom: 12px;
     }
-    
+
     .BottomCardsContainer .card-title {
         font-size: 1.1rem;
         margin-bottom: 10px;
     }
-    
+
     .BottomCardsContainer .card-description {
         font-size: 0.9rem;
         line-height: 1.5;
@@ -201,6 +200,6 @@
 
 @media (max-width: 768px) {
     .CommonLayoutContainer {
-      width: unset !important;
+        width: unset !important;
     }
 }

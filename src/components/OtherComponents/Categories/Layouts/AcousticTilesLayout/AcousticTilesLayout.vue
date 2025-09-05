@@ -20,21 +20,46 @@
 
         </div> -->
         <div class="MadeIndiaWrittenContainer paddingTop80 paddingBottom80">
-            <div class="Container EditContainerContent">
-                <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Manufactured in India</h2>
+            <div class="Container EditContainerContent paddingBottom80">
+               
                 <br>
-                <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">India's first startup offering integrated solutions in floorings and
-                    acoustic panels for high-performance interiors.</h3>
-                <!-- <div class="sets-apart-logos-Container" style="justify-content: start;">
-                    <div class="sets-apart-logos-Container-item">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
-                            alt="">
+                <div class="FlexContainerEditNew ">
+                    
+                    <div>
+                        <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Manufactured in India</h2>
+                        <br>
+                        <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">India's first startup
+                            offering
+                            integrated solutions in floorings and
+                            acoustic panels for high-performance interiors.</h3>
                     </div>
-                    <div class="sets-apart-logos-Container-item">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
-                            alt="">
+                    <div class="AccousticContainerLogo">
+                        <div class="sets-apart-logos-Container" style="justify-content: start;">
+                            <div class="sets-apart-logos-Container-item">
+                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                                    alt="">
+                            </div>
+                            <div class="sets-apart-logos-Container-item">
+                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                                    alt="">
+                            </div>
+                        </div>
                     </div>
-                </div> -->
+                </div>
+            </div>
+            <div class="BlueBackContainer paddingTop80 paddingBottom80">
+                <div class="Container">
+                    <div>
+                        <h2 class="whiteColor" style="color: #E4D8C8 !important;">Coming Soon – Explore Our New Arrivals
+                        </h2>
+                        <br>
+                        <h3 class="whiteColor">Get ready for our latest additions:
+                        </h3>
+                        <h3 class="whiteColor">Non-Woven (Felt) and Machine Woven Carpets. </h3>
+                    </div>
+
+                </div>
+
             </div>
         </div>
         <!-- <div class="EditContainerContent paddingTop80">
@@ -265,14 +290,14 @@
         </div>
         <div class="VariousApplicationsContainer paddingTop80 paddingBottom80">
             <div class="Container">
-                <h2 class="text-center" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Characteristics</h2>
+                <h2 class="text-center" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+                    Characteristics</h2>
                 <br>
                 <br>
                 <div class="VariousApplicationsGridContainer marginTop20">
-                    <div class="VariousApplicationsGridItem" v-for="(feature, index) in applicationFeatures" :key="feature.id"
-                         data-aos="fade-up" 
-                         :data-aos-duration="600" 
-                         :data-aos-delay="200 + (index * 50)">
+                    <div class="VariousApplicationsGridItem" v-for="(feature, index) in applicationFeatures"
+                        :key="feature.id" data-aos="fade-up" :data-aos-duration="600"
+                        :data-aos-delay="200 + (index * 50)">
                         <div class="featureIcon">
                             <img :src="feature.image" :alt="feature.name" class="application-icon">
                         </div>
@@ -293,7 +318,8 @@
 
                 </div>
                 <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                    <p>Designed to reduce noise and enhance interiors, our acoustic PET panels combine performance with <br>
+                    <p>Designed to reduce noise and enhance interiors, our acoustic PET panels combine performance with
+                        <br>
                         aesthetics. Browse real-world installations to see how they transform a variety of spaces.
                     </p>
                 </div>
@@ -301,9 +327,7 @@
                 <div class="paddingTop80">
                     <div class="LastGridImagesGridContainer">
                         <div class="LastGridImagesGridItem" v-for="(space, index) in interiorSpaces" :key="space.id"
-                             data-aos="zoom-in" 
-                             :data-aos-duration="600" 
-                             :data-aos-delay="300 + (index * 150)">
+                            data-aos="zoom-in" :data-aos-duration="600" :data-aos-delay="300 + (index * 150)">
                             <div class="LastGridImagesImageContainer">
                                 <img :src="space.image" :alt="space.name">
                             </div>
@@ -318,7 +342,7 @@
         </div>
     </div>
     <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
-        description="Connect with us to create acoustic tile solutions customized for your space, style, and sound needs." />
+        description="Connect with us to create acoustic PET panels solutions customized for your space, style, and sound needs." />
 </template>
 
 <script setup>

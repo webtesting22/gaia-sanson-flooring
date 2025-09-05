@@ -670,3 +670,12 @@
     /* background-color: #1e3a8a; */
     border-radius: 10px;
 }
+
+.FlexContainerEditNew{
+    display: flex;
+    align-items: center;
+}
+
+.AccousticContainerLogo .sets-apart-logos-Container-item{
+    margin-top: 0px !important;
+}

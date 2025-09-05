@@ -46,7 +46,7 @@
             </div>
 
             <!-- Search Bar -->
-            <div class="search-section">
+            <!-- <div class="search-section">
                 <div class="search-container">
                     <svg class="search-icon" viewBox="0 0 24 24">
                         <path
@@ -55,7 +55,7 @@
                     </svg>
                     <input type="text" class="search-input" placeholder="Search Products..." v-model="searchQuery">
                 </div>
-            </div>
+            </div> -->
 
             <!-- Mobile Menu Button -->
             <button class="mobile-menu-btn" @click="toggleMobileMenu" aria-label="Toggle mobile menu">

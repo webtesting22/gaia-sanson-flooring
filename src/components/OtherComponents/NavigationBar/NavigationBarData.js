@@ -15,7 +15,7 @@ const navigationBarData = [
                 description: 'Modular carpet solutions for flexible installations'
             },
             {
-                name: 'Artificial & Multiturf',
+                name: 'Artificial & Multiturf Grass',
                 path: '/categories/artificial-multiturf',
                 description: 'Modular carpet solutions for flexible installations'
             },

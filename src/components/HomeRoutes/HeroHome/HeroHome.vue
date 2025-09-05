@@ -74,10 +74,10 @@ export default {
                     <transition name="slide-text" mode="out-in">
                         <div :key="currentSlide" class="text-content-wrapper" :class="{ 'animating': isAnimating }">
                             <h1 class="hero-title animated-title">
-                                {{ currentSlideData.title || 'FLOORING &' }}<br>
-                                {{ currentSlideData.description || 'ACOUSTIC SOLUTION' }}
+                                {{ currentSlideData.title }}<br>
+                                {{ currentSlideData.description }}
                             </h1>
-                            <button class="hero-cta-btn animated-button">CONTACT US</button>
+                            <!-- <button class="hero-cta-btn animated-button">CONTACT US</button> -->
                         </div>
                     </transition>
                 </div>
@@ -85,7 +85,8 @@ export default {
 
             <!-- Carousel container -->
             <div class="carousel-container">
-                <swiper @swiper="onSwiper" :spaceBetween="0" :centeredSlides="true" :loop="true" :modules="modules" :speed="800" class="mySwiper">
+                <swiper @swiper="onSwiper" :spaceBetween="0" :centeredSlides="true" :loop="true" :modules="modules"
+                    :speed="800" class="mySwiper">
                     <swiper-slide v-for="item in carouselData" :key="item.id">
                         <div class="slide-content">
                             <ImageLoader :src="item.image" :alt="item.title" />

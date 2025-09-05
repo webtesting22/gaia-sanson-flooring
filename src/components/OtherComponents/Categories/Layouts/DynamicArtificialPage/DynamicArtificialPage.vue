@@ -169,7 +169,7 @@ const grassTypesData = {
                 alt: 'Sports Grass Training Field'
             },
             {
-                src: '/Images/GrassImages/SportsGrass4.jpg',
+                src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SportGrassimage.jpg',
                 alt: 'Sports Grass School Ground'
             },
             {

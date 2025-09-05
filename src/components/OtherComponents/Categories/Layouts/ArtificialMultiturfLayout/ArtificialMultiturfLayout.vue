@@ -9,7 +9,8 @@
             imageAlt="Artificial grass background image" />
 
         <div class=" ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container">
-            <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Explore our Artificial Grass collection</h2>
+            <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Explore our Artificial Grass
+                collection</h2>
             <div class="ArtificialMultiturfGrid paddingTop60">
                 <div class="ArtificialMultiturfGridItem">
                     <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
@@ -58,7 +59,8 @@
 
         <div class="width100 WhyChooseArtificialMultiturf paddingTop80 paddingBottom80 ">
             <div class="why-choose-section Container">
-                <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Why Choose Our Artificial Grass?</h2>
+                <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Why Choose Our Artificial Grass?
+                </h2>
                 <div class="features-grid paddingTop60">
                     <div class="feature-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <div class="feature-icon">
@@ -114,8 +116,10 @@
             <div class="CommonHeader paddingTop80 paddingBottom80 Container">
                 <div class="width100">
                     <div class="max-width-800">
-                        <h2 class="text-center" style="justify-content: center;" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Designed for Every Space</h2>
-                        <p class="text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Versatile solutions that enhance every environment.</p>
+                        <h2 class="text-center" style="justify-content: center;" data-aos="fade-down"
+                            data-aos-duration="800" data-aos-delay="100">Designed for Every Space</h2>
+                        <p class="text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Versatile
+                            solutions that enhance every environment.</p>
                     </div>
                     <div class="paddingTop80" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                         <swiper @swiper="onSwiper" :slidesPerView="3" :spaceBetween="50" :autoplay="{
@@ -123,21 +127,21 @@
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         }" :loop="true" :speed="700" :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
-                    320: { slidesPerView: 1, spaceBetween: 15 },
-                    768: { slidesPerView: 2, spaceBetween: 20 },
-                    1024: { slidesPerView: 2, spaceBetween: 30 },
-                    1200: { slidesPerView: 3, spaceBetween: 100 }
-                }" :navigation="{
-                                nextEl: '.swiper-button-next-custom',
-                                prevEl: '.swiper-button-prev-custom'
-                            }">
+                            320: { slidesPerView: 1, spaceBetween: 15 },
+                            768: { slidesPerView: 2, spaceBetween: 20 },
+                            1024: { slidesPerView: 2, spaceBetween: 30 },
+                            1200: { slidesPerView: 3, spaceBetween: 100 }
+                        }" :navigation="{
+                            nextEl: '.swiper-button-next-custom',
+                            prevEl: '.swiper-button-prev-custom'
+                        }">
                             <swiper-slide v-for="(design, index) in DesignedData" :key="index" class="DesignSlide">
                                 <div class="DesignedContainer">
                                     <div class="DesignedImage">
                                         <img :src="design.image" :alt="design.name" />
                                     </div>
                                     <div class="DesignedText">
-                                        <h3 class="text-center">{{ design.title }}</h3>
+                                        <h3 class="text-center" v-html="design.title"></h3>
                                         <p class="text-center" style="color: #525252;">{{ design.description }}</p>
                                     </div>
                                 </div>
@@ -171,17 +175,17 @@ const onSwiper = (swiper) => {
 const DesignedData = [
     {
         image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Kids at Play.png',
-        title: 'Child-Friendly Play Lounge',
+        title: 'Child-Friendly<br>Play Lounge',
         description: 'Soft, safe, and always green – perfect turf for endless fun.'
     },
     {
         image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Indoor Play Zone.png',
-        title: 'Indoor Play Zone',
+        title: 'Indoor<br>Play Zone',
         description: 'Bring the playground indoors with vibrant, cushioned grass.'
     },
     {
         image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Colorful Outdoor Playground.png',
-        title: 'Colorful Outdoor Playground',
+        title: 'Colorful Outdoor<br>Playground',
         description: 'A splash of color and comfort for big adventures under the sun.'
     },
 ]

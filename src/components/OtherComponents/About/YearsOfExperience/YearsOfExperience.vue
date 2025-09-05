@@ -39,7 +39,7 @@
                                     <i class="fas fa-users"></i>
                                 </div>
                                 <div class="statContent">
-                                    <span class="statNumber" data-count="100">100</span>
+                                    <span class="statNumber" data-count="100" data-suffix="+">100+</span>
                                     <span class="statLabel">Employees</span>
                                     <span class="statDescription">Dedicated team members</span>
                                 </div>
@@ -50,7 +50,7 @@
                                     <i class="fas fa-project-diagram"></i>
                                 </div>
                                 <div class="statContent">
-                                    <span class="statNumber" data-count="1000+">1000+ </span>
+                                    <span class="statNumber" data-count="1000" data-suffix="+">1000+</span>
                                     <span class="statLabel">Projects</span>
                                     <span class="statDescription">Successfully completed</span>
                                 </div>
@@ -61,7 +61,7 @@
                                     <i class="fas fa-handshake"></i>
                                 </div>
                                 <div class="statContent">
-                                    <span class="statNumber" data-count="100+">100+</span>
+                                    <span class="statNumber" data-count="100" data-suffix="+">100+</span>
                                     <span class="statLabel">Clients</span>
                                     <span class="statDescription">Satisfied customers</span>
                                 </div>
@@ -72,7 +72,7 @@
                                     <i class="fas fa-trophy"></i>
                                 </div>
                                 <div class="statContent">
-                                    <span class="statNumber" data-count="8">8</span>
+                                    <span class="statNumber" data-count="8" data-suffix="">8</span>
                                     <span class="statLabel">Billion Premia</span>
                                     <span class="statDescription">Market value achieved</span>
                                 </div>
@@ -94,7 +94,7 @@
                                     <i class="fas fa-industry"></i>
                                 </div>
                                 <div class="statContent">
-                                    <span class="statNumber" data-count="2">2</span>
+                                    <span class="statNumber" data-count="3">3</span>
                                     <span class="statLabel">Factory Units</span>
                                     <span class="statDescription">Manufacturing facilities</span>
                                 </div>
@@ -112,7 +112,7 @@ import { onMounted } from 'vue'
 import "./YearsOfExperience.css"
 
 onMounted(() => {
-    // Counter animation function
+    // Counter animation function with suffix support
     const animateCounters = () => {
         const counters = document.querySelectorAll('[data-count]')
 
@@ -121,6 +121,7 @@ onMounted(() => {
                 if (entry.isIntersecting) {
                     const counter = entry.target
                     const target = parseInt(counter.getAttribute('data-count'))
+                    const suffix = counter.getAttribute('data-suffix') || ''
                     const duration = 2000 // 2 seconds
                     const step = target / (duration / 16) // 60fps
                     let current = 0
@@ -128,10 +129,10 @@ onMounted(() => {
                     const timer = setInterval(() => {
                         current += step
                         if (current >= target) {
-                            counter.textContent = target
+                            counter.textContent = target + suffix
                             clearInterval(timer)
                         } else {
-                            counter.textContent = Math.floor(current)
+                            counter.textContent = Math.floor(current) + suffix
                         }
                     }, 16)
 

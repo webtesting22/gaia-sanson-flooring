@@ -1,5 +1,5 @@
 <template>
-    <div class="aboutPage paddingBottom80">
+    <div class="aboutPage">
         <CommonTopLayout heading="About Us"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsBannerImage.png"
             imageAlt="Acoustic Solutions" />
@@ -18,26 +18,55 @@
                     data-aos-delay="300">
                     <div class="contentWrapper">
                         <div class="yearsBadge" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300">
-                            <span  style="color: white;">40+</span>
+                            <span style="color: white;">40+</span>
                             <span class="yearsText">Years of Excellence</span>
                         </div>
 
                         <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                             Building Trust Since 1982
                         </h2>
-<br>
+                        <br>
                         <p class="introText" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
-                            Since 1982, Sanson Group, India has been on a journey of innovation, growth, and trust. For
-                            over 40 years, we've proudly served a diverse range of industries — always focused on
-                            delivering quality, value, and long-term impact.
+                            Sanson group, India is a major player in many ventures. Since our inception in 1982, we are
+                            continually improving our quality and serving our clients over 40 years.
                         </p>
+                        <div class="BrandGridContainerDetails" data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="600">
+                            <div class="brandGrid">
+                                <div class="brandCard">
+                                    <div class="brandLogo">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png"
+                                            alt="GAIA Logo">
+                                    </div>
+                                    <h4>GAIA</h4>
+                                    <!-- <p>FLOORING & ACOUSTIC SOLUTION</p> -->
+                                </div>
 
-                        <div class="closingStatement" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                                <div class="brandCard">
+                                    <div class="brandLogo">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
+                                            alt="Seedo Logo">
+                                    </div>
+                                    <h4>SEEDO</h4>
+                                    <!-- <p>INNOVATION & TECHNOLOGY</p> -->
+                                </div>
+
+                                <div class="brandCard">
+                                    <div class="brandLogo">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFuHBtCr1cRvsEIqZjC6HlSTka0C4uXgSxA&s"
+                                            alt="Customer Service Logo">
+                                    </div>
+                                    <h4>Sanfit</h4>
+                                    <!-- <p>EXCELLENCE & SUPPORT</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="closingStatement" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
                             <blockquote>
                                 We don't just deliver products and services — we build relationships based on
                                 reliability and innovation.
                             </blockquote>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -178,7 +207,7 @@
                         <!-- <p>Creative freedom with unlimited design options for every space</p> -->
                     </div>
                 </div>
-                
+
                 <div class="qualityFeatureCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
                     <div class="qualityFeatureIcon">
                         <i class="checkmark">✓</i>
@@ -188,7 +217,7 @@
                         <!-- <p>Superior materials and craftsmanship in every product</p> -->
                     </div>
                 </div>
-                
+
                 <div class="qualityFeatureCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
                     <div class="qualityFeatureIcon">
                         <i class="checkmark">✓</i>
@@ -253,6 +282,8 @@
         </div>
         <!-- <WhatWeMake /> -->
     </div>
+    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
+        description="Whether you’re a potential partner, client or collaborator - we’d love to explore how we can grow together. Drop us a message to learn more." />
 </template>
 
 <script setup>
@@ -262,6 +293,7 @@ import HomeProducts from "../../HomeRoutes/HomeProducts/HomeProducts.vue";
 import YearsOfExperience from "./YearsOfExperience/YearsOfExperience.vue";
 import OurVision from "../OurVision/OurVision.vue";
 import ImageGallery from "../ImageGallery/ImageGallery.vue";
+import GetInTouch from "../GetInTouch/GetInTouch.vue";
 import "./About.css"
 </script>
 

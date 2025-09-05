@@ -1,6 +1,6 @@
 <template>
     <div class="width100 acousticTilesLayout">
-        <CommonTopLayout heading="Acoustic PET Panels — Redefining Spaces with Elegance"
+        <CommonTopLayout heading="Acoustic PET Panels"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic TilesImagesBackground.png"
             imageAlt="Acoustic Solutions" />
 
@@ -21,10 +21,10 @@
         </div> -->
         <div class="MadeIndiaWrittenContainer paddingTop80 paddingBottom80">
             <div class="Container EditContainerContent paddingBottom80">
-               
+
                 <br>
                 <div class="FlexContainerEditNew ">
-                    
+
                     <div>
                         <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Manufactured in India</h2>
                         <br>
@@ -110,20 +110,23 @@
                             alt="Specification Image" />
                     </div>
                     <div class="rightContent" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-                        <h2>Specification</h2>
+                        <h2>Specifications</h2>
                         <ul>
                             <li>Acoustic Panel boards are made from Recycled Polyester Fiber and are meant to be
                                 used
                                 for Wall Claddings, Ceilings and Paneling.</li>
                             <li>More than 54 Colors Bank</li>
                             <li>Density: 1350-4000 g/m3</li>
-                            <li>Acoustic Panel boards can absorb 30% of Sound (0.3 NRC) when the panel is
+                            <!-- <li>Acoustic Panel boards can absorb 30% of Sound (0.3 NRC) when the panel is
                                 directly fixed
                                 onto the wall.</li>
                             <li>Acoustic Panel boards can absorb 85% to 90% (0.85 to 0.9) of the sound when the
                                 Acoustic
                                 Panel is installed correctly keeping a gap between the wall and the Acoustic Panels.
-                            </li>
+                            </li> -->
+                            <li>Acoustic Panel boards can absorb 30% of sound (0.3 NRC) when the panel is directly fixed
+                                onto the wall, whereas they can absorb 85% to 90% (0.85 to 0.9 NRC) of the sound when
+                                installed correctly with a gap maintained between the wall and the Acoustic Panels.</li>
                         </ul>
                     </div>
                 </div>

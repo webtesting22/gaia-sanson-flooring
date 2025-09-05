@@ -13,7 +13,7 @@
     .gridContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 60px;
+        gap: 40px;
         align-items: center;
     }
 
@@ -257,6 +257,16 @@
 .LastGridImagesGridContainer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.LastGridImagesGridContainer>div {
+    width: 50%;
+}
+
+.LastGridImagesGridContainer .LastGridImagesImageContainer {
+    height: 250px;
+    max-height: 300px !important;
 }
 
 .LastGridImagesGridContainer .LastGridImagesImageContainer img {
@@ -265,6 +275,10 @@
 }
 
 @media (max-width: 768px) {
+    .LastGridImagesGridContainer>div {
+        width: 100%;
+    }
+
     .VariousApplicationsGridItem {
         flex-direction: column;
     }
@@ -666,16 +680,21 @@
 
 
 .EditContainerContent {
-    /* min-height: 400px; */
-    /* background-color: #1e3a8a; */
     border-radius: 10px;
 }
 
-.FlexContainerEditNew{
+.FlexContainerEditNew {
     display: flex;
     align-items: center;
 }
 
-.AccousticContainerLogo .sets-apart-logos-Container-item{
+.AccousticContainerLogo .sets-apart-logos-Container-item {
     margin-top: 0px !important;
+}
+
+@media (max-width:780px) {
+    .FlexContainerEditNew {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

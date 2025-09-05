@@ -312,10 +312,12 @@
         font-size: 1.5rem;
     }
 }
+
 .experienceHeader h2 {
     text-align: center;
     justify-content: center;
 }
+
 @media (max-width: 768px) {
 
     .statContent {

@@ -153,7 +153,7 @@
             </div>
         </div>
     </div>
-    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
+    <GetInTouch title="Get In Touch!" subtitle="Partner with Us for Tailored Solutions"
         description="Get in touch with us to design and customize your perfect artificial grass space, tailored to your needs." />
 </template>
 

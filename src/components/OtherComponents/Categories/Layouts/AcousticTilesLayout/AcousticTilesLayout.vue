@@ -344,8 +344,8 @@
             </div>
         </div>
     </div>
-    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
-        description="Connect with us to create acoustic PET panels solutions customized for your space, style, and sound needs." />
+    <GetInTouch title="Get In Touch!" subtitle="Partner with Us for Tailored Solutions"
+        description="Connect with us to create acoustic tile solutions customized for your space, style, and sound needs." />
 </template>
 
 <script setup>

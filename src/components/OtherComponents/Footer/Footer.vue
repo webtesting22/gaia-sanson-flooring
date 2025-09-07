@@ -58,7 +58,11 @@ import "./Footer.css"
                     </div>
                     <div class="address-item">
                         <h4 class="address-subtitle">Manufacturing Unit:</h4>
-                        <p class="address-text">D-9, Flatted Factory Complex, Jhandewalan, New Delhi - 110055</p>
+                        <!-- <p class="address-text">D-9, Flatted Factory Complex, Jhandewalan, New Delhi - 110055</p> -->
+                         <p class="address-text">SY No. 7/P and 8/P,  
+Kodicherla Village, Kothur Mandal,  
+Ranga Reddy District,  
+Hyderabad, Telangana - 509228, India</p>
                     </div>
                 </div>
             </div>

@@ -108,11 +108,12 @@
 .girdImagesContainer {
     display: flex;
     gap: 20px;
-    min-height: 200px;
+    /* min-height: 300px; */
+    flex-wrap: wrap;
 }
 
 .girdImagesContainer>div {
-    width: 100%;
+    width: 49%;
 }
 
 .girdImagesContainer>div img {
@@ -296,6 +297,9 @@
     .properties-title {
         font-size: 2rem;
         margin-bottom: 40px;
+    }
+    .girdImagesContainer>div {
+        width: 100%;
     }
 
     .properties-grid {

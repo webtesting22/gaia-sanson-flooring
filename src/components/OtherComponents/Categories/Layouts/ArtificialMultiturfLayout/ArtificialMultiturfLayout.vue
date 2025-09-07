@@ -118,6 +118,7 @@
                     <div class="max-width-800">
                         <h2 class="text-center" style="justify-content: center;" data-aos="fade-down"
                             data-aos-duration="800" data-aos-delay="100">Designed for Every Space</h2>
+                            <br>
                         <p class="text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Versatile
                             solutions that enhance every environment.</p>
                     </div>

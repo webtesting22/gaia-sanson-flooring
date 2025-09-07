@@ -10,8 +10,6 @@
     gap: 15px;
 }
 
-
-
 .DesignSwiper {
     width: 100%;
 }
@@ -47,6 +45,47 @@
     color: #6c757d;
     font-weight: 500;
     margin: 0;
+}
+
+/* Clickable and non-clickable swatch styles */
+.DesignSwatch.clickable {
+    cursor: pointer;
+    position: relative;
+}
+
+.DesignSwatch.clickable:hover .SwatchImage {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.DesignSwatch.non-clickable {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.DesignSwatch.non-clickable .SwatchImage {
+    cursor: default;
+}
+
+.DesignSwatch.non-clickable .SwatchImage:hover {
+    transform: none;
+}
+
+/* PDF indicator */
+.pdf-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ChooseDesignsContainer .swiper {
@@ -501,39 +540,39 @@
         min-height: 700px;
         margin-top: 80px;
     }
-    
+
     /* Scale down all containers proportionally */
     .AnimatedImageContainer .FirstImage {
         left: 250px;
         width: 170px;
         height: 600px;
     }
-    
+
     .AnimatedImageContainer .SecondImage {
         top: 150px;
         left: 170px;
         width: 170px;
         height: 400px;
     }
-    
+
     .AnimatedImageContainer .SixthImage {
         left: 450px;
         width: 200px;
         height: 250px;
     }
-    
+
     .AnimatedImageContainer .SeventhImage {
         left: 400px;
         width: 170px;
         height: 500px;
     }
-    
+
     .AnimatedImageContainer .EighthImage {
         left: 320px;
         width: 500px;
         height: 170px;
     }
-    
+
     .AnimatedImageContainer .NinthImage {
         left: 300px;
         width: 500px;
@@ -545,14 +584,14 @@
     .AnimatedImageContainerMainContainer {
         padding: 50px 10px;
     }
-    
+
     .AnimatedImageContainer {
         width: 100%;
         min-height: 500px;
         margin-top: 50px;
         /* overflow-x: hidden; */
     }
-    
+
     /* Mobile layout - stack containers more vertically */
     .AnimatedImageContainer .FirstImage {
         top: 0;
@@ -561,28 +600,28 @@
         width: 120px;
         height: 300px;
     }
-    
+
     .AnimatedImageContainer .SecondImage {
         top: 80px;
         left: 20px;
         width: 120px;
         height: 250px;
     }
-    
+
     .AnimatedImageContainer .ThirdImage {
         top: 120px;
         left: 10px;
         width: 120px;
         height: 120px;
     }
-    
+
     .AnimatedImageContainer .FourthImage {
         top: 250px;
         left: 30px;
         width: 120px;
         height: 200px;
     }
-    
+
     .AnimatedImageContainer .FifthImage {
         top: 150px;
         left: 50%;
@@ -590,14 +629,14 @@
         width: 100px;
         height: 200px;
     }
-    
+
     .AnimatedImageContainer .FifthImage .FifthFirstImage,
     .AnimatedImageContainer .FifthImage .FifthSecondImage,
     .AnimatedImageContainer .FifthImage .FifthThirdImage {
         width: 50px;
         height: 50px;
     }
-    
+
     .AnimatedImageContainer .SixthImage {
         top: 10px;
         right: 20px;
@@ -605,7 +644,7 @@
         width: 150px;
         height: 180px;
     }
-    
+
     .AnimatedImageContainer .SeventhImage {
         top: 120px;
         right: 10px;
@@ -613,7 +652,7 @@
         width: 120px;
         height: 350px;
     }
-    
+
     .AnimatedImageContainer .EighthImage {
         top: 280px;
         left: 50%;
@@ -622,7 +661,7 @@
         max-width: 350px;
         height: 120px;
     }
-    
+
     .AnimatedImageContainer .NinthImage {
         top: 420px;
         left: 50%;
@@ -638,14 +677,14 @@
         min-height: 400px;
         margin-top: 30px;
     }
-    
+
     /* Extra small mobile - further reduce sizes */
     .AnimatedImageContainer .FirstImage {
         width: 100px;
         height: 600px;
         left: 100px;
     }
-    
+
     .AnimatedImageContainer .SecondImage {
         top: 60px;
         left: 57px;
@@ -653,53 +692,53 @@
         height: 250px;
 
     }
-    
+
     .AnimatedImageContainer .ThirdImage {
         top: 90px;
         left: 20px;
         width: 80px;
         height: 80px;
     }
-    
+
     .AnimatedImageContainer .FourthImage {
         top: 180px;
         left: 5px;
         width: 80px;
         height: 200px;
     }
-    
+
     .AnimatedImageContainer .FifthImage {
         width: 69px;
         height: 140px;
         left: 105px;
         top: 100px;
     }
-    
+
     .AnimatedImageContainer .FifthImage .FifthFirstImage,
     .AnimatedImageContainer .FifthImage .FifthSecondImage,
     .AnimatedImageContainer .FifthImage .FifthThirdImage {
         width: 35px;
         height: 35px;
     }
-    
+
     .AnimatedImageContainer .SixthImage {
         right: 30px;
         width: 100px;
         height: 120px;
     }
-    
+
     .AnimatedImageContainer .SeventhImage {
         right: 100px;
         width: 80px;
         height: 250px;
     }
-    
+
     .AnimatedImageContainer .EighthImage {
         top: 150px;
         height: 80px;
         left: 140px;
     }
-    
+
     .AnimatedImageContainer .NinthImage {
         top: 232px;
         height: 80px;

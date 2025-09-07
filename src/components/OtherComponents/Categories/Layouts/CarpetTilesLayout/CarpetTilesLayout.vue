@@ -1,6 +1,6 @@
 <template>
     <div class="width100">
-        <CommonTopLayout heading="Carpet Tiles Crafted for Modern Spaces"
+        <CommonTopLayout heading="Carpet Tiles"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarprtTiles.png"
             imageAlt="Carpet tiles background image" />
         <div class="ChooseDesignsContainer">
@@ -36,9 +36,14 @@
                                 1200: { slidesPerView: 8, spaceBetween: 20 }
                             }" class="DesignSwiper">
                             <swiper-slide v-for="(design, index) in designSwatches" :key="index" class="DesignSlide">
-                                <div class="DesignSwatch">
+                                <div class="DesignSwatch" 
+                                     :class="{ 'clickable': design.pdf && design.pdf.trim() !== '', 'non-clickable': !design.pdf || design.pdf.trim() === '' }"
+                                     @click="design.pdf && design.pdf.trim() !== '' ? openPDF(design.pdf) : null">
                                     <img :src="design.image" :alt="design.name" class="SwatchImage">
                                     <p class="SwatchCode">{{ design.code }}</p>
+                                    <!-- <div v-if="design.pdf && design.pdf.trim() !== ''" class="pdf-indicator">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div> -->
                                 </div>
                             </swiper-slide>
                         </swiper>
@@ -299,17 +304,23 @@ const category = computed(() => {
 
 // Sample design swatches data
 const designSwatches = [
-    { image: '/Images/CarpetFrames/CarpetFrame1.svg', name: 'Classic Elegance', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame2.svg', name: 'Modern Luxury', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame3.svg', name: 'Contemporary Style', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame4.svg', name: 'Premium Collection', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame5.svg', name: 'Designer Series', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame6.svg', name: 'Artisan Craft', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame7.svg', name: 'Signature Line', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame8.svg', name: 'Heritage Collection', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame9.svg', name: 'Innovation Series', code: '90020066' },
-    { image: '/Images/CarpetFrames/CarpetFrame10.svg', name: 'Exclusive Edition', code: '90020066' }
+    { image: '/Images/CarpetCircleImages/90020095 & 90020096.png', name: 'Classic Elegance', code: '90020095-90020096', pdf: '' },
+    { image: '/Images/CarpetCircleImages/90020107.svg', name: 'Modern Luxury', code: '90020107', pdf: '/Images/CarpetCircleImages/Documents/90020107.pdf' },
+    { image: '/Images/CarpetCircleImages/90020090.svg', name: 'Contemporary Style', code: '90020090', pdf: '/Images/CarpetCircleImages/Documents/90020090.pdf' },
+    { image: '/Images/CarpetCircleImages/90020089.svg', name: 'Premium Collection', code: '90020089', pdf: '' },
+    { image: '/Images/CarpetCircleImages/90020067.svg', name: 'Designer Series', code: '90020067', pdf: '/Images/CarpetCircleImages/Documents/90020067.pdf' },
+    { image: '/Images/CarpetCircleImages/90020066.svg', name: 'Artisan Craft', code: '90020066', pdf: '/Images/CarpetCircleImages/Documents/90020066.pdf' },
+    { image: '/Images/CarpetCircleImages/90020062.svg', name: 'Signature Line', code: '90020062', pdf: '/Images/CarpetCircleImages/Documents/90020062.pdf' },
+    { image: '/Images/CarpetCircleImages/90020055.svg', name: 'Heritage Collection', code: '90020055', pdf: '' },
+    { image: '/Images/CarpetCircleImages/90020088.svg', name: 'Innovation Series', code: '90020088', pdf: '/Images/CarpetCircleImages/Documents/90020088.pdf' }
 ]
+
+// Function to open PDF in new tab
+const openPDF = (pdfPath) => {
+    if (pdfPath && pdfPath.trim() !== '') {
+        window.open(pdfPath, '_blank')
+    }
+}
 </script>
 
 <style scoped>

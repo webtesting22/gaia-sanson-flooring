@@ -1,6 +1,6 @@
 <template>
     <div class="width100">
-        <CommonTopLayout heading="Premium Artificial Grass for Every Space"
+        <CommonTopLayout heading="Broadloom Carpets"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/ArtificialGrassImage.png"
             imageAlt="Artificial grass background image" />
 

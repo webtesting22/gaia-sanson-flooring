@@ -578,6 +578,7 @@ const applicationFeatures = [
     { id: 13, name: 'Sound Transmission Class (STC)', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
     { id: 14, name: 'Noise Reduction Coefficient (NRC)', image: '/Images/VariousApplicationsIcons/NRCICon.svg' }
 ]
+
 const interiorSpaces = [
     {
         id: 1,

@@ -99,6 +99,33 @@
 }
 
 /* ===========================================
+   CLICKABLE CONTACT LINKS
+   =========================================== */
+
+.phone-link,
+.email-link,
+.website-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.phone-link:hover,
+.email-link:hover,
+.website-link:hover {
+    color: #E4D8C8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.phone-link:active,
+.email-link:active,
+.website-link:active {
+    color: #B0B8C1;
+}
+
+/* ===========================================
    EXPLORE SECTION
    =========================================== */
 

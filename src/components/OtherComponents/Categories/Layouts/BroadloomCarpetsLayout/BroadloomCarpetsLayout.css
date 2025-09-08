@@ -272,16 +272,69 @@
         padding: 0px 0px;
         padding-top: 20px;
     }
+
     .DesignedContainer .DesignedImage img {
         width: 60%;
- 
+
     }
+
     .DesignedContainer .DesignedImage {
         display: flex;
         justify-content: center;
     }
 }
 
-.BackGroundColorBroadloom{
+.BackGroundColorBroadloom {
     background-color: #ECEDEE !important;
+}
+
+.LeftSideDesigns img {
+    width: 100%;
+}
+
+.BroadLoomDesignsContainerInner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.RightSideDesigns>div img {
+    width: 100%;
+}
+
+.LeftSideDesigns {
+    display: flex;
+    align-items: end;
+}
+
+.LeftSideDesigns hr {
+    height: 8px;
+    background-color: #A38410;
+    border: none;
+    outline: none;
+
+}
+
+.LeftSideDesigns p {
+    font-size: 30px;
+}
+
+.RelativeContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.CirclesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: 30px;
+    /* top: 0px; */
+}
+.CirclesContainer>div{
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    border-radius: 50%;
 }

@@ -18,15 +18,17 @@ import "./Footer.css"
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span class="contact-text">+91-99109 21119</span>
+                        <a href="tel:+919910921119" class="contact-text phone-link">+91-99109 21119</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span class="contact-text">contact@sansonfloorings.com</span>
+                        <a href="mailto:contact@sansonfloorings.com"
+                            class="contact-text email-link">contact@sansonfloorings.com</a>
                     </div>
                     <div class="contact-item">
-                    <i class="fas fa-globe"></i>
-                        <span class="contact-text">www.sansonfloorings.com</span>
+                        <i class="fas fa-globe"></i>
+                        <a href="https://www.sansonfloorings.com" target="_blank"
+                            class="contact-text website-link">www.sansonfloorings.com</a>
                     </div>
                 </div>
             </div>
@@ -59,10 +61,10 @@ import "./Footer.css"
                     <div class="address-item">
                         <h4 class="address-subtitle">Manufacturing Unit:</h4>
                         <!-- <p class="address-text">D-9, Flatted Factory Complex, Jhandewalan, New Delhi - 110055</p> -->
-                         <p class="address-text">SY No. 7/P and 8/P,  
-Kodicherla Village, Kothur Mandal,  
-Ranga Reddy District,  
-Hyderabad, Telangana - 509228, India</p>
+                        <p class="address-text">SY No. 7/P and 8/P,
+                            Kodicherla Village, Kothur Mandal,
+                            Ranga Reddy District,
+                            Hyderabad, Telangana - 509228, India</p>
                     </div>
                 </div>
             </div>

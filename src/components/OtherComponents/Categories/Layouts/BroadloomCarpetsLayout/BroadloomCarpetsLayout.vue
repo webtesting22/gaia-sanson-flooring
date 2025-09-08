@@ -18,11 +18,87 @@
             </div>
 
         </div>
-        <div class="paddingTop80 Container">
+        <div class="paddingTop80 Container paddingBottom80">
             <div>
                 <div>
                     <h2>Discover Our Broadloom Collection</h2>
                     <br>
+                </div>
+                <div class="BroadLoomDesignsContainer paddingTop80">
+                    <div class="BroadLoomDesignsContainerInner">
+                        <div class="LeftSideDesigns">
+                            <div>
+                                <p>90020088</p>
+                                <hr>
+                                <br>
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1757120386310-96afbd9bab86?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="RightSideDesigns">
+                            <div class="RelativeContainer">
+                                <div class="CirclesContainer">
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1755371034010-51c25321312d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="BroadLoomDesignsContainer paddingTop80">
+                    <div class="BroadLoomDesignsContainerInner">
+                        <div class="LeftSideDesigns">
+                            <div>
+                                <p>90020088</p>
+                                <hr>
+                                <br>
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1757120386310-96afbd9bab86?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="RightSideDesigns">
+                            <div class="RelativeContainer">
+                                <div class="CirclesContainer">
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1755371034010-51c25321312d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

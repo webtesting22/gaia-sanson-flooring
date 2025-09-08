@@ -4,7 +4,7 @@
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Solutions Image.png"
             imageAlt="Artificial & Multiturf" /> -->
 
-        <CommonTopLayout heading="Artificial & Multiturf Grass"
+        <CommonTopLayout heading="Artificial Grass & Multiturf "
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/ArtificialGrassImage.png"
             imageAlt="Artificial grass background image" />
         <div class="paddingTop80 ">

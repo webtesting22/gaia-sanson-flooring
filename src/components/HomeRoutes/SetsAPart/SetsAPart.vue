@@ -49,15 +49,15 @@ export default {
                 const elementTop = rect.top;
                 const elementHeight = rect.height;
                 const windowHeight = window.innerHeight;
-                
+
                 // Calculate how much of the element is visible in the viewport
                 const visibleTop = Math.max(0, windowHeight - elementTop);
                 const visibleBottom = Math.min(elementHeight, windowHeight - elementTop + elementHeight);
                 const visibleHeight = Math.max(0, visibleBottom - visibleTop);
-                
+
                 // Calculate scroll progress (0 to 1) based on element visibility
                 const scrollProgress = visibleHeight / elementHeight;
-                
+
                 // Apply parallax effect with 100px to 0px range (reverse direction)
                 this.parallaxOffset = (1 - scrollProgress) * 100;
                 element.style.transform = `translateY(${this.parallaxOffset}px)`;
@@ -65,7 +65,7 @@ export default {
 
             // Add scroll listener
             window.addEventListener('scroll', this.scrollHandler);
-            
+
             // Set initial position to 0px (no offset)
             this.parallaxOffset = 0;
             element.style.transform = `translateY(0px)`;
@@ -83,8 +83,7 @@ export default {
 <template>
     <div class="paddingTop60 paddingBottom80 SetsApartContainerParent">
         <div class="BackgoundOverlayImage">
-            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BackgroundOverlayCarpetImage.jpeg"
-                alt="">
+            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BackgroundCarpet.png" alt="">
         </div>
         <div class="SetsApartContainer">
             <!-- Left Side - Content -->

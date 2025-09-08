@@ -14,7 +14,7 @@ const BottomCardsData = [
     {
         id: 3,
         title: "GLOBAL QUALITY",
-        description: "Consistent quality, from our floors to your world.",
+        description: "Consistent quality but matches global standards.",
         image: "/Images/HeroHomeIcons/GLOBALQUALITY.svg"
     }
 ]

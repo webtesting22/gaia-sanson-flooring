@@ -6,10 +6,13 @@
             <div class="grassDetailLayout">
                 <!-- Left Side - Main Image with Inset -->
                 <div class="grassImageSection">
-                    <div class="mainImageContainer">
-                        <img :src="grassData.mainImage" :alt="grassData.title" class="mainImage" />
-                        <div class="productInset">
-                            <img :src="grassData.insetImage" :alt="grassData.title + ' Detail'" class="insetImage" />
+                    <div class="mainImageContainer" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave"
+                        @mousemove="handleMouseMove" ref="mainImageContainer">
+                        <img :src="grassData.mainImage" :alt="grassData.title" class="mainImage" ref="mainImage" />
+                        <div class="zoomContainer" :class="{ 'active': isHovering }" :style="zoomContainerStyle">
+                            <div class="zoomArea" :style="zoomAreaStyle">
+                                <img :src="grassData.mainImage" :alt="grassData.title + ' Zoom'" class="insetImage" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,17 +61,16 @@
             </div>
 
             <div class="landscapeCarousel paddingTop80">
-                <swiper @swiper="onSwiper" :slidesPerView="4" :spaceBetween="10":autoplay="{
+                <swiper @swiper="onSwiper" :slidesPerView="4" :spaceBetween="10" :autoplay="{
                     delay: 2500,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
-                }" :loop="true" :speed="700"
-                    :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
-                        320: { slidesPerView: 1, spaceBetween: 10 },
-                        768: { slidesPerView: 2, spaceBetween: 10 },
-                        1024: { slidesPerView: 3, spaceBetween: 10 },
-                        1200: { slidesPerView: 4, spaceBetween: 10 }
-                    }">
+                }" :loop="true" :speed="700" :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
+                    320: { slidesPerView: 1, spaceBetween: 10 },
+                    768: { slidesPerView: 2, spaceBetween: 10 },
+                    1024: { slidesPerView: 3, spaceBetween: 10 },
+                    1200: { slidesPerView: 4, spaceBetween: 10 }
+                }">
                     <swiper-slide v-for="(image, index) in landscapeImages" :key="index" class="landscapeSlide">
                         <div class="landscapeImageContainer">
                             <img :src="image.src" :alt="image.alt" />
@@ -81,7 +83,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, reactive } from 'vue'
 import { useRoute } from 'vue-router'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation as SwiperNavigation, Autoplay } from 'swiper/modules'
@@ -91,10 +93,76 @@ import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 
 const route = useRoute()
 const swiperInstance = ref(null)
+const mainImageContainer = ref(null)
+const mainImage = ref(null)
+
+// Zoom functionality state
+const isHovering = ref(false)
+const mousePosition = reactive({ x: 0, y: 0 })
 
 const onSwiper = (swiper) => {
     swiperInstance.value = swiper
 }
+
+// Zoom functionality methods
+const handleMouseEnter = () => {
+    isHovering.value = true
+}
+
+const handleMouseLeave = () => {
+    isHovering.value = false
+}
+
+const handleMouseMove = (event) => {
+    if (!mainImageContainer.value) return
+
+    const rect = mainImageContainer.value.getBoundingClientRect()
+    const x = event.clientX - rect.left
+    const y = event.clientY - rect.top
+
+    mousePosition.x = x
+    mousePosition.y = y
+}
+
+// Computed style for zoom container positioning (follows mouse)
+const zoomContainerStyle = computed(() => {
+    if (!isHovering.value || !mainImageContainer.value) {
+        return { opacity: 0 }
+    }
+
+    const rect = mainImageContainer.value.getBoundingClientRect()
+    const x = mousePosition.x - 50 // Center the 100px container
+    const y = mousePosition.y - 50
+
+    return {
+        left: `${x}px`,
+        top: `${y}px`,
+        opacity: 1
+    }
+})
+
+// Computed style for zoom area positioning
+const zoomAreaStyle = computed(() => {
+    if (!isHovering.value || !mainImageContainer.value) {
+        return { transform: 'scale(1)' }
+    }
+
+    const rect = mainImageContainer.value.getBoundingClientRect()
+    const containerWidth = rect.width
+    const containerHeight = rect.height
+
+    // Calculate percentage position
+    const xPercent = (mousePosition.x / containerWidth) * 100
+    const yPercent = (mousePosition.y / containerHeight) * 100
+
+    // Calculate zoom offset to center the zoomed area (increased zoom capacity)
+    const zoomOffsetX = (xPercent - 50) * 3
+    const zoomOffsetY = (yPercent - 50) * 3
+
+    return {
+        transform: `scale(3) translate(${-zoomOffsetX}%, ${-zoomOffsetY}%)`
+    }
+})
 
 // Artificial Grass Data based on type
 const grassTypesData = {
@@ -137,7 +205,7 @@ const grassTypesData = {
             }
         ],
         landscapeTitle: 'Designed for Every Landscape',
-        landscapeDescription: 'See how our Landscape Grass transforms outdoor spaces — creating lush, natural-looking gardens and terraces that enhance any property.'
+        landscapeDescription: 'See how Landscape Grass transforms outdoor spaces — creating lush, natural-looking gardens and terraces that enhance any property.'
     },
     'sports-grass': {
         heading: 'Durable Sports Grass for All-Weather Play',
@@ -224,7 +292,7 @@ const grassTypesData = {
             }
         ],
         landscapeTitle: 'Multi-Grass: Versatility in Every Installation',
-        landscapeDescription: 'Discover our multi-sports grass installations, designed to withstand the demands of various sports while providing superior performance and durability.'
+        landscapeDescription: 'Discover multi-sports grass installations, designed to withstand the demands of various sports while providing superior performance and durability.'
     },
     'curly-grass': {
         heading: 'Elevate Your Outdoors with Curly Grass Turf',

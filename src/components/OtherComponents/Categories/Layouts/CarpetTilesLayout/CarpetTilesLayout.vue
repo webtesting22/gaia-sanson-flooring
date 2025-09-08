@@ -182,10 +182,9 @@
         <div class="gridImagesContainer paddingTop80 paddingBottom80">
             <div class="Container">
                 <div class="gridImagesContainerText">
-                    <h2 class="blackColor" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Our Work in
-                        Spaces</h2>
+                    <h2 class="blackColor" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Transform Your Workspace</h2>
                     <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Transform your workspace with
-                        carpet tiles that <br> combine design, comfort, and durability.</p>
+                        carpet tile that <br> combine design, comfort, and durability.</p>
                 </div>
                 <div class="girdImagesContainer paddingTop60">
                     <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">

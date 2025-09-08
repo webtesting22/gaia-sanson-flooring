@@ -116,7 +116,7 @@
                             <li>Acoustic Panel boards are made from Recycled Polyester Fiber and are meant to be
                                 used
                                 for Wall Claddings, Ceilings and Paneling.</li>
-                            <li>More than 54 Colors Bank</li>
+                            <li>We have more than 54 Colors in our Bank.</li>
                             <li>Density: 1350-4000 g/m3</li>
                             <!-- <li>Acoustic Panel boards can absorb 30% of Sound (0.3 NRC) when the panel is
                                 directly fixed
@@ -300,6 +300,28 @@
                 <br>
                 <div class="VariousApplicationsGridContainer marginTop20">
                     <div class="VariousApplicationsGridItem" v-for="(feature, index) in applicationFeatures"
+                        :key="feature.id" data-aos="fade-up" :data-aos-duration="600"
+                        :data-aos-delay="200 + (index * 50)">
+                        <div class="featureIcon">
+                            <img :src="feature.image" :alt="feature.name" class="application-icon">
+                        </div>
+                        <div class="featureText">
+                            <span>{{ feature.name }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="VariousApplicationsContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <h2 class="text-center" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+                    Certifications</h2>
+                <br>
+                <p>Certificates available on request.</p>
+                <br>
+                <br>
+                <div class="VariousApplicationsGridContainer marginTop20">
+                    <div class="VariousApplicationsGridItem" v-for="(feature, index) in certificationsFeatures"
                         :key="feature.id" data-aos="fade-up" :data-aos-duration="600"
                         :data-aos-delay="200 + (index * 50)">
                         <div class="featureIcon">
@@ -570,14 +592,20 @@ const applicationFeatures = [
     { id: 4, name: 'Insulation', image: '/Images/VariousApplicationsIcons/insulationIcon.svg' },
     { id: 5, name: 'Light Weight', image: '/Images/VariousApplicationsIcons/lightweightIcon.svg' },
     { id: 6, name: 'Stackable', image: '/Images/VariousApplicationsIcons/stackableIcon.svg' },
-    { id: 7, name: 'No-VOC', image: '/Images/VariousApplicationsIcons/novocIcon.svg' },
     { id: 8, name: 'Fire - Rated', image: '/Images/VariousApplicationsIcons/fireratedIcon.svg' },
     { id: 9, name: 'Printable', image: '/Images/VariousApplicationsIcons/printableIcon.svg' },
     { id: 10, name: 'Ventilate', image: '/Images/VariousApplicationsIcons/ventilateIcon.svg' },
     { id: 11, name: 'Create Buffer', image: '/Images/VariousApplicationsIcons/createbufferIcon.svg' },
     { id: 12, name: 'Easy Install', image: '/Images/VariousApplicationsIcons/easyInstallICon.svg' },
+    // { id: 13, name: 'Sound Transmission Class (STC)', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
+    // { id: 14, name: 'Noise Reduction Coefficient (NRC)', image: '/Images/VariousApplicationsIcons/NRCICon.svg' }
+]
+
+const certificationsFeatures = [
     { id: 13, name: 'Sound Transmission Class (STC)', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
-    { id: 14, name: 'Noise Reduction Coefficient (NRC)', image: '/Images/VariousApplicationsIcons/NRCICon.svg' }
+    { id: 14, name: 'Noise Reduction Coefficient (NRC)', image: '/Images/VariousApplicationsIcons/NRCICon.svg' },
+
+    { id: 7, name: 'No-VOC', image: '/Images/VariousApplicationsIcons/novocIcon.svg' },
 ]
 
 const interiorSpaces = [

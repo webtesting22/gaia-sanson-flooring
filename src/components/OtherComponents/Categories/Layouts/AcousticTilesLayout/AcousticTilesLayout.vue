@@ -20,7 +20,7 @@
 
         </div> -->
         <div class="MadeIndiaWrittenContainer paddingTop80 paddingBottom80">
-            <div class="Container EditContainerContent paddingBottom80">
+            <!-- <div class="Container EditContainerContent paddingBottom80">
 
                 <br>
                 <div class="FlexContainerEditNew ">
@@ -46,7 +46,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <MakeInIndia />
             <div class="BlueBackContainer paddingTop80 paddingBottom80">
                 <div class="Container">
                     <div>
@@ -354,7 +355,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
-
+import MakeInIndia from '../MakeInIndia/MakeInIndia.vue'
 const swiperInstance = ref(null)
 
 const onSwiper = (swiper) => {

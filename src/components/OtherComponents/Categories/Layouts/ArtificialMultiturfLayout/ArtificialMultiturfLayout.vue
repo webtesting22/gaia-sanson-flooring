@@ -7,7 +7,9 @@
         <CommonTopLayout heading="Artificial & Multiturf Grass"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/ArtificialGrassImage.png"
             imageAlt="Artificial grass background image" />
-
+        <div class="paddingTop80 ">
+            <MakeInIndia />
+        </div>
         <div class=" ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container">
             <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Explore our Artificial Grass
                 collection</h2>
@@ -118,7 +120,7 @@
                     <div class="max-width-800">
                         <h2 class="text-center" style="justify-content: center;" data-aos="fade-down"
                             data-aos-duration="800" data-aos-delay="100">Designed for Every Space</h2>
-                            <br>
+                        <br>
                         <p class="text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Versatile
                             solutions that enhance every environment.</p>
                     </div>
@@ -166,7 +168,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
-
+import MakeInIndia from '../MakeInIndia/MakeInIndia.vue'
 const swiperInstance = ref(null)
 
 const onSwiper = (swiper) => {

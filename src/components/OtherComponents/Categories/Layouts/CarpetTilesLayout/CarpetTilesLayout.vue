@@ -3,6 +3,9 @@
         <CommonTopLayout heading="Carpet Tiles"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarprtTiles.png"
             imageAlt="Carpet tiles background image" />
+            <div class="paddingTop80 ">
+        <MakeInIndia />
+       </div>
         <div class="ChooseDesignsContainer">
             <div class="Container paddingTop80 paddingBottom80 ">
                 <div class="ChooseDesignsContainer">
@@ -215,7 +218,7 @@ import 'swiper/css/navigation'
 import CategoriesData from '../../CategoriesLayout/Categories'
 import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
-
+import MakeInIndia from '../MakeInIndia/MakeInIndia.vue'
 // Scroll animation variables
 let animationContainers = []
 

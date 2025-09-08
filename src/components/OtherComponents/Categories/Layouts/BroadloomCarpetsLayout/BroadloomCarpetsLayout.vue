@@ -168,7 +168,7 @@
         </div>
 
     </div>
-    <GetInTouch />
+    <GetInTouch title="Get In Touch!" subtitle="Partner with Us for Tailored Solutions" description="Bring your vision to life. Let us help you customize broadloom carpets in fibre, pattern, and colour for your space." />
 </template>
 
 <script setup>

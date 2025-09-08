@@ -294,7 +294,7 @@
 
 .BroadLoomDesignsContainerInner {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     gap: 50px;
 }
 
@@ -308,7 +308,7 @@
 }
 
 .LeftSideDesigns hr {
-    height: 8px;
+    height: 5px;
     background-color: #A38410;
     border: none;
     outline: none;
@@ -335,6 +335,6 @@
 .CirclesContainer>div{
     height: 60px;
     width: 60px;
-    background-color: red;
+    /* background-color: red; */
     border-radius: 50%;
 }

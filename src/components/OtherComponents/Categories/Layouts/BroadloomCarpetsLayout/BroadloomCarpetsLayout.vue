@@ -28,11 +28,11 @@
                     <div class="BroadLoomDesignsContainerInner">
                         <div class="LeftSideDesigns">
                             <div>
-                                <p>90020088</p>
+                                <p>90020115</p>
                                 <hr>
                                 <br>
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1757120386310-96afbd9bab86?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020115.png"
                                         alt="">
                                 </div>
                             </div>
@@ -41,22 +41,22 @@
                             <div class="RelativeContainer">
                                 <div class="CirclesContainer">
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020115/image 229.png" alt="90020115 circle 1">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020115/image 230.png" alt="90020115 circle 2">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020115/image 231.png" alt="90020115 circle 3">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020115/image 232.png" alt="90020115 circle 4">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020115/image 233.png" alt="90020115 circle 5">
                                     </div>
                                 </div>
-                                <img src="https://images.unsplash.com/photo-1755371034010-51c25321312d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020115 broadloom2.png"
                                     alt="">
                             </div>
                         </div>
@@ -66,11 +66,11 @@
                     <div class="BroadLoomDesignsContainerInner">
                         <div class="LeftSideDesigns">
                             <div>
-                                <p>90020088</p>
+                                <p>90020099</p>
                                 <hr>
                                 <br>
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1757120386310-96afbd9bab86?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020099.png"
                                         alt="">
                                 </div>
                             </div>
@@ -79,22 +79,22 @@
                             <div class="RelativeContainer">
                                 <div class="CirclesContainer">
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020099/image 223.png" alt="90020099 circle 1">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020099/image 224.png" alt="90020099 circle 2">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020099/image 226.png" alt="90020099 circle 3">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020099/image 227.png" alt="90020099 circle 4">
                                     </div>
                                     <div>
-
+                                        <img src="/Images/BroadLoomCircleImages/90020099/image 228.png" alt="90020099 circle 5">
                                     </div>
                                 </div>
-                                <img src="https://images.unsplash.com/photo-1755371034010-51c25321312d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020099 broadloom1.png"
                                     alt="">
                             </div>
                         </div>

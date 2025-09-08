@@ -343,14 +343,15 @@
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
 }
 
-.gridContainer>div {
+.gridContainer>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
 }
 
 .gridContainer>div img {
@@ -360,14 +361,15 @@
 }
 
 .DoubleImageContainer img:nth-child(2) {
-    transform: rotate(-20deg);
-    margin-top: -3rem;
-    opacity: 0.4;
+    transform: rotate(-10deg);
+    margin-top: -6rem;
+    opacity: 0.3;
 }
 
 .DoubleImageContainer img:nth-child(1) {
     transform: rotate(0deg);
     z-index: 4;
+    position: relative;
 }
 
 /* Swiper Gallery Section */

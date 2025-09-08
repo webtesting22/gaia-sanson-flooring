@@ -3,9 +3,9 @@
         <CommonTopLayout heading="Broadloom Carpets"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BroadloomCarpetsbannerImage.png"
             imageAlt="Artificial grass background image" />
-       <div class="paddingTop80 ">
-        <MakeInIndia />
-       </div>
+        <div class="paddingTop80 ">
+            <MakeInIndia />
+        </div>
         <div class=" paddingTop80 paddingBottom80 BackGroundColorBroadloom">
             <div class="max-width-800 ">
                 <h2 class="text-center">Engineered Broadloom: Process &
@@ -114,6 +114,58 @@
                 </div>
             </div>
         </div>
+        <div class="ImageGridContainer paddingTop80 paddingBottom80">
+            <div class="gridContainer Container">
+                <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NewBroadLoomImage0099.jpeg"
+                        alt="">
+                </div>
+                <div>
+                    <h2 class="text-center">Bespoke Carpets — Customised to Your Project</h2>
+                    <p class="text-center">From fibre selection and backing options to textures, colours, and patterns,
+                        we tailor carpets to
+                        specific project requirements, whether residential, hospitality, or commercial. Every roll is
+                        engineered for consistency, longevity, and ease of installation.</p>
+                </div>
+                <div class="DoubleImageContainer">
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NewBroadLoomImage0099.jpeg"
+                        alt="">
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NewBroadLoomImage0099.jpeg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="SwiperSliderContainer paddingTop80 paddingBottom80">
+            <div class="Container">
+                <div class="swiperHeader">
+                    <div class="headerLeft">
+                        <h2 class="swiperTitle">Elevating Interiors with Broadloom</h2>
+                    </div>
+                    <div class="headerRight">
+                        <p class="swiperDescription">Explore our installations that blend durability, design, and seamless elegance.</p>
+                    </div>
+                </div>
+
+                <div class="swiperCarousel paddingTop80">
+                    <swiper @swiper="onSwiper" :slidesPerView="4" :spaceBetween="10" :autoplay="{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }" :loop="true" :speed="700" :modules="[SwiperNavigation, Autoplay]" :breakpoints="{
+                        320: { slidesPerView: 1, spaceBetween: 10 },
+                        768: { slidesPerView: 2, spaceBetween: 10 },
+                        1024: { slidesPerView: 3, spaceBetween: 10 },
+                        1200: { slidesPerView: 4, spaceBetween: 10 }
+                    }">
+                        <swiper-slide v-for="(image, index) in broadloomImages" :key="index" class="swiperSlide">
+                            <div class="swiperImageContainer">
+                                <img :src="image.src" :alt="image.alt" />
+                            </div>
+                        </swiper-slide>
+                    </swiper>
+                </div>
+            </div>
+        </div>
 
     </div>
     <GetInTouch />
@@ -129,7 +181,40 @@ import CommonTopLayout from '../../CommonTopLayout/CommonTopLayout.vue'
 import GetInTouch from '../../../GetInTouch/GetInTouch.vue'
 import "./BroadloomCarpetsLayout.css"
 import MakeInIndia from '../MakeInIndia/MakeInIndia.vue'
+
 const swiperInstance = ref(null)
+
+const onSwiper = (swiper) => {
+    swiperInstance.value = swiper
+}
+
+// Broadloom images data
+const broadloomImages = [
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery2.png',
+        alt: 'Premium Broadloom Carpet - Residential'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery3.png',
+        alt: 'Commercial Broadloom Installation'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery6.png',
+        alt: 'Luxury Broadloom Design'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery4.png',
+        alt: 'Modern Broadloom Pattern'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery5.png',
+        alt: 'Executive Office Broadloom'
+    },
+    {
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery1.png',
+        alt: 'Hospitality Broadloom Solution'
+    }
+]
 
 </script>
 

@@ -275,8 +275,13 @@
 }
 
 @media (max-width: 768px) {
+    .LastGridImagesGridContainer .LastGridImagesImageContainer {
+        height: 100%;
+        max-height: 100% !important;
+    }
+
     .LastGridImagesGridContainer>div {
-        width: 100%;
+        width: 100% !important;
     }
 
     .VariousApplicationsGridItem {

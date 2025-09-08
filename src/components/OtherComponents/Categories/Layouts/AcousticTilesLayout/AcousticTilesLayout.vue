@@ -19,7 +19,7 @@
             </div>
 
         </div> -->
-        <div class="MadeIndiaWrittenContainer paddingTop80 paddingBottom80">
+        <div class="MadeIndiaWrittenContainer paddingTop80 ">
             <!-- <div class="Container EditContainerContent paddingBottom80">
 
                 <br>
@@ -602,10 +602,10 @@ const applicationFeatures = [
 ]
 
 const certificationsFeatures = [
-    { id: 13, name: 'Sound Transmission Class (STC)', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
-    { id: 14, name: 'Noise Reduction Coefficient (NRC)', image: '/Images/VariousApplicationsIcons/NRCICon.svg' },
-
-    { id: 7, name: 'No-VOC', image: '/Images/VariousApplicationsIcons/novocIcon.svg' },
+    { id: 1, name: 'Sound Transmission Loss', image: '/Images/STL.svg' },
+    { id: 2, name: 'Sound Transmission Class (STC)', image: '/Images/VariousApplicationsIcons/STCIcon.svg' },
+    { id: 3, name: 'Noise Reduction Coefficient (NRC)', image: '/Images/VariousApplicationsIcons/NRCICon.svg' },
+    { id: 4, name: 'VOC compound', image: '/Images/VariousApplicationsIcons/novocIcon.svg' },
 ]
 
 const interiorSpaces = [

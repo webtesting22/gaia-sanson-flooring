@@ -28,7 +28,7 @@ const HomeProductsData = [
     },
     {
         id: 4,
-        title: "Artificial & Multiturf",
+        title: "Artificial Grass & Multiturf",
         description: "Lush, low-maintenance turf designed for outdoor appeal and everyday performance.",
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Artificial & multiturfCaroslImage.png",
         bgColor: "#e8d5c4",

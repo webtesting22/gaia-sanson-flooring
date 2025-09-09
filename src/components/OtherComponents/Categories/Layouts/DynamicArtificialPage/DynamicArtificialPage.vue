@@ -250,7 +250,7 @@ const grassTypesData = {
             }
         ],
         landscapeTitle: 'Explore Sports Grass Installations',
-        landscapeDescription: 'Explore our sports grass installations, engineered for durability, performance, and excellence across various sports fields.'
+        landscapeDescription: 'Explore sports grass installations, engineered for durability, performance, and excellence across various sports fields.'
     },
     'multisports-grass': {
         heading: 'Multisports Grass',
@@ -331,7 +331,7 @@ const grassTypesData = {
             }
         ],
         landscapeTitle: 'Transforming Spaces with Curly Grass',
-        landscapeDescription: 'Browse our curly grass installations, offering natural beauty and texture, perfect for transforming both residential and commercial landscapes.'
+        landscapeDescription: 'Browse curly grass installations, offering natural beauty and texture, perfect for transforming both residential and commercial landscapes.'
     }
 }
 

@@ -340,7 +340,7 @@
                     <!-- <div class="HeaderContainerCommonAll" data-aos="fade-down" data-aos-duration="800"
                         data-aos-delay="100">
                         <div> -->
-                    <h2>Optimized Spaces with Acoustic PET Panels</h2>
+                    <h2 style="width: 100%">Optimized Spaces with Acoustic PET Panels</h2>
                     <br>
                     <!-- <br>
                         </div> -->

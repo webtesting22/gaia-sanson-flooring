@@ -267,11 +267,11 @@ const grassTypesData = {
         ],
         images: [
             {
-                src: '/Images/GrassImages/multisportgras1.jpg',
+                src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisportGrassImage2.jpg',
                 alt: 'Multisports Grass Tennis Court'
             },
             {
-                src: '/Images/GrassImages/multisportgras2.jpg',
+                src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisportGrassImage.jpg',
                 alt: 'Multisports Grass Badminton Court'
             },
             {

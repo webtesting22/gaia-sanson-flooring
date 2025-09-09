@@ -190,10 +190,7 @@
     background-color: white;
 }
 
-.gridImagesContainerText {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .SwiperNavigationContainerDesktopOnly {
     display: block;
@@ -249,11 +246,7 @@
         justify-content: space-between !important;
     }
 
-    .gridImagesContainerText {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+   
 
     .ChooseDesignsHeader {
         flex-direction: column;

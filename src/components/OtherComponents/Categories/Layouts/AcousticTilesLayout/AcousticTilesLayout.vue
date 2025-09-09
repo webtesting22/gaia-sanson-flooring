@@ -336,18 +336,24 @@
         </div>
         <div class="LastGridImagesContainer">
             <div class="Container paddingTop80 paddingBottom80">
-                <div class="HeaderContainerCommonAll" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
-                    <div>
-                        <h2>Optimized Spaces with Acoustic PET Panels</h2>
-                        <br>
-                    </div>
+                <div class="gridImagesContainerText">
+                    <!-- <div class="HeaderContainerCommonAll" data-aos="fade-down" data-aos-duration="800"
+                        data-aos-delay="100">
+                        <div> -->
+                    <h2>Optimized Spaces with Acoustic PET Panels</h2>
+                    <br>
+                    <!-- <br>
+                        </div> -->
 
-                </div>
-                <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                    <p>Designed to reduce noise and enhance interiors, our acoustic PET panels combine performance with
-                        <br>
+                    <!-- </div>
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"> -->
+                    <p>Designed to reduce noise and enhance interiors, our acoustic PET panels combine performance
+                        with
+                        <!-- <br> -->
                         aesthetics. Browse real-world installations to see how they transform a variety of spaces.
                     </p>
+                    <!-- </div> -->
+
                 </div>
 
                 <div class="paddingTop80">

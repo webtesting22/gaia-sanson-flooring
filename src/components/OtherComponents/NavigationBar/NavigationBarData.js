@@ -17,9 +17,8 @@ const navigationBarData = [
             {
                 name: 'Artificial Grass & Multiturf',
                 path: '/categories/artificial-multiturf',
-                description: 'Modular carpet solutions for flexible installations'
+                description: 'Synthetic grass and outdoor flooring solutions'
             },
-
             {
                 name: 'Acoustic PET Panels',
                 path: '/categories/acoustic-tiles',
@@ -29,12 +28,7 @@ const navigationBarData = [
                 name: 'Broadloom Carpets',
                 path: '/categories/broadloom-carpets',
                 description: 'Seamless wall-to-wall carpeting solutions'
-            },
-            // {
-            //     name: 'Artificial & Multiturf',
-            //     path: '/categories/artificial-multiturf',
-            //     description: 'Synthetic grass and outdoor flooring solutions'
-            // }
+            }
         ]
     },
     // {

@@ -691,6 +691,7 @@
 .FlexContainerEditNew {
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 
 .AccousticContainerLogo .sets-apart-logos-Container-item {

@@ -3,9 +3,9 @@
         <CommonTopLayout heading="Carpet Tiles"
             imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarprtTiles.png"
             imageAlt="Carpet tiles background image" />
-            <div class="paddingTop80 ">
-        <MakeInIndia />
-       </div>
+        <div class="paddingTop80 ">
+            <MakeInIndia />
+        </div>
         <div class="ChooseDesignsContainer">
             <div class="Container paddingTop80 paddingBottom80 ">
                 <div class="ChooseDesignsContainer">
@@ -182,7 +182,8 @@
         <div class="gridImagesContainer paddingTop80 paddingBottom80">
             <div class="Container">
                 <div class="gridImagesContainerText">
-                    <h2 class="blackColor" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Transform Your Workspace</h2>
+                    <h2 class="blackColor" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">Transform
+                        Your Workspace</h2>
                     <!-- <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Transform your workspace with
                         carpet tile that <br> combine design, comfort, and durability.</p> -->
                 </div>
@@ -319,6 +320,9 @@ const designSwatches = [
     { image: '/Images/CarpetCircleImages/90020095.png', name: 'Heritage Collection', code: '90020095', pdf: '/Images/CarpetCircleImages/Documents/90020095.pdf' },
     // { image: '/Images/CarpetCircleImages/90020096.png', name: 'Heritage Collection', code: '90020096', pdf: '/Images/CarpetCircleImages/Documents/90020096.pdf' },
     { image: '/Images/CarpetCircleImages/90020097.png', name: 'Heritage Collection', code: '90020097', pdf: '/Images/CarpetCircleImages/Documents/90020097.pdf' },
+    { image: '/Images/CarpetCircleImages/90020071.png', name: 'Heritage Collection', code: '90020071', pdf: '/Images/CarpetCircleImages/Documents/2 Color- 90020071.pdf' },
+    { image: '/Images/CarpetCircleImages/90020074.png', name: 'Heritage Collection', code: '90020074', pdf: '/Images/CarpetCircleImages/Documents/2 Color- 90020074.pdf' },
+    { image: '/Images/CarpetCircleImages/90020106.png', name: 'Heritage Collection', code: '90020106', pdf: '/Images/CarpetCircleImages/Documents/2 Color- 90020106.pdf' },
     // { image: '/Images/CarpetCircleImages/90020107.svg', name: 'Modern Luxury', code: '90020107', pdf: '/Images/CarpetCircleImages/Documents/90020107.pdf' },
     // { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },
 ]

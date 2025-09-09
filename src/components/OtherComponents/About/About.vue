@@ -32,6 +32,7 @@
                         </p>
                         <div class="BrandGridContainerDetails" data-aos="fade-up" data-aos-duration="600"
                             data-aos-delay="600">
+                            <h2>Our Brands From Our Group</h2>
                             <div class="brandGrid">
                                 <div class="brandCard">
                                     <div class="brandLogo">

@@ -291,7 +291,7 @@ const grassTypesData = {
                 alt: 'Multisports Grass Recreational Area'
             }
         ],
-        landscapeTitle: 'Multi-Grass: Versatility in Every Installation',
+        landscapeTitle: 'MultiSport Grass: Versatility in Every Installation',
         landscapeDescription: 'Discover multi-sports grass installations, designed to withstand the demands of various sports while providing superior performance and durability.'
     },
     'curly-grass': {

@@ -46,7 +46,7 @@
                         <div class="teamContent">
                             <div class="teamHeader">
                                 <h3 class="teamName">{{ team.name }}</h3>
-                                <div class="teamTitle">{{ team.title }}</div>
+                                <!-- <div class="teamTitle">{{ team.title }}</div> -->
                             </div>
                             
                             <!-- <div class="teamDescription">

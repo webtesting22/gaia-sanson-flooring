@@ -153,7 +153,37 @@ export default {
                     style: {
                         position: 'absolute',
                         top: '60%',
-                        right: '28%',
+                        right: '38%',
+                        // width: '280px',
+                        height: '280px',
+                        zIndex: 5
+                    }
+                },
+                {
+                    src: '  https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassImage1.jpg',
+                    alt: 'Innovative Flooring Design',
+                    caption: 'Innovation & Quality',
+                    description: 'Cutting-edge flooring solutions that push the boundaries of design and functionality.',
+                    parallaxSpeed: 0.5, // Slower speed
+                    style: {
+                        position: 'absolute',
+                        top: '70%',
+                        right: '5%',
+                        width: '280px',
+                        height: '180px',
+                        zIndex: 5
+                    }
+                },
+                {
+                    src: '  https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GalleryImage2.jpeg',
+                    alt: 'Innovative Flooring Design',
+                    caption: 'Innovation & Quality',
+                    description: 'Cutting-edge flooring solutions that push the boundaries of design and functionality.',
+                    parallaxSpeed: 0.5, // Slower speed
+                    style: {
+                        position: 'absolute',
+                        top: '40%',
+                        left: '30%',
                         width: '280px',
                         height: '180px',
                         zIndex: 5

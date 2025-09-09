@@ -7,7 +7,7 @@ export default {
             comparisonData: {
                 title: "Showcasing our products in various settings for easy comparison",
                 leftImage: {
-                    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SHOWCASINGOURCARPETS1.png",
+                    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HomeCarousal1.png",
                     label: "CARPET TILE"
                 },
                 rightImage: {

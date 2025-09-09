@@ -10,7 +10,7 @@
                     <div class="SansonLogoContainer" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
                         <img src="./SansonLogo.svg" alt="Sanson Group Logo">
                     </div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsImageNew.png"
+                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGaiaNewImage.png"
                         alt="Sanson Group Manufacturing Facility" data-aos="fade-up" data-aos-duration="800"
                         data-aos-delay="600">
                 </div>
@@ -73,7 +73,7 @@
         </div>
 
         <!-- Quality Features Grid Section -->
-        <div class="qualityFeaturesSection Container paddingTop80 paddingBottom80">
+        <!-- <div class="qualityFeaturesSection Container paddingTop80 paddingBottom80">
             <div class="qualityFeaturesHeader" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <h2>Why Choose Sanson Group</h2>
                 <p>Our commitment to excellence drives everything we do</p>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="qualityFeatureContent">
                         <h3>Quality-first mindset</h3>
-                        <!-- <p>Uncompromising standards in every product we manufacture and deliver</p> -->
+                        <p>Uncompromising standards in every product we manufacture and deliver</p>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@
                     </div>
                     <div class="qualityFeatureContent">
                         <h3>Value-for-money solutions</h3>
-                        <!-- <p>Premium quality products at competitive prices for maximum value</p> -->
+                        <p>Premium quality products at competitive prices for maximum value</p>
                     </div>
                 </div>
 
@@ -105,11 +105,11 @@
                     </div>
                     <div class="qualityFeatureContent">
                         <h3>Complete customer satisfaction</h3>
-                        <!-- <p>Building lasting relationships through excellence and reliable service</p> -->
+                        <p>Building lasting relationships through excellence and reliable service</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="marginTop80 paddingTop80 paddingBottom80 CategoriesClientContainers">
             <div class="expertSolutionsSection Container
                 <div class="expertSolutionsHeader">
@@ -184,7 +184,7 @@
                             elegant, and future-ready solutions that meet the evolving needs of modern spaces.</p> -->
                     </div>
                     <div class="AboutGaiaRightSide" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUs2Image.png"
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsImageNewOne.png"
                             alt="GAIA Flooring Fashion" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
                     </div>
                 </div>
@@ -203,7 +203,7 @@
                         <i class="checkmark">✓</i>
                     </div>
                     <div class="qualityFeatureContent">
-                        <h3>Endless Design Possibilities</h3>
+                        <h3>Endless Design and Colour Possibilities</h3>
                         <!-- <p>Creative freedom with unlimited design options for every space</p> -->
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                         <i class="checkmark">✓</i>
                     </div>
                     <div class="qualityFeatureContent">
-                        <h3>Unmatched Quality</h3>
+                        <h3>Test Certified and Stabilized</h3>
                         <!-- <p>Superior materials and craftsmanship in every product</p> -->
                     </div>
                 </div>
@@ -223,7 +223,7 @@
                         <i class="checkmark">✓</i>
                     </div>
                     <div class="qualityFeatureContent">
-                        <h3>Fashion-Forward Aesthetics</h3>
+                        <h3>Multiple Sizes and Cutting Options</h3>
                         <!-- <p>Trendsetting designs that define the future of flooring</p> -->
                     </div>
                 </div>
@@ -236,12 +236,12 @@
 
         <HomeProducts title="What we make"
             subtitle="Discover our comprehensive collection of premium flooring solutions" />
-        <div class=" paddingTop80 paddingBottom80 CategoriesClientContainers">
+        <!-- <div class=" paddingTop80 paddingBottom80 CategoriesClientContainers">
             <div class="expertSolutionsSection Container">
                 <div class="expertSolutionsHeader" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
                     <h2>Our Brands From Our Group</h2>
-                    <!-- <p>Our Group has a diverse range of brands that cater to different industries and needs.
-                    </p> -->
+                    <p>Our Group has a diverse range of brands that cater to different industries and needs.
+                    </p>
                 </div>
                 <div class="expertSolutionsGrid">
                     <div class="expertSolutionCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
@@ -279,7 +279,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- <WhatWeMake /> -->
     </div>
     <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"

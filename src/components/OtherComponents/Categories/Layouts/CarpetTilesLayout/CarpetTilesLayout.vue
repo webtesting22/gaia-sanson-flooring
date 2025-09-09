@@ -317,10 +317,10 @@ const designSwatches = [
     { image: '/Images/CarpetCircleImages/90020089.svg', name: 'Premium Collection', code: '90020089', pdf: '/Images/CarpetCircleImages/Documents/90020089.pdf' },
     { image: '/Images/CarpetCircleImages/90020090.svg', name: 'Contemporary Style', code: '90020090', pdf: '/Images/CarpetCircleImages/Documents/90020090.pdf' },
     { image: '/Images/CarpetCircleImages/90020095.png', name: 'Heritage Collection', code: '90020095', pdf: '/Images/CarpetCircleImages/Documents/90020095.pdf' },
-    { image: '/Images/CarpetCircleImages/90020096.png', name: 'Heritage Collection', code: '90020096', pdf: '/Images/CarpetCircleImages/Documents/90020096.pdf' },
+    // { image: '/Images/CarpetCircleImages/90020096.png', name: 'Heritage Collection', code: '90020096', pdf: '/Images/CarpetCircleImages/Documents/90020096.pdf' },
     { image: '/Images/CarpetCircleImages/90020097.png', name: 'Heritage Collection', code: '90020097', pdf: '/Images/CarpetCircleImages/Documents/90020097.pdf' },
-    { image: '/Images/CarpetCircleImages/90020107.svg', name: 'Modern Luxury', code: '90020107', pdf: '/Images/CarpetCircleImages/Documents/90020107.pdf' },
-    { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },
+    // { image: '/Images/CarpetCircleImages/90020107.svg', name: 'Modern Luxury', code: '90020107', pdf: '/Images/CarpetCircleImages/Documents/90020107.pdf' },
+    // { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },
 ]
 
 // Function to open PDF in new tab

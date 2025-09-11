@@ -42,7 +42,7 @@ import "./Footer.css"
                         <div v-if="navItem.hasDropdown && navItem.dropdownItems" class="sub-links">
                             <router-link v-for="subItem in navItem.dropdownItems" :key="subItem.name" :to="subItem.path"
                                 class="nav-link sub-link">
-                                - {{ subItem.name }}
+                                {{ subItem.name }}
                             </router-link>
                         </div>
                     </div>

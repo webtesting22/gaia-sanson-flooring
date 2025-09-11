@@ -185,6 +185,12 @@ const clientLogos = ref([
         name: 'Reliance Retail',
         logo: '/Images/ClientsLogos/RelianceRetail.png',
         alt: 'Reliance Retail Logo'
+    },
+    {
+        id: 10,
+        name: 'Welspun',
+        logo: '/Images/ClientsLogos/WelSpun.jpeg',
+        alt: 'Welspun Logo'
     }
 ])
 

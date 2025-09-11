@@ -1,6 +1,13 @@
 const CarousalData = [
     {
         id: 1,
+        // image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GaiaHomePageImage1.jpeg",
+        image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AccosticPanelImage.webp",
+        title: "Flooring & ",
+        description: "ACOUSTIC SOLUTIONS"
+    },
+    {
+        id: 2,
         image: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GaiaHomePageImage1.jpeg",
         title: "Flooring & ",
         description: "ACOUSTIC SOLUTIONS"

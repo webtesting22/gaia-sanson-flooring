@@ -8,7 +8,7 @@ const BottomCardsData = [
     {
         id: 2,
         title: "ADAPTABILITY",
-        description: "Made to move with your space, your style, and your needs.",
+        description: "Made to move with your space, style and needs.",
         image: "/Images/HeroHomeIcons/ADAPTIBILITY.svg"
     },
     {

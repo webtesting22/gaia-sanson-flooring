@@ -246,7 +246,7 @@
         justify-content: space-between !important;
     }
 
-   
+
 
     .ChooseDesignsHeader {
         flex-direction: column;
@@ -291,6 +291,7 @@
         font-size: 2rem;
         margin-bottom: 40px;
     }
+
     .girdImagesContainer>div {
         width: 100%;
     }

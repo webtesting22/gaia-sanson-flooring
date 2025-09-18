@@ -99,21 +99,21 @@ export default {
                         zIndex: 1
                     }
                 },
-                {
-                    src: '/Images/GalleryImages/Gallery2.png',
-                    alt: 'Modern Interior Design',
-                    caption: 'Contemporary Design',
-                    description: 'Modern interior flooring solutions that blend functionality with sophisticated aesthetics.',
-                    parallaxSpeed: 0.6, // Normal speed
-                    style: {
-                        position: 'absolute',
-                        top: '35%',
-                        right: '5%',
-                        width: '380px',
-                        height: '290px',
-                        zIndex: 2
-                    }
-                },
+                // {
+                //     src: '/Images/GalleryImages/Gallery2.png',
+                //     alt: 'Modern Interior Design',
+                //     caption: 'Contemporary Design',
+                //     description: 'Modern interior flooring solutions that blend functionality with sophisticated aesthetics.',
+                //     parallaxSpeed: 0.6, // Normal speed
+                //     style: {
+                //         position: 'absolute',
+                //         top: '35%',
+                //         right: '5%',
+                //         width: '380px',
+                //         height: '290px',
+                //         zIndex: 2
+                //     }
+                // },
                 {
                     src: '/Images/GalleryImages/Gallery3.png',
                     alt: 'Commercial Flooring Project',

@@ -323,6 +323,7 @@ const designSwatches = [
     { image: '/Images/CarpetCircleImages/90020071.png', name: 'Heritage Collection', code: '90020071', pdf: '/Images/CarpetCircleImages/Documents/2 Color- 90020071.pdf' },
     { image: '/Images/CarpetCircleImages/90020074.png', name: 'Heritage Collection', code: '90020074', pdf: '/Images/CarpetCircleImages/Documents/2 Color- 90020074.pdf' },
     { image: '/Images/CarpetCircleImages/90020106.png', name: 'Heritage Collection', code: '90020106', pdf: '/Images/CarpetCircleImages/Documents/2 Color- 90020106.pdf' },
+    { image: '/Images/CarpetCircleImages/Drizzle plank.png', name: 'Drizzle Plank.pdf', code: 'Drizzle Plank.pdf', pdf: '/Images/CarpetCircleImages/Documents/Drizzle Plank.pdf' },
     // { image: '/Images/CarpetCircleImages/90020107.svg', name: 'Modern Luxury', code: '90020107', pdf: '/Images/CarpetCircleImages/Documents/90020107.pdf' },
     // { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },
 ]

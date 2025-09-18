@@ -190,14 +190,18 @@ const onSwiper = (swiper) => {
 
 // Broadloom images data
 const broadloomImages = [
+{
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020115 broadloom2 (1).png',
+        alt: 'Hospitality Broadloom Solution'
+    },
     {
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery2.png',
         alt: 'Premium Broadloom Carpet - Residential'
     },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery3.png',
-        alt: 'Commercial Broadloom Installation'
-    },
+    // {
+    //     src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery3.png',
+    //     alt: 'Commercial Broadloom Installation'
+    // },
     {
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery6.png',
         alt: 'Luxury Broadloom Design'
@@ -206,14 +210,11 @@ const broadloomImages = [
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery4.png',
         alt: 'Modern Broadloom Pattern'
     },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery5.png',
-        alt: 'Executive Office Broadloom'
-    },
-    {
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery1.png',
-        alt: 'Hospitality Broadloom Solution'
-    }
+    // {
+    //     src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery5.png',
+    //     alt: 'Executive Office Broadloom'
+    // },
+   
 ]
 
 </script>

@@ -65,10 +65,16 @@ const firstRowImages = [
 ];
 
 // Gallery data - Second row with 4 images
-const secondRowImages = [
+const secondRowImages = [  
+    {
+        id: 7,
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery7.png',
+        alt: 'Modern Interior with Premium Flooring'
+    },
+
     {
         id: 4,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery4.png',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutGalleryImage4.png',
         alt: 'Children\'s Playroom with Colorful Design'
     },
     {
@@ -76,16 +82,13 @@ const secondRowImages = [
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGallery.png',
         alt: 'Conference Room and Dining Area'
     },
+   
+  
     {
         id: 6,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery6.png',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGalllery5.png',
         alt: 'Music Studio with Acoustic Panels'
     },
-    {
-        id: 7,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery7.png',
-        alt: 'Modern Interior with Premium Flooring'
-    }
 ];
 </script>
 

@@ -34,14 +34,14 @@
                             data-aos-delay="600">
                             <h2>Our Brands From Our Group</h2>
                             <div class="brandGrid">
-                                <div class="brandCard">
+                                <!-- <div class="brandCard">
                                     <div class="brandLogo">
                                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png"
                                             alt="GAIA Logo">
                                     </div>
                                     <h4>GAIA</h4>
-                                    <!-- <p>FLOORING & ACOUSTIC SOLUTION</p> -->
-                                </div>
+                                    <p>FLOORING & ACOUSTIC SOLUTION</p>
+                                </div> -->
 
                                 <div class="brandCard">
                                     <div class="brandLogo">

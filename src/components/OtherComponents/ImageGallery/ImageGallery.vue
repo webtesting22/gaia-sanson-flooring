@@ -59,7 +59,7 @@ const firstRowImages = [
     },
     {
         id: 3,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery3.png',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGallery2.jpg',
         alt: 'Collaborative Desk Area with Privacy Screens'
     }
 ];
@@ -73,7 +73,7 @@ const secondRowImages = [
     },
     {
         id: 5,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery5.png',
+        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGallery.png',
         alt: 'Conference Room and Dining Area'
     },
     {

@@ -21,22 +21,14 @@
 
                 <!-- Mobile Swiper Gallery Container -->
                 <div v-if="isMobile" class="mobile-gallery-container">
-                    <swiper
-                        :modules="modules"
-                        :slides-per-view="1.2"
-                        :space-between="20"
-                        :centered-slides="true"
-                        :loop="true"
-                        :autoplay="{
+                    <swiper :modules="modules" :slides-per-view="1.2" :space-between="20" :centered-slides="true"
+                        :loop="true" :autoplay="{
                             delay: 3000,
                             disableOnInteraction: false,
-                        }"
-                        :pagination="{
+                        }" :pagination="{
                             clickable: true,
                             dynamicBullets: true,
-                        }"
-                        :navigation="false"
-                        :breakpoints="{
+                        }" :navigation="false" :breakpoints="{
                             480: {
                                 slidesPerView: 1.4,
                                 spaceBetween: 25,
@@ -45,9 +37,7 @@
                                 slidesPerView: 1.8,
                                 spaceBetween: 30,
                             }
-                        }"
-                        class="gallery-swiper"
-                    >
+                        }" class="gallery-swiper">
                         <swiper-slide v-for="(image, index) in galleryImages" :key="index" class="mobile-gallery-slide">
                             <div class="mobile-image-container" @click="onImageClick(index)">
                                 <img :src="image.src" :alt="image.alt" class="mobile-gallery-image" />
@@ -216,7 +206,7 @@ export default {
         handleResize() {
             const wasMobile = this.isMobile;
             this.checkMobileDevice();
-            
+
             // If device type changed, reinitialize appropriate functionality
             if (wasMobile !== this.isMobile) {
                 if (this.isMobile) {

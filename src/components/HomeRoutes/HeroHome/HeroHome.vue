@@ -66,7 +66,7 @@ export default {
 </script>
 
 <template>
-    <div class="HomePageHeroContainer  ">
+    <div class="HomePageHeroContainer">
         <div class="hero-carousel-wrapper">
             <!-- Left side text content with animations -->
             <div class="SwiperDetailsContentContainer">
@@ -74,7 +74,7 @@ export default {
                     <transition name="slide-text" mode="out-in">
                         <div :key="currentSlide" class="text-content-wrapper" :class="{ 'animating': isAnimating }">
                             <h1 class="hero-title animated-title">
-                                {{ currentSlideData.title }}<br>
+                                 {{ currentSlideData.title }}<br>
                                 {{ currentSlideData.description }}
                             </h1>
                             <!-- <button class="hero-cta-btn animated-button">CONTACT US</button> -->

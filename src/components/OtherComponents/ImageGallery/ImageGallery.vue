@@ -5,35 +5,25 @@
                 <h2>Gallery</h2>
                 <!-- <p>Explore our diverse range of interior applications and design solutions</p> -->
             </div>
-            
+
             <div class="ImageGalleryGrid paddingBottom80">
                 <!-- First Row - 3 Images -->
                 <div class="galleryRow firstRow">
                     <div class="galleryItem" v-for="image in firstRowImages" :key="image.id">
-                        <a-image
-                            :src="image.src"
-                            :alt="image.alt"
-                            :preview="{
-                                src: image.src,
-                                mask: 'Click to view full screen'
-                            }"
-                            class="galleryImage"
-                        />
+                        <a-image :src="image.src" :alt="image.alt" :preview="{
+                            src: image.src,
+                            mask: 'Click to view full screen'
+                        }" class="galleryImage" />
                     </div>
                 </div>
-                
+
                 <!-- Second Row - 4 Images -->
                 <div class="galleryRow secondRow">
                     <div class="galleryItem" v-for="image in secondRowImages" :key="image.id">
-                        <a-image
-                            :src="image.src"
-                            :alt="image.alt"
-                            :preview="{
-                                src: image.src,
-                                mask: 'Click to view full screen'
-                            }"
-                            class="galleryImage"
-                        />
+                        <a-image :src="image.src" :alt="image.alt" :preview="{
+                            src: image.src,
+                            mask: 'Click to view full screen'
+                        }" class="galleryImage" />
                     </div>
                 </div>
             </div>
@@ -65,13 +55,12 @@ const firstRowImages = [
 ];
 
 // Gallery data - Second row with 4 images
-const secondRowImages = [  
+const secondRowImages = [
     {
         id: 7,
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery7.png',
         alt: 'Modern Interior with Premium Flooring'
     },
-
     {
         id: 4,
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutGalleryImage4.png',
@@ -82,8 +71,6 @@ const secondRowImages = [
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGallery.png',
         alt: 'Conference Room and Dining Area'
     },
-   
-  
     {
         id: 6,
         src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGalllery5.png',

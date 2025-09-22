@@ -52,18 +52,41 @@
     transform: scale(1);
 }
 
-.zoomContainer {
+.zoomLens {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.zoomLens.active {
+    opacity: 1;
+}
+
+.zoomContainer {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    width: 200px;
+    height: 200px;
     border: 2px solid white;
     border-radius: 8px;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.2s ease;
     pointer-events: none;
     z-index: 10;
+    transform: translateY(-50%);
+    padding: 10px;
 }
 
 .zoomContainer.active {
@@ -71,13 +94,14 @@
 }
 
 .zoomArea {
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     transform-origin: center;
     transition: transform 0.1s ease-out;
+    overflow: hidden;
 }
 
 .insetImage {
@@ -191,6 +215,12 @@
         height: 500px;
     }
 
+    .zoomContainer {
+        right: 20px;
+        width: 150px;
+        height: 150px;
+    }
+
     .productInset {
         width: 100px;
         height: 100px;
@@ -206,6 +236,12 @@
 
     .mainImageContainer {
         height: 400px;
+    }
+
+    .zoomContainer {
+        right: 15px;
+        width: 120px;
+        height: 120px;
     }
 
     .productInset {
@@ -236,6 +272,12 @@
 @media (max-width: 480px) {
     .mainImageContainer {
         height: 300px;
+    }
+
+    .zoomContainer {
+        right: 10px;
+        width: 100px;
+        height: 100px;
     }
 
     .productInset {

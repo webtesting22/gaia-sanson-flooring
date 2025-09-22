@@ -230,7 +230,7 @@
                 </div>
             </div>
         </div>
-        <SansonTeam />
+        <!-- <SansonTeam /> -->
         <YearsOfExperience />
         <OurVision />
         <ImageGallery />

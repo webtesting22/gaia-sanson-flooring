@@ -307,7 +307,7 @@ const category = computed(() => {
 
 // Sample design swatches data
 const designSwatches = [
-    { image: '/Images/CarpetCircleImages/90020052.png', name: 'Heritage Collection', code: '90020052', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_90020052.pdf' },
+    { image: '/Images/CarpetCircleImages/90020052.png', name: 'Heritage Collection', code: '90020052', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_ 90020052.pdf' },
     { image: '/Images/CarpetCircleImages/90020055.svg', name: 'Heritage Collection', code: '90020055', pdf: '/Images/CarpetCircleImages/Documents/90020055.pdf' },
     { image: '/Images/CarpetCircleImages/90020059.png', name: 'Heritage Collection', code: '90020059', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020059.pdf' },
     { image: '/Images/CarpetCircleImages/90020061.png', name: 'Heritage Collection', code: '90020061', pdf: '/Images/CarpetCircleImages/Documents/90020061.pdf' },

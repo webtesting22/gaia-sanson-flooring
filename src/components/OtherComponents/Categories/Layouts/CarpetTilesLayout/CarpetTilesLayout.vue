@@ -337,7 +337,7 @@ const designSwatches = [
     { image: '/Images/CarpetCircleImages/90020108.png', name: 'Heritage Collection', code: '90020108', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020108.pdf' },
     { image: '/Images/CarpetCircleImages/90020112.png', name: 'Heritage Collection', code: '90020112', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020112.pdf' },
     { image: '/Images/CarpetCircleImages/90020138.png', name: 'Heritage Collection', code: '90020138', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020138.pdf' },
-    { image: '/Images/CarpetCircleImages/Drizzle plank.png', name: 'Drizzle Plank', code: 'Drizzle Plank', pdf: '/Images/CarpetCircleImages/Documents/Drizzle Plank.pdf' },
+    { image: '/Images/CarpetCircleImages/Drizzle plank.png', name: 'Drizzle Plank', code: 'Tiles/Planks', pdf: '/Images/CarpetCircleImages/Documents/Tiles_Planks.pdf' },
     { image: '/Images/CarpetCircleImages/New Design.png', name: 'New Design.png', code: 'New Design', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_New Design.pdf' },
     // { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },
 ]

@@ -286,17 +286,17 @@ const broadloomProducts = [
             '/Images/BroadLoomImages/90020083/7.png',
         ]
     },
-    {
-        id: 90020082, name: 'Design 90020082', sku: '90020082', collection: 'Broadloom', images: [
-            '/Images/BroadLoomImages/90020082/1.png',
-            '/Images/BroadLoomImages/90020082/2.png',
-            '/Images/BroadLoomImages/90020082/3.png',
-            '/Images/BroadLoomImages/90020082/4.png',
-            '/Images/BroadLoomImages/90020082/5.png',
-            '/Images/BroadLoomImages/90020082/6.png',
-            '/Images/BroadLoomImages/90020082/7.png',
-        ]
-    },
+    // {
+    //     id: 90020082, name: 'Design 90020082', sku: '90020082', collection: 'Broadloom', images: [
+    //         '/Images/BroadLoomImages/90020082/1.png',
+    //         '/Images/BroadLoomImages/90020082/2.png',
+    //         '/Images/BroadLoomImages/90020082/3.png',
+    //         '/Images/BroadLoomImages/90020082/4.png',
+    //         '/Images/BroadLoomImages/90020082/5.png',
+    //         '/Images/BroadLoomImages/90020082/6.png',
+    //         '/Images/BroadLoomImages/90020082/7.png',
+    //     ]
+    // },
     // {
     //     id: 90020086, name: 'Design 90020086', sku: '90020086', collection: 'Broadloom', images: [
     //         '/Images/BroadLoomImages/90020086/1.png',
@@ -324,17 +324,17 @@ const broadloomProducts = [
     //         '/Images/BroadLoomImages/90020089/7.png',
     //     ]
     // },
-    // {
-    //     id: 90020090, name: 'Design 90020090', sku: '90020090', collection: 'Broadloom', images: [
-    //         '/Images/BroadLoomImages/90020090/1.png',
-    //         '/Images/BroadLoomImages/90020090/2.png',
-    //         '/Images/BroadLoomImages/90020090/3.png',
-    //         '/Images/BroadLoomImages/90020090/4.png',
-    //         '/Images/BroadLoomImages/90020090/5.png',
-    //         '/Images/BroadLoomImages/90020090/6.png',
-    //         '/Images/BroadLoomImages/90020090/7.png',
-    //     ]
-    // },
+    {
+        id: 90020090, name: 'Design 90020090', sku: '90020090', collection: 'Broadloom', images: [
+            '/Images/BroadLoomImages/90020090/1.png',
+            '/Images/BroadLoomImages/90020090/2.png',
+            '/Images/BroadLoomImages/90020090/3.png',
+            '/Images/BroadLoomImages/90020090/4.png',
+            '/Images/BroadLoomImages/90020090/5.png',
+            '/Images/BroadLoomImages/90020090/6.png',
+            '/Images/BroadLoomImages/90020090/7.png',
+        ]
+    },
     // {
     //     id: 90020071, name: 'Design 90020071', sku: '90020071', collection: 'Broadloom', images: [
     //         '/Images/BroadLoomImages/90020071/1.png',
@@ -420,17 +420,17 @@ const broadloomProducts = [
             '/Images/BroadLoomImages/90020066/7.png',
         ]
     },
-    {
-        id: 90020085, name: 'Design 90020085', sku: '90020085', collection: 'Broadloom', images: [
-            '/Images/BroadLoomImages/90020085/1.png',
-            '/Images/BroadLoomImages/90020085/2.png',
-            '/Images/BroadLoomImages/90020085/3.png',
-            '/Images/BroadLoomImages/90020085/4.png',
-            '/Images/BroadLoomImages/90020085/5.png',
-            '/Images/BroadLoomImages/90020085/6.png',
-            '/Images/BroadLoomImages/90020085/7.png',
-        ]
-    },
+    // {
+    //     id: 90020085, name: 'Design 90020085', sku: '90020085', collection: 'Broadloom', images: [
+    //         '/Images/BroadLoomImages/90020085/1.png',
+    //         '/Images/BroadLoomImages/90020085/2.png',
+    //         '/Images/BroadLoomImages/90020085/3.png',
+    //         '/Images/BroadLoomImages/90020085/4.png',
+    //         '/Images/BroadLoomImages/90020085/5.png',
+    //         '/Images/BroadLoomImages/90020085/6.png',
+    //         '/Images/BroadLoomImages/90020085/7.png',
+    //     ]
+    // },
     {
         id: 90020084, name: 'Design 90020084', sku: '90020084', collection: 'Broadloom', images: [
             '/Images/BroadLoomImages/90020084/1.png',

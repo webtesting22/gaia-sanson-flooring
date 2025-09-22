@@ -205,7 +205,7 @@
                         <div class="featureItem">
                             <div class="featureIcon">✓</div>
                             <div class="featureDetails">
-                                <h3>Different GSM sheet can be made</h3>
+                                <h3>Different GSM sheets can be made</h3>
                             </div>
                         </div>
 

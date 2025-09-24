@@ -6,35 +6,57 @@
 
         <div class="SansonAboutContainer Container paddingTop80">
             <div class="SansonAboutContainerInner">
-                <div class="LeftSideImageContainer" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                    <div class="SansonLogoContainer" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
-                        <img src="./SansonLogo.svg" alt="Sanson Group Logo">
-                    </div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGaiaNewImage.png"
-                        alt="Sanson Group Manufacturing Facility" data-aos="fade-up" data-aos-duration="800"
-                        data-aos-delay="600">
-                </div>
-                <div class="RightSideContentContainer" data-aos="fade-left" data-aos-duration="800"
-                    data-aos-delay="300">
-                    <div class="contentWrapper">
-                        <div class="yearsBadge" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300">
-                            <span style="color: white;">40+</span>
-                            <span class="yearsText">Years of Excellence</span>
+                <Row :gutter="30">
+                    <Col :span="24" :md="12" :lg="12">
+                    <div class="LeftSideImageContainer" data-aos="fade-right" data-aos-duration="800"
+                        data-aos-delay="200">
+                        <div class="SansonLogoContainer" data-aos="zoom-in" data-aos-duration="600"
+                            data-aos-delay="400">
+                            <img src="./SansonLogo.svg" alt="Sanson Group Logo">
                         </div>
-
-                        <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-                            Building Trust Since 1982
-                        </h2>
-                        <br>
-                        <p class="introText" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
-                            Sanson group, India is a major player in many ventures. Since our inception in 1982, we are
-                            continually improving our quality and serving our clients over 40 years.
-                        </p>
-                        <div class="BrandGridContainerDetails" data-aos="fade-up" data-aos-duration="600"
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGaiaNewImage.png"
+                            alt="Sanson Group Manufacturing Facility" data-aos="fade-up" data-aos-duration="800"
                             data-aos-delay="600">
-                            <h2>Our Brands From Our Group</h2>
-                            <div class="brandGrid">
-                                <!-- <div class="brandCard">
+                    </div>
+                    </Col>
+                    <Col :span="24" :md="12" :lg="12">
+                    <div class="RightSideContentContainer" data-aos="fade-left" data-aos-duration="800"
+                        data-aos-delay="300">
+                        <div class="contentWrapper">
+                            <div class="yearsBadge" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300">
+                                <span style="color: white;">40+</span>
+                                <span class="yearsText">Years of Excellence</span>
+                            </div>
+
+                            <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                                Building Trust Since 1982
+                            </h2>
+                            <br>
+                            <p class="introText" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                                Sanson group, India is a major player in many ventures. Since our inception in 1982, we
+                                are
+                                continually improving our quality and serving our clients over 40 years.
+                            </p>
+                            <p style="color: #2c3e50;"><b style="font-weight: 500;">GreenPro Certified for Environmental Sustainability </b>
+                            </p>
+                            <br>
+                            <p style="color: rgb(44, 62, 80);">GAIA is the first Indian MSME to earn the GreenPro label for our Acoustic PET Panels,
+                                showcasing our commitment to environmental sustainability. Made with recycled polyester
+                                fibers, our panels deliver top-tier performance while minimizing ecological impact.
+                            </p>
+                            <br>
+                            <p style="color: #2c3e50;"><b style="font-weight: 500;">Ethical Standards & Global Compliance</b></p>
+                            <br>
+                            <p style="color: rgb(44, 62, 80);">We uphold the highest ethical standards, serving clients across industries with
+                                integrity.
+                                With SEDEX and QIMA audits, we ensure full compliance with global sustainability and
+                                ethical
+                                practices.</p>
+                            <div class="BrandGridContainerDetails" data-aos="fade-up" data-aos-duration="600"
+                                data-aos-delay="600">
+                                <h3>Our Brands From Our Group</h3>
+                                <div class="brandGrid">
+                                    <!-- <div class="brandCard">
                                     <div class="brandLogo">
                                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png"
                                             alt="GAIA Logo">
@@ -43,33 +65,35 @@
                                     <p>FLOORING & ACOUSTIC SOLUTION</p>
                                 </div> -->
 
-                                <div class="brandCard">
-                                    <div class="brandLogo">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
-                                            alt="Seedo Logo">
+                                    <div class="brandCard">
+                                        <div class="brandLogo">
+                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
+                                                alt="Seedo Logo">
+                                        </div>
+                                        <h4>SEEDO</h4>
+                                        <!-- <p>INNOVATION & TECHNOLOGY</p> -->
                                     </div>
-                                    <h4>SEEDO</h4>
-                                    <!-- <p>INNOVATION & TECHNOLOGY</p> -->
-                                </div>
 
-                                <div class="brandCard">
-                                    <div class="brandLogo">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFuHBtCr1cRvsEIqZjC6HlSTka0C4uXgSxA&s"
-                                            alt="Customer Service Logo">
+                                    <div class="brandCard">
+                                        <div class="brandLogo">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFuHBtCr1cRvsEIqZjC6HlSTka0C4uXgSxA&s"
+                                                alt="Customer Service Logo">
+                                        </div>
+                                        <h4>Sanfit</h4>
+                                        <!-- <p>EXCELLENCE & SUPPORT</p> -->
                                     </div>
-                                    <h4>Sanfit</h4>
-                                    <!-- <p>EXCELLENCE & SUPPORT</p> -->
                                 </div>
                             </div>
-                        </div>
-                        <!-- <div class="closingStatement" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                            <!-- <div class="closingStatement" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
                             <blockquote>
                                 We don't just deliver products and services — we build relationships based on
                                 reliability and innovation.
                             </blockquote>
                         </div> -->
+                        </div>
                     </div>
-                </div>
+                    </Col>
+                </Row>
             </div>
         </div>
 
@@ -295,6 +319,7 @@ import YearsOfExperience from "./YearsOfExperience/YearsOfExperience.vue";
 import OurVision from "../OurVision/OurVision.vue";
 import ImageGallery from "../ImageGallery/ImageGallery.vue";
 import GetInTouch from "../GetInTouch/GetInTouch.vue";
+import { Row, Col } from "ant-design-vue";
 import "./About.css"
 </script>
 

@@ -645,7 +645,16 @@
 /* .MadeIndiaWrittenContainer {
     background-color: white;
 } */
+ .AccounticLogoContainer .FlexContainerEditNew{
+    display: grid;
 
+ }
+
+ .AccounticLogoContainer .FlexContainerEditNew .sets-apart-logos-Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+ }
 @media (max-width: 768px) {
 
     .EditContainerContent {

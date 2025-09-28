@@ -131,6 +131,12 @@ import "./YearsOfExperience.css"
 
 // Client logos data
 const clientLogos = ref([
+    {
+        id: 10,
+        name: 'Welspun',
+        logo: '/Images/ClientsLogos/WelSpun.jpeg',
+        alt: 'Welspun Logo'
+    },
 
     {
         id: 1,
@@ -186,12 +192,7 @@ const clientLogos = ref([
         logo: '/Images/ClientsLogos/RelianceRetail.png',
         alt: 'Reliance Retail Logo'
     },
-    {
-        id: 10,
-        name: 'Welspun',
-        logo: '/Images/ClientsLogos/WelSpun.jpeg',
-        alt: 'Welspun Logo'
-    }
+
 ])
 
 // Handle image loading errors

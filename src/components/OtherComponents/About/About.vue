@@ -12,7 +12,7 @@
                         data-aos-delay="200">
                         <div class="SansonLogoContainer" data-aos="zoom-in" data-aos-duration="600"
                             data-aos-delay="400">
-                            <img src="./SansonLogo.svg" alt="Sanson Group Logo">
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/sanson HD logo.png" alt="Sanson Group Logo">
                         </div>
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGaiaNewImage.png"
                             alt="Sanson Group Manufacturing Facility" data-aos="fade-up" data-aos-duration="800"

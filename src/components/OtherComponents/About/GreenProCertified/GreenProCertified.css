@@ -1,4 +1,84 @@
-.GreenProCertifiedContainer {
-  width: 1200px;
-  margin: 0 auto;
+.grid {
+  display: grid;
+  gap: 0px;
+}
+
+.greenProCertifiedImageContainer {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenProCertifiedImage {
+  width: 80%;
+  object-fit: cover;
+}
+
+.circleContainer {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circleWrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.outlineCircle {
+  width: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #ba8c45;
+  padding: 5px;
+}
+
+.innerCircle {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #ba8c45;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  z-index: 10;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+@media (min-width: 1080px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .outline-circle {
+    width: 60%;
+  }
+
+  .video {
+    width: 300px;
+  }
 }

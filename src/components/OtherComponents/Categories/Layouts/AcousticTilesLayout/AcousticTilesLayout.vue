@@ -428,7 +428,7 @@
           data-aos-duration="800"
           data-aos-delay="100"
         >
-          Characteristics
+          Properties
         </h2>
         <br />
         <br />
@@ -455,20 +455,19 @@
         </div>
       </div>
     </div>
-    <div class="VariousApplicationsContainer paddingTop80 paddingBottom80">
+    <div
+      class="VariousApplicationsContainer paddingTop80 paddingBottom80"
+      style="background-color: #fffaf2"
+    >
       <div class="Container">
-        <h2
-          class="text-center"
-          data-aos="fade-down"
-          data-aos-duration="800"
-          data-aos-delay="100"
-        >
-          Certifications
-        </h2>
-        <br />
-        <p>Certificates available on request.</p>
-        <br />
-        <br />
+        <div class="gridImagesContainerText" style="margin-bottom: 40px">
+          <!-- <div class="HeaderContainerCommonAll" data-aos="fade-down" data-aos-duration="800"
+                        data-aos-delay="100">
+                        <div> -->
+          <h2>Certifications</h2>
+          <p>Certificates available on request.</p>
+        </div>
+
         <div class="VariousApplicationsGridContainer marginTop20">
           <div
             class="VariousApplicationsGridItem"

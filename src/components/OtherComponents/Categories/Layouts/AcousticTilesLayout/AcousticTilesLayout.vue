@@ -2,7 +2,7 @@
   <div class="width100 acousticTilesLayout">
     <CommonTopLayout
       heading="Acoustic PET Panels"
-      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic TilesImagesBackground.png"
+      imageSrc="/Images/accoustic-full.png"
       imageAlt="Acoustic Solutions"
     />
 

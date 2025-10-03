@@ -1,0 +1,309 @@
+/* GreenPro Certified Component Styles */
+
+.GreenProCertifiedContainer {
+  background-color: #f8f5ed; /* Light beige/cream background */
+  min-height: 681px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-top: 1px solid #2c3e50;
+  border-bottom: 1px solid #2c3e50;
+  overflow: hidden; /* Hide overflow for marquee effect */
+}
+
+.greenpro-content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 681px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Initial state - centered and visible */
+.greenpro-content-wrapper:not(.marquee-active) {
+  transform: translateX(0);
+}
+
+/* Marquee animation when active */
+.greenpro-content-wrapper.marquee-active {
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Left Section - GreenPro Certification Details */
+.greenpro-left-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 60px;
+  min-width: 600px; /* Ensure minimum width for marquee */
+}
+
+.greenpro-frame {
+  position: relative;
+  transform: rotate(2deg); /* Slight clockwise rotation */
+  border: 3px solid #2c3e50; /* Dark blue/black outer border */
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #f8f5ed;
+}
+
+.greenpro-content-box {
+  background-color: #ffffff;
+  border: 1px solid #f8f5ed; /* Light beige inner border */
+  border-radius: 4px;
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* GreenPro Logo */
+.greenpro-logo {
+  margin-bottom: 30px;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #8b0000; /* Dark red/maroon border */
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4caf50, #2e7d32); /* Green gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+
+.logo-leaf {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.logo-text {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.trademark {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 8px;
+  font-weight: normal;
+}
+
+/* Heading Text */
+.greenpro-heading {
+  color: #8b6b3b; /* Warm brown color */
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 25px 0;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Body Text */
+.greenpro-body-text {
+  color: #333333; /* Dark gray/black */
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-align: justify;
+}
+
+/* Right Section - Mobile Mockup */
+.greenpro-right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 60px;
+  min-width: 400px; /* Ensure minimum width for marquee */
+}
+
+.mobile-mockup-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-mockup-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #a07f4b; /* Brown circle background */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.mobile-phone {
+  position: relative;
+  width: 120px;
+  height: 240px;
+  background-color: #000000; /* Black phone */
+  border-radius: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.status-bar {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 3;
+}
+
+.time {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.status-icons {
+  display: flex;
+  gap: 8px;
+  font-size: 10px;
+}
+
+.phone-buttons {
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.volume-button {
+  width: 3px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+.power-button {
+  width: 3px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 2px;
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .greenpro-content-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .greenpro-left-section,
+  .greenpro-right-section {
+    padding: 20px 0;
+    min-width: auto;
+  }
+
+  .greenpro-heading {
+    font-size: 28px;
+  }
+
+  .mobile-mockup-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .mobile-phone {
+    width: 100px;
+    height: 200px;
+  }
+
+  /* Disable marquee on smaller screens */
+  .greenpro-content-wrapper.marquee-active {
+    animation: none;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .greenpro-content-box {
+    padding: 30px 30px;
+  }
+
+  .greenpro-heading {
+    font-size: 24px;
+  }
+
+  .greenpro-body-text {
+    font-size: 14px;
+  }
+
+  .mobile-mockup-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mobile-phone {
+    width: 80px;
+    height: 160px;
+  }
+
+  .logo-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo-leaf {
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 8px;
+  }
+}

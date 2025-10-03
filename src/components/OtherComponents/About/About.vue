@@ -1,62 +1,112 @@
 <template>
-    <div class="aboutPage">
-        <CommonTopLayout heading="About Us"
-            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsBannerImage.png"
-            imageAlt="Acoustic Solutions" />
+  <div class="aboutPage">
+    <CommonTopLayout
+      heading="About Us"
+      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsBannerImage.png"
+      imageAlt="Acoustic Solutions"
+    />
 
-        <div class="SansonAboutContainer Container paddingTop80">
-            <div class="SansonAboutContainerInner">
-                <Row :gutter="30">
-                    <Col :span="24" :md="12" :lg="12">
-                    <div class="LeftSideImageContainer" data-aos="fade-right" data-aos-duration="800"
-                        data-aos-delay="200">
-                        <div class="SansonLogoContainer" data-aos="zoom-in" data-aos-duration="600"
-                            data-aos-delay="400">
-                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/sanson HD logo.png" alt="Sanson Group Logo">
-                        </div>
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGaiaNewImage.png"
-                            alt="Sanson Group Manufacturing Facility" data-aos="fade-up" data-aos-duration="800"
-                            data-aos-delay="600">
-                    </div>
-                    </Col>
-                    <Col :span="24" :md="12" :lg="12">
-                    <div class="RightSideContentContainer" data-aos="fade-left" data-aos-duration="800"
-                        data-aos-delay="300">
-                        <div class="contentWrapper">
-                            <div class="yearsBadge" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300">
-                                <span style="color: white;">40+</span>
-                                <span class="yearsText">Years of Excellence</span>
-                            </div>
+    <div class="SansonAboutContainer Container paddingTop80">
+      <div class="SansonAboutContainerInner">
+        <Row :gutter="30">
+          <Col :span="24" :md="12" :lg="12">
+            <div
+              class="LeftSideImageContainer"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <div
+                class="SansonLogoContainer"
+                data-aos="zoom-in"
+                data-aos-duration="600"
+                data-aos-delay="400"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/sanson HD logo.png"
+                  alt="Sanson Group Logo"
+                />
+              </div>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGaiaNewImage.png"
+                alt="Sanson Group Manufacturing Facility"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="600"
+              />
+            </div>
+          </Col>
+          <Col :span="24" :md="12" :lg="12">
+            <div
+              class="RightSideContentContainer"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
+              <div class="contentWrapper">
+                <div
+                  class="yearsBadge"
+                  data-aos="fade-down"
+                  data-aos-duration="600"
+                  data-aos-delay="300"
+                >
+                  <span style="color: white">40+</span>
+                  <span class="yearsText">Years of Excellence</span>
+                </div>
 
-                            <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-                                Building Trust Since 1982
-                            </h2>
-                            <br>
-                            <p class="introText" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
-                                Sanson group, India is a major player in many ventures. Since our inception in 1982, we
-                                are
-                                continually improving our quality and serving our clients over 40 years.
-                            </p>
-                            <p style="color: #2c3e50;"><b style="font-weight: 500;">GreenPro Certified for Environmental Sustainability </b>
-                            </p>
-                            <br>
-                            <p style="color: rgb(44, 62, 80);">GAIA is the first Indian MSME to earn the GreenPro label for our Acoustic PET Panels,
-                                showcasing our commitment to environmental sustainability. Made with recycled polyester
-                                fibers, our panels deliver top-tier performance while minimizing ecological impact.
-                            </p>
-                            <br>
-                            <p style="color: #2c3e50;"><b style="font-weight: 500;">Ethical Standards & Global Compliance</b></p>
-                            <br>
-                            <p style="color: rgb(44, 62, 80);">We uphold the highest ethical standards, serving clients across industries with
-                                integrity.
-                                With SEDEX and QIMA audits, we ensure full compliance with global sustainability and
-                                ethical
-                                practices.</p>
-                            <div class="BrandGridContainerDetails" data-aos="fade-up" data-aos-duration="600"
-                                data-aos-delay="600">
-                                <h3>Our Brands From Our Group</h3>
-                                <div class="brandGrid">
-                                    <!-- <div class="brandCard">
+                <h2
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="400"
+                >
+                  Building Trust Since 1982
+                </h2>
+                <br />
+                <p
+                  class="introText"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="500"
+                >
+                  Sanson group, India is a major player in many ventures. Since
+                  our inception in 1982, we are continually improving our
+                  quality and serving our clients over 40 years.
+                </p>
+                <p style="color: #2c3e50">
+                  <b style="font-weight: 500"
+                    >GreenPro Certified for Environmental Sustainability
+                  </b>
+                </p>
+                <br />
+                <p style="color: rgb(44, 62, 80)">
+                  GAIA is the first Indian MSME to earn the GreenPro label for
+                  our Acoustic PET Panels, showcasing our commitment to
+                  environmental sustainability. Made with recycled polyester
+                  fibers, our panels deliver top-tier performance while
+                  minimizing ecological impact.
+                </p>
+                <br />
+                <p style="color: #2c3e50">
+                  <b style="font-weight: 500"
+                    >Ethical Standards & Global Compliance</b
+                  >
+                </p>
+                <br />
+                <p style="color: rgb(44, 62, 80)">
+                  We uphold the highest ethical standards, serving clients
+                  across industries with integrity. With SEDEX and QIMA audits,
+                  we ensure full compliance with global sustainability and
+                  ethical practices.
+                </p>
+                <div
+                  class="BrandGridContainerDetails"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="600"
+                >
+                  <h3>Our Brands From Our Group</h3>
+                  <div class="brandGrid">
+                    <!-- <div class="brandCard">
                                     <div class="brandLogo">
                                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png"
                                             alt="GAIA Logo">
@@ -65,40 +115,44 @@
                                     <p>FLOORING & ACOUSTIC SOLUTION</p>
                                 </div> -->
 
-                                    <div class="brandCard">
-                                        <div class="brandLogo">
-                                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
-                                                alt="Seedo Logo">
-                                        </div>
-                                        <h4>SEEDO</h4>
-                                        <!-- <p>INNOVATION & TECHNOLOGY</p> -->
-                                    </div>
+                    <div class="brandCard">
+                      <div class="brandLogo">
+                        <img
+                          src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
+                          alt="Seedo Logo"
+                        />
+                      </div>
+                      <h4>SEEDO</h4>
+                      <!-- <p>INNOVATION & TECHNOLOGY</p> -->
+                    </div>
 
-                                    <div class="brandCard">
-                                        <div class="brandLogo">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFuHBtCr1cRvsEIqZjC6HlSTka0C4uXgSxA&s"
-                                                alt="Customer Service Logo">
-                                        </div>
-                                        <h4>Sanfit</h4>
-                                        <!-- <p>EXCELLENCE & SUPPORT</p> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="closingStatement" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                    <div class="brandCard">
+                      <div class="brandLogo">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFuHBtCr1cRvsEIqZjC6HlSTka0C4uXgSxA&s"
+                          alt="Customer Service Logo"
+                        />
+                      </div>
+                      <h4>Sanfit</h4>
+                      <!-- <p>EXCELLENCE & SUPPORT</p> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="closingStatement" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
                             <blockquote>
                                 We don't just deliver products and services — we build relationships based on
                                 reliability and innovation.
                             </blockquote>
                         </div> -->
-                        </div>
-                    </div>
-                    </Col>
-                </Row>
+              </div>
             </div>
-        </div>
+          </Col>
+        </Row>
+      </div>
+    </div>
 
-        <!-- Quality Features Grid Section -->
-        <!-- <div class="qualityFeaturesSection Container paddingTop80 paddingBottom80">
+    <!-- Quality Features Grid Section -->
+    <!-- <div class="qualityFeaturesSection Container paddingTop80 paddingBottom80">
             <div class="qualityFeaturesHeader" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <h2>Why Choose Sanson Group</h2>
                 <p>Our commitment to excellence drives everything we do</p>
@@ -135,7 +189,7 @@
                 </div>
             </div>
         </div> -->
-        <!-- <div class="marginTop80 paddingTop80 paddingBottom80 CategoriesClientContainers">
+    <!-- <div class="marginTop80 paddingTop80 paddingBottom80 CategoriesClientContainers">
             <div class="expertSolutionsSection Container
                 <div class="expertSolutionsHeader">
                     <h2>Expert Solutions for Every Need</h2>
@@ -180,88 +234,133 @@
                 </div>
             </div>
         </div> -->
-        <div class="marginTop80 paddingTop80 AboutGaiaContainer paddingBottom80">
-            <div class="Container">
-                <div class="AboutGaiaContainer">
-                    <div class="AboutGaiaLeftSide" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                        <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">GAIA: The New World of
-                            Flooring Fashion</h2>
-                        <br>
-                        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">From Gaia, the Greek goddess
-                            — Mother Earth, origin of life — to Prithvi, the vast and
-                            grounding force in Indian tradition.</p>
-                        <br>
-                        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">Across cultures, Earth has
-                            always been revered as the ultimate source of creation and
-                            balance.
-                        </p>
-                        <br>
-                        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">At Sanson Group, we honor
-                            this legacy by combining innovation with purpose.
-                            Today, we're proud to unveil our newest label: GAIA – The New World of Flooring Fashion.</p>
-                        <br>
-                        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">GAIA is more than just
-                            flooring — it's a movement toward planet-positive design and timeless
-                            craftsmanship, brought to life with the precision and quality Sanson is known for.
-                        </p>
-                        <!-- <br> -->
-                        <!-- <p>As early adopters in the industry, we are now redefining what flooring can be: natural,
+    <div class="marginTop80 paddingTop80 AboutGaiaContainer paddingBottom80">
+      <div class="Container">
+        <div class="AboutGaiaContainer">
+          <div
+            class="AboutGaiaLeftSide"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+              GAIA: The New World of Flooring Fashion
+            </h2>
+            <br />
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+              From Gaia, the Greek goddess — Mother Earth, origin of life — to
+              Prithvi, the vast and grounding force in Indian tradition.
+            </p>
+            <br />
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+              Across cultures, Earth has always been revered as the ultimate
+              source of creation and balance.
+            </p>
+            <br />
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+              At Sanson Group, we honor this legacy by combining innovation with
+              purpose. Today, we're proud to unveil our newest label: GAIA – The
+              New World of Flooring Fashion.
+            </p>
+            <br />
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
+              GAIA is more than just flooring — it's a movement toward
+              planet-positive design and timeless craftsmanship, brought to life
+              with the precision and quality Sanson is known for.
+            </p>
+            <!-- <br> -->
+            <!-- <p>As early adopters in the industry, we are now redefining what flooring can be: natural,
                             elegant, and future-ready solutions that meet the evolving needs of modern spaces.</p> -->
-                    </div>
-                    <div class="AboutGaiaRightSide" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsImageNewOne.png"
-                            alt="GAIA Flooring Fashion" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div
+            class="AboutGaiaRightSide"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsImageNewOne.png"
+              alt="GAIA Flooring Fashion"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="600"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAIA Features Grid Section -->
+    <div class="qualityFeaturesSection Container paddingTop80 paddingBottom80">
+      <div
+        class="qualityFeaturesHeader"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+      >
+        <h2>GAIA Excellence</h2>
+        <p style="text-align: start">
+          Discover what makes GAIA the future of flooring fashion
+        </p>
+      </div>
+      <div class="qualityFeaturesGrid">
+        <div
+          class="qualityFeatureCard"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >
+          <div class="qualityFeatureIcon">
+            <i class="checkmark">✓</i>
+          </div>
+          <div class="qualityFeatureContent">
+            <h3>Endless Design and Colour Possibilities</h3>
+            <!-- <p>Creative freedom with unlimited design options for every space</p> -->
+          </div>
         </div>
 
-        <!-- GAIA Features Grid Section -->
-        <div class="qualityFeaturesSection Container paddingTop80 paddingBottom80">
-            <div class="qualityFeaturesHeader" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                <h2>GAIA Excellence</h2>
-                <p style="text-align: start;">Discover what makes GAIA the future of flooring fashion</p>
-            </div>
-            <div class="qualityFeaturesGrid">
-                <div class="qualityFeatureCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                    <div class="qualityFeatureIcon">
-                        <i class="checkmark">✓</i>
-                    </div>
-                    <div class="qualityFeatureContent">
-                        <h3>Endless Design and Colour Possibilities</h3>
-                        <!-- <p>Creative freedom with unlimited design options for every space</p> -->
-                    </div>
-                </div>
-
-                <div class="qualityFeatureCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
-                    <div class="qualityFeatureIcon">
-                        <i class="checkmark">✓</i>
-                    </div>
-                    <div class="qualityFeatureContent">
-                        <h3>Test Certified and Stabilized</h3>
-                        <!-- <p>Superior materials and craftsmanship in every product</p> -->
-                    </div>
-                </div>
-
-                <div class="qualityFeatureCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
-                    <div class="qualityFeatureIcon">
-                        <i class="checkmark">✓</i>
-                    </div>
-                    <div class="qualityFeatureContent">
-                        <h3>Multiple Sizes and Cutting Options</h3>
-                        <!-- <p>Trendsetting designs that define the future of flooring</p> -->
-                    </div>
-                </div>
-            </div>
+        <div
+          class="qualityFeatureCard"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="450"
+        >
+          <div class="qualityFeatureIcon">
+            <i class="checkmark">✓</i>
+          </div>
+          <div class="qualityFeatureContent">
+            <h3>Test Certified and Stabilized</h3>
+            <!-- <p>Superior materials and craftsmanship in every product</p> -->
+          </div>
         </div>
-        <!-- <SansonTeam /> -->
-        <YearsOfExperience />
-        <OurVision />
-        <ImageGallery />
 
-        <HomeProducts title="What we make"
-            subtitle="Discover our comprehensive collection of premium flooring solutions" />
-        <!-- <div class=" paddingTop80 paddingBottom80 CategoriesClientContainers">
+        <div
+          class="qualityFeatureCard"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="600"
+        >
+          <div class="qualityFeatureIcon">
+            <i class="checkmark">✓</i>
+          </div>
+          <div class="qualityFeatureContent">
+            <h3>Multiple Sizes and Cutting Options</h3>
+            <!-- <p>Trendsetting designs that define the future of flooring</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <SansonTeam /> -->
+    <YearsOfExperience />
+    <GreenProCertified />
+    <OurVision />
+    <ImageGallery />
+
+    <HomeProducts
+      title="What we make"
+      subtitle="Discover our comprehensive collection of premium flooring solutions"
+    />
+    <!-- <div class=" paddingTop80 paddingBottom80 CategoriesClientContainers">
             <div class="expertSolutionsSection Container">
                 <div class="expertSolutionsHeader" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
                     <h2>Our Brands From Our Group</h2>
@@ -305,24 +404,28 @@
                 </div>
             </div>
         </div> -->
-        <!-- <WhatWeMake /> -->
-    </div>
-    <GetInTouch title="Get In Touch!" subtitle="Tell Us What You Need for Your Perfect Carpet"
-        description="Whether you’re a potential partner, client or collaborator - we’d love to explore how we can grow together. Drop us a message to learn more." />
+    <!-- <WhatWeMake /> -->
+  </div>
+  <GetInTouch
+    title="Get In Touch!"
+    subtitle="Tell Us Your Needs, We’ll Tailor the Solution"
+    description="Whether you’re a potential partner, client or collaborator - we’d love to explore how we can grow together. Drop us a message to learn more."
+  />
 </template>
 
 <script setup>
-import CommonTopLayout from '../../OtherComponents/Categories/CommonTopLayout/CommonTopLayout.vue';
-import SansonTeam from '../SansonTeam/SansonTeam.vue';
+import CommonTopLayout from "../../OtherComponents/Categories/CommonTopLayout/CommonTopLayout.vue";
+import SansonTeam from "../SansonTeam/SansonTeam.vue";
 import HomeProducts from "../../HomeRoutes/HomeProducts/HomeProducts.vue";
 import YearsOfExperience from "./YearsOfExperience/YearsOfExperience.vue";
 import OurVision from "../OurVision/OurVision.vue";
 import ImageGallery from "../ImageGallery/ImageGallery.vue";
 import GetInTouch from "../GetInTouch/GetInTouch.vue";
+import GreenProCertified from "./GreenProCertified/GreenProCertified.vue";
 import { Row, Col } from "ant-design-vue";
-import "./About.css"
+import "./About.css";
 </script>
 
 <style scoped>
-@import './About.css';
+@import "./About.css";
 </style>

@@ -16,12 +16,6 @@
         <div class="sets-apart-logos-Container" style="justify-content: start">
           <div class="sets-apart-logos-Container-item">
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
-              alt=""
-            />
-          </div>
-          <div class="sets-apart-logos-Container-item">
-            <img
               src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
               alt=""
             />

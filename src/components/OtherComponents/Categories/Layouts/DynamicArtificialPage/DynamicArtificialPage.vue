@@ -85,7 +85,7 @@
     </div>
 
     <!-- Second Container - Designed for Every Landscape -->
-    <div class="Container paddingTop80 paddingBottom80">
+    <div class="Container paddingTop40 paddingBottom80">
       <div class="landscapeHeader">
         <div class="headerLeft">
           <h2 class="landscapeTitle">{{ grassData.landscapeTitle }}</h2>
@@ -97,7 +97,8 @@
         </div>
       </div>
 
-      <div class="landscapeCarousel paddingTop80">
+      <!-- Option 1: Swiper with Pagination Dots -->
+      <div class="landscapeCarousel paddingTop40" v-if="showSwiper">
         <swiper
           @swiper="onSwiper"
           :slides-per-view="4"
@@ -105,7 +106,12 @@
           :autoplay="{ delay: 2500, disableOnInteraction: false }"
           :loop="true"
           :speed="700"
-          :modules="[SwiperNavigation, Autoplay]"
+          :modules="[SwiperNavigation, Autoplay, Pagination]"
+          :pagination="{
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 3,
+          }"
           :breakpoints="{
             320: { slidesPerView: 1, spaceBetween: 10 },
             768: { slidesPerView: 2, spaceBetween: 10 },
@@ -124,21 +130,45 @@
           </swiper-slide>
         </swiper>
       </div>
+
+      <!-- Option 2: 2x2 Grid Layout -->
+      <div class="landscapeGrid paddingTop40" v-if="!showSwiper">
+        <div class="landscapeGridContainer">
+          <div
+            v-for="(image, index) in landscapeImages.slice(0, 4)"
+            :key="index"
+            class="landscapeGridItem"
+          >
+            <div class="landscapeImageContainer">
+              <img :src="image.src" :alt="image.alt" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <BackToTop />
 </template>
 
 <script setup>
 import { computed, ref, reactive } from "vue";
 import { useRoute } from "vue-router";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation as SwiperNavigation, Autoplay } from "swiper/modules";
+import {
+  Navigation as SwiperNavigation,
+  Autoplay,
+  Pagination,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
+import BackToTop from "../../../BackToTop/BackToTop.vue";
 
 const route = useRoute();
 const swiperInstance = ref(null);
+const showSwiper = ref(true); // Set to false to show 2x2 grid instead
+
 const onSwiper = (swiper) => {
   swiperInstance.value = swiper;
 };
@@ -363,27 +393,27 @@ const grassTypesData = {
     images: [
       {
         src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisportGrassImage2.jpg",
-        alt: "Multisports Grass Tennis Court",
+        alt: "MultiTurf Tennis Court",
       },
       {
         src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisportGrassImage.jpg",
-        alt: "Multisports Grass Badminton Court",
+        alt: "MultiTurf Badminton Court",
       },
       {
         src: "/Images/GrassImages/multisportgras3.jpg",
-        alt: "Multisports Grass Gym Floor",
+        alt: "MultiTurf Gym Floor",
       },
       {
         src: "/Images/GrassImages/multisportgras4.jpg",
-        alt: "Multisports Grass Skating Zone",
+        alt: "MultiTurf Skating Zone",
       },
       {
         src: "/Images/GrassImages/multisportgras5.jpg",
-        alt: "Multisports Grass Indoor Sports Complex",
+        alt: "MultiTurf Indoor Sports Complex",
       },
       {
         src: "/Images/GrassImages/multisportgras6.jpg",
-        alt: "Multisports Grass Recreational Area",
+        alt: "MultiTurf Recreational Area",
       },
     ],
     landscapeTitle: "Versatile MultiTurf for Every Sport",

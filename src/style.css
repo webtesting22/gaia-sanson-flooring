@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-@import url('https://fonts.cdnfonts.com/css/degaule');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import url("https://fonts.cdnfonts.com/css/degaule");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
 /* Degular Font Import - Local Font Files */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #FFFAF2;
+  background-color: #fffaf2;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -57,11 +57,11 @@ i {
 } */
 
 .paddingTop80 {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .paddingBottom80 {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .marginTop80 {
@@ -85,7 +85,7 @@ i {
 }
 
 .paddingTop60 {
-  padding-top: 60px;
+  padding-top: 25px;
 }
 
 .whiteColor {
@@ -130,7 +130,6 @@ h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
 /* h2::before {
@@ -264,26 +263,28 @@ h2 {
   width: 50%;
 }
 
-@media (min-width:700px) and (max-width:1100px) {
+@media (min-width: 700px) and (max-width: 1100px) {
   .Container {
     max-width: 800px !important;
   }
 }
-
 
 .gridImagesContainerText {
   display: flex;
   justify-content: space-between;
 }
 
-
 @media (max-width: 768px) {
   .Width50 {
     width: 100%;
   }
 
+  .paddingTop80 {
+    padding-top: 20px;
+  }
+
   .paddingBottom80 {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .CommonHeader {
@@ -318,7 +319,23 @@ h2 {
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 14px; /* subheading font size for mobile */
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 14px; /* subheading font size for mobile */
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 14px; /* subheading font size for mobile */
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 14px; /* subheading font size for mobile */
+    font-weight: 600;
   }
 
   h2::before {
@@ -326,11 +343,11 @@ h2 {
   }
 
   .paddingTop60 {
-    padding-top: 30px;
+    padding-top: 15px;
   }
   .gridImagesContainerText {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
+  }
 }

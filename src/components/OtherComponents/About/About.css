@@ -522,6 +522,12 @@
     left: 15px;
   }
 
+  /* Make section headings behave like subheadings on mobile */
+  .expertSolutionTitle {
+    font-size: 14px; /* subheading font size for mobile */
+    font-weight: 600;
+  }
+
   .mainHeading {
     font-size: 2.2rem;
   }
@@ -562,7 +568,7 @@
   }
 
   .qualityFeatureContent h3 {
-    font-size: 1.3rem;
+    font-size: 14px;
   }
 
   .expertSolutionsGrid {
@@ -643,7 +649,7 @@
   }
 
   .qualityFeatureContent h3 {
-    font-size: 1.2rem;
+    font-size: 14px;
   }
 
   .qualityFeatureContent p {
@@ -810,7 +816,7 @@
   }
 
   .brandCard h3 {
-    font-size: 1.1rem;
+    font-size: 14px;
   }
 
   .brandCard p {

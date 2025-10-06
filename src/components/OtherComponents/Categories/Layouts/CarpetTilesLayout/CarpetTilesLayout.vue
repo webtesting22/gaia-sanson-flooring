@@ -8,6 +8,7 @@
     <div class="paddingTop80" style="background-color: white !important">
       <MakeInIndia />
     </div>
+    <YearsOfExperience />
     <div class="ChooseDesignsContainer">
       <div class="Container paddingTop80 paddingBottom80">
         <div class="ChooseDesignsContainer">
@@ -311,6 +312,7 @@
     subtitle="Tell Us What You Need for Your Perfect Carpet"
     description="Connect with our team to discuss premium carpet tile solutions — including fully customizable options to meet your project requirements."
   />
+  <BackToTop />
 </template>
 
 <script setup>
@@ -324,6 +326,8 @@ import CategoriesData from "../../CategoriesLayout/Categories";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
+import YearsOfExperience from "../../../About/YearsOfExperience/YearsOfExperience.vue";
+import BackToTop from "../../../BackToTop/BackToTop.vue";
 // Scroll animation variables
 let animationContainers = [];
 

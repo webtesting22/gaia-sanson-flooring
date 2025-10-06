@@ -12,6 +12,7 @@
     <div class="paddingTop80" style="background-color: white !important">
       <MakeInIndia />
     </div>
+    <YearsOfExperience />
     <div
       class="ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container"
     >
@@ -46,7 +47,7 @@
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
             <img src="/Images/products/multiturf2.jpg" alt="" />
             <div class="ArtificialMultiturfGridItemText">
-              <h3>Multisports Grass</h3>
+              <h3>MultiTurf</h3>
               <router-link to="/artificial-grass/multisports-grass">
                 <button>View More</button>
               </router-link>
@@ -270,6 +271,7 @@ import "swiper/css/pagination";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
+import YearsOfExperience from "../../../About/YearsOfExperience/YearsOfExperience.vue";
 const swiperInstance = ref(null);
 
 const onSwiper = (swiper) => {

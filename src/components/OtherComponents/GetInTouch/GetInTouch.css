@@ -175,6 +175,12 @@
     font-size: 2rem;
   }
 
+  /* Make h1 behave like h2 on mobile */
+  h1 {
+    font-size: 1.5rem; /* h2 equivalent font size */
+    font-weight: 600; /* h2 equivalent font weight */
+  }
+
   .input-group {
     margin: 0 auto;
   }
@@ -194,7 +200,11 @@
   }
 
   .sub-heading {
-    font-size: 1rem;
+    font-size: 14px;
+  }
+
+  .subtitle {
+    font-size: 14px;
   }
 
   .description-text {

@@ -39,13 +39,13 @@
 
   .rightContent ul li {
     list-style: disc;
-    margin: 20px 0px;
+    margin: 12px 0px;
   }
 
   /* Our Colors Section Styles */
   .OurColoursCardContainer {
     background-color: #f8f9fa;
-    padding: 80px 0;
+    padding: 30px 0;
   }
 
   .ourColorsHeader {
@@ -156,8 +156,8 @@
 
   .VariousApplicationsGridContainer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     justify-content: center;
   }
 
@@ -199,6 +199,27 @@
   }
 
   /* Responsive for Various Applications */
+  @media (min-width: 769px) {
+    .VariousApplicationsGridContainer {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .VariousApplicationsGridContainer {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .VariousApplicationsGridContainer {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+    }
+  }
+
   @media (max-width: 768px) {
     .featureText span {
       text-align: center;
@@ -251,13 +272,14 @@
 }
 
 .LastGridImagesGridContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .LastGridImagesGridContainer > div {
-  width: 50%;
+  width: 100%;
 }
 
 .LastGridImagesGridContainer .LastGridImagesImageContainer {
@@ -289,12 +311,20 @@
   }
 
   .LastGridImagesGridContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .LastGridImagesGridContainer > div {
-    width: 50%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .LastGridImagesGridContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
@@ -460,7 +490,7 @@
 .featuresContent {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 25px;
   align-items: flex-start;
   justify-content: center;
 }
@@ -564,7 +594,7 @@
   }
 
   .featuresContent {
-    gap: 30px;
+    gap: 20px;
   }
 
   .featureItem {
@@ -583,7 +613,7 @@
 
 @media (max-width: 480px) {
   .featuresContent {
-    gap: 25px;
+    gap: 15px;
   }
 
   .featureDetails h3 {
@@ -647,8 +677,10 @@
 
 .AccounticLogoContainer .FlexContainerEditNew .sets-apart-logos-Container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .EditContainerContent {
@@ -703,6 +735,16 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .AccounticLogoContainer .FlexContainerEditNew .sets-apart-logos-Container {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .sets-apart-logos-Container-item img {
+    max-width: 120px;
+    max-height: 60px;
+  }
 }
 
 /* GreenPro Logo Inline Styles */
@@ -738,5 +780,25 @@
 
   .greenpro-logo-inline {
     margin: 0 10px 0 0;
+  }
+
+  .AccounticLogoContainer .FlexContainerEditNew .sets-apart-logos-Container {
+    gap: 10px;
+  }
+
+  .sets-apart-logos-Container-item img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .AccounticLogoContainer .FlexContainerEditNew .sets-apart-logos-Container {
+    gap: 8px;
+  }
+
+  .sets-apart-logos-Container-item img {
+    max-width: 80px;
+    max-height: 40px;
   }
 }

@@ -542,6 +542,7 @@
     subtitle="Partner with Us for Tailored Solutions"
     description="Connect with us to create acoustic tile solutions customized for your space, style, and sound needs."
   />
+  <BackToTop />
 </template>
 
 <script setup>
@@ -551,6 +552,7 @@ import "swiper/css/navigation";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
+import BackToTop from "../../../BackToTop/BackToTop.vue";
 const swiperInstance = ref(null);
 
 const onSwiper = (swiper) => {

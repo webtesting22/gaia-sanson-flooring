@@ -161,16 +161,22 @@
 }
 
 .property-icon {
+  width: 70px;
+  height: 70px;
+  background: #a38410;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .property-icon img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
 }
 
 .property-card:hover .property-icon img {
@@ -370,39 +376,21 @@
   .girdImagesContainer > div {
     width: 100%;
   }
-
-  .properties-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .property-icon {
-    width: 70px;
-    height: 70px;
-  }
-
-  .property-label {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .properties-grid {
-    grid-template-columns: 1fr !important;
-    gap: 15px;
-  }
-
-  .property-card {
-    padding: 15px 10px;
-  }
-
   .girdImagesContainer > div img {
     width: 98%;
   }
 
   .property-icon {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .property-icon img {
+    width: 28px;
+    height: 28px;
   }
 
   .property-label {

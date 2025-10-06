@@ -15,78 +15,91 @@
             <h2 class="blackColor marginBottom20">
               Choose a design to preview
             </h2>
-            <div class="SwiperNavigationContainerDesktopOnly">
-              <div class="SwiperNavigation">
-                <button class="common-btn secondary swiper-button-prev-custom">
-                  <span>←</span>
-                </button>
-                <button class="common-btn secondary swiper-button-next-custom">
-                  <span>→</span>
-                </button>
-              </div>
-            </div>
           </div>
 
-          <div class="paddingTop60">
-            <swiper
-              :modules="[SwiperNavigation, Autoplay]"
-              :slides-per-view="7"
-              :space-between="20"
-              :loop="true"
-              :speed="700"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }"
-              :navigation="{
-                nextEl: '.swiper-button-next-custom',
-                prevEl: '.swiper-button-prev-custom',
-              }"
-              :breakpoints="{
-                320: { slidesPerView: 3, spaceBetween: 15 },
-                768: { slidesPerView: 6, spaceBetween: 20 },
-                1024: { slidesPerView: 6, spaceBetween: 20 },
-                1200: { slidesPerView: 8, spaceBetween: 20 },
-              }"
-              class="DesignSwiper"
+          <div class="SwiperWithAbsoluteArrows">
+            <!-- Left Arrow -->
+            <button
+              class="common-btn secondary desktop-nav-btn left-arrow swiper-button-prev-custom"
             >
-              <swiper-slide
-                v-for="(design, index) in designSwatches"
-                :key="index"
-                class="DesignSlide"
+              <span>←</span>
+            </button>
+
+            <!-- Carousel Container -->
+            <div class="SwiperContainer">
+              <swiper
+                :modules="[SwiperNavigation, Autoplay]"
+                :slides-per-view="7"
+                :space-between="20"
+                :loop="true"
+                :speed="700"
+                :autoplay="{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }"
+                :navigation="{
+                  nextEl: '.swiper-button-next-custom',
+                  prevEl: '.swiper-button-prev-custom',
+                }"
+                :breakpoints="{
+                  320: { slidesPerView: 3, spaceBetween: 15 },
+                  768: { slidesPerView: 6, spaceBetween: 20 },
+                  1024: { slidesPerView: 6, spaceBetween: 20 },
+                  1200: { slidesPerView: 8, spaceBetween: 20 },
+                }"
+                class="DesignSwiper"
               >
-                <div
-                  class="DesignSwatch"
-                  :class="{
-                    clickable: design.pdf && design.pdf.trim() !== '',
-                    'non-clickable': !design.pdf || design.pdf.trim() === '',
-                  }"
-                  @click="
-                    design.pdf && design.pdf.trim() !== ''
-                      ? openPDF(design.pdf)
-                      : null
-                  "
+                <swiper-slide
+                  v-for="(design, index) in designSwatches"
+                  :key="index"
+                  class="DesignSlide"
                 >
-                  <img
-                    :src="design.image"
-                    :alt="design.name"
-                    class="SwatchImage"
-                  />
-                  <p class="SwatchCode">{{ design.code }}</p>
-                  <!-- <div v-if="design.pdf && design.pdf.trim() !== ''" class="pdf-indicator">
-                                        <i class="fas fa-file-pdf"></i>
-                                    </div> -->
-                </div>
-              </swiper-slide>
-            </swiper>
+                  <div
+                    class="DesignSwatch"
+                    :class="{
+                      clickable: design.pdf && design.pdf.trim() !== '',
+                      'non-clickable': !design.pdf || design.pdf.trim() === '',
+                    }"
+                    @click="
+                      design.pdf && design.pdf.trim() !== ''
+                        ? openPDF(design.pdf)
+                        : null
+                    "
+                  >
+                    <img
+                      :src="design.image"
+                      :alt="design.name"
+                      class="SwatchImage"
+                    />
+                    <p class="SwatchCode">{{ design.code }}</p>
+                    <!-- <div v-if="design.pdf && design.pdf.trim() !== ''" class="pdf-indicator">
+                                          <i class="fas fa-file-pdf"></i>
+                                      </div> -->
+                  </div>
+                </swiper-slide>
+              </swiper>
+            </div>
+
+            <!-- Right Arrow -->
+            <button
+              class="common-btn secondary desktop-nav-btn right-arrow swiper-button-next-custom"
+            >
+              <span>→</span>
+            </button>
           </div>
+
+          <!-- Mobile Navigation -->
           <div class="SwiperNavigationContainerMobileOnly">
             <div class="SwiperNavigation">
-              <button class="common-btn secondary swiper-button-prev-custom">
+              <button
+                class="common-btn secondary mobile-nav-btn swiper-button-prev-custom"
+              >
                 <span>←</span>
               </button>
-              <button class="common-btn secondary swiper-button-next-custom">
+              <button
+                class="common-btn secondary mobile-nav-btn swiper-button-next-custom"
+              >
                 <span>→</span>
               </button>
             </div>

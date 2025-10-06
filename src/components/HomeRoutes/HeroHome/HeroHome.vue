@@ -74,22 +74,16 @@ export default {
 <template>
   <div class="HomePageHeroContainer">
     <div class="hero-carousel-wrapper">
-      <!-- Left side text content with animations -->
+      <!-- Left side text content - Sticky heading -->
       <div class="SwiperDetailsContentContainer">
         <div class="Container hero-text-content">
-          <transition name="slide-text" mode="out-in">
-            <div
-              :key="currentSlide"
-              class="text-content-wrapper"
-              :class="{ animating: isAnimating }"
-            >
-              <h1 class="hero-title animated-title">
-                {{ currentSlideData.title }}<br />
-                {{ currentSlideData.description }}
-              </h1>
-              <!-- <button class="hero-cta-btn animated-button">CONTACT US</button> -->
-            </div>
-          </transition>
+          <div class="text-content-wrapper">
+            <h1 class="hero-title">
+              Flooring &<br />
+              ACOUSTIC SOLUTIONS
+            </h1>
+            <!-- <button class="hero-cta-btn animated-button">CONTACT US</button> -->
+          </div>
         </div>
       </div>
 

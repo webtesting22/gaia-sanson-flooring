@@ -181,7 +181,7 @@ export default {
           },
         },
         {
-          src: "/Images/GalleryImages/Gallery5.png",
+          src: "/Images/gallery5.png",
           alt: "Innovative Flooring Design",
           caption: "Innovation & Quality",
           description:

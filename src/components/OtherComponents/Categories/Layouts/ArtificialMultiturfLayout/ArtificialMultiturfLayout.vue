@@ -206,7 +206,7 @@
               }"
               :loop="true"
               :speed="700"
-              :modules="[SwiperNavigation, Autoplay]"
+              :modules="[SwiperNavigation, Autoplay, Pagination]"
               :breakpoints="{
                 320: { slidesPerView: 1, spaceBetween: 15 },
                 768: { slidesPerView: 2, spaceBetween: 20 },
@@ -216,6 +216,11 @@
               :navigation="{
                 nextEl: '.swiper-button-next-custom',
                 prevEl: '.swiper-button-prev-custom',
+              }"
+              :pagination="{
+                el: '.swiper-pagination-custom',
+                clickable: true,
+                dynamicBullets: true,
               }"
             >
               <swiper-slide
@@ -236,6 +241,9 @@
                 </div>
               </swiper-slide>
             </swiper>
+
+            <!-- Pagination dots -->
+            <div class="swiper-pagination-custom"></div>
           </div>
         </div>
       </div>
@@ -258,6 +266,7 @@ import {
 } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";

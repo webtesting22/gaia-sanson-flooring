@@ -60,8 +60,20 @@
                 data-aos-delay="100"
               >
                 Proudly Made in India, GreenPro Certified
+
+                <div
+                  class="greenpro-logo-inline"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="150"
+                >
+                  <img
+                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
+                    alt="GreenPro Certified Logo"
+                    class="greenpro-logo-inline-img"
+                  />
+                </div>
               </h2>
-              <br />
               <h3
                 data-aos="fade-up"
                 data-aos-duration="600"
@@ -80,12 +92,6 @@
                 class="sets-apart-logos-Container"
                 style="justify-content: start"
               >
-                <div class="sets-apart-logos-Container-item">
-                  <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
-                    alt=""
-                  />
-                </div>
                 <div class="sets-apart-logos-Container-item">
                   <img
                     src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
@@ -283,14 +289,8 @@
               <div class="featureDetails">
                 <h3>Density: 1350-4000 g/m<sup>3</sup></h3>
                 <ul class="featureSpecs">
-                  <li>
-                    9mm X 1220mm X 2440mm (0.35" X 4.00' X 8.00'),<br />
-                    Standard 1650gsm
-                  </li>
-                  <li>
-                    12mm X 1220mm X 2440mm (0.47" X 4.00' X 8.00'),<br />
-                    Standard 2400gsm
-                  </li>
+                  <li>9mm x 1220mm x 2440mm (1650 GSM)</li>
+                  <li>12mm x 1220mm x 2440mm (2250 GSM)</li>
                 </ul>
               </div>
             </div>
@@ -298,7 +298,7 @@
             <div class="featureItem">
               <div class="featureIcon">✓</div>
               <div class="featureDetails">
-                <h3>Different GSM sheets can be made</h3>
+                <h3>Different GSM sheets can be custom-made in all sizes</h3>
               </div>
             </div>
 

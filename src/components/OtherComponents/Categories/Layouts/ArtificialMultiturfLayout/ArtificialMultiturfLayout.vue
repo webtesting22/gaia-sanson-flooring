@@ -33,10 +33,7 @@
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-            <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg"
-              alt=""
-            />
+            <img src="/Images/products/sports-grass1.jpg" alt="" />
             <div class="ArtificialMultiturfGridItemText">
               <h3>Sports Grass</h3>
               <router-link to="/artificial-grass/sports-grass">
@@ -47,10 +44,7 @@
         </div>
         <div class="ArtificialMultiturfGridItem">
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-            <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg"
-              alt=""
-            />
+            <img src="/Images/products/multiturf2.jpg" alt="" />
             <div class="ArtificialMultiturfGridItemText">
               <h3>Multisports Grass</h3>
               <router-link to="/artificial-grass/multisports-grass">

@@ -295,14 +295,11 @@ const grassTypesData = {
   },
   "sports-grass": {
     heading: " Sports Grass",
-    imageSrc:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg",
+    imageSrc: "/Images/products/sports-grass2.jpg",
     imageAlt: "Sports Grass",
     title: "Sports Grass",
-    mainImage:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg",
-    insetImage:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Sports Grass.jpg",
+    mainImage: "/Images/products/sports-grass1.jpg",
+    insetImage: "/Images/products/sports-grass2.jpg",
     overview:
       "Engineered for maximum performance and resilience, our Sports Grass is the go-to solution for athletic surfaces.",
     idealFor: [

@@ -375,14 +375,11 @@ const grassTypesData = {
   },
   "multisports-grass": {
     heading: "MultiTurf",
-    imageSrc:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg",
+    imageSrc: "/Images/products/sports-grass2.jpg",
     imageAlt: "MultiTurf",
     title: "MultiTurf",
-    mainImage:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg",
-    insetImage:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisports Grass.jpg",
+    mainImage: "/Images/products/sports-grass2.jpg",
+    insetImage: "/Images/products/sports-grass2.jpg",
     overview:
       "For multi-use surfaces that demand versatility and safety, our MultiTurf balances performance with value.",
     idealFor: ["Tennies", "Badminton", "Gym Floors", "Skating Zones"],

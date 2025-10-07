@@ -8,7 +8,6 @@
     <div class="paddingTop80" style="background-color: white !important">
       <MakeInIndia />
     </div>
-    <YearsOfExperience />
     <div class="ChooseDesignsContainer">
       <div class="Container paddingTop80 paddingBottom80">
         <div class="ChooseDesignsContainer">
@@ -16,16 +15,22 @@
             <h2 class="blackColor marginBottom20">
               Choose a design to preview
             </h2>
+            <!-- Desktop Arrows -->
+            <div class="DesktopArrows">
+              <button
+                class="common-btn secondary mobile-nav-btn left-arrow swiper-button-prev-custom"
+              >
+                <span>←</span>
+              </button>
+              <button
+                class="common-btn secondary mobile-nav-btn right-arrow swiper-button-next-custom"
+              >
+                <span>→</span>
+              </button>
+            </div>
           </div>
 
           <div class="SwiperWithAbsoluteArrows">
-            <!-- Left Arrow -->
-            <button
-              class="common-btn secondary desktop-nav-btn left-arrow swiper-button-prev-custom"
-            >
-              <span>←</span>
-            </button>
-
             <!-- Carousel Container -->
             <div class="SwiperContainer">
               <swiper
@@ -81,13 +86,6 @@
                 </swiper-slide>
               </swiper>
             </div>
-
-            <!-- Right Arrow -->
-            <button
-              class="common-btn secondary desktop-nav-btn right-arrow swiper-button-next-custom"
-            >
-              <span>→</span>
-            </button>
           </div>
 
           <!-- Mobile Navigation -->
@@ -326,7 +324,6 @@ import CategoriesData from "../../CategoriesLayout/Categories";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
-import YearsOfExperience from "../../../About/YearsOfExperience/YearsOfExperience.vue";
 import BackToTop from "../../../BackToTop/BackToTop.vue";
 // Scroll animation variables
 let animationContainers = [];

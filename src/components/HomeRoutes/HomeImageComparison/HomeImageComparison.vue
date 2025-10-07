@@ -9,7 +9,7 @@ export default {
           "Showcasing our products in various settings for easy comparison",
         leftImage: {
           src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AccousticHome.jpg",
-          label: "ACOUSTIC PET PANELS",
+          label: "ACOUSTIC PET PANEL",
         },
         rightImage: {
           src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SHOWCASINGOURCARPETS2.png",

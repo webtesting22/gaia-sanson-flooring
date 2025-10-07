@@ -487,7 +487,7 @@
 }
 
 .gallery-swiper .swiper-pagination-bullet {
-  background: #2c3e50;
+  background: #29384a;
   opacity: 0.4;
   transition: all 0.3s ease;
   width: 12px;
@@ -497,12 +497,12 @@
 
 .gallery-swiper .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #34495e;
+  background: #29384a;
   transform: scale(1.3);
 }
 
 .gallery-swiper .swiper-pagination-bullet-active-main {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #29384a;
 }
 
 /* ===========================================

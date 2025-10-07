@@ -8,7 +8,6 @@
     <div class="paddingTop80">
       <MakeInIndia />
     </div>
-    <YearsOfExperience />
     <div class="paddingTop80 paddingBottom80 BackGroundColorBroadloom">
       <div class="max-width-800">
         <h2 class="text-center">Engineered Broadloom: Process & Performance</h2>
@@ -256,7 +255,6 @@ import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import "./BroadloomCarpetsLayout.css";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
-import YearsOfExperience from "../../../About/YearsOfExperience/YearsOfExperience.vue";
 import BackToTop from "../../../BackToTop/BackToTop.vue";
 
 const swiperInstance = ref(null);
@@ -534,6 +532,20 @@ const broadloomProducts = [
       "/Images/BroadLoomImages/90020084/5.png",
       "/Images/BroadLoomImages/90020084/6.png",
       "/Images/BroadLoomImages/90020084/7.png",
+    ],
+  },
+  {
+    id: 90020104,
+    name: "Design 90020104",
+    sku: "90020104",
+    collection: "Broadloom",
+    images: [
+      "/Images/BroadLoomImages/90020104-new/1.png",
+      "/Images/BroadLoomImages/90020104-new/2.png",
+      "/Images/BroadLoomImages/90020104-new/3.png",
+      "/Images/BroadLoomImages/90020104-new/4.png",
+      "/Images/BroadLoomImages/90020104-new/5.png",
+      "/Images/BroadLoomImages/90020104-new/6.png",
     ],
   },
 ];

@@ -12,7 +12,6 @@
     <div class="paddingTop80" style="background-color: white !important">
       <MakeInIndia />
     </div>
-    <YearsOfExperience />
     <div
       class="ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container"
     >
@@ -271,7 +270,6 @@ import "swiper/css/pagination";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
-import YearsOfExperience from "../../../About/YearsOfExperience/YearsOfExperience.vue";
 const swiperInstance = ref(null);
 
 const onSwiper = (swiper) => {

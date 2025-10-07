@@ -578,6 +578,12 @@
   z-index: 1;
 }
 
+@media (max-width: 767px) {
+  .logosGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Logo Card */
 .logoCard {
   background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);

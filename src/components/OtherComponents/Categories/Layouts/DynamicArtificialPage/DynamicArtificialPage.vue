@@ -375,11 +375,11 @@ const grassTypesData = {
   },
   "multisports-grass": {
     heading: "MultiTurf",
-    imageSrc: "/Images/products/sports-grass2.jpg",
+    imageSrc: "/Images/products/multiturf1.jpg",
     imageAlt: "MultiTurf",
     title: "MultiTurf",
-    mainImage: "/Images/products/sports-grass2.jpg",
-    insetImage: "/Images/products/sports-grass2.jpg",
+    mainImage: "/Images/products/multiturf2.jpg",
+    insetImage: "/Images/products/multiturf2.jpg",
     overview:
       "For multi-use surfaces that demand versatility and safety, our MultiTurf balances performance with value.",
     idealFor: ["Tennies", "Badminton", "Gym Floors", "Skating Zones"],
@@ -409,7 +409,7 @@ const grassTypesData = {
         alt: "MultiTurf Indoor Sports Complex",
       },
       {
-        src: "/Images/GrassImages/multisportgras6.jpg",
+        src: "/Images/products/multiturf2.jpg",
         alt: "MultiTurf Recreational Area",
       },
     ],

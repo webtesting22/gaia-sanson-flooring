@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     port: 3002,
+    host: true, // Allow access from network
   },
 });

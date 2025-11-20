@@ -17,7 +17,7 @@
 .certificationsSwiperContainer {
   position: relative;
   width: 100%;
-  padding: 10px 70px 0 70px;
+  padding: 10px 80px 0 80px;
   box-sizing: border-box;
 }
 
@@ -35,7 +35,7 @@
 
 .certificationCard {
   background: white;
-  border: 2px solid #ba8c45;
+  border: 1px solid #ba8c45;
   border-radius: 8px;
   padding: 35px 25px;
   width: 100%;
@@ -240,7 +240,7 @@
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0;
   z-index: 30;
   pointer-events: none;
 }
@@ -259,7 +259,15 @@
   pointer-events: auto;
   box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
   color: white;
-  position: relative;
+  position: absolute;
+}
+
+.prevArrow {
+  left: -5px;
+}
+
+.nextArrow {
+  right: -5px;
 }
 
 .navArrow:hover {
@@ -284,13 +292,13 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .certificationsSwiperContainer {
-    padding: 0 60px;
+    padding: 10px 70px 0 70px;
   }
 }
 
 @media (max-width: 768px) {
   .certificationsSwiperContainer {
-    padding: 0 55px;
+    padding: 10px 60px 0 60px;
   }
 
   .certificationCard {
@@ -346,15 +354,11 @@
     width: 20px;
     height: 20px;
   }
-
-  .certificationsNavigation {
-    padding: 0 20px;
-  }
 }
 
 @media (max-width: 480px) {
   .certificationsSwiperContainer {
-    padding: 0 50px;
+    padding: 10px 55px 0 55px;
   }
 
   .certificationCard {
@@ -421,7 +425,4 @@
     height: 18px;
   }
 
-  .certificationsNavigation {
-    padding: 0 15px;
-  }
 }

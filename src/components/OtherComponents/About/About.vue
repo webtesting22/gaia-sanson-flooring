@@ -353,6 +353,7 @@
     <!-- <SansonTeam /> -->
     <YearsOfExperience />
     <GreenProCertified />
+    <Certification />
     <OurVision />
     <ImageGallery />
 
@@ -418,6 +419,7 @@ import CommonTopLayout from "../../OtherComponents/Categories/CommonTopLayout/Co
 import SansonTeam from "../SansonTeam/SansonTeam.vue";
 import HomeProducts from "../../HomeRoutes/HomeProducts/HomeProducts.vue";
 import YearsOfExperience from "./YearsOfExperience/YearsOfExperience.vue";
+import Certification from "./Certification/Certification.vue";
 import OurVision from "../OurVision/OurVision.vue";
 import ImageGallery from "../ImageGallery/ImageGallery.vue";
 import GetInTouch from "../GetInTouch/GetInTouch.vue";

@@ -363,6 +363,7 @@
         </div>
       </div>
     </div>
+    <GreenProCertified />
     <div class="OurColoursCardContainer">
       <div class="Container">
         <div
@@ -553,6 +554,7 @@ import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
 import BackToTop from "../../../BackToTop/BackToTop.vue";
+import GreenProCertified from "../../../About/GreenProCertified/GreenProCertified.vue";
 const swiperInstance = ref(null);
 
 const onSwiper = (swiper) => {

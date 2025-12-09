@@ -363,7 +363,7 @@
         </div>
       </div>
     </div>
-    <GreenProCertified />
+    <GreenProCertified video-src="/videos/GreenPro.mp4" />
     <div class="OurColoursCardContainer">
       <div class="Container">
         <div

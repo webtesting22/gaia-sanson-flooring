@@ -136,6 +136,9 @@
       </div>
     </div>
 
+    <GreenProCertified videoSrc="/videos/CarpetTiles.mp4" />
+
+
     <div class="propertiesLayoutContainer">
       <div class="Container">
         <h2
@@ -325,6 +328,7 @@ import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
 import BackToTop from "../../../BackToTop/BackToTop.vue";
+import GreenProCertified from "../../../About/GreenProCertified/GreenProCertified.vue";
 // Scroll animation variables
 let animationContainers = [];
 
@@ -617,4 +621,5 @@ const openPDF = (pdfPath) => {
 <style scoped>
 /* Import the CSS file */
 @import "./CarpetTilesLayout.css";
+
 </style>

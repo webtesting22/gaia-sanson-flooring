@@ -438,6 +438,12 @@ const designSwatches = [
     pdf: "/Images/CarpetCircleImages/Documents/90020055.pdf",
   },
   {
+    image: "/Images/CarpetCircleImages/90020057.png",
+    name: "Heritage Collection",
+    code: "90020057",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020057.pdf",
+  },
+  {
     image: "/Images/CarpetCircleImages/90020059.png",
     name: "Heritage Collection",
     code: "90020059",
@@ -541,6 +547,12 @@ const designSwatches = [
     pdf: "/Images/CarpetCircleImages/Documents/90020090.pdf",
   },
   {
+    image: "/Images/CarpetCircleImages/90020092.png",
+    name: "Heritage Collection",
+    code: "90020092",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020092.pdf",
+  },
+  {
     image: "/Images/CarpetCircleImages/90020094.png",
     name: "Heritage Collection",
     code: "90020094",
@@ -589,6 +601,12 @@ const designSwatches = [
     code: "90020112",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020112.pdf",
   },
+   {
+    image: "/Images/CarpetCircleImages/90020131.png",
+    name: "Heritage Collection",
+    code: "90020131",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020131.pdf",
+  },
   {
     image: "/Images/CarpetCircleImages/90020138.png",
     name: "Heritage Collection",
@@ -596,10 +614,58 @@ const designSwatches = [
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020138.pdf",
   },
   {
+    image: "/Images/CarpetCircleImages/Archibrown.png",
+    name: "Heritage Collection",
+    code: "ArchiBrown",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ArchiBrown.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/bloxx.png",
+    name: "Heritage Collection",
+    code: "Bloxx",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Bloxx.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Brixx.png",
+    name: "Heritage Collection",
+    code: "Brixx",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Brixx.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Gridwork.png",
+    name: "Heritage Collection",
+    code: "Grid Work",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Gridwork.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Rhythm.png",
+    name: "Heritage Collection",
+    code: "Rhythm",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_RHYTHM.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Gridwork.png",
+    name: "Heritage Collection",
+    code: "Shining Glow",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Shining Glow.pdf",
+  },
+  {
     image: "/Images/CarpetCircleImages/Drizzle plank.png",
     name: "Drizzle Plank",
     code: "Tiles/Planks",
     pdf: "/Images/CarpetCircleImages/Documents/Tiles_Planks.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Trends.png",
+    name: "Heritage Collection",
+    code: "Trends",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_TRENDS.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Nevada.png",
+    name: "Heritage Collection",
+    code: "Nevada",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_NEVADA.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/New Design.png",

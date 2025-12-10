@@ -669,8 +669,8 @@ const designSwatches = [
   },
   {
     image: "/Images/CarpetCircleImages/New Design.png",
-    name: "New Design.png",
-    code: "New Design",
+    name: "New Design",
+    code: "90020111",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_New Design.pdf",
   },
   // { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },

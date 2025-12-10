@@ -644,16 +644,16 @@ const designSwatches = [
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_RHYTHM.pdf",
   },
   {
-    image: "/Images/CarpetCircleImages/Gridwork.png",
+    image: "/Images/CarpetCircleImages/Shining_Glow.png",
     name: "Heritage Collection",
     code: "Shining Glow",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Shining Glow.pdf",
   },
   {
-    image: "/Images/CarpetCircleImages/Drizzle plank.png",
-    name: "Drizzle Plank",
-    code: "Tiles/Planks",
-    pdf: "/Images/CarpetCircleImages/Documents/Tiles_Planks.pdf",
+    image: "/Images/CarpetCircleImages/Plateau.png",
+    name: "Plateau",
+    code: "Plateau",
+    pdf: "/Images/CarpetCircleImages/Documents/Plateau.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Trends.png",

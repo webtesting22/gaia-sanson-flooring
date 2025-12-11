@@ -136,7 +136,10 @@
       </div>
     </div>
 
-    <GreenProCertified videoSrc="/videos/CarpetTiles.mp4" />
+    <GreenProCertified 
+      image-src="/Images/GreenProCertified/green-pro-certified-carpet-tile.png" 
+      video-src="/videos/CarpetTiles.mp4" 
+    />
 
 
     <div class="propertiesLayoutContainer">

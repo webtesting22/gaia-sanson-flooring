@@ -5,7 +5,7 @@
         <div class="grid-item">
           <div class="greenProCertifiedImageContainer">
             <img
-              src="/Images/GreenProCertified/green-pro-certified.svg"
+              :src="imageSrc"
               alt="GreenPro Logo"
               class="greenProCertifiedImage"
             />
@@ -49,6 +49,10 @@ import { onMounted, ref } from "vue";
 import "./GreenProCertified.css";
 
 const props = defineProps({
+  imageSrc: {
+    type: String,
+    required: true,
+  },
   videoSrc: {
     type: String,
     required: true,

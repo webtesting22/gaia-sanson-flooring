@@ -352,7 +352,7 @@
     </div>
     <!-- <SansonTeam /> -->
     <YearsOfExperience />
-    <GreenProCertified video-src="/videos/AboutUs.mp4" />
+    <GreenProCertified image-src="/Images/GreenProCertified/green-pro-certified-about-us.png" video-src="/videos/AboutUs.mp4" />
     <Certification />
     <OurVision />
     <ImageGallery />

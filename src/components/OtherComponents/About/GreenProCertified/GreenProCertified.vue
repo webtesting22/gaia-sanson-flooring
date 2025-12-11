@@ -5,9 +5,13 @@
         <div class="grid-item">
           <div class="greenProCertifiedImageContainer">
             <img
-              src="/Images/GreenProCertified/green-pro-certified.svg"
+              ref="imageRef"
               alt="GreenPro Logo"
               class="greenProCertifiedImage"
+               <source :src="imageSrc" type="image/png" />
+                <object :data="imageSrcd" type="image/png">
+                  <embed :src="imageSrc" type="image/png" />
+                </object>
             />
           </div>
         </div>
@@ -52,10 +56,15 @@ const props = defineProps({
   videoSrc: {
     type: String,
     required: true,
+  },
+  imageSrc:{
+    type: String,
+    required: true,
   }
 });
 
 const videoRef = ref(null);
+const imageRef = ref(null);
 
 onMounted(() => {
   const video = videoRef.value;

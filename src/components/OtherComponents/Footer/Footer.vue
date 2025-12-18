@@ -18,7 +18,7 @@ import "./Footer.css"
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <a href="tel:+917496905804" class="contact-text phone-link">+91-74969-05804</a>
+                        <a href="tel:+917496905804" class="contact-text phone-link">+91-9910921119</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>

@@ -364,7 +364,7 @@
       </div>
     </div>
     <GreenProCertified 
-      image-src="/Images/GreenProCertified/green-pro-certified.svg" 
+      image-src="/Images/GreenProCertified/green-pro-certified.png" 
       video-src="/videos/GreenPro.mp4" 
     />
     <div class="OurColoursCardContainer">

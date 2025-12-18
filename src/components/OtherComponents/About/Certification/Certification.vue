@@ -40,6 +40,36 @@ export default {
           image: "/Images/24MM GreenPro_page-0001.jpg",
           certificationNumber: "GPSFP576004",
         },
+        {
+          id: 5,
+          name: "Bitumen Nylon Tiles Eco Back",
+          image: "/Images/certi/bitumen_nylon_carpet_tiles_back.jpg",
+          certificationNumber: "GPSFP576007",
+        },
+        {
+          id: 6,
+          name: "Bitumen Nylon Carpet Plank",
+          image: "/Images/certi/bitumen_carpet_plank.jpg",
+          certificationNumber: "GPSFP576008",
+        },
+        {
+          id: 7,
+          name: "Bitmen PP Carpet Tiles Eco Back",
+          image: "/Images/certi/bitumen_nylon_carpet_tiles_eco_back.jpg",
+          certificationNumber: "GPSFP576005",
+        },
+        {
+          id: 8,
+          name: "Bitumen PP Carpet Tiles",
+          image: "/Images/certi/bitumen_nylon_carpet_tiles.jpg",
+          certificationNumber: "GPSFP576011",
+        },
+        {
+          id: 9,
+          name: "Bitumen PP Carpet Plank",
+          image: "/Images/certi/bitumen_nylon_carpet_plank.jpg",
+          certificationNumber: "GPSFP576012",
+        },
       ],
       swiperInstance: null,
       isAnimating: false,
@@ -89,8 +119,8 @@ export default {
       >
         <h2>GreenPro Certified</h2>
         <p style="text-align: start">
-          Our Polyester Acoustic Panels are GreenPro Certified, reflecting our
-          commitment to sustainable, safe, and high-performance acoustic
+          Our Polyester Acoustic Panels and Carpet Tiles are GreenPro Certified,
+          showcasing our commitment to sustainable, safe, and high-performance
           solutions made in India.
         </p>
       </div>

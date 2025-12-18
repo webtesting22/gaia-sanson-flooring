@@ -79,11 +79,7 @@
                 </p>
                 <br />
                 <p style="color: rgb(44, 62, 80)">
-                  GAIA is the first Indian MSME to earn the GreenPro label for
-                  our Acoustic PET Panels, showcasing our commitment to
-                  environmental sustainability. Made with recycled polyester
-                  fibers, our panels deliver top-tier performance while
-                  minimizing ecological impact.
+                  GAIA is the first Indian MSME to earn GreenPro label for both Acoustic PET Panels and Carpet Tiles - under one roof. This recognition reflects our focus on responsible manufacturing, sustainable materials, and high-performance solutions that reduce environmental impact without compromising quality.
                 </p>
                 <br />
                 <p style="color: #2c3e50">

@@ -6,7 +6,63 @@
       imageAlt="Carpet tiles background image"
     />
     <div class="paddingTop80" style="background-color: white !important">
-      <MakeInIndia />
+      <!-- <MakeInIndia /> -->
+       <div class="AccounticLogoContainer">
+        <div class="Container EditContainerContent paddingBottom80">
+          <br />
+          <div class="FlexContainerEditNew">
+            <div>
+              <h2
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-delay="100"
+              >
+                Proudly Made in India, GreenPro Certified
+
+                <div
+                  class="greenpro-logo-inline"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="150"
+                >
+                  <img
+                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
+                    alt="GreenPro Certified Logo"
+                    class="greenpro-logo-inline-img"
+                  />
+                </div>
+              </h2>
+              <h3
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="200"
+              >
+                India’s first startup delivering integrated carpet tile solutions for high-performance interiors.<br /><br />
+                GAIA is the first Indian MSME to earn the GreenPro label for Carpet Tiles, highlighting our focus on sustainable practices. Made in India with eco-conscious materials and advanced manufacturing techniques, our carpet tiles offer long-lasting durability, enhanced comfort, and a lower environmental footprint while meeting recognized green standards.
+              </h3>
+            </div>
+            <div class="AccousticContainerLogo">
+              <div
+                class="sets-apart-logos-Container"
+                style="justify-content: start"
+              >
+                <div class="sets-apart-logos-Container-item">
+                  <img
+                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                    alt=""
+                  />
+                </div>
+                <div class="sets-apart-logos-Container-item">
+                  <img
+                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="ChooseDesignsContainer">
       <div class="Container paddingTop80 paddingBottom80">

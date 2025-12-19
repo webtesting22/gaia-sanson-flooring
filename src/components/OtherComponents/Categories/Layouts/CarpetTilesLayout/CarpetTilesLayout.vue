@@ -38,7 +38,7 @@
                 data-aos-delay="200"
               >
                 India’s first startup delivering integrated carpet tile solutions for high-performance interiors.<br /><br />
-                GAIA is the first Indian MSME to earn the GreenPro label for Carpet Tiles, highlighting our focus on sustainable practices. Made in India with eco-conscious materials and advanced manufacturing techniques, our carpet tiles offer long-lasting durability, enhanced comfort, and a lower environmental footprint while meeting recognized green standards.
+                GAIA is one of the proud Indian MSME to earn the GreenPro label for Carpet Tiles, highlighting our focus on sustainable practices. Made in India with eco-conscious materials and advanced manufacturing techniques, our carpet tiles offer long-lasting durability, enhanced comfort, and a lower environmental footprint while meeting recognized green standards.
               </h3>
             </div>
             <div class="AccousticContainerLogo">

@@ -81,10 +81,7 @@
               >
                 India's first startup offering integrated solutions in floorings
                 and acoustic panels for high-performance interiors.<br /><br />
-                GAIA is the first Indian MSME to earn the GreenPro label for our
-                Acoustic PET Panels, showcasing our commitment to environmental
-                sustainability. Made with recycled polyester fibers, our panels
-                deliver top-tier performance while minimizing ecological impact.
+                GAIA is one of the proud Indian MSME to earn the GreenPro label for our Acoustic PET Panels, showcasing our commitment to environmental sustainability. Made with recycled polyester fibers, our panels deliver top-tier performance while minimizing ecological impact
               </h3>
             </div>
             <div class="AccousticContainerLogo">

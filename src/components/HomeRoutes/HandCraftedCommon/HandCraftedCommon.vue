@@ -32,7 +32,7 @@ export default {
                 <div class="Container">
                     <div class="FlexContainerEdit">
                         <div class="Width50">
-                        <h2 class="whiteColor">Manufactured in India</h2>
+                        <h2 class="whiteColor full-text">Manufactured in India</h2>
                         <br>
                         <p class="whiteColor">GAIA stands as a proud contributor to the Make in India initiative. By producing world-class flooring solutions with advanced machinery in India, we combine global standards with local strength — driving innovation, self-reliance, and progress from the ground up.</p>
                     </div>
@@ -44,6 +44,13 @@ export default {
                         <div>
                             <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
                                 alt="">
+                        </div>
+                        <div>
+                            <img
+                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
+                    alt="GreenPro Certified Logo"
+                    class="greenpro-logo-inline-img"
+                  />
                         </div>
                     </div>
                     </div>

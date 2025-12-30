@@ -257,7 +257,7 @@
             data-aos-duration="600"
             data-aos-delay="500"
           >
-            <div class="property-icon">
+            <div class="property-icon imgAntiStatic">
               <img
                 src="/Images/propertiesImages/Anti static.png"
                 alt="Anti Static"

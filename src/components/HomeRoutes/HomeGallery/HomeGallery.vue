@@ -34,9 +34,13 @@
             @mouseenter="onImageHover(index, true)"
             @mouseleave="onImageHover(index, false)"
           >
-            <img
+            <a-image
               :src="image.src"
               :alt="image.alt"
+              :preview="{
+                src: image.src,
+                mask: 'Click to view full screen'
+              }"
               class="parallax-image"
               @load="onImageLoad(index)"
               draggable="false"
@@ -78,10 +82,14 @@
               :key="index"
               class="mobile-gallery-slide"
             >
-              <div class="mobile-image-container" @click="onImageClick(index)">
-                <img
+              <div class="mobile-image-container">
+                <a-image
                   :src="image.src"
                   :alt="image.alt"
+                  :preview="{
+                    src: image.src,
+                    mask: 'Click to view full screen'
+                  }"
                   class="mobile-gallery-image"
                 />
                 <!-- <div class="mobile-image-overlay">
@@ -99,6 +107,7 @@
 
 <script>
 import "./HomeGallery.css";
+import { Image as AImage } from 'ant-design-vue';
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -109,6 +118,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    AImage,
   },
   data() {
     return {

@@ -1,4 +1,9 @@
 /* Main About Container Styling */
+.aboutPage {
+  background-color: #fffaf2;
+  width: 100%;
+}
+
 .SansonAboutContainerInner {
   display: flex;
   gap: 60px;
@@ -495,6 +500,9 @@
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+  .aboutPage{
+    overflow-x: hidden;
+  }
   .qualityFeaturesHeader p {
     text-align: center !important;
   }

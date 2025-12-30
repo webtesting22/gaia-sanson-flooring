@@ -411,7 +411,14 @@
             :key="swatch.code"
           >
             <div class="swatchImage">
-              <img :src="swatch.image" :alt="swatch.name" />
+              <a-image 
+                :src="swatch.image" 
+                :alt="swatch.name"
+                :preview="{
+                  src: swatch.image,
+                  mask: 'Click to view full screen'
+                }"
+              />
             </div>
             <div class="swatchInfo">
               <span class="colorCode">{{ swatch.code }}</span>
@@ -526,7 +533,14 @@
               :data-aos-delay="300 + index * 150"
             >
               <div class="LastGridImagesImageContainer">
-                <img :src="space.image" :alt="space.name" />
+                <a-image 
+                  :src="space.image" 
+                  :alt="space.name"
+                  :preview="{
+                    src: space.image,
+                    mask: 'Click to view full screen'
+                  }"
+                />
               </div>
               <!-- <div class="LastGridImagesContentContainer">
                             <h2>{{ space.name }}</h2>
@@ -548,6 +562,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import { Image as AImage } from 'ant-design-vue';
 import "swiper/css";
 import "swiper/css/navigation";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";

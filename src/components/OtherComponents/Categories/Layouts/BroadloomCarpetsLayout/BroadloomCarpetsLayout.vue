@@ -224,7 +224,14 @@
               class="swiperSlide"
             >
               <div class="swiperImageContainer">
-                <img :src="image.src" :alt="image.alt" />
+                <a-image 
+                  :src="image.src" 
+                  :alt="image.alt"
+                  :preview="{
+                    src: image.src,
+                    mask: 'Click to view full screen'
+                  }"
+                />
               </div>
             </swiper-slide>
           </swiper>

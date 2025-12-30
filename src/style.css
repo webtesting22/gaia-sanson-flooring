@@ -16,6 +16,7 @@ body {
   box-sizing: border-box;
   background-color: #fffaf2;
   font-family: "Work Sans", sans-serif;
+  
 }
 
 .Container {
@@ -350,4 +351,23 @@ h2 {
     justify-content: space-between;
     flex-direction: column;
   }
+}
+
+/* Fix preview modal to show images */
+.ant-image-preview-img {
+  object-fit: contain !important;
+  max-width: 90% !important;
+  max-height: 50% !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.ant-image-preview-img-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ant-image-preview-wrap {
+  z-index: 9999 !important;
 }

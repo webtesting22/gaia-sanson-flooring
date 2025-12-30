@@ -117,6 +117,8 @@
 
   .featureText span {
     text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
   }
 
   /* Responsive Design */
@@ -167,7 +169,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     border: 2px solid #e4d8c8;
     transition: all 0.3s ease;
   }
@@ -189,8 +191,8 @@
   }
 
   .application-icon {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     transition: transform 0.3s ease;
   }
@@ -213,14 +215,14 @@
 
   @media (min-width: 1024px) {
     .VariousApplicationsGridContainer {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       gap: 25px;
     }
   }
 
   @media (min-width: 1200px) {
     .VariousApplicationsGridContainer {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       gap: 30px;
     }
   }

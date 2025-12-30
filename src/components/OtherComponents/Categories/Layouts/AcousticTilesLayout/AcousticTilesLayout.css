@@ -72,12 +72,25 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
   }
 
   .navArrow:hover {
     border-color: #29384a;
     color: #29384a;
     transform: scale(1.05);
+    background: #f5f5f5;
+  }
+  
+  .navArrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .navArrow svg {
+    width: 24px;
+    height: 24px;
   }
 
   .colorSwatchesGrid {
@@ -143,9 +156,14 @@
     }
 
     .ourColorsHeader {
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
       gap: 20px;
-      text-align: center;
+      text-align: left;
+    }
+
+    .ourColorsHeader h2 {
+      text-align: left;
     }
 
     .colorSwatchesGrid {

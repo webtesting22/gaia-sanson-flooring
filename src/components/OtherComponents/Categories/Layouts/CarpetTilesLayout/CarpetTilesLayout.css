@@ -72,8 +72,8 @@
 }
 
 .SwatchImage {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
   /* border: 3px solid #fff; */
@@ -195,7 +195,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   border: 2px solid #e4d8c8;
   transition: all 0.3s ease;
   background: white;
@@ -218,11 +218,20 @@
 }
 
 .property-icon img {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   transition: transform 0.3s ease;
   filter: brightness(0) invert(1);
+}
+.imgAntiStatic img{
+   width: 35px;
+  /* height: 35px; */
+    height: 45px;
+  object-fit: contain;
+
+  
+
 }
 
 .property-card:hover .property-icon img {
@@ -231,7 +240,7 @@
 
 .property-label {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #374151;
   text-align: center;
   line-height: 1.2;
@@ -332,21 +341,21 @@
 /* Tablet and larger screens */
 @media (min-width: 769px) {
   .properties-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .properties-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 25px;
   }
 }
 
 @media (min-width: 1200px) {
   .properties-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 30px;
   }
 }

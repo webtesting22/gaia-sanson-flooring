@@ -134,7 +134,7 @@
                       :alt="design.name"
                       class="SwatchImage"
                     />
-                    <p class="SwatchCode">{{ design.code }}</p>
+                    <p v-if="isNaN(design.code)" class="SwatchCode">{{ design.code }}</p>
                     <!-- <div v-if="design.pdf && design.pdf.trim() !== ''" class="pdf-indicator">
                                           <i class="fas fa-file-pdf"></i>
                                       </div> -->
@@ -257,7 +257,7 @@
             data-aos-duration="600"
             data-aos-delay="500"
           >
-            <div class="property-icon">
+            <div class="property-icon imgAntiStatic">
               <img
                 src="/Images/propertiesImages/Anti static.png"
                 alt="Anti Static"

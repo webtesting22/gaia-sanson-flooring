@@ -4,7 +4,7 @@
             <div class="logo-section">
                 <router-link to="/" class="logo-link">
                     <div class="logo">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png" alt="">
+                        <img src="/Images/GAIA_Logo.png" alt="">
                     </div>
                 </router-link>
             </div>

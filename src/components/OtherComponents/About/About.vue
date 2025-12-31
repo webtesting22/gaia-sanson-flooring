@@ -104,7 +104,7 @@
                   <div class="brandGrid">
                     <!-- <div class="brandCard">
                                     <div class="brandLogo">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png"
+                                        <img src="/Images/GAIA_Logo.png"
                                             alt="GAIA Logo">
                                     </div>
                                     <h4>GAIA</h4>
@@ -197,7 +197,7 @@
                     <div class="expertSolutionCard" data-aos="fade-up" data-aos-delay="200">
                         <div class="expertSolutionCardContent">
                             <div class="expertSolutionLogo">
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png"
+                                <img src="/Images/GAIA_Logo.png"
                                     alt="Quality Assurance">
                             </div>
                             <h3 class="expertSolutionTitle">GAIA</h3>
@@ -371,7 +371,7 @@
                     <div class="expertSolutionCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                         <div class="expertSolutionCardContent">
                             <div class="expertSolutionLogo">
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png"
+                                <img src="/Images/GAIA_Logo.png"
                                     alt="Quality Assurance">
                             </div>
                             <h3 class="expertSolutionTitle">GAIA</h3>

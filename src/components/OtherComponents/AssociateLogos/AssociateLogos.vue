@@ -54,7 +54,7 @@ const associateLogos = [
         id: 5,
         name: 'GAIA',
         tagline: 'Flooring Fashion',
-        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GAIA Logo.png'
+        image: '/Images/GAIA_Logo.png'
     }
 ];
 </script>

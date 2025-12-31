@@ -125,7 +125,14 @@
             class="landscapeSlide"
           >
             <div class="landscapeImageContainer">
-              <img :src="image.src" :alt="image.alt" />
+              <AImage 
+                :src="image.src" 
+                :alt="image.alt"
+                :preview="{
+                  src: image.src,
+                  mask: 'Click to view full screen'
+                }"
+              />
             </div>
           </swiper-slide>
         </swiper>
@@ -154,6 +161,7 @@
 import { computed, ref, reactive } from "vue";
 import { useRoute } from "vue-router";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { Image as AImage } from "ant-design-vue";
 import {
   Navigation as SwiperNavigation,
   Autoplay,
@@ -668,7 +676,15 @@ const landscapeImages = computed(() => grassData.value.images || []);
 .landscapeImageContainer img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+}
+
+.landscapeImageContainer :deep(.ant-image),
+.landscapeImageContainer :deep(.ant-image-img) {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* Swiper */

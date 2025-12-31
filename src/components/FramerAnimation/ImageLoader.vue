@@ -22,8 +22,10 @@
         class="image-placeholder"
       >
         <div class="placeholder-content">
-          <div class="placeholder-icon"><img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetIcon.png" alt=""></div>
-          <div class="placeholder-text">Loading...</div>
+          <!-- <div class="placeholder-icon"><img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetIcon.png" alt=""></div> -->
+          <div class="placeholder-icon"><img src="/Images/GAIA Loading.svg" alt=""></div>
+
+          <!-- <div class="placeholder-text">Loading...</div> -->
         </div>
       </div>
     </transition>

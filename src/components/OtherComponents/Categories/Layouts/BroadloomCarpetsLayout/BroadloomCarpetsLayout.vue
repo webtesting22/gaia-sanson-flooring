@@ -159,6 +159,7 @@
           <img
             src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NewBroadLoomImage0099.jpeg"
             alt=""
+            class="FirstImg"
           />
         </div>
         <div>
@@ -177,10 +178,10 @@
             src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery6.png"
             alt=""
           />
-          <img
+          <!-- <img
             src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery6.png"
             alt=""
-          />
+          /> -->
         </div>
       </div>
     </div>

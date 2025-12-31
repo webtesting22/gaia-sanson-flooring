@@ -476,6 +476,10 @@
   object-fit: cover;
 }
 
+.FirstImg{
+  height: 292px !important ;
+}
+
 
 
 .DoubleImageContainer img:nth-child(2) {

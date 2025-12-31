@@ -23,9 +23,9 @@
       >
         <div class="placeholder-content">
           <!-- <div class="placeholder-icon"><img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetIcon.png" alt=""></div> -->
-          <div class="placeholder-icon"><img src="/Images/GAIA Loading.svg" alt=""></div>
+          <div class="placeholder-icon spinning"><img src="/Images/GAIA Loading.svg" alt=""></div>
 
-          <!-- <div class="placeholder-text">Loading...</div> -->
+          <div class="placeholder-text">Loading...</div>
         </div>
       </div>
     </transition>
@@ -121,10 +121,26 @@ preloadImage()
   width: 50px;
   height: 50px;
 }
+
+.placeholder-icon.spinning{
+  animation: spin 1.5s linear infinite;
+  display: inline-block;
+  transform-origin: center center ;
+  
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .placeholder-text {
   font-size: 0.875rem;
   font-weight: 500;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /* Image Fade Transition */

@@ -335,7 +335,7 @@
             data-aos-duration="800"
             data-aos-delay="200"
           >
-            <img src="/Images/VariousAplicationsUpdateImage.svg" alt="" />
+            <img src="/Images/VariousAplicationsUpdateImage.png" alt="" />
           </div>
           <!-- <div class="SurfaceContentContainer">
                         <div>

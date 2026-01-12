@@ -8,6 +8,13 @@
               :src="imageSrc"
               alt="GreenPro Logo"
               class="greenProCertifiedImage"
+              <source
+              :src="imageSrc"
+              type="image/png"
+            />
+            <object :data="imageSrcd" type="image/png">
+              <embed :src="imageSrc" type="image/png" />
+            </object>
             />
           </div>
         </div>
@@ -36,7 +43,6 @@
                 </object>
               </video>
             </div>
-
           </div>
         </div>
       </div>
@@ -56,10 +62,15 @@ const props = defineProps({
   videoSrc: {
     type: String,
     required: true,
-  }
+  },
+  imageSrc: {
+    type: String,
+    required: true,
+  },
 });
 
 const videoRef = ref(null);
+const imageRef = ref(null);
 
 onMounted(() => {
   const video = videoRef.value;

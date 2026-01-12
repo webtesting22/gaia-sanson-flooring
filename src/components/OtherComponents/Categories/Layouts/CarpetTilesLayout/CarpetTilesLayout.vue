@@ -7,7 +7,7 @@
     />
     <div class="paddingTop80" style="background-color: white !important">
       <!-- <MakeInIndia /> -->
-       <div class="AccounticLogoContainer">
+      <div class="AccounticLogoContainer">
         <div class="Container EditContainerContent paddingBottom80">
           <br />
           <div class="FlexContainerEditNew">
@@ -37,8 +37,15 @@
                 data-aos-duration="600"
                 data-aos-delay="200"
               >
-                India’s first startup delivering integrated carpet tile solutions for high-performance interiors.<br /><br />
-                GAIA is one of the proud Indian MSME to earn the GreenPro label for Carpet Tiles, highlighting our focus on sustainable practices. Made in India with eco-conscious materials and advanced manufacturing techniques, our carpet tiles offer long-lasting durability, enhanced comfort, and a lower environmental footprint while meeting recognized green standards.
+                India’s first startup delivering integrated carpet tile
+                solutions for high-performance interiors.<br /><br />
+                GAIA is one of the proud Indian MSME to earn the GreenPro label
+                for Carpet Tiles, highlighting our focus on sustainable
+                practices. Made in India with eco-conscious materials and
+                advanced manufacturing techniques, our carpet tiles offer
+                long-lasting durability, enhanced comfort, and a lower
+                environmental footprint while meeting recognized green
+                standards.
               </h3>
             </div>
             <div class="AccousticContainerLogo">
@@ -134,7 +141,9 @@
                       :alt="design.name"
                       class="SwatchImage"
                     />
-                    <p v-if="isNaN(design.code)" class="SwatchCode">{{ design.code }}</p>
+                    <p v-if="isNaN(design.code)" class="SwatchCode">
+                      {{ design.code }}
+                    </p>
                     <!-- <div v-if="design.pdf && design.pdf.trim() !== ''" class="pdf-indicator">
                                           <i class="fas fa-file-pdf"></i>
                                       </div> -->
@@ -192,11 +201,10 @@
       </div>
     </div>
 
-    <GreenProCertified 
-      image-src="/Images/GreenProCertified/green-pro-certified-carpet-tile.png" 
-      video-src="/videos/CarpetTiles.mp4" 
+    <GreenProCertified
+      image-src="/Images/GreenProCertified/green-pro-certified-carpet-tile.png"
+      video-src="/videos/CarpetTiles.mp4"
     />
-
 
     <div class="propertiesLayoutContainer">
       <div class="Container">
@@ -660,7 +668,7 @@ const designSwatches = [
     code: "90020112",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020112.pdf",
   },
-   {
+  {
     image: "/Images/CarpetCircleImages/90020131.png",
     name: "Heritage Collection",
     code: "90020131",
@@ -746,5 +754,4 @@ const openPDF = (pdfPath) => {
 <style scoped>
 /* Import the CSS file */
 @import "./CarpetTilesLayout.css";
-
 </style>

@@ -37,6 +37,11 @@ const navigationBarData = [
     //     hasDropdown: false
     // },
     {
+        name: 'Tools',
+        path: '/tools',
+        hasDropdown: false
+    },
+    {
         name: 'About us',
         path: '/about-us',
         hasDropdown: false

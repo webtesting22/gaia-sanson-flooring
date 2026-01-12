@@ -4,6 +4,7 @@ import CategoriesRoutes from '../components/OtherComponents/Categories/Categorie
 import CategoryDetail from '../components/OtherComponents/Categories/CategoriesLayout/CategoryDetail.vue'
 import AnimationDemo from '../components/FramerAnimation/AnimationDemo.vue'
 import AboutUs from '../components/OtherComponents/About/About.vue'
+import Tools from '../components/OtherComponents/Tools/Tools.vue'
 import DynamicArtificialPage from '../components/OtherComponents/Categories/Layouts/DynamicArtificialPage/DynamicArtificialPage.vue'
 
 const routes = [
@@ -42,6 +43,11 @@ const routes = [
         path: '/demo',
         name: 'AnimationDemo',
         component: AnimationDemo
+    },
+      {
+        path: '/tools',
+        name: 'Tools',
+        component: Tools
     },
       {
         path: '/about-us',

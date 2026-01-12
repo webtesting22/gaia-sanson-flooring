@@ -2,7 +2,7 @@
   <div class="toolsPage">
     <CommonTopLayout
       heading="Tools"
-      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsBannerImage.png"
+      imageSrc="/Images/CARPET_TILES.png"
       imageAlt="GAIA Tools"
     />
 
@@ -54,6 +54,7 @@
             >
               <div class="contentWrapper">
                 <h2
+
                   data-aos="fade-up"
                   data-aos-duration="600"
                   data-aos-delay="400"

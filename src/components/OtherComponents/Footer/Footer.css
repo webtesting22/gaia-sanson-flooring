@@ -113,7 +113,8 @@
 
 .phone-link:hover,
 .email-link:hover,
-.website-link:hover {
+.website-link:hover,
+.li-links:hover {
   color: #e4d8c8;
   text-decoration: underline;
   text-underline-offset: 2px;

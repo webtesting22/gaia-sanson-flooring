@@ -2,7 +2,7 @@
   <div class="aboutPage">
     <CommonTopLayout
       heading="About Us"
-      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsBannerImage.png"
+      imageSrc="/Images/AboutUsBannerImage.webp"
       imageAlt="Acoustic Solutions"
     />
 

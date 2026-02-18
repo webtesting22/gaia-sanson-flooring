@@ -2,7 +2,7 @@
   <div class="width100">
     <CommonTopLayout
       heading="Broadloom Carpets"
-      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BroadloomCarpetsbannerImage.png"
+      imageSrc="/Images/BroadloomCarpetsbannerImage.webp"
       imageAlt="Artificial grass background image"
     />
     <div class="paddingTop80">

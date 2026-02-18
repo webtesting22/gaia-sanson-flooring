@@ -6,7 +6,7 @@
 
     <CommonTopLayout
       heading="Artificial Grass & Multiturf "
-      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/ArtificialGrassImage.png"
+      imageSrc="/Images/ArtificialGrassImage.webp"
       imageAlt="Artificial grass background image"
     />
     <div class="paddingTop80" style="background-color: white !important">

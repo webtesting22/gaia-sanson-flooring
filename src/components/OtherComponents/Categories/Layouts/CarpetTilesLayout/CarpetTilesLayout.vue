@@ -2,7 +2,7 @@
   <div class="width100">
     <CommonTopLayout
       heading="Carpet Tiles"
-      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarprtTiles.png"
+      imageSrc="/Images/carpet_tiles.webp"
       imageAlt="Carpet tiles background image"
     />
     <div class="paddingTop80" style="background-color: white !important">

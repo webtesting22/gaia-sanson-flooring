@@ -59,6 +59,13 @@
 .DesignSwiper {
   width: 100%;
 }
+.DesignGridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 25px;
+  justify-items: center;
+  padding: 20px 0;
+}
 
 .DesignSlide {
   text-align: center;
@@ -72,8 +79,8 @@
 }
 
 .SwatchImage {
-  width: 130px;
-  height: 130px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   /* border: 3px solid #fff; */
@@ -874,5 +881,39 @@
     height: 80px;
     left: 140px;
     width: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .DesignGridContainer {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .DesignGridContainer{
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  .swatchImage {
+    width: 60px;
+    height: 60px;
+  }
+  .SwatchCode {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .DesignGridContainer {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+  .SwatchImage {
+    width: 50px;
+    height: 50px;
+  }
+  .SwatchCode {
+    font-size: 10px;
   }
 }

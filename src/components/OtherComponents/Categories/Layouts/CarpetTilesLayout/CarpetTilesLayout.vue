@@ -7,7 +7,7 @@
     />
     <div class="paddingTop80" style="background-color: white !important">
       <!-- <MakeInIndia /> -->
-       <div class="AccounticLogoContainer">
+      <div class="AccounticLogoContainer">
         <div class="Container EditContainerContent paddingBottom80">
           <br />
           <div class="FlexContainerEditNew">
@@ -37,8 +37,15 @@
                 data-aos-duration="600"
                 data-aos-delay="200"
               >
-                India’s first startup delivering integrated carpet tile solutions for high-performance interiors.<br /><br />
-                GAIA is one of the proud Indian MSME to earn the GreenPro label for Carpet Tiles, highlighting our focus on sustainable practices. Made in India with eco-conscious materials and advanced manufacturing techniques, our carpet tiles offer long-lasting durability, enhanced comfort, and a lower environmental footprint while meeting recognized green standards.
+                India’s first startup delivering integrated carpet tile
+                solutions for high-performance interiors.<br /><br />
+                GAIA is one of the proud Indian MSME to earn the GreenPro label
+                for Carpet Tiles, highlighting our focus on sustainable
+                practices. Made in India with eco-conscious materials and
+                advanced manufacturing techniques, our carpet tiles offer
+                long-lasting durability, enhanced comfort, and a lower
+                environmental footprint while meeting recognized green
+                standards.
               </h3>
             </div>
             <div class="AccousticContainerLogo">
@@ -86,66 +93,10 @@
             </div> -->
           </div>
 
-          <div class="SwiperWithAbsoluteArrows">
-            <!-- Carousel Container -->
-            <div class="SwiperContainer">
-              <swiper
-                :modules="[SwiperNavigation, Autoplay]"
-                :slides-per-view="7"
-                :space-between="20"
-                :loop="true"
-                :speed="700"
-                :autoplay="{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
-                }"
-                :navigation="{
-                  nextEl: '.swiper-button-next-custom',
-                  prevEl: '.swiper-button-prev-custom',
-                }"
-                :breakpoints="{
-                  320: { slidesPerView: 3, spaceBetween: 15 },
-                  768: { slidesPerView: 6, spaceBetween: 20 },
-                  1024: { slidesPerView: 6, spaceBetween: 20 },
-                  1200: { slidesPerView: 8, spaceBetween: 20 },
-                }"
-                class="DesignSwiper"
-              >
-                <swiper-slide
-                  v-for="(design, index) in designSwatches"
-                  :key="index"
-                  class="DesignSlide"
-                >
-                  <div
-                    class="DesignSwatch"
-                    :class="{
-                      clickable: design.pdf && design.pdf.trim() !== '',
-                      'non-clickable': !design.pdf || design.pdf.trim() === '',
-                    }"
-                    @click="
-                      design.pdf && design.pdf.trim() !== ''
-                        ? openPDF(design.pdf)
-                        : null
-                    "
-                  >
-                    <img
-                      :src="design.image"
-                      :alt="design.name"
-                      class="SwatchImage"
-                    />
-                    <p v-if="isNaN(design.code)" class="SwatchCode">{{ design.code }}</p>
-                    <!-- <div v-if="design.pdf && design.pdf.trim() !== ''" class="pdf-indicator">
-                                          <i class="fas fa-file-pdf"></i>
-                                      </div> -->
-                  </div>
-                </swiper-slide>
-              </swiper>
-            </div>
-          </div>
+          
 
           <!-- Mobile Navigation -->
-          <div class="SwiperNavigationContainerMobileOnly">
+          <!-- <div class="SwiperNavigationContainerMobileOnly">
             <div class="SwiperNavigation">
               <button
                 class="common-btn secondary mobile-nav-btn swiper-button-prev-custom"
@@ -157,6 +108,29 @@
               >
                 <span>→</span>
               </button>
+            </div>
+          </div> -->
+
+          <div class="DesignGridContainer">
+            <div
+              v-for="(design, index) in designSwatches"
+              :key="index"
+              class="DesignSwatch"
+              :class="{
+                clickable: design.pdf && design.pdf.trim() !== '',
+                'non-clickable': !design.pdf || design.pdf.trim() === '',
+              }"
+              @click="
+                design.pdf && design.pdf.trim() !== ''
+                  ? openPDF(design.pdf)
+                  : null
+              "
+            >
+              <img :src="design.image" :alt="design.name" class="SwatchImage" />
+
+              <p v-if="isNaN(design.code)" class="SwatchCode">
+                {{ design.code }}
+              </p>
             </div>
           </div>
         </div>
@@ -192,11 +166,10 @@
       </div>
     </div>
 
-    <GreenProCertified 
-      image-src="/Images/GreenProCertified/green-pro-certified-carpet-tile.png" 
-      video-src="/videos/CarpetTiles.mp4" 
+    <GreenProCertified
+      image-src="/Images/GreenProCertified/green-pro-certified-carpet-tile.png"
+      video-src="/videos/CarpetTiles.mp4"
     />
-
 
     <div class="propertiesLayoutContainer">
       <div class="Container">
@@ -395,7 +368,7 @@ let animationContainers = [];
 onMounted(() => {
   // Get all animated containers
   animationContainers = document.querySelectorAll(
-    ".AnimatedImageContainer > div"
+    ".AnimatedImageContainer > div",
   );
 
   // Set initial offsets (responsive based on screen size)
@@ -457,7 +430,7 @@ onMounted(() => {
     {
       threshold: 0.3, // Trigger when 30% of container is visible
       rootMargin: "0px 0px -50px 0px", // Trigger slightly before container enters viewport
-    }
+    },
   );
 
   // Observe all containers
@@ -484,6 +457,60 @@ const category = computed(() => {
 
 // Sample design swatches data
 const designSwatches = [
+  {
+    image: "/Images/CarpetCircleImages/Archibrown.png",
+    name: "Heritage Collection",
+    code: "ArchiBrown",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ArchiBrown.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/bloxx.png",
+    name: "Heritage Collection",
+    code: "Bloxx",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Bloxx.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Brixx.png",
+    name: "Heritage Collection",
+    code: "Brixx",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Brixx.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Gridwork.png",
+    name: "Heritage Collection",
+    code: "Grid Work",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Gridwork.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Rhythm.png",
+    name: "Heritage Collection",
+    code: "Rhythm",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_RHYTHM.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Shining_Glow.png",
+    name: "Heritage Collection",
+    code: "ShiningGlow",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Shining Glow.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Plateau.png",
+    name: "Plateau",
+    code: "Plateau",
+    pdf: "/Images/CarpetCircleImages/Documents/Plateau.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Trends.png",
+    name: "Heritage Collection",
+    code: "Trends",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_TRENDS.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Nevada.png",
+    name: "Heritage Collection",
+    code: "Nevada",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_NEVADA.pdf",
+  },
   {
     image: "/Images/CarpetCircleImages/90020052.png",
     name: "Heritage Collection",
@@ -660,7 +687,7 @@ const designSwatches = [
     code: "90020112",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020112.pdf",
   },
-   {
+  {
     image: "/Images/CarpetCircleImages/90020131.png",
     name: "Heritage Collection",
     code: "90020131",
@@ -671,60 +698,6 @@ const designSwatches = [
     name: "Heritage Collection",
     code: "90020138",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020138.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Archibrown.png",
-    name: "Heritage Collection",
-    code: "ArchiBrown",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ArchiBrown.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/bloxx.png",
-    name: "Heritage Collection",
-    code: "Bloxx",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Bloxx.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Brixx.png",
-    name: "Heritage Collection",
-    code: "Brixx",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Brixx.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Gridwork.png",
-    name: "Heritage Collection",
-    code: "Grid Work",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Gridwork.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Rhythm.png",
-    name: "Heritage Collection",
-    code: "Rhythm",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_RHYTHM.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Shining_Glow.png",
-    name: "Heritage Collection",
-    code: "Shining Glow",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Shining Glow.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Plateau.png",
-    name: "Plateau",
-    code: "Plateau",
-    pdf: "/Images/CarpetCircleImages/Documents/Plateau.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Trends.png",
-    name: "Heritage Collection",
-    code: "Trends",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_TRENDS.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Nevada.png",
-    name: "Heritage Collection",
-    code: "Nevada",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_NEVADA.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/New Design.png",
@@ -746,5 +719,4 @@ const openPDF = (pdfPath) => {
 <style scoped>
 /* Import the CSS file */
 @import "./CarpetTilesLayout.css";
-
 </style>

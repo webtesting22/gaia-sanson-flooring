@@ -36,11 +36,11 @@ const navigationBarData = [
     //     path: '/manufacturing',
     //     hasDropdown: false
     // },
-    {
-        name: 'Tools',
-        path: '/tools',
-        hasDropdown: false
-    },
+    // {
+    //     name: 'Tools',
+    //     path: '/tools',
+    //     hasDropdown: false
+    // },
     {
         name: 'About us',
         path: '/about-us',

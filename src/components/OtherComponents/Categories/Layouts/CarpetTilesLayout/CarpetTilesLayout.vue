@@ -72,7 +72,7 @@
               Choose a design to preview
             </h2>
             <!-- Desktop Arrows -->
-            <div class="DesktopArrows">
+            <!-- <div class="DesktopArrows">
               <button
                 class="common-btn secondary mobile-nav-btn left-arrow swiper-button-prev-custom"
               >
@@ -83,7 +83,7 @@
               >
                 <span>→</span>
               </button>
-            </div>
+            </div> -->
           </div>
 
           <div class="SwiperWithAbsoluteArrows">

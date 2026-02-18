@@ -17,18 +17,29 @@ import "./Footer.css"
                 <h3 class="section-title">CONTACT US</h3>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
+                        <a href="tel:+917496905804" target="_blank"><i style="color: white;" class="fas fa-phone"></i></a>
                         <a href="tel:+917496905804" class="contact-text phone-link">+91-9910921119</a>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contact@sansonfloorings.com" target="_blank"><i style="color: white;" class="fas fa-envelope"></i></a>
                         <a href="mailto:contact@sansonfloorings.com"
                             class="contact-text email-link">contact@sansonfloorings.com</a>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-globe"></i>
+                       <a href="https://www.sansonfloorings.com" target="_blank"><i style="color: white;" class="fas fa-globe"></i></a>
                         <a href="https://www.sansonfloorings.com" target="_blank"
                             class="contact-text website-link">www.sansonfloorings.com</a>
+                    </div>
+                    <div class="contact-item">
+                         <a href="https://www.linkedin.com/company/gaia-by-sanson-floorings/" target="_blank">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0zM7.06 20.452H3.56V9h3.5v11.452zM5.31 7.433a2.03 2.03 0 1 1 .001-4.06 2.03 2.03 0 0 1-.001 4.06zM20.452 20.452h-3.5v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667h-3.5V9h3.36v1.561h.049c.468-.885 1.613-1.852 3.319-1.852 3.546 0 4.26 2.337 4.26 5.377v6.366z" />
+                        </svg>
+                         </a>
+                        <a class="contact-text webiste-link" href="https://www.linkedin.com/company/gaia-by-sanson-floorings/" target="_blank">
+                            Gaia by Sanson Floorings
+                        </a>
                     </div>
                 </div>
             </div>

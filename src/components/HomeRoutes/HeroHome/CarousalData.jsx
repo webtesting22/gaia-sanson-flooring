@@ -2,28 +2,28 @@ const CarousalData = [
   {
     id: 1,
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AccousticHome.jpg",
+      "/Images/AccousticHome.webp",
     title: "Flooring & ",
     description: "ACOUSTIC SOLUTIONS",
   },
   {
     id: 2,
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GaiaHomePageImage1.jpeg",
+      "/Images/GaiaHomePageImage1.webp",
     title: "Flooring & ",
     description: "ACOUSTIC SOLUTIONS",
   },
   {
     id: 3,
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HomeCarousal2.jpg",
+      "/Images/HomeCarousal2.webp",
     title: "Flooring & ",
     description: "ACOUSTIC SOLUTIONS",
   },
   {
     id: 4,
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarousalImage3.png",
+      "/Images/CarousalImage3.webp",
     title: "Flooring & ",
     description: "ACOUSTIC SOLUTIONS",
   },

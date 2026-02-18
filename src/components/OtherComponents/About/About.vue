@@ -2,7 +2,7 @@
   <div class="aboutPage">
     <CommonTopLayout
       heading="About Us"
-      imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsBannerImage.png"
+      imageSrc="/Images/AboutUsBannerImage.webp"
       imageAlt="Acoustic Solutions"
     />
 
@@ -79,11 +79,7 @@
                 </p>
                 <br />
                 <p style="color: rgb(44, 62, 80)">
-                  GAIA is the first Indian MSME to earn GreenPro label for both
-                  Acoustic PET Panels and Carpet Tiles - under one roof. This
-                  recognition reflects our focus on responsible manufacturing,
-                  sustainable materials, and high-performance solutions that
-                  reduce environmental impact without compromising quality.
+                  GAIA is the first Indian MSME to earn GreenPro label for both Acoustic PET Panels and Carpet Tiles - under one roof. This recognition reflects our focus on responsible manufacturing, sustainable materials, and high-performance solutions that reduce environmental impact without compromising quality.
                 </p>
                 <br />
                 <p style="color: #2c3e50">
@@ -352,9 +348,9 @@
     </div>
     <!-- <SansonTeam /> -->
     <YearsOfExperience />
-    <GreenProCertified
-      image-src="/Images/GreenProCertified/green-pro-certified-about-us.png"
-      video-src="/videos/AboutUs.mp4"
+    <GreenProCertified 
+      image-src="/Images/GreenProCertified/green-pro-certified-about-us.png" 
+      video-src="/videos/AboutUs.mp4" 
     />
     <Certification />
     <OurVision />

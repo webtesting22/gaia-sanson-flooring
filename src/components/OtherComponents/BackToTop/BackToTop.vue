@@ -42,7 +42,7 @@ onUnmounted(() => {
 <style scoped>
 .back-to-top {
   position: fixed;
-  bottom: 100px;
+  bottom: 120px;
   right: 30px;
   width: 50px;
   height: 50px;
@@ -122,8 +122,8 @@ onUnmounted(() => {
 
 @media (max-width: 480px) {
   .back-to-top {
-    bottom: 80px;
-    right: 15px;
+    bottom: 110px;
+    right: 20px;
     width: 40px;
     height: 40px;
   }

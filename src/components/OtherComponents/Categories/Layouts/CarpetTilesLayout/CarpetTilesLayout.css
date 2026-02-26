@@ -214,8 +214,8 @@
 }
 
 .property-icon {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background: #a38410;
   border-radius: 50%;
   display: flex;
@@ -225,8 +225,8 @@
 }
 
 .property-icon img {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   transition: transform 0.3s ease;
   filter: brightness(0) invert(1);
@@ -234,7 +234,7 @@
 .imgAntiStatic img{
    width: 35px;
   /* height: 35px; */
-    height: 45px;
+    height: 30px;
   object-fit: contain;
 
   
@@ -348,21 +348,21 @@
 /* Tablet and larger screens */
 @media (min-width: 769px) {
   .properties-grid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .properties-grid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
   }
 }
 
 @media (min-width: 1200px) {
   .properties-grid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
   }
 }

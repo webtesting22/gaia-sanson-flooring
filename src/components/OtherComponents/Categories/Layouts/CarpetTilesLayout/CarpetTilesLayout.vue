@@ -190,11 +190,11 @@
           >
             <div class="property-icon">
               <img
-                src="/Images/propertiesImages/Multi-Directional.png"
-                alt="Multi-Directional"
+                src="/Images/propertiesImages/environment.png"
+                alt="Ozone Depletion"
               />
             </div>
-            <p class="property-label">Multi-Directional</p>
+            <p class="property-label">Ozone Depletion</p>
           </div>
 
           <div
@@ -204,9 +204,9 @@
             data-aos-delay="300"
           >
             <div class="property-icon">
-              <img src="/Images/propertiesImages/Brick.png" alt="Brick" />
+              <img src="/Images/propertiesImages/Fire Resistant.png" alt="Brick" />
             </div>
-            <p class="property-label">Brick</p>
+            <p class="property-label">Flammability</p>
           </div>
 
           <div
@@ -215,13 +215,13 @@
             data-aos-duration="600"
             data-aos-delay="400"
           >
-            <div class="property-icon">
+            <div class="property-icon imgAntiStatic">
               <img
-                src="/Images/propertiesImages/Quarter Turn.png"
-                alt="Quarter Turn"
+                src="/Images/propertiesImages/flask.png"
+                alt="Extractable Heavy Metals"
               />
             </div>
-            <p class="property-label">Quarter Turn</p>
+            <p class="property-label">Extractable Heavy Metals</p>
           </div>
 
           <div
@@ -230,13 +230,13 @@
             data-aos-duration="600"
             data-aos-delay="500"
           >
-            <div class="property-icon imgAntiStatic">
+            <div class="property-icon">
               <img
-                src="/Images/propertiesImages/Anti static.png"
-                alt="Anti Static"
+                src="/Images/propertiesImages/voc.png"
+                alt="VOC"
               />
             </div>
-            <p class="property-label">Anti Static</p>
+            <p class="property-label">VOC</p>
           </div>
 
           <div
@@ -245,13 +245,13 @@
             data-aos-duration="600"
             data-aos-delay="350"
           >
-            <div class="property-icon">
+            <div class="property-icon imgAntiStatic">
               <img
-                src="/Images/propertiesImages/Non-Directional.png"
-                alt="Non-Directional"
+                src="/Images/propertiesImages/stability.png"
+                alt="Dimensional Stability"
               />
             </div>
-            <p class="property-label">Non-Directional</p>
+            <p class="property-label">Dimensional Stability</p>
           </div>
 
           <div
@@ -260,13 +260,13 @@
             data-aos-duration="600"
             data-aos-delay="450"
           >
-            <div class="property-icon">
+            <div class="property-icon imgAntiStatic">
               <img
-                src="/Images/propertiesImages/Underfloor Heating.png"
-                alt="Underfloor Heating"
+                src="/Images/propertiesImages/fabric.png"
+                alt="Tuft withdrawal"
               />
             </div>
-            <p class="property-label">Underfloor Heating</p>
+            <p class="property-label">Tuft withdrawal</p>
           </div>
 
           <div
@@ -275,14 +275,26 @@
             data-aos-duration="600"
             data-aos-delay="550"
           >
-            <div class="property-icon">
+            <div class="property-icon imgAntiStatic">
               <img
-                src="/Images/propertiesImages/Fire Resistant.png"
-                alt="Fire Resistant"
+                src="/Images/propertiesImages/art.png"
+                alt="Color Fastness"
               />
             </div>
-            <p class="property-label">Fire Resistant</p>
+            <p class="property-label">Color Fastness</p>
           </div>
+
+          <div class="property-card"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="650"
+          >
+            <div class="property-icon imgAntiStatic">
+              <img src="/Images/propertiesImages/electric-resistance.png" alt="Electric Resistance">
+            </div>
+            <p class="property-label">Electric Resistance</p>
+          </div>
+          
         </div>
       </div>
     </div>

@@ -231,14 +231,11 @@
   transition: transform 0.3s ease;
   filter: brightness(0) invert(1);
 }
-.imgAntiStatic img{
-   width: 35px;
+.imgAntiStatic img {
+  width: 35px;
   /* height: 35px; */
-    height: 45px;
+  height: 45px;
   object-fit: contain;
-
-  
-
 }
 
 .property-card:hover .property-icon img {
@@ -891,7 +888,7 @@
 }
 
 @media (max-width: 768px) {
-  .DesignGridContainer{
+  .DesignGridContainer {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
   }

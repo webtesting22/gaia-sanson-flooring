@@ -36,7 +36,6 @@
                 </object>
               </video>
             </div>
-
           </div>
         </div>
       </div>
@@ -56,7 +55,7 @@ const props = defineProps({
   videoSrc: {
     type: String,
     required: true,
-  }
+  },
 });
 
 const videoRef = ref(null);

@@ -101,6 +101,12 @@
                     alt=""
                   />
                 </div>
+                <div class="sets-apart-logos-Container-item">
+                  <img
+                    src="/Images/arai%20GAIA%20logo.jpeg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>

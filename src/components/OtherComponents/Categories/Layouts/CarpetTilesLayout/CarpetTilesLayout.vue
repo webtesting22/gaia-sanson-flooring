@@ -65,6 +65,12 @@
                     alt=""
                   />
                 </div>
+                <div class="sets-apart-logos-Container-item">
+                  <img
+                    src="/Images/CRI%20Greenlabel.png"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -92,8 +98,6 @@
               </button>
             </div> -->
           </div>
-
-          
 
           <!-- Mobile Navigation -->
           <!-- <div class="SwiperNavigationContainerMobileOnly">

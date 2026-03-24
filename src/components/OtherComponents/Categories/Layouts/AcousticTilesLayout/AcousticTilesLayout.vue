@@ -81,7 +81,11 @@
               >
                 India's first startup offering integrated solutions in floorings
                 and acoustic panels for high-performance interiors.<br /><br />
-                GAIA is one of the proud Indian MSME to earn the GreenPro label for our Acoustic PET Panels, showcasing our commitment to environmental sustainability. Made with recycled polyester fibers, our panels deliver top-tier performance while minimizing ecological impact
+                GAIA is one of the proud Indian MSME to earn the GreenPro label
+                for our Acoustic PET Panels, showcasing our commitment to
+                environmental sustainability. Made with recycled polyester
+                fibers, our panels deliver top-tier performance while minimizing
+                ecological impact
               </h3>
             </div>
             <div class="AccousticContainerLogo">
@@ -102,10 +106,10 @@
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
-                  <img
-                    src="/Images/arai%20GAIA%20logo.jpeg"
-                    alt=""
-                  />
+                  <img src="/Images/arai%20GAIA%20logo.jpeg" alt="" />
+                </div>
+                <div class="sets-apart-logos-Container-item">
+                  <img src="/Images/ASTM_logo.png" alt="" style="width: 40%" />
                 </div>
               </div>
             </div>
@@ -366,9 +370,9 @@
         </div>
       </div>
     </div>
-    <GreenProCertified 
-      image-src="/Images/GreenProCertified/green-pro-certified.png" 
-      video-src="/videos/GreenPro.mp4" 
+    <GreenProCertified
+      image-src="/Images/GreenProCertified/green-pro-certified.png"
+      video-src="/videos/GreenPro.mp4"
     />
     <div class="OurColoursCardContainer">
       <div class="Container">
@@ -417,12 +421,12 @@
             :key="swatch.code"
           >
             <div class="swatchImage">
-              <a-image 
-                :src="swatch.image" 
+              <a-image
+                :src="swatch.image"
                 :alt="swatch.name"
                 :preview="{
                   src: swatch.image,
-                  mask: 'Click to view full screen'
+                  mask: 'Click to view full screen',
                 }"
               />
             </div>
@@ -539,12 +543,12 @@
               :data-aos-delay="300 + index * 150"
             >
               <div class="LastGridImagesImageContainer">
-                <a-image 
-                  :src="space.image" 
+                <a-image
+                  :src="space.image"
                   :alt="space.name"
                   :preview="{
                     src: space.image,
-                    mask: 'Click to view full screen'
+                    mask: 'Click to view full screen',
                   }"
                 />
               </div>
@@ -568,7 +572,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import { Image as AImage } from 'ant-design-vue';
+import { Image as AImage } from "ant-design-vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";

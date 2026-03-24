@@ -8,8 +8,7 @@
         </h2>
         <br />
         <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-          India's first startup offering integrated solutions in floorings and
-          acoustic panels for high-performance interiors.
+          {{ description }}
         </h3>
       </div>
       <div class="AccousticContainerLogo" style="margin-top: 20px">
@@ -26,6 +25,9 @@
               alt=""
             />
           </div>
+          <div class="sets-apart-logos-Container-item">
+            <img src="/Images/bellinturf-logo.webp" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -33,4 +35,12 @@
 </template>
 <script setup>
 import "../AcousticTilesLayout/AcousticTilesLayout.css";
+
+defineProps({
+  description: {
+    type: String,
+    default:
+      "India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.",
+  },
+});
 </script>

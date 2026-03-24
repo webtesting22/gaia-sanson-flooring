@@ -56,21 +56,54 @@ p.whiteColor {
 
 .LogoContainerEdit {
   display: flex;
-  gap: 25px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
 }
 
-.LogoContainerEdit > div {
+/* Two rows: exactly 3 logos, then 2 (grid prevents 2+1 wrapping on narrow widths) */
+.LogoContainerEditRow {
+  width: 100%;
+}
+
+.LogoContainerEditRow > div {
   background-color: rgba(255, 255, 255, 0.858);
   border-radius: 20px;
   padding: 10px;
   border: 5px solid #a68801be;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.LogoContainerEdit > div img {
-  width: 180px;
+.LogoContainerEditRow > div img {
+  width: 100%;
+  max-width: 180px;
   aspect-ratio: 3/2;
   object-fit: contain;
+}
+
+.logo-row-top {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Second row: two cells, centered under the three above */
+.logo-row-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  width: min(100%, 66.666%);
+  max-width: 640px;
+  margin-inline: auto;
+  align-items: center;
+  justify-items: center;
+  padding-top: 4px;
 }
 
 @media (max-width: 768px) {
@@ -113,21 +146,30 @@ p.whiteColor {
 
   .LogoContainerEdit {
     padding-top: 20px;
-    gap: 8px;
+    gap: 14px;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
-  .LogoContainerEdit > div {
-    width: auto;
+  .logo-row-top {
+    gap: 8px;
+  }
+
+  .logo-row-bottom {
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .LogoContainerEditRow > div {
     padding: 6px;
     border: 3px solid #a68801be;
     border-radius: 15px;
+    box-sizing: border-box;
   }
 
-  .LogoContainerEdit > div img {
-    width: 90px;
+  .LogoContainerEditRow > div img {
+    max-width: min(100px, 28vw);
     aspect-ratio: 3/2;
     object-fit: contain;
   }

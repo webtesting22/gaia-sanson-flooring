@@ -66,10 +66,7 @@
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
-                  <img
-                    src="/Images/CRI%20Greenlabel.png"
-                    alt=""
-                  />
+                  <img src="/Images/CRI%20Greenlabel.png" alt="" />
                 </div>
               </div>
             </div>
@@ -486,16 +483,16 @@ const designSwatches = [
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Gridwork.pdf",
   },
   {
-    image: "/Images/CarpetCircleImages/Rhythm.png",
+    image: "/Images/Miami.png",
     name: "Heritage Collection",
-    code: "Rhythm",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_RHYTHM.pdf",
+    code: "Miami",
+    pdf: "/Images/Miami.pdf",
   },
   {
-    image: "/Images/CarpetCircleImages/Shining_Glow.png",
+    image: "/Images/CarpetCircleImages/Nevada.png",
     name: "Heritage Collection",
-    code: "ShiningGlow",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Shining Glow.pdf",
+    code: "Nevada",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_NEVADA.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Plateau.png",
@@ -504,17 +501,36 @@ const designSwatches = [
     pdf: "/Images/CarpetCircleImages/Documents/Plateau.pdf",
   },
   {
+    image: "/Images/CarpetCircleImages/Rhythm.png",
+    name: "Heritage Collection",
+    code: "Rhythm",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_RHYTHM.pdf",
+  },
+  {
+    image: "/Images/Salt.png",
+    name: "Heritage Collection",
+    code: "Salt",
+    pdf: "/Images/Salt.pdf",
+  },
+  {
+    image: "/Images/SBT.png",
+    name: "Heritage Collection",
+    code: "SBT",
+    pdf: "/Images/SBT.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Shining_Glow.png",
+    name: "Heritage Collection",
+    code: "ShiningGlow",
+    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Shining Glow.pdf",
+  },
+  {
     image: "/Images/CarpetCircleImages/Trends.png",
     name: "Heritage Collection",
     code: "Trends",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_TRENDS.pdf",
   },
-  {
-    image: "/Images/CarpetCircleImages/Nevada.png",
-    name: "Heritage Collection",
-    code: "Nevada",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_NEVADA.pdf",
-  },
+
   {
     image: "/Images/CarpetCircleImages/90020052.png",
     name: "Heritage Collection",
@@ -636,12 +652,12 @@ const designSwatches = [
     code: "90020090",
     pdf: "/Images/CarpetCircleImages/Documents/90020090.pdf",
   },
-  {
-    image: "/Images/CarpetCircleImages/90020092.png",
-    name: "Heritage Collection",
-    code: "90020092",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020092.pdf",
-  },
+  //{
+  //   image: "/Images/CarpetCircleImages/90020092.png",
+  //   name: "Heritage Collection",
+  //   code: "90020092",
+  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020092.pdf",
+  // },
   {
     image: "/Images/CarpetCircleImages/90020094.png",
     name: "Heritage Collection",
@@ -672,43 +688,43 @@ const designSwatches = [
     code: "90020103",
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020103.pdf",
   },
-  {
-    image: "/Images/CarpetCircleImages/90020106.png",
-    name: "Heritage Collection",
-    code: "90020106",
-    pdf: "/Images/CarpetCircleImages/Documents/2 Color- 90020106.pdf",
-  },
+  // {
+  //  image: "/Images/CarpetCircleImages/90020106.png",
+  //   name: "Heritage Collection",
+  //   code: "90020106",
+  //   pdf: "/Images/CarpetCircleImages/Documents/2 Color- 90020106.pdf",
+  // },
   // { image: '/Images/CarpetCircleImages/90020107.svg', name: 'Modern Luxury', code: '90020107', pdf: '/Images/CarpetCircleImages/Documents/90020107.pdf' },
-  {
-    image: "/Images/CarpetCircleImages/90020108.png",
-    name: "Heritage Collection",
-    code: "90020108",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020108.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/90020112.png",
-    name: "Heritage Collection",
-    code: "90020112",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020112.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/90020131.png",
-    name: "Heritage Collection",
-    code: "90020131",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020131.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/90020138.png",
-    name: "Heritage Collection",
-    code: "90020138",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020138.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/New Design.png",
-    name: "New Design",
-    code: "90020111",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_New Design.pdf",
-  },
+  // {
+  //   image: "/Images/CarpetCircleImages/90020108.png",
+  //   name: "Heritage Collection",
+  //   code: "90020108",
+  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020108.pdf",
+  // },
+  // {
+  //   image: "/Images/CarpetCircleImages/90020112.png",
+  //   name: "Heritage Collection",
+  //   code: "90020112",
+  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020112.pdf",
+  // },
+  // {
+  //   image: "/Images/CarpetCircleImages/90020131.png",
+  //   name: "Heritage Collection",
+  //   code: "90020131",
+  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020131.pdf",
+  // },
+  // {
+  //   image: "/Images/CarpetCircleImages/90020138.png",
+  //   name: "Heritage Collection",
+  //   code: "90020138",
+  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020138.pdf",
+  // },
+  //  {
+  //   image: "/Images/CarpetCircleImages/New Design.png",
+  //   name: "New Design",
+  //   code: "90020111",
+  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_New Design.pdf",
+  // },
   // { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },
 ];
 

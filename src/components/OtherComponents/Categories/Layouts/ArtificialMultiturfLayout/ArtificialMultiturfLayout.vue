@@ -10,7 +10,9 @@
       imageAlt="Artificial grass background image"
     />
     <div class="paddingTop80" style="background-color: white !important">
-      <MakeInIndia />
+      <MakeInIndia
+        description="1st Time in India, International Standard UNE 14836 certified grass yarn from Bellinturf."
+      />
     </div>
     <div
       class="ArtificialMultiturfLayoutContainer paddingTop80 paddingBottom80 Container"

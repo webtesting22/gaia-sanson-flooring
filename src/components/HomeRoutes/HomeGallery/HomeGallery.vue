@@ -159,7 +159,7 @@ export default {
         //     }
         // },
         {
-          src: "/Images/accoustic-full.png",
+          src: "/Images/accoustic-full.webp",
           alt: "Commercial Flooring Project",
           caption: "Commercial Excellence",
           description:

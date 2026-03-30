@@ -5,7 +5,7 @@ const HomeProductsData = [
     description:
       "Modular, durable, and design-forward flooring made for flexibility and easy installation.",
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetTilesupdatedImage.png",
+      "/Images/carpetImage3.png",
     bgColor: "#d4c4b0",
     textColor: "#8b6f47",
     link: "/categories/carpet-tiles",
@@ -16,7 +16,7 @@ const HomeProductsData = [
     description:
       "Elegant, full-width carpeting for a rich and cohesive interior look.",
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HeroHome1.png",
+      "/Images/image335.png",
     bgColor: "#8b7355",
     textColor: "#f5f5f0",
     link: "/categories/broadloom-carpets",
@@ -26,7 +26,7 @@ const HomeProductsData = [
     title: "Acoustic PET Panels",
     description:
       "Control sound beautifully with tiles that absorb noise and elevate interior design.",
-    image: "/Images/accoustic.png",
+    image: "/Images/acousticPetPanel.jpeg",
     bgColor: "#f5f5f0",
     textColor: "#8b6f47",
     link: "/categories/acoustic-tiles",
@@ -37,7 +37,7 @@ const HomeProductsData = [
     description:
       "Lush, low-maintenance turf designed for outdoor appeal and everyday performance.",
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/productArtificalgrassNewImage.jpg",
+      "/Images/sportsGrass.jpg",
     bgColor: "#e8d5c4",
     textColor: "#6b5b47",
     link: "/categories/artificial-multiturf",

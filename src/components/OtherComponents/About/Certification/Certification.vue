@@ -17,6 +17,12 @@ export default {
     return {
       certifications: [
         {
+          id: 10,
+          name: "ASTM Certified",
+          image: "/Images/ASTM_logo.png",
+          isLogo: true,
+        },
+        {
           id: 1,
           name: "Polyester Acoustic Panels 9mm",
           image: "/Images/9MM GreenPro_page-0001.jpg",
@@ -70,6 +76,7 @@ export default {
           image: "/Images/certi/bitumen_nylon_carpet_plank.jpg",
           certificationNumber: "GPSFP576012",
         },
+
       ],
       swiperInstance: null,
       isAnimating: false,
@@ -117,11 +124,9 @@ export default {
         data-aos-duration="600"
         data-aos-delay="200"
       >
-        <h2>GreenPro Certified</h2>
+        <h2>Certifications & Standards</h2>
         <p style="text-align: start">
-          Our Polyester Acoustic Panels and Carpet Tiles are GreenPro Certified,
-          showcasing our commitment to sustainable, safe, and high-performance
-          solutions made in India.
+          Meeting global standards for sustainability, safety, and performance.
         </p>
       </div>
 
@@ -160,11 +165,17 @@ export default {
                 <img
                   :src="certification.image"
                   :alt="certification.name"
-                  class="certificationImage"
+                  :class="[
+                    'certificationImage',
+                    { 'certificationImage--small': certification.isLogo },
+                  ]"
                 />
               </div>
               <p class="certificationName">{{ certification.name }}</p>
-              <p class="certificationNumber">
+              <p
+                v-if="certification.certificationNumber"
+                class="certificationNumber"
+              >
                 Certificate No: {{ certification.certificationNumber }}
               </p>
             </div>

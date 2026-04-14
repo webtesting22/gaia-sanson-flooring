@@ -25,7 +25,8 @@
               alt=""
             />
           </div>
-          <div class="sets-apart-logos-Container-item">
+          <!-- BellinTurf logo (optional per page) -->
+          <div v-if="showBellinTurfLogo" class="sets-apart-logos-Container-item">
             <img src="/Images/bellinturf-logo.webp" alt="" />
           </div>
         </div>
@@ -37,6 +38,10 @@
 import "../AcousticTilesLayout/AcousticTilesLayout.css";
 
 defineProps({
+  showBellinTurfLogo: {
+    type: Boolean,
+    default: true,
+  },
   description: {
     type: String,
     default:

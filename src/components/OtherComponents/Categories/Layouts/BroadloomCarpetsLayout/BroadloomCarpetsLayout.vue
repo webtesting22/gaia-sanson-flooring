@@ -6,7 +6,7 @@
       imageAlt="Artificial grass background image"
     />
     <div class="paddingTop80">
-      <MakeInIndia />
+      <MakeInIndia :showBellinTurfLogo="false" />
     </div>
     <div class="paddingTop80 paddingBottom80 BackGroundColorBroadloom">
       <div class="max-width-800">

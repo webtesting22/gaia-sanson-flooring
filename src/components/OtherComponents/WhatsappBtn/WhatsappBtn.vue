@@ -1,6 +1,6 @@
 <template>
     <div class="WhatsappBtnContainer">
-        <a href="https://wa.me/7496905804" target="_blank" rel="noopener noreferrer" class="whatsappBtn">
+        <a href="https://wa.me/919910921119" target="_blank" rel="noopener noreferrer" class="whatsappBtn">
             <div class="whatsappIcon">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
                     <path

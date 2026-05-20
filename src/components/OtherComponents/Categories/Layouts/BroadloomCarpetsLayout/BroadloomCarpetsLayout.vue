@@ -6,7 +6,39 @@
       imageAlt="Artificial grass background image"
     />
     <div class="paddingTop80">
-      <MakeInIndia :showBellinTurfLogo="false" />
+      <div class="Container EditContainerContent paddingBottom80">
+        <br />
+        <div>
+          <h2 data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+            Manufactured in India
+          </h2>
+          <br />
+          <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            India's first startup offering integrated solutions in floorings and
+            acoustic panels for high-performance interiors.
+          </h3>
+        </div>
+        <div class="AccousticContainerLogo" style="margin-top: 20px">
+          <div
+            class="sets-apart-logos-Container"
+            style="justify-content: start"
+          >
+            <div class="sets-apart-logos-Container-item">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                alt=""
+              />
+            </div>
+            <div class="sets-apart-logos-Container-item">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                alt=""
+              />
+            </div>
+            <!-- BellinTurf logo removed for broadloom-carpets -->
+          </div>
+        </div>
+      </div>
     </div>
     <div class="paddingTop80 paddingBottom80 BackGroundColorBroadloom">
       <div class="max-width-800">
@@ -262,7 +294,7 @@ import { Image as AImage } from "ant-design-vue";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import "./BroadloomCarpetsLayout.css";
-import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
+import "../AcousticTilesLayout/AcousticTilesLayout.css";
 import BackToTop from "../../../BackToTop/BackToTop.vue";
 
 const swiperInstance = ref(null);
@@ -456,66 +488,66 @@ const broadloomProducts = [
   //         '/Images/BroadLoomImages/90020104/6.png',
   //     ]
   // },
-  {
-    id: 90020107,
-    name: "Design 90020107",
-    sku: "90020107",
-    collection: "Broadloom",
-    images: [
-      "/Images/BroadLoomImages/90020107/1.png",
-      "/Images/BroadLoomImages/90020107/2.png",
-      "/Images/BroadLoomImages/90020107/3.png",
-      "/Images/BroadLoomImages/90020107/4.png",
-      "/Images/BroadLoomImages/90020107/5.png",
-      "/Images/BroadLoomImages/90020107/6.png",
-      "/Images/BroadLoomImages/90020107/7.png",
-    ],
-  },
-  {
-    id: 90020106,
-    name: "Design 90020106",
-    sku: "90020106",
-    collection: "Broadloom",
-    images: [
-      "/Images/BroadLoomImages/90020106/1.png",
-      "/Images/BroadLoomImages/90020106/2.png",
-      "/Images/BroadLoomImages/90020106/3.png",
-      "/Images/BroadLoomImages/90020106/4.png",
-      "/Images/BroadLoomImages/90020106/5.png",
-      "/Images/BroadLoomImages/90020106/6.png",
-      "/Images/BroadLoomImages/90020106/7.png",
-    ],
-  },
-  {
-    id: 90020069,
-    name: "Design 90020069",
-    sku: "90020069",
-    collection: "Broadloom",
-    images: [
-      "/Images/BroadLoomImages/90020069/1.png",
-      "/Images/BroadLoomImages/90020069/2.png",
-      "/Images/BroadLoomImages/90020069/3.png",
-      "/Images/BroadLoomImages/90020069/4.png",
-      "/Images/BroadLoomImages/90020069/5.png",
-      "/Images/BroadLoomImages/90020069/6.png",
-      "/Images/BroadLoomImages/90020069/7.png",
-    ],
-  },
-  {
-    id: 90020066,
-    name: "Design 90020066",
-    sku: "90020066",
-    collection: "Broadloom",
-    images: [
-      "/Images/BroadLoomImages/90020066/1.png",
-      "/Images/BroadLoomImages/90020066/2.png",
-      "/Images/BroadLoomImages/90020066/3.png",
-      "/Images/BroadLoomImages/90020066/4.png",
-      "/Images/BroadLoomImages/90020066/5.png",
-      "/Images/BroadLoomImages/90020066/6.png",
-      "/Images/BroadLoomImages/90020066/7.png",
-    ],
-  },
+  // {
+  //   id: 90020107,
+  //   name: "Design 90020107",
+  //   sku: "90020107",
+  //   collection: "Broadloom",
+  //   images: [
+  //     "/Images/BroadLoomImages/90020107/1.png",
+  //     "/Images/BroadLoomImages/90020107/2.png",
+  //     "/Images/BroadLoomImages/90020107/3.png",
+  //     "/Images/BroadLoomImages/90020107/4.png",
+  //     "/Images/BroadLoomImages/90020107/5.png",
+  //     "/Images/BroadLoomImages/90020107/6.png",
+  //     "/Images/BroadLoomImages/90020107/7.png",
+  //   ],
+  // },
+  // {
+  //   id: 90020106,
+  //   name: "Design 90020106",
+  //   sku: "90020106",
+  //   collection: "Broadloom",
+  //   images: [
+  //     "/Images/BroadLoomImages/90020106/1.png",
+  //     "/Images/BroadLoomImages/90020106/2.png",
+  //     "/Images/BroadLoomImages/90020106/3.png",
+  //     "/Images/BroadLoomImages/90020106/4.png",
+  //     "/Images/BroadLoomImages/90020106/5.png",
+  //     "/Images/BroadLoomImages/90020106/6.png",
+  //     "/Images/BroadLoomImages/90020106/7.png",
+  //   ],
+  // },
+  // {
+  //   id: 90020069,
+  //   name: "Design 90020069",
+  //   sku: "90020069",
+  //   collection: "Broadloom",
+  //   images: [
+  //     "/Images/BroadLoomImages/90020069/1.png",
+  //     "/Images/BroadLoomImages/90020069/2.png",
+  //     "/Images/BroadLoomImages/90020069/3.png",
+  //     "/Images/BroadLoomImages/90020069/4.png",
+  //     "/Images/BroadLoomImages/90020069/5.png",
+  //     "/Images/BroadLoomImages/90020069/6.png",
+  //     "/Images/BroadLoomImages/90020069/7.png",
+  //   ],
+  // },
+  // {
+  //   id: 90020066,
+  //   name: "Design 90020066",
+  //   sku: "90020066",
+  //   collection: "Broadloom",
+  //   images: [
+  //     "/Images/BroadLoomImages/90020066/1.png",
+  //     "/Images/BroadLoomImages/90020066/2.png",
+  //     "/Images/BroadLoomImages/90020066/3.png",
+  //     "/Images/BroadLoomImages/90020066/4.png",
+  //     "/Images/BroadLoomImages/90020066/5.png",
+  //     "/Images/BroadLoomImages/90020066/6.png",
+  //     "/Images/BroadLoomImages/90020066/7.png",
+  //   ],
+  // },
   // {
   //     id: 90020085, name: 'Design 90020085', sku: '90020085', collection: 'Broadloom', images: [
   //         '/Images/BroadLoomImages/90020085/1.png',

@@ -17,8 +17,8 @@ import "./Footer.css"
                 <h3 class="section-title">CONTACT US</h3>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <a href="tel:+917496905804" target="_blank"><i style="color: white;" class="fas fa-phone"></i></a>
-                        <a href="tel:+917496905804" class="contact-text phone-link">+91-9910921119</a>
+                        <a href="tel:+919910921119" target="_blank"><i style="color: white;" class="fas fa-phone"></i></a>
+                        <a href="tel:+919910921119" class="contact-text phone-link">+91 99109 21119</a>
                     </div>
                     <div class="contact-item">
                         <a href="mailto:contact@sansonfloorings.com" target="_blank"><i style="color: white;" class="fas fa-envelope"></i></a>

@@ -561,6 +561,12 @@ const designSwatchesData = [
     pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/Legacy+by+GAIA.pdf",
   },
   {
+    image: "/Images/CarpetCircleImages/new_added/Opulence.png",
+    name: "GAIA Collection",
+    code: "Opulence",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/OPULENCE.pdf",
+  },
+  {
     image: "/Images/CarpetCircleImages/new_added/sovereign.png",
     name: "GAIA Collection",
     code: "Sovereign",
@@ -571,6 +577,12 @@ const designSwatchesData = [
     name: "GAIA Collection",
     code: "Sterling",
     pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/STERLING+by+GAIA.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/new_added/Virtue.png",
+    name: "GAIA Collection",
+    code: "Virtue",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/VIRTUE.pdf",
   },
 
   // {

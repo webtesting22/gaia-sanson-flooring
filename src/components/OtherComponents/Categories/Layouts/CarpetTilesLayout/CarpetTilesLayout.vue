@@ -471,10 +471,10 @@ const designSwatchesData = [
     pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Bloxx.pdf",
   },
   {
-    image: "/Images/CarpetCircleImages/Brixx.png",
+    image: "/Images/CarpetCircleImages/Aangan.png",
     name: "Heritage Collection",
-    code: "Brixx",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Brixx.pdf",
+    code: "Aangan",
+    pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/7dc8dfff72fa3a9/05b2e993b39a36b2de5e_GAIA_AANGAN.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Gridwork.png",
@@ -501,10 +501,28 @@ const designSwatchesData = [
     pdf: "/Images/CarpetCircleImages/Documents/Plateau.pdf",
   },
   {
-    image: "/Images/CarpetCircleImages/Rhythm.png",
+    image: "/Images/CarpetCircleImages/Dalaan.png",
     name: "Heritage Collection",
-    code: "Rhythm",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_RHYTHM.pdf",
+    code: "Dalaan",
+    pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/2b0702f5ffb249f/ab14be7669fbb6ba244c_GAIA_DALAAN.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Alankrit.png",
+    name: "Heritage Collection",
+    code: "Alankrit",
+    pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/56b5714ec519e07/673a18d846ab96c1dea7_GAIA_ALANKRIT.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Drip.png",
+    name: "Heritage Collection",
+    code: "Drip",
+    pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/57d0e8ffc092763/01b6aff253bc50010267_GAIA_DRIP.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Naqsh.png",
+    name: "Heritage Collection",
+    code: "Naqsh",
+    pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/ab4926f88b8a83e/37d2aa6a0317b7de393b_GAIA_NAQSH.pdf",
   },
   {
     image: "/Images/Salt.png",
@@ -528,7 +546,7 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Trends.png",
     name: "Heritage Collection",
     code: "Trends",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_TRENDS.pdf",
+    pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/2646ac10f46fbed/834cfbe94233ad8e0953_GAIA_TRENDS.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/ascend.png",

@@ -525,6 +525,30 @@ const designSwatchesData = [
     pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/ab4926f88b8a83e/37d2aa6a0317b7de393b_GAIA_NAQSH.pdf",
   },
   {
+    image: "/Images/CarpetCircleImages/Majesty.png",
+    name: "Heritage Collection",
+    code: "Majesty",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/MAJESTY.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Paramount.png",
+    name: "Heritage Collection",
+    code: "Paramount",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/PARAMOUNT.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Pinnacle.png",
+    name: "Heritage Collection",
+    code: "Pinnacle",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/PINNACLE.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Signature.png",
+    name: "Heritage Collection",
+    code: "Signature",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/SIGNATURE.pdf",
+  },
+  {
     image: "/Images/Salt.png",
     name: "Heritage Collection",
     code: "Salt",

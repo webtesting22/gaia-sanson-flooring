@@ -184,105 +184,21 @@
         </h2>
         <div class="properties-grid paddingTop60">
           <div
+            v-for="(property, index) in properties"
+            :key="property.label"
             class="property-card"
             data-aos="fade-up"
             data-aos-duration="600"
-            data-aos-delay="200"
+            :data-aos-delay="200 + index * 50"
           >
             <div class="property-icon">
               <img
-                src="/Images/propertiesImages/Multi-Directional.png"
-                alt="Multi-Directional"
+                v-if="property.icon"
+                :src="property.icon"
+                :alt="property.label"
               />
             </div>
-            <p class="property-label">Multi-Directional</p>
-          </div>
-
-          <div
-            class="property-card"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="300"
-          >
-            <div class="property-icon">
-              <img src="/Images/propertiesImages/Brick.png" alt="Brick" />
-            </div>
-            <p class="property-label">Brick</p>
-          </div>
-
-          <div
-            class="property-card"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="400"
-          >
-            <div class="property-icon">
-              <img
-                src="/Images/propertiesImages/Quarter Turn.png"
-                alt="Quarter Turn"
-              />
-            </div>
-            <p class="property-label">Quarter Turn</p>
-          </div>
-
-          <div
-            class="property-card"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="500"
-          >
-            <div class="property-icon imgAntiStatic">
-              <img
-                src="/Images/propertiesImages/Anti static.png"
-                alt="Anti Static"
-              />
-            </div>
-            <p class="property-label">Anti Static</p>
-          </div>
-
-          <div
-            class="property-card"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="350"
-          >
-            <div class="property-icon">
-              <img
-                src="/Images/propertiesImages/Non-Directional.png"
-                alt="Non-Directional"
-              />
-            </div>
-            <p class="property-label">Non-Directional</p>
-          </div>
-
-          <div
-            class="property-card"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="450"
-          >
-            <div class="property-icon">
-              <img
-                src="/Images/propertiesImages/Underfloor Heating.png"
-                alt="Underfloor Heating"
-              />
-            </div>
-            <p class="property-label">Underfloor Heating</p>
-          </div>
-
-          <div
-            class="property-card"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="550"
-          >
-            <div class="property-icon">
-              <img
-                src="/Images/propertiesImages/Fire Resistant.png"
-                alt="Fire Resistant"
-              />
-            </div>
-            <p class="property-label">Fire Resistant</p>
+            <p class="property-label">{{ property.label }}</p>
           </div>
         </div>
       </div>
@@ -828,6 +744,38 @@ const designSwatches = computed(() =>
     a.code.localeCompare(b.code, undefined, { sensitivity: "base" }),
   ),
 );
+
+const properties = [
+  {
+    label: "Ozone Depletion",
+    icon: "/Images/propertiesImages/ozone-depletion.png",
+  },
+  {
+    label: "Flammability",
+    icon: "/Images/propertiesImages/flammability.png",
+  },
+  {
+    label: "Extractable Heavy Metals",
+    icon: "/Images/propertiesImages/extractable-heavy-metals.png",
+  },
+  { label: "VOC", icon: "/Images/propertiesImages/voc.png" },
+  {
+    label: "Dimensional Stability",
+    icon: "/Images/propertiesImages/dimensional-stability.png",
+  },
+  {
+    label: "Tuft withdrawal",
+    icon: "/Images/propertiesImages/tuft-withdrawal.png",
+  },
+  {
+    label: "Color Fastness",
+    icon: "/Images/propertiesImages/color-fastness.png",
+  },
+  {
+    label: "Electric Resistance",
+    icon: "/Images/propertiesImages/electric-resistance.png",
+  },
+];
 
 // Function to open PDF in new tab
 const openPDF = (pdfPath) => {

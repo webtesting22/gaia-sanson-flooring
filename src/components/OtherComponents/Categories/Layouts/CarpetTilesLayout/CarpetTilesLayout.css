@@ -345,21 +345,21 @@
 /* Tablet and larger screens */
 @media (min-width: 769px) {
   .properties-grid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .properties-grid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
   }
 }
 
 @media (min-width: 1200px) {
   .properties-grid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
 }

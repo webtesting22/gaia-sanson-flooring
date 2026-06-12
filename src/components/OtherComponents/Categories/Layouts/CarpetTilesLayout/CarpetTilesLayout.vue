@@ -542,6 +542,18 @@ const designSwatchesData = [
     code: "Virtue",
     pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/VIRTUE.pdf",
   },
+  {
+    image: "/Images/CarpetCircleImages/new_added/stairway.png",
+    name: "GAIA Collection",
+    code: "Stairway",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_STAIRWAY.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/new_added/zara-carpet-tiles.png",
+    name: "GAIA Collection",
+    code: "Zara",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/ZARA+CARPET+TILES.pdf",
+  },
 
   // {
   //   image: "/Images/CarpetCircleImages/90020052.png",

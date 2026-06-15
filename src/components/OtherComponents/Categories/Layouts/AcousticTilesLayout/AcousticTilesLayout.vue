@@ -111,6 +111,9 @@
                 <div class="sets-apart-logos-Container-item">
                   <img src="/Images/ASTM_logo.png" alt="" style="width: 40%" />
                 </div>
+                <div class="sets-apart-logos-Container-item">
+                  <img src="/Images/epd-logo.png" alt="EPD Logo" />
+                </div>
               </div>
             </div>
           </div>

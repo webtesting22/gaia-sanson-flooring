@@ -68,6 +68,9 @@
                 <div class="sets-apart-logos-Container-item">
                   <img src="/Images/CRI%20Greenlabel.png" alt="" />
                 </div>
+                <div class="sets-apart-logos-Container-item">
+                  <img src="/Images/epd-logo.png" alt="EPD Logo" />
+                </div>
               </div>
             </div>
           </div>
@@ -378,13 +381,13 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Archibrown.png",
     name: "Heritage Collection",
     code: "ArchiBrown",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ArchiBrown.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/bloxx.png",
     name: "Heritage Collection",
     code: "Bloxx",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Bloxx.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/Aangan.png",
@@ -402,19 +405,19 @@ const designSwatchesData = [
     image: "/Images/Miami.png",
     name: "Heritage Collection",
     code: "Miami",
-    pdf: "/Images/Miami.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/Nevada.png",
     name: "Heritage Collection",
     code: "Nevada",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_NEVADA.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/Plateau.png",
     name: "Plateau",
     code: "Plateau",
-    pdf: "/Images/CarpetCircleImages/Documents/Plateau.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/Dalaan.png",
@@ -468,25 +471,25 @@ const designSwatchesData = [
     image: "/Images/Salt.png",
     name: "Heritage Collection",
     code: "Salt",
-    pdf: "/Images/Salt.pdf",
+    pdf: "",
   },
   {
     image: "/Images/SBT.png",
     name: "Heritage Collection",
     code: "SBT",
-    pdf: "/Images/SBT.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/Shining_Glow.png",
     name: "Heritage Collection",
     code: "ShiningGlow",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Shining Glow.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/Trends.png",
     name: "Heritage Collection",
     code: "Trends",
-    pdf: "https://prepseed-files.prepseed.com/namunjii/u/69cccf96238240ff79a206df/2646ac10f46fbed/834cfbe94233ad8e0953_GAIA_TRENDS.pdf",
+    pdf: "",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/ascend.png",

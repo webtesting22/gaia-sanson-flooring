@@ -399,7 +399,7 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Gridwork.png",
     name: "Heritage Collection",
     code: "Grid Work",
-    pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_Gridwork.pdf",
+    pdf: "",
   },
   {
     image: "/Images/Miami.png",

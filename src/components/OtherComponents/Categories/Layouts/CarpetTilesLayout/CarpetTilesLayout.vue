@@ -399,13 +399,13 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Gridwork.png",
     name: "Heritage Collection",
     code: "Grid Work",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_GRIDWORK.pdf",
   },
   {
     image: "/Images/Miami.png",
     name: "Heritage Collection",
     code: "Miami",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_MIAMI.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Nevada.png",

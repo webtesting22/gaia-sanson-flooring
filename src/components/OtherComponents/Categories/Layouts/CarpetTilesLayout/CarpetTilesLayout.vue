@@ -417,7 +417,7 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Plateau.png",
     name: "Plateau",
     code: "Plateau",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_PLATEAU.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Dalaan.png",
@@ -483,7 +483,13 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Shining_Glow.png",
     name: "Heritage Collection",
     code: "ShiningGlow",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_SHINING+GLOW.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/Cobble.png",
+    name: "GAIA Collection",
+    code: "Cobble",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_COBBLE.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Trends.png",

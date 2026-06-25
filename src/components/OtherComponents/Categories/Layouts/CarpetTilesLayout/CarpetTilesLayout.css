@@ -113,7 +113,6 @@
 
 .DesignSwatch.non-clickable {
   cursor: default;
-  opacity: 0.7;
 }
 
 .DesignSwatch.non-clickable .SwatchImage {
@@ -121,7 +120,7 @@
 }
 
 .DesignSwatch.non-clickable .SwatchImage:hover {
-  transform: none;
+  transform: scale(1.1);
 }
 
 /* PDF indicator */

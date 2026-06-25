@@ -491,12 +491,12 @@ const designSwatchesData = [
     code: "Cobble",
     pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_COBBLE.pdf",
   },
-  {
-    image: "/Images/CarpetCircleImages/Trends.png",
-    name: "Heritage Collection",
-    code: "Trends",
-    pdf: "",
-  },
+  // {
+  //   image: "/Images/CarpetCircleImages/Trends.png",
+  //   name: "Heritage Collection",
+  //   code: "Trends",
+  //   pdf: "",
+  // },
   {
     image: "/Images/CarpetCircleImages/new_added/ascend.png",
     name: "GAIA Collection",
@@ -573,7 +573,7 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/new_added/zara-carpet-tiles.png",
     name: "GAIA Collection",
     code: "Zara",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/ZARA+CARPET+TILES.pdf",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ZARA.pdf",
   },
 
   // {

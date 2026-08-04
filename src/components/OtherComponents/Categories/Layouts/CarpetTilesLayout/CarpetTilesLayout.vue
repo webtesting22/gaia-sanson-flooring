@@ -557,6 +557,18 @@ const designSwatchesData = [
     code: "Zenith",
     pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ZENITH.pdf",
   },
+  {
+    image: "/Images/CarpetCircleImages/new_added/chromatic.png",
+    name: "GAIA Collection",
+    code: "Chromatic",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_CHROMATIC.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/new_added/nova.png",
+    name: "GAIA Collection",
+    code: "Nova",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_NOVA.pdf",
+  },
 
   // {
   //   image: "/Images/CarpetCircleImages/90020052.png",

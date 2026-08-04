@@ -574,6 +574,8 @@ const designSwatchesData = [
     name: "GAIA Collection",
     code: "Nova",
     pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_NOVA.pdf",
+  },
+  {
     image: "/Images/CarpetCircleImages/new_added/stairway.png",
     name: "GAIA Collection",
     code: "Stairway",

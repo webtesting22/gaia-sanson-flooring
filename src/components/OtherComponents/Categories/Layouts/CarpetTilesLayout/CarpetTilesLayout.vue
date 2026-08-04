@@ -399,13 +399,13 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Gridwork.png",
     name: "Heritage Collection",
     code: "Grid Work",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_GRIDWORK.pdf",
   },
   {
     image: "/Images/Miami.png",
     name: "Heritage Collection",
     code: "Miami",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_MIAMI.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Nevada.png",
@@ -417,7 +417,7 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Plateau.png",
     name: "Plateau",
     code: "Plateau",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_PLATEAU.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Dalaan.png",
@@ -483,14 +483,20 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Shining_Glow.png",
     name: "Heritage Collection",
     code: "ShiningGlow",
-    pdf: "",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_SHINING+GLOW.pdf",
   },
   {
-    image: "/Images/CarpetCircleImages/Trends.png",
-    name: "Heritage Collection",
-    code: "Trends",
-    pdf: "",
+    image: "/Images/CarpetCircleImages/Cobble.png",
+    name: "GAIA Collection",
+    code: "Cobble",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_COBBLE.pdf",
   },
+  // {
+  //   image: "/Images/CarpetCircleImages/Trends.png",
+  //   name: "Heritage Collection",
+  //   code: "Trends",
+  //   pdf: "",
+  // },
   {
     image: "/Images/CarpetCircleImages/new_added/ascend.png",
     name: "GAIA Collection",
@@ -568,6 +574,16 @@ const designSwatchesData = [
     name: "GAIA Collection",
     code: "Nova",
     pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_NOVA.pdf",
+    image: "/Images/CarpetCircleImages/new_added/stairway.png",
+    name: "GAIA Collection",
+    code: "Stairway",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_STAIRWAY.pdf",
+  },
+  {
+    image: "/Images/CarpetCircleImages/new_added/zara-carpet-tiles.png",
+    name: "GAIA Collection",
+    code: "Zara",
+    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ZARA.pdf",
   },
 
   // {

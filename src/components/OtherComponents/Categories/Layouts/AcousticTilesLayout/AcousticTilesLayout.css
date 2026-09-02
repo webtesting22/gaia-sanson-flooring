@@ -42,6 +42,28 @@
     margin: 12px 0px;
   }
 
+  .downloadCatalogueBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #a38703 0%, #c4a304 100%);
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(163, 135, 3, 0.25);
+    transition: all 0.3s ease;
+  }
+
+  .downloadCatalogueBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(163, 135, 3, 0.35);
+  }
+
   /* Our Colors Section Styles */
   .OurColoursCardContainer {
     background-color: #f8f9fa;

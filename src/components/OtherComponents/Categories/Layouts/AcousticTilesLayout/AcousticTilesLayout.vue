@@ -220,6 +220,13 @@
                 Acoustic Panels.
               </li>
             </ul>
+            <a
+              href="/pdfs/GAIA%20ACOUSTIC%20CATALOGUE.pdf"
+              download="GAIA Acoustic Catalogue.pdf"
+              class="downloadCatalogueBtn"
+            >
+              Download Catalogue
+            </a>
           </div>
         </div>
       </div>
